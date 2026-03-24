@@ -5,8 +5,8 @@ import { LogViewer } from './viewer.js';
 
 async function main() {
   program
-    .name('fscrm-log')
-    .description('Simple log viewer for FS-CRM events')
+    .name('zcrm-log')
+    .description('Simple log viewer for Zax CRM events')
     .version('1.0.0')
     .option('--vault <path>', 'Path to vault directory', '../vault')
     .option('--days <number>', 'Number of days to load', '7')

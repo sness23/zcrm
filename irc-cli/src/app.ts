@@ -104,7 +104,7 @@ export class IRCApp {
       this.screen.render();
 
       // Show welcome message
-      this.showMessage('Welcome to FS-CRM IRC! Type /help for commands.');
+      this.showMessage('Welcome to Zax CRM IRC! Type /help for commands.');
     } catch (error) {
       this.showError(`Failed to start: ${error}`);
     }

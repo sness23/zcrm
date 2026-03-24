@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Slow Data Seeder for FS-CRM
+ * Slow Data Seeder for Zax CRM
  * Generates random test data with 1-second pauses between each record
  * Useful for watching the data flow through the system in real-time
  */
@@ -320,7 +320,7 @@ async function seedCampaigns(count: number = 10) {
 
 // Main seeder
 async function main() {
-  console.log('🐌 Starting SLOW FS-CRM data seeder...\n');
+  console.log('🐌 Starting SLOW Zax CRM data seeder...\n');
   console.log(`📍 API URL: ${API_URL}`);
   console.log(`⏱️  Delay: ${DELAY_MS}ms between records\n`);
 

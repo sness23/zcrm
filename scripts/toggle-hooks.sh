@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Toggle git hooks on/off for FS-CRM validation
+# Toggle git hooks on/off for Zax CRM validation
 
 HOOKS_DIR=".git/hooks"
 HOOKS=("pre-commit" "pre-push")

@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Start All Services for FS-CRM
+ * Start All Services for Zax CRM
  * Launches API, Worker, and all UI applications
  */
 
@@ -181,7 +181,7 @@ const services = [
 const reset = '\x1b[0m';
 const bold = '\x1b[1m';
 
-console.log(`${bold}🚀 Starting FS-CRM Services...${reset}\n`);
+console.log(`${bold}🚀 Starting Zax CRM Services...${reset}\n`);
 
 const processes: any[] = [];
 

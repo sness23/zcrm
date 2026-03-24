@@ -284,7 +284,7 @@ class SFLeadLoader {
 
 class LeadTransformer {
   /**
-   * Transform SF Lead → FS-CRM Lead
+   * Transform SF Lead → Zax CRM Lead
    */
   transform(sfLead: SFLead): FSLead {
     const slug = this.slugify(sfLead.Name);
@@ -437,7 +437,7 @@ class LeadSyncService {
   }
 
   /**
-   * Load leads from Salesforce → FS-CRM
+   * Load leads from Salesforce → Zax CRM
    */
   async load(fullSync: boolean = false): Promise<void> {
     console.log('\n' + '='.repeat(60));
@@ -541,7 +541,7 @@ class LeadSyncService {
   }
 
   /**
-   * Save leads from FS-CRM → Salesforce
+   * Save leads from Zax CRM → Salesforce
    */
   async save(): Promise<void> {
     console.log('\n' + '='.repeat(60));

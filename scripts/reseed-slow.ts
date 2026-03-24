@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Slow Reseed Orchestrator for FS-CRM
+ * Slow Reseed Orchestrator for Zax CRM
  * Resets data and then creates records one at a time with full processing
  * After each record: creates event → processes to markdown → syncs to database
  * Useful for watching the complete data flow in real-time

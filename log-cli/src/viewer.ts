@@ -39,7 +39,7 @@ export class LogViewer {
     // Create screen
     this.screen = blessed.screen({
       smartCSR: true,
-      title: 'FS-CRM Log Viewer',
+      title: 'Zax CRM Log Viewer',
       fullUnicode: true
     });
 
@@ -72,7 +72,7 @@ export class LogViewer {
           inverse: true
         }
       },
-      label: ' FS-CRM Event Log '
+      label: ' Zax CRM Event Log '
     });
 
     // Create status bar

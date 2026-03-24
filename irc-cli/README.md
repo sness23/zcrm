@@ -1,6 +1,6 @@
-# FS-CRM IRC
+# Zax CRM IRC
 
-A classic IRC-style terminal interface for FS-CRM that brings old-school IRC aesthetics to your CRM workflow.
+A classic IRC-style terminal interface for Zax CRM that brings old-school IRC aesthetics to your CRM workflow.
 
 ## Features
 
@@ -95,7 +95,7 @@ npm start -- --theme monokai --vault ../vault
 
 ## Configuration
 
-Config file: `~/.config/fscrm-irc/config.yaml`
+Config file: `~/.config/zcrm-irc/config.yaml`
 
 ```yaml
 # Display settings

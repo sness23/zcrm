@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Reset script for FS-CRM
+ * Reset script for Zax CRM
  * Clears all data: entity markdown files, database, logs
  */
 
@@ -72,7 +72,7 @@ function clearDirectory(dir: string) {
 }
 
 async function main() {
-  console.log('🧹 Resetting FS-CRM data...\n');
+  console.log('🧹 Resetting Zax CRM data...\n');
 
   // Clear entity markdown files
   console.log('📁 Clearing entity directories:');

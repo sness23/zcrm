@@ -1,11 +1,11 @@
 {
-  "name": "fscrm-irc",
+  "name": "zcrm-irc",
   "version": "1.0.0",
-  "description": "IRC-style terminal interface for FS-CRM",
+  "description": "IRC-style terminal interface for Zax CRM",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "fscrm-irc": "./bin/fscrm-irc.js"
+    "zcrm-irc": "./bin/zcrm-irc.js"
   },
   "scripts": {
     "build": "tsc",

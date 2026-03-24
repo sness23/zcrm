@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Event Processor for FS-CRM
+ * Event Processor for Zax CRM
  * Converts pending events into entity markdown files
  */
 

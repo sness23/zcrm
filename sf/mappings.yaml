@@ -1,5 +1,5 @@
-# Salesforce to FS-CRM Field Mappings
-# This file defines how Salesforce fields map to FS-CRM frontmatter fields
+# Salesforce to Zax CRM Field Mappings
+# This file defines how Salesforce fields map to Zax CRM frontmatter fields
 
 # Global mappings that apply to all objects
 global:

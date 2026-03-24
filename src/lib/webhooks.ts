@@ -405,7 +405,7 @@ export class WebhookService {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'User-Agent': 'FS-CRM-Webhook/1.0',
+          'User-Agent': 'Zax-CRM-Webhook/1.0',
           'X-Webhook-ID': webhook.id,
           'X-Event-ID': delivery.event_id,
           'X-Event-Type': delivery.event_type,

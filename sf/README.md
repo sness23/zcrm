@@ -384,7 +384,7 @@ sf project convert mdapi -r mdapi-output -d force-app
 
 ## License
 
-This script is part of the FS-CRM project. Use freely for your Salesforce backup and documentation needs.
+This script is part of the Zax CRM project. Use freely for your Salesforce backup and documentation needs.
 
 ## Contributing
 

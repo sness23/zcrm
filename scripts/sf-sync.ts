@@ -28,7 +28,7 @@ const execAsync = promisify(exec);
 
 interface ObjectConfig {
   sfObject: string;        // Salesforce object API name
-  fsType: string;          // FS-CRM type name
+  fsType: string;          // Zax CRM type name
   vaultDir: string;        // Vault subdirectory
   idPrefix: string;        // ID prefix (e.g., 'acc_', 'con_')
   fields: string[];        // Salesforce fields to query

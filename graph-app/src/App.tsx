@@ -46,7 +46,7 @@ function App() {
       <NodeDetailPanel />
 
       <div className="app-header">
-        <h1>FS-CRM Graph Visualizer</h1>
+        <h1>Zax CRM Graph Visualizer</h1>
         <div className="connection-status">
           <span className={webSocketService.isConnected() ? 'connected' : 'disconnected'}>
             {webSocketService.isConnected() ? '● Connected' : '○ Disconnected'}

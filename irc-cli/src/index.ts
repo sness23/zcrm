@@ -5,8 +5,8 @@ import { IRCApp } from './app.js';
 
 async function main() {
   program
-    .name('fscrm-irc')
-    .description('IRC-style terminal interface for FS-CRM')
+    .name('zcrm-irc')
+    .description('IRC-style terminal interface for Zax CRM')
     .version('1.0.0')
     .option('--theme <name>', 'Color theme to use', 'default')
     .option('--no-watch', 'Disable file watching')

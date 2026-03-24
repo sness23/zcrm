@@ -84,7 +84,7 @@ npm run hooks:status             # Check hook status
 
 ## CLI Commands
 
-The `fscrm` CLI (compiled to `dist/index.js`) provides:
+The `zcrm` CLI (compiled to `dist/index.js`) provides:
 
 ```bash
 # Initialize vault structure
@@ -107,7 +107,7 @@ node dist/index.js validate      # Run frontmatter + link validators
 node dist/index.js install-hooks # Install pre-commit/pre-push hooks
 
 # Cleanup
-node dist/index.js clean --force # Clear all vault data
+zcrm clean --force              # Clear all vault data
 ```
 
 ## Architecture

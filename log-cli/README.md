@@ -1,6 +1,6 @@
-# FS-CRM Log Viewer
+# Zax CRM Log Viewer
 
-A simple, real-time log viewer for FS-CRM events. Just displays events as they come in - no filtering, no commands, just pure event streaming.
+A simple, real-time log viewer for Zax CRM events. Just displays events as they come in - no filtering, no commands, just pure event streaming.
 
 ## Features
 

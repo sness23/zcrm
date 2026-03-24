@@ -303,7 +303,7 @@ export class CommandHandler {
   }
 
   private async handleVersion(args: string[]) {
-    this.context.onMessage('FS-CRM IRC v1.0.0');
+    this.context.onMessage('Zax CRM IRC v1.0.0');
   }
 
   private async handleQuit(args: string[]) {
@@ -328,7 +328,7 @@ export class CommandHandler {
   // Help text
   private showGeneralHelp() {
     const help = `
-FS-CRM IRC Commands
+Zax CRM IRC Commands
 
 Navigation:
   /join <channel>    Switch to channel

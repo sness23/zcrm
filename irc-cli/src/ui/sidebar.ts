@@ -38,7 +38,7 @@ export class SidebarWidget {
       mouse: true,
       keys: true,
       tags: true,
-      label: ' FS-CRM IRC '
+      label: ' Zax CRM IRC '
     });
   }
 

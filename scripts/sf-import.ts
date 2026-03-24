@@ -1,13 +1,13 @@
 #!/usr/bin/env tsx
 /**
- * Salesforce to FS-CRM Importer
+ * Salesforce to Zax CRM Importer
  *
- * Imports Salesforce records into FS-CRM by:
+ * Imports Salesforce records into Zax CRM by:
  * 1. Loading SF data (SOQL query or JSON file)
  * 2. Transforming fields according to mappings.yaml
  * 3. Building ID→Slug mapping (Pass 1)
  * 4. Resolving relationships to typed links (Pass 2)
- * 5. Posting events to FS-CRM API
+ * 5. Posting events to Zax CRM API
  */
 
 import * as fs from 'fs';
@@ -269,7 +269,7 @@ class RecordTransformer {
   }
 
   /**
-   * Transform SF record to FS-CRM record (Pass 1: no relationship resolution)
+   * Transform SF record to Zax CRM record (Pass 1: no relationship resolution)
    */
   transform(
     sfRecord: SFRecord,
@@ -501,7 +501,7 @@ class EventEmitter {
   ) {}
 
   /**
-   * Post events to FS-CRM API
+   * Post events to Zax CRM API
    */
   async postEvents(records: FSRecord[], objectName: string): Promise<void> {
     if (this.dryRun) {
@@ -837,7 +837,7 @@ class SFImporter {
     const results = new Map<string, ImportStats>();
 
     console.log(`\n${'='.repeat(60)}`);
-    console.log(`SF → FS-CRM Import`);
+    console.log(`SF → Zax CRM Import`);
     console.log(`Objects: ${objects.join(', ')}`);
     console.log('='.repeat(60));
 

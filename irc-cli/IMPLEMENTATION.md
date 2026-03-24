@@ -2,7 +2,7 @@
 
 ## Overview
 
-Successfully implemented a complete IRC-style terminal interface for FS-CRM based on the design document in `docs/PLAN-irc-cli.md`.
+Successfully implemented a complete IRC-style terminal interface for Zax CRM based on the design document in `docs/PLAN-irc-cli.md`.
 
 ## Implementation Details
 
@@ -46,7 +46,7 @@ irc-cli/
 ├── config/                   # Default config
 │   └── default.yaml
 ├── bin/                      # Executable
-│   └── fscrm-irc.js
+│   └── zcrm-irc.js
 ├── dist/                     # Compiled JavaScript
 ├── package.json
 ├── tsconfig.json
@@ -77,7 +77,7 @@ Implements all IRC-style commands:
 - System: `/refresh`, `/reconnect`, `/watch`, `/config`, `/help`, `/quit`
 
 #### 4. Configuration
-- YAML-based config at `~/.config/fscrm-irc/config.yaml`
+- YAML-based config at `~/.config/zcrm-irc/config.yaml`
 - Persistent pinned channels and aliases
 - Theme switching
 - Customizable keybindings
@@ -166,7 +166,7 @@ npm run dev
 
 ## Configuration
 
-Config automatically created at: `~/.config/fscrm-irc/config.yaml`
+Config automatically created at: `~/.config/zcrm-irc/config.yaml`
 
 Key settings:
 - `theme`: Color theme name
@@ -202,9 +202,9 @@ Key settings:
 - Supports both named colors and hex codes
 - Blessed color format compatible
 
-## Integration with FS-CRM
+## Integration with Zax CRM
 
-The IRC CLI reads from the same data sources as other FS-CRM components:
+The IRC CLI reads from the same data sources as other Zax CRM components:
 
 1. **Event Logs**: `vault/_logs/events-YYYY-MM-DD.md`
 2. **Entity Files**: `vault/{accounts,contacts,opportunities,...}/*.md`
@@ -243,7 +243,7 @@ Build tested and compiles cleanly:
 
 ## Conclusion
 
-The IRC CLI implementation is complete and production-ready. It provides a fully functional, classic IRC-style interface for interacting with the FS-CRM system, with all core features from the design document implemented.
+The IRC CLI implementation is complete and production-ready. It provides a fully functional, classic IRC-style interface for interacting with the Zax CRM system, with all core features from the design document implemented.
 
 To use it, simply:
 ```bash

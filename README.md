@@ -1,18 +1,18 @@
-# FS-CRM Starter
+# Zax CRM
 
 Filesystem-first, Obsidian-native AI CRM (SSOT). This repo contains:
 - A sample Obsidian vault structure with 9 Salesforce-compatible entity types
 - JSON Schemas for core entities
 - Git-backed vault with automatic version control
 - Git hook validators (frontmatter & link checks)
-- A minimal TypeScript CLI (`fscrm`) to scaffold records, validate, and install hooks
+- A minimal TypeScript CLI (`zcrm`) to scaffold records, validate, and install hooks
 - A Postgres adapter stub
 
 ## Quickstart
 
 ```bash
 # 1) Install Node 20+ and Python 3.10+
-cd fscrm-starter
+cd zcrm
 
 # 2) Install CLI deps
 npm i

@@ -12,7 +12,7 @@ export class ConfigManager {
 
   constructor() {
     // Default paths
-    const configDir = path.join(os.homedir(), '.config', 'fscrm-irc');
+    const configDir = path.join(os.homedir(), '.config', 'zcrm-irc');
     this.configPath = path.join(configDir, 'config.yaml');
     this.themesDir = path.join(process.cwd(), 'themes');
 

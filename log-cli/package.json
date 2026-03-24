@@ -1,11 +1,11 @@
 {
-  "name": "fscrm-log-cli",
+  "name": "zcrm-log-cli",
   "version": "1.0.0",
-  "description": "Simple log viewer for FS-CRM events",
+  "description": "Simple log viewer for Zax CRM events",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "fscrm-log": "./bin/fscrm-log.js"
+    "zcrm-log": "./bin/zcrm-log.js"
   },
   "scripts": {
     "build": "tsc",

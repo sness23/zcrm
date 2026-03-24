@@ -1,5 +1,5 @@
 /**
- * Identity Resolution Engine for FS-CRM
+ * Identity Resolution Engine for Zax CRM
  *
  * Implements Salesforce Data Cloud-style identity matching for researchers:
  * - Exact matching (email, ORCID, Google Scholar ID, etc.)

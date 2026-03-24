@@ -46,7 +46,7 @@ async function inspectObject(objectName: string, filePath: string) {
   console.log(`\n📄 Original SF Record (${sfRecord.Id}):`);
   console.log(JSON.stringify(sfRecord, null, 2));
 
-  console.log(`\n✨ Transformed FS-CRM Record (${fsRecord.id}):`);
+  console.log(`\n✨ Transformed Zax CRM Record (${fsRecord.id}):`);
   console.log('---');
   console.log(yaml.dump(fsRecord, { lineWidth: -1, noRefs: true }));
   console.log('---');
@@ -58,7 +58,7 @@ async function inspectObject(objectName: string, filePath: string) {
 
   // Show field mapping summary
   console.log(`\n📊 Field Mapping Summary:`);
-  console.log('  SF Field → FS-CRM Field');
+  console.log('  SF Field → Zax CRM Field');
   console.log('  ' + '-'.repeat(50));
 
   for (const [sfField, mapping] of Object.entries(objectMapping.fields) as any[]) {
@@ -103,7 +103,7 @@ async function inspectObject(objectName: string, filePath: string) {
 }
 
 async function main() {
-  console.log('SF → FS-CRM Import Inspection');
+  console.log('SF → Zax CRM Import Inspection');
   console.log('=' .repeat(70));
 
   await inspectObject('Account', 'sf/test-data/sample-accounts.json');

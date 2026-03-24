@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Extend FS-CRM schemas with Salesforce-specific fields
+ * Extend Zax CRM schemas with Salesforce-specific fields
  * Adds sf_id, sf_synced_at, and other SF tracking fields to all schemas
  */
 
@@ -258,7 +258,7 @@ function extendSchema(schemaPath: string): void {
 }
 
 function main() {
-  console.log('Extending FS-CRM schemas with Salesforce fields...\n');
+  console.log('Extending Zax CRM schemas with Salesforce fields...\n');
 
   // Get all schema files
   const files = fs.readdirSync(SCHEMAS_DIR).filter(f => f.endsWith('.schema.json'));

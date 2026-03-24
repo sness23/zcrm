@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Real data seeder for FS-CRM
+ * Real data seeder for Zax CRM
  * Seeds the database with real customer data for testing
  */
 

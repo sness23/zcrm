@@ -3651,7 +3651,7 @@ app.post("/api/command/execute", async (req: Request, res: Response) => {
 ╚══════════════════════════════════════╝
 
 ╭─ 📜 MOTD ──────────────────────────╮
-│ Welcome to FS-CRM! Markdown files │
+│ Welcome to Zax CRM! Markdown files│
 │ are the source of truth. Git is   │
 │ your audit trail. Obsidian is UI.  │
 ╰────────────────────────────────────╯
@@ -3688,7 +3688,7 @@ app.post("/api/command/execute", async (req: Request, res: Response) => {
     without the dot prefix!
 
 ──────────────────────────────────────
-FS-CRM v1.0 | Type 'help' anytime
+Zax CRM v1.0 | Type 'help' anytime
 `;
 
       return res.json({
@@ -4169,7 +4169,7 @@ wss.on('connection', (ws, req) => {
     ws.send(JSON.stringify({
       type: 'connection',
       socketId: socketId,
-      message: 'Connected to FS-CRM'
+      message: 'Connected to Zax CRM'
     }));
 
     // Continue to message handler below (skip visitor session creation)
@@ -4296,7 +4296,7 @@ wss.on('connection', (ws, req) => {
       type: 'connection',
       socketId: socketId,
       sessionId: sessionId,
-      message: 'Connected to FS-CRM'
+      message: 'Connected to Zax CRM'
     }));
 
     // Broadcast visitor connection to all admins

@@ -31,7 +31,7 @@ export class ScreenManager {
     // Create screen
     this.screen = blessed.screen({
       smartCSR: true,
-      title: 'FS-CRM IRC',
+      title: 'Zax CRM IRC',
       fullUnicode: true,
       autoPadding: true,
       warnings: false

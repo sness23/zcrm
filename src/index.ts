@@ -215,7 +215,7 @@ function gitCommitAndPush(file: string, action: string, entityType: string, name
 }
 
 program
-  .name("fscrm")
+  .name("zcrm")
   .description("Filesystem-first AI CRM CLI")
   .version("0.1.0");
 
@@ -1368,7 +1368,7 @@ program
       console.log("");
       console.log("   Structure (_schemas, _hooks, settings) will be preserved.");
       console.log("");
-      console.log("   Run with --force to confirm: fscrm clean --force");
+      console.log("   Run with --force to confirm: zcrm clean --force");
       process.exit(1);
     }
 

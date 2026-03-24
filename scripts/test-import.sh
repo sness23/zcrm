@@ -3,7 +3,7 @@
 
 set -euo pipefail
 
-echo "Testing SF → FS-CRM Import"
+echo "Testing SF → Zax CRM Import"
 echo "======================================"
 echo ""
 

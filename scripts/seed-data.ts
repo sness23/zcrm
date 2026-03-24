@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Data seeder for FS-CRM
+ * Data seeder for Zax CRM
  * Generates random test data for all entity types
  */
 
@@ -479,7 +479,7 @@ async function seedKnowledge(count: number = 10) {
 
 // Main seeder
 async function main() {
-  console.log('🌱 Starting FS-CRM data seeder...\n');
+  console.log('🌱 Starting Zax CRM data seeder...\n');
   console.log(`📍 API URL: ${API_URL}\n`);
 
   const recordsPerType = parseInt(process.argv[2] || '10');
