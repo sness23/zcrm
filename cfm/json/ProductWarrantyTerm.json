@@ -1,0 +1,87 @@
+{
+  "@id": "ProductWarrantyTerm",
+  "name": "Product Warranty Term",
+  "@type": "Class",
+  "description": "A limitation or boudary of a product warranty",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "warrantyTermId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "47e48dc8-8ed7-4c7c-8808-e4911d55012e",
+    "@type": "Shape",
+    "targetClass": "ProductWarrantyTerm",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "30faa9ac-af81-4a1a-9d9d-fbd3b4a09078",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "c921996a-d575-43b3-be3e-64ce7f6166d7",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "d8784e7f-23a0-44a4-bd7d-e11a9a2e2cfb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f749512e-4adc-48c8-b7b7-7d4c362bcf42",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ddaa0352-de57-4080-9f5f-6d4abcc2ad21",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "45b36fff-008d-4c0c-8bcb-010300566bf2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "3cca7f46-533b-4373-83c3-ddded57f2185",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a8e17903-2d28-4e7e-a7a7-ad6dfa955f54",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

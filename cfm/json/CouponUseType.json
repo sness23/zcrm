@@ -1,0 +1,80 @@
+{
+  "@id": "CouponUseType",
+  "name": "Coupon Use Type",
+  "@type": "Class",
+  "description": "Types of coupons include Single Code for many users; multiple codes on one coupon for one user; multiple codes on one coupon for multiple users.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6c98602d-a74a-4888-8404-aa778e421dda",
+    "@type": "Shape",
+    "targetClass": "CouponUseType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "48757f56-be17-4636-8fcf-ceb1a2cbe7c8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "64503254-cb0a-4141-a929-fec1a02e491e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "08875a87-0597-4666-b2f2-242e44304378",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d62b1276-061b-40c0-befe-59a560bffd0b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1271b79f-7ec2-4222-8b0b-69cbb5e45b4e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b4b7b9c8-9844-41e1-aaaa-6eb029e657d3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "50445ff4-ef37-44d4-a6e6-673cb837af76",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "8944c072-0f5a-4d9d-bd7d-4b8a7a62f1d8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

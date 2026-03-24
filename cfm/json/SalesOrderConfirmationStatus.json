@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderConfirmationStatus",
+  "name": "Sales Order Confirmation Status",
+  "@type": "Class",
+  "description": "Stages of customer approval and finalization of a Sales Order.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "633ff6d6-aed1-4858-8d8d-3556ec8904c3",
+    "@type": "Shape",
+    "targetClass": "SalesOrderConfirmationStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "00aa5838-9687-4fdf-9ddd-1f10a488c1cd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "7a9637bc-11de-4515-b2f2-ff30e1283941",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d05ef1af-b602-4c6c-bc3c-7defbb89cf24",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ed4b124f-33ef-4979-8686-cb83164445f7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a471fb6e-e46a-4cbc-ac2c-6ef3873c9752",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "143372f0-68a5-40d0-a7a7-fbd47e295873",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9e06ce56-e9bd-4101-9ada-f0d04e1b54c4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0d9d4936-fa56-4c8c-83c3-28d8a38f8630",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

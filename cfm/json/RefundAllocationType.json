@@ -1,0 +1,79 @@
+{
+  "@id": "RefundAllocationType",
+  "name": "Refund Allocation Type",
+  "@type": "Class",
+  "description": "Each Refund Allocation is either a Refund Payment Allocation, or a Refund Credit Memo Allocation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6056fb37-b56c-4e2e-9393-2b0a0f416af2",
+    "@type": "Shape",
+    "targetClass": "RefundAllocationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "eef6f115-ce5d-4848-9b5b-eff18aa06be5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1136afa9-b251-4fcf-8202-072c9d601130",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "cf1d8f3a-b866-4454-b8b8-207da273ae81",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a1004021-3689-4828-8d8d-1c0d0b7878b7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "51ec6d70-9a0f-4010-9c5c-2680bfb856e2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6aa0714c-71ee-4e2e-9555-47bf5fcee4cc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "308ad310-6e9c-49f9-a262-931b7e19eaf0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "53b0b5d3-f1d6-4060-a7a7-34b2fce4f50d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

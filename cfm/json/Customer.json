@@ -1,0 +1,285 @@
+{
+  "@id": "Customer",
+  "name": "Customer",
+  "@type": "Class",
+  "description": "Information about a party playing role of customer e.g. life time value, life cycle status",
+  "subClassOf": "PartyRole",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "churnScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "last12MonthsNewRevenueAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalProfitContributionAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalContractedAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "marketingEmailResponseRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalBookingsAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "last12MonthsNewRevenueAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalContractedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalLifeTimeValue",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "netPromoterScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "originatingCustomerSource",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalProfitContributionAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "prospectRatingId",
+      "@type": "Property"
+    },
+    {
+      "@id": "last24MonthsNewRevenueAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "last24MonthsNewRevenueAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerSatisfactionScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalBookingsAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "last12MonthsSupportCallCount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9c3da7a2-435b-395a-b031-328314727453",
+    "@type": "Shape",
+    "targetClass": "Customer",
+    "properties": [
+      {
+        "path": "totalProfitContributionAmountCurrency",
+        "@id": "2138713f-2faa-3e33-91ed-a97b98baa694",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalProfitContributionAmount",
+        "@id": "1259f92e-adb1-3d43-a8a7-425b82572b02",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalLifeTimeValue",
+        "@id": "b1b3331c-9ba2-36b2-ab15-a2e1e758464c",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalContractedAmountCurrency",
+        "@id": "37a194ac-5c79-36b0-bc04-1d09206f1c0c",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalContractedAmount",
+        "@id": "a34340d9-a309-38a5-a901-b1b870a9409d",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalBookingsAmountCurrency",
+        "@id": "2a3c949b-31c6-34e4-ac4c-f058427db8d2",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalBookingsAmount",
+        "@id": "6804c910-ebfc-3485-8efd-c3b6f5038d6f",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "9b7ad006-eb60-39dc-ba1c-03983c21505a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "prospectRatingId",
+        "@id": "fe652414-8377-31e4-a363-b57ec54f24fc",
+        "node": "b250d23a-3ea3-3561-979d-2af558c3579b",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "086b2f57-19b4-48e8-97d7-282ac1beef61",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "originatingCustomerSource",
+        "@id": "f1b90fd1-9dd0-30af-9aae-f27ff3c46b70",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "netPromoterScore",
+        "@id": "44c8adbf-13d6-3edb-9a35-c4d3691ed6e0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "marketingEmailResponseRate",
+        "@id": "e8b0a46b-5a6b-3e06-b597-84a6ab0cee65",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "6ae00663-f4cf-36f3-aa7c-fd8307925938",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "last24MonthsNewRevenueAmountCurrency",
+        "@id": "dab48d26-6cfc-3bef-aeb4-203da56421c8",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "last24MonthsNewRevenueAmount",
+        "@id": "68ce35a3-e023-36dd-9c67-e08f4e486861",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "last12MonthsSupportCallCount",
+        "@id": "96f3d0b9-2345-3f39-8910-0b5a28a00b50",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "last12MonthsNewRevenueAmountCurrency",
+        "@id": "ac3679c5-9b8b-3cdb-8fa9-d522312ce12a",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "last12MonthsNewRevenueAmount",
+        "@id": "c766687c-5480-3e86-a217-b610e1e941d0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "253b42ab-fb49-4383-b9f9-bc1e44825d40",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "766663be-8984-4bab-be3e-96459dd8c52d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6625176b-9c2f-4afa-9d1d-2d0a31acf90f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "36111dbb-0e3e-379a-acef-a08c8f36974b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerStatusId",
+        "@id": "83168c0f-8224-3814-a2a5-272529d7e8b1",
+        "node": "c9d6b8a3-8085-3867-91f5-ba2ff8f186ad",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "customerSatisfactionScore",
+        "@id": "edbdbdea-5b15-3168-bc7d-71fd0cf6c4b0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerNumber",
+        "@id": "04ef63aa-7cb5-4faf-b4f4-662622172e38",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2243fee8-f181-341e-985f-c1fa651e7998",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "churnScore",
+        "@id": "56359180-0200-3eb5-9915-c9685c7d4295",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "CustomerStatusHistories",
+        "node": "f38b14e3-ac6a-3717-9030-017758780119",
+        "minCount": "1"
+      }
+    ]
+  }
+}

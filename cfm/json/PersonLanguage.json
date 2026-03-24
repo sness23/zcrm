@@ -1,0 +1,103 @@
+{
+  "@id": "PersonLanguage",
+  "name": "Person Language",
+  "@type": "Class",
+  "description": "Languages a person can comprehend and level of comprehension",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "writtenProficiencyLevelId",
+      "@type": "Property"
+    },
+    {
+      "@id": "spokenProficiencyLevelId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    },
+    {
+      "@id": "languageId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3d5e5d6f-30a3-3294-9ba7-56b4e64d2037",
+    "@type": "Shape",
+    "targetClass": "PersonLanguage",
+    "properties": [
+      {
+        "path": "writtenProficiencyLevelId",
+        "@id": "1cd2f9e0-cbc0-3271-a26a-384ec54e60bf",
+        "node": "9939c7b0-4614-383d-95a4-887d3824f022",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "a8f1912d-278b-46b6-b1b1-74b184aef470",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "spokenProficiencyLevelId",
+        "@id": "8dc483bf-6513-3d96-9b91-c9b698d6940d",
+        "node": "9939c7b0-4614-383d-95a4-887d3824f022",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0e5a2cee-d650-4202-8a8a-27f8dce4b6a2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "7070614f-0206-33b2-80d8-9fd53669361d",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4976c487-3b48-4ebe-a969-12fa960a007e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fe843a8a-0c16-3fc1-8852-fc43c9e0032b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c6048082-5f5c-4fff-99d9-9a524c39fb02",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9cbb7f8e-8f87-4565-9c1c-6bb1633f8f80",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fcc6144d-6fb1-43c3-b979-db277cf9a70c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

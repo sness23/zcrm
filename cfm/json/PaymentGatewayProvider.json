@@ -1,0 +1,127 @@
+{
+  "@id": "PaymentGatewayProvider",
+  "name": "Payment Gateway Provider",
+  "@type": "Class",
+  "description": "Stores class details needed for maintaining Apex adapter.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "apexAdapterClassName",
+      "@type": "Property"
+    },
+    {
+      "@id": "namespacePrefixText",
+      "@type": "Property"
+    },
+    {
+      "@id": "developerName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayProviderName",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayProviderCommentText",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cc22e940-9ebf-4b2b-bfff-ac1e5a67b3ad",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayProvider",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f4f6d5ae-47a1-4727-80c0-6820c435f085",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayProviderName",
+        "@id": "296469d3-1bfc-44d4-afef-2cb993865ccd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayProviderCommentText",
+        "@id": "4c5c1a87-78b9-4a3a-bfbf-bf5310b3118f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "namespacePrefixText",
+        "@id": "f9de2e2f-f867-4404-bc7c-1f9c3cbf3cc5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "6736487a-c6bb-4f5f-b9b9-2236227f8214",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4b092c4c-89ae-4ada-8d8d-5e1fe7aafe4f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fd961de8-818d-4090-a9a9-c25a19da2eaa",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9ad974af-b863-4626-8c0c-d2365d18fa70",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8d5ea135-97ea-4909-a727-6ba4fea2647e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "developerName",
+        "@id": "1dd65b11-97bc-4999-81c1-3ab1200f1812",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4c93f231-c408-4191-b272-1571d31f5506",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "apexAdapterClassName",
+        "@id": "ae387e42-433f-46f6-8141-9df6490b6dc6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "GatewayProviderPaymentMethodTypes",
+        "node": "8fb2c0fc-e9eb-4686-8b8b-8e2cf2d92f7f",
+        "minCount": "1"
+      }
+    ]
+  }
+}

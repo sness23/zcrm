@@ -1,0 +1,90 @@
+{
+  "@id": "ShipmentStatus",
+  "name": "Shipment Status",
+  "@type": "Class",
+  "description": "The stage of a shipment. Possible values could be pre-transit, in transit, delayed, delivered",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c471dbe1-ab61-4787-b3f3-0602612d3e5e",
+    "@type": "Shape",
+    "targetClass": "ShipmentStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "29b5b5b1-a1d0-4090-ba3a-2dc14513f58c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "beeec93c-c72b-43f3-9f9f-374b5fc2195a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7c023308-d01d-4f3f-a5e5-2f1b9345a39d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "074120e9-3f76-4c2c-b8f8-1bf99ca1f795",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "42ab4d51-df91-45b5-9ddd-f5b77f06705c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d33366ee-4372-4a0a-a8e8-5b1a3b2e2e86",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a64f0858-53d9-4969-8d8d-5ed7a2fbcceb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "b27f0be9-19c9-4676-9353-204cb5b7dcd0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "653c4ae0-e3b9-4a8a-a6a6-f8e9109c9757",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

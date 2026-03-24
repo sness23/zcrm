@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "type", "title", "filename", "created"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^vid_"
+    },
+    "type": {
+      "type": "string",
+      "const": "Video"
+    },
+    "title": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string",
+      "pattern": "\\.(mp4|webm|mov)$"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

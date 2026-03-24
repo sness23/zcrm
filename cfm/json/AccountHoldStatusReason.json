@@ -1,0 +1,79 @@
+{
+  "@id": "AccountHoldStatusReason",
+  "name": "Account Hold Status Reason",
+  "@type": "Class",
+  "description": "Why the account is in hold status e.g misused, legal request",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "accountHoldStatusReasonName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "41c0ac46-ef4c-36a8-a0cc-3538adfba5cb",
+    "@type": "Shape",
+    "targetClass": "AccountHoldStatusReason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "23540f90-a9ee-39d8-b4e5-980cee37bb2a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0e0eb32b-db6f-37cf-9e51-a86a614eed6d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "77078fce-9671-4e2e-9f1f-6549d65b07b0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b2de1218-b202-3406-8e5f-2921e3b616e6",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f186ebfb-f13e-49c9-9353-47b6c2fb7741",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "760f4fe6-e211-3381-9224-4f4820d1f511",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "5980982d-986b-3072-84cd-a0d8895c63be",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountHoldStatusReasonName",
+        "@id": "ec6585bd-c5a9-3543-8072-993cc5b02af1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "@id": "AccountServiceEntitlement",
+  "name": "Account Service Entitlement",
+  "@type": "Class",
+  "description": "Units of customer support which a customer is eligible to consume that are not specific to any product they purchased",
+  "subClassOf": "ServiceEntitlement",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4596c40d-f183-4979-a020-59d96666fd01",
+    "@type": "Shape",
+    "targetClass": "AccountServiceEntitlement",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6bc1ea69-3513-4565-8080-a855e89fe7d9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c5e65c64-11a8-4ece-b0b0-391613a65dc4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4f94d0fa-4e6e-4101-b979-0cf1747a7dd8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "03cc2af2-86c8-46c6-a6a6-67003c7de8d5",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5f3e773c-c34e-48c8-a525-669a9e9a9fbd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e370ce88-d5c0-4c7c-9313-6cd3bbec4083",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "8bbf5bf4-a098-4080-9515-cbc28b460f7a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "2f53de5b-305e-4e4e-a0a0-a9f8fc12588d",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

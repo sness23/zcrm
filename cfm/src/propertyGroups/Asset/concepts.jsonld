@@ -1,0 +1,9 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "AssetPropertyGroup",
+    "name": "Asset Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+
+    ]
+}

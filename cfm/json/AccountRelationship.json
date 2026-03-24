@@ -1,0 +1,90 @@
+{
+  "@id": "AccountRelationship",
+  "name": "Account Relationship",
+  "@type": "Class",
+  "description": "The association of two Accounts. Reasons for account association include implementation partners, sales partners and linked customers.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "account2Id",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountRelationshipRole",
+      "@type": "Property"
+    },
+    {
+      "@id": "account1Id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "78878833-91d3-4f3f-a6a6-5b0e1f565cb1",
+    "@type": "Shape",
+    "targetClass": "AccountRelationship",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2be9e30b-7eed-4050-b636-b9d381503c9c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9c8b1cdd-9ffd-4f1f-b9b9-4e15dbb98b5d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ae32962c-9e5d-4d0d-8c4c-bc5461da1165",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3f1ace63-9c18-4c2c-9ddd-2907fe17570d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "886626de-9649-46e6-8c4c-6981e1d9ed17",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "206a5384-7844-43e3-b5b5-ca2853e56ae7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountRelationshipRole",
+        "@id": "7f54caae-abf2-4999-b6b6-9934b212d363",
+        "node": "03f975bb-828e-4696-96d6-fcb120ff8cec",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "account2Id",
+        "@id": "696bb473-e19f-45b5-8545-2a8481081426",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "account1Id",
+        "@id": "1e9dc3fe-7102-4c2c-8f4f-41a6d320477f",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

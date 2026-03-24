@@ -1,0 +1,79 @@
+{
+  "@id": "BankruptcyType",
+  "name": "Bankruptcy Type",
+  "@type": "Class",
+  "description": "What type of bankcruptcy the business ent through e.g. chapter 7, chapter 11",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "bankcruptcyTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f0f06dcc-68df-3eb6-afc7-14454ce99aa4",
+    "@type": "Shape",
+    "targetClass": "BankruptcyType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "17c2126b-bcc8-3b93-96b3-bf003e6a0cd5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "bc74a905-9a0a-3000-8ac0-a6738868637c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "eefc05f1-805a-4ded-afaf-1a7633b4a802",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e60a5ea8-06e8-33da-85a5-ad632273027b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c72616ae-3076-4bdb-bc7c-80c8f15a1cc4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0bd94cae-4f0d-3478-852d-901c0ebdddbd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d0bb0f06-8a4f-3fb7-b5dd-8cc2ae0cb11e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "bankcruptcyTypeName",
+        "@id": "af9ab1de-02bc-4101-9494-9e32ff8e048e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

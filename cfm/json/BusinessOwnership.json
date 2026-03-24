@@ -1,0 +1,68 @@
+{
+  "@id": "BusinessOwnership",
+  "name": "Business Ownership",
+  "@type": "Class",
+  "description": "Is the company public or private",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ad61d9f7-0c5c-3156-9c1a-9ef1e43bc84d",
+    "@type": "Shape",
+    "targetClass": "BusinessOwnership",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d953d3bb-8c74-4f6f-a2e2-89666d74bccf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "dd8fdfa5-dbc9-4dcd-9555-5f4b2075e426",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2fe94cc6-4c25-4000-acac-b2214cfed449",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e501c57a-fcfa-4989-ba3a-36eec8952b81",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ece965d9-6e9f-4a8a-a3e3-2092900caa90",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c8a1b21e-9e41-4a2a-9515-91ec5713ac7d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "30a98199-d68a-44b4-8ccc-03de4c9177b0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

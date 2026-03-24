@@ -1,0 +1,80 @@
+{
+  "@id": "HousingType",
+  "name": "Housing Type",
+  "@type": "Class",
+  "description": "List of Housing Types e.g. Owned, Rented, Homeless",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6c4c800b-f721-4a8a-adad-2909b89c46f5",
+    "@type": "Shape",
+    "targetClass": "HousingType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b5c9da49-9ff8-42f2-ae2e-7adc0f2bf45c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "bd89e207-fc11-45a5-b2b2-bb703eecba31",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2b1f9d7c-09b3-4a3a-8f0f-29e4b98e8142",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "720067fd-6edb-48a8-93d3-1a681c0b7f96",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2809908f-bf9a-4808-aded-cb9e2d655f56",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c728e4dd-4928-42f2-a121-6cac279c7cb6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2878a8a9-5111-40b0-a969-82940e55ec8b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "105c8840-d806-40c0-acac-d5db6f4bbe27",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

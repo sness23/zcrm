@@ -1,0 +1,80 @@
+{
+  "@id": "VoucherType",
+  "name": "Voucher Type",
+  "@type": "Class",
+  "description": "Values of Voucher Type include: accrual, redemption, and manual action",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9de310a0-723b-4373-8f0f-c24d5a8afe7c",
+    "@type": "Shape",
+    "targetClass": "VoucherType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "663c2950-9232-4d2d-b2b2-477d5465f959",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "87f34515-ad29-43b3-aded-b04388877f5f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1af69f3c-45a0-4ece-aa2a-c074612977fa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ff0e4f96-22b0-4aca-bf3f-c446b7ad1c6e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d5010547-acfc-4f8f-b4b4-895b462a7177",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "cca18990-0320-4505-8dcd-39488c57d5e7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "df6421d3-8a18-4d8d-ae2e-109eec6d91ab",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "5759cc41-678e-4cfc-9e5e-232452b88edd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "Occupation",
+  "name": "Occupation",
+  "@type": "Class",
+  "description": "Professional, manager, tradesman, technical, military, unskilled, student, home maker, other",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "occupationName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f5dda8a9-3a0f-35c3-a7dc-b9ef0b9adc66",
+    "@type": "Shape",
+    "targetClass": "Occupation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f556277e-d644-3ead-bc80-1d6ede246fa9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "occupationName",
+        "@id": "83ce6440-e1cd-33f0-bf50-688a381571bd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d6055ca0-fccf-31d6-8bd0-8500168f90a8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "be83aebc-6ef7-4a4a-9656-337b3e57cdb1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4dab33d9-653b-31ca-acf7-4d4477880b44",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e8c5f8bc-0e73-4e1e-b4b4-68fe6a1f6540",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "07d18487-da1d-3595-bbed-2b8e72ec9d80",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "28ca799a-5c7f-3f3d-b81d-64662d5094e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

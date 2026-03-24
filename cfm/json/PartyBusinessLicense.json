@@ -1,0 +1,108 @@
+{
+  "@id": "PartyBusinessLicense",
+  "name": "Party Business License",
+  "@type": "Class",
+  "description": "A legal document that grants a Party the right to operate in a city or other jurisdiction e.g., granted permission to run a gym or a contracting company.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "licenseNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "licenseIssuedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "licenseExpirationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "23002c9a-e91c-4676-8d4d-05673c0e8adc",
+    "@type": "Shape",
+    "targetClass": "PartyBusinessLicense",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "667d6728-c808-4d5d-a929-0257c56cc060",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "ecf5a489-ca55-4f2f-8aca-0fc9e6a8e210",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "licenseNumber",
+        "@id": "c84d1250-60bb-4727-a626-558ebd585ca8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "licenseIssuedDate",
+        "@id": "6d8f84e5-cba7-4fbf-8181-a21c76abc396",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "licenseExpirationDate",
+        "@id": "f97318cc-7630-4f3f-8f8f-b1cd60488bb1",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a2f02630-8689-4c9c-b171-de3ac0467ce4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "88444c2c-f7d8-4030-bf7f-cc7a15baaaef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "cbbcb5be-db9d-4a6a-9c5c-3c3b0fb09f60",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9b0f7a99-30a7-42f2-b2b2-f3f1b09dee68",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c9efaf18-abda-48d8-a020-7a598a751fab",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9ef75f8a-4e99-4515-9797-90e75350175f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

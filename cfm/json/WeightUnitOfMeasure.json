@@ -1,0 +1,89 @@
+{
+  "@id": "WeightUnitOfMeasure",
+  "name": "Weight Unit Of Measure",
+  "@type": "Class",
+  "description": "What unit of measure is used for weight e.g. pound, kilogram",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "measurementSystemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "weightUOMName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e640be2c-6fc8-3335-90e6-6a339e3c0e16",
+    "@type": "Shape",
+    "targetClass": "WeightUnitOfMeasure",
+    "properties": [
+      {
+        "path": "weightUOMName",
+        "@id": "fb40a2ba-8bee-37fd-a9af-c0da35ed3f38",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "0aa06de0-8072-3428-8e85-a369ed3381d9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "measurementSystemId",
+        "@id": "f4286d87-83d1-4000-aa2a-ce4dd9e65b7b",
+        "node": "9503249c-384a-4212-8d0d-712bdca393d2",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e07fa2dd-9783-39aa-9571-facb66a22702",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "de58a0c0-3345-4e4e-8d0d-ea33637ec8a2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9c3fd081-c735-340a-84ac-5cf5244ef5c7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e3b727da-2c74-4525-8484-5f68be8475ef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d6fb9565-3e2a-3eb9-b71b-9f0aa8a3e0d8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f99c6afe-fa9c-3255-b87b-899ecc246a0b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

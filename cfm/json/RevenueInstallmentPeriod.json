@@ -1,0 +1,68 @@
+{
+  "@id": "RevenueInstallmentPeriod",
+  "name": "Revenue Installment Period",
+  "@type": "Class",
+  "description": "The period of time covered by the schedule i.e. Daily, Weekly, Monthly, Quarterly, Yearly",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "af17d62d-d449-392f-8858-d00fe3e1bf26",
+    "@type": "Shape",
+    "targetClass": "RevenueInstallmentPeriod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "16e4f07c-5e8b-4d7d-99d9-956b38d0f173",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "235b2afa-289d-4999-b8f8-b21450229d17",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9e4eb8f1-54f4-4020-b939-b6a25af4fe2b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e47936d0-1c32-4838-a7e7-f8f9ae6d7f35",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b72c844b-c5d0-4fef-9d5d-1bad44f227f6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "45acd5c7-dbf0-43f3-93d3-9c588165bde2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cacec672-b01e-4080-baba-4faf9266d5ad",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

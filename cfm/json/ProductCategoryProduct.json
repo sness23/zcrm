@@ -1,0 +1,111 @@
+{
+  "@id": "ProductCategoryProduct",
+  "name": "Product Category Product",
+  "@type": "Class",
+  "description": "Assignment of product to categories e.g. the Nikedas shoe assigned to shoe and running categories",
+  "subjectArea": "Product",
+  "entityGroup": "ProductCatalog",
+  "properties": [
+    {
+      "@id": "activeFromDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeToDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCategoryId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0022e014-e35d-3e01-84a4-4e859ce17553",
+    "@type": "Shape",
+    "targetClass": "ProductCategoryProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b693b72d-e01a-340c-aafd-9a17849f231a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "4ee9af79-78b4-3f1d-83e6-47364f8a0257",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCategoryId",
+        "@id": "a1767f54-e5b6-3ee0-9afa-d93b07caf69c",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "33171470-68a0-3f6e-bb38-d156dd36af2f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "41f02075-91c5-4b9b-b575-e8a41841d8bd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "13a1dd4c-cc3d-321c-a059-c0292cd5dcad",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "804f9d3d-4715-40b0-bc7c-ec7987d33a34",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ad9559c5-42cd-330a-8826-df3c861219e1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c45e98ef-280c-379d-b1ff-6635fd53793d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "activeToDateTime",
+        "@id": "61d83eb7-3563-34df-9621-a94e706b66c6",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeFromDateTime",
+        "@id": "370067e7-943f-3273-a56c-bafc25287228",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

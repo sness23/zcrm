@@ -1,0 +1,69 @@
+{
+  "@id": "DigitalWallet",
+  "name": "Digital Wallet",
+  "@type": "Class",
+  "description": "A payment system that utilizes a 3rd party vendor to process payments from the customer's bank to the seller.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "421afded-28c7-3c9b-9663-6bf71d6e7cba",
+    "@type": "Shape",
+    "targetClass": "DigitalWallet",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7436d252-556b-4949-9e9e-a3edffd66be4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "da8c0db2-fbd0-41a1-a020-2d091debb82d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a9452322-8ef3-4f2f-a4e4-1cfb0736d82c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ea875d66-08f0-4919-9e1e-ab214a928d11",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "bdf28b81-4e40-4242-9555-7d44f17a3d97",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f9910692-8d48-4424-b8f8-c8372d6aaae1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c7857976-440e-4050-9a9a-bec0b78324df",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "PaymentCreditMemoAllocation",
+  "name": "Payment Credit Memo Allocation",
+  "@type": "Class",
+  "description": "Facilitates applying a Payment Application to the line items of a Credit Memo.",
+  "subClassOf": "PaymentAllocation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "41ce8db8-f461-4838-b737-4147ef316a43",
+    "@type": "Shape",
+    "targetClass": "PaymentCreditMemoAllocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "475a4678-2baa-4424-b0b0-d2268ed52611",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b4133121-bb38-4949-8e4e-10ada4942f57",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b52cb3ea-b0db-40c0-a1e1-1338f7ef4269",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1ca7d2bb-93a2-4656-9b5b-fdcaaf475229",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6859d69a-e9eb-44f4-a828-3c94f8ff0bd0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "842040d9-b3cf-48b8-b474-cf35473bd125",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "fe0c633d-4f30-4bdb-b9b9-c66024b66c49",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b2d196ca-e48e-4ded-9494-1be6998005e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "appliedAmount",
+        "@id": "29e51f18-6804-4f6f-bcfc-681e17621571",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

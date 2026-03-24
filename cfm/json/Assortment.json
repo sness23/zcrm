@@ -1,0 +1,89 @@
+{
+  "@id": "Assortment",
+  "name": "Assortment",
+  "@type": "Class",
+  "description": "An array of products that are presented together.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c5ecef9d-b708-4424-8d0d-a8de6da39864",
+    "@type": "Shape",
+    "targetClass": "Assortment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7066c915-263f-4bdb-b5b5-82711e61d2e6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "437c6d54-9876-4a9a-bb7b-682bc9427e62",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "722ba68e-b3c6-4353-8a0a-02d465aedbc8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a8b318c0-ab49-4e2e-acac-8b772fe11589",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9e4bb3a5-a863-46d6-b434-57bee61501ea",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "241abf7f-a7f6-4fef-8ece-66dd1262b748",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "0a394b3e-b9de-44f4-b6f6-ad68b2871701",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f4f40a7b-00e3-4252-bd7d-4ca5fd82990d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "AssortmentProducts",
+        "node": "be302306-5661-4171-ac2c-47409d0a508b",
+        "minCount": "1"
+      }
+    ]
+  }
+}

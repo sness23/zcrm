@@ -1,0 +1,79 @@
+{
+  "@id": "ContactAccountRelationshipRole",
+  "name": "Contact Account Relationship Role",
+  "@type": "Class",
+  "description": "When a Contact is associated with an Account, there can be multiple reasons for this, which are defined as Contact Account Relationship Roles.",
+  "subjectArea": "Account",
+  "entityGroup": "AccountConfiguration",
+  "properties": [
+    {
+      "@id": "contactRoleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactAccountRelationshipId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b7031a6b-36ad-4020-b434-0451099272be",
+    "@type": "Shape",
+    "targetClass": "ContactAccountRelationshipRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "fc90dce1-6616-45a5-bdbd-606185af8490",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7400e94f-f21f-4c1c-b838-8822076d511e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5db1232d-49d0-41e1-8ece-530d727ce552",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1456aae3-b369-4464-9e1e-70ec51befe2c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e30b0e44-28f5-4888-a868-c11fd19b7912",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "39ef91e4-9502-4efe-a9a9-d849dca43be5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactRoleId",
+        "@id": "4a78a9aa-ce95-42e2-b030-10b3d020cff2",
+        "node": "3e0c1d7d-abf4-4383-bc3c-977221762b65",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactAccountRelationshipId",
+        "@id": "e96c2629-d3af-4e4e-b9b9-ffc80e1ffb7b",
+        "node": "15df5cab-2acd-4e0e-8585-3271f144f3f5",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

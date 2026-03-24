@@ -1,0 +1,133 @@
+{
+  "@id": "RefundPaymentAllocation",
+  "name": "Refund Payment Allocation",
+  "@type": "Class",
+  "description": "Facilitates applying/unapplying refund balance to a payment.",
+  "subClassOf": "RefundAllocation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "capturePaymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundAllocationCommentsDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditMemoBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundPaymentAllocationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundAllocationCommentText",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d88d3599-9e17-45a5-a4e4-fa4e28fbbf15",
+    "@type": "Shape",
+    "targetClass": "RefundPaymentAllocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "225234d4-62ad-4a4a-88c8-2a6e6bbff419",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "refundPaymentAllocationName",
+        "@id": "c8966132-c668-4c2c-bb3b-72d338ff7e1b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "refundAllocationCommentText",
+        "@id": "2a9fc87a-4a7d-45a5-8d4d-bce2e3f74773",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "refundAllocationCommentsDate",
+        "@id": "acabbe5e-8d22-4cdc-a0a0-3a416f9d9ae2",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentBalanceAmount",
+        "@id": "03ac7d61-4ad2-4414-be7e-2a5aa7665d4a",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "20781b1e-c269-4858-9ada-e027b80c23b5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "23584b26-902a-45e5-bc3c-75cf16b79d23",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b5c74cf0-cb83-4161-bcfc-207bb28f7088",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6887f801-70fd-4ece-a3a3-655e4ce5c8ab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a8b8c191-bf58-4ded-a4a4-79e297da5fa4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditMemoBalanceAmount",
+        "@id": "0ab8d95e-a39e-4292-bbbb-04ec70569273",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "efb6dfc9-568d-48c8-b878-14cd606c8e0c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "capturePaymentId",
+        "@id": "842fb1c9-db0b-4434-8383-294cec1abe99",
+        "node": "f667136c-1a92-4282-9555-66186aced3a4",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "PaymentPolicyTreatmentSelection",
+  "name": "Payment Policy Treatment Selection",
+  "@type": "Class",
+  "description": "Determines how to select one treatment out of many.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1f75a968-5204-4b2b-9f5f-9c3ca54d39b9",
+    "@type": "Shape",
+    "targetClass": "PaymentPolicyTreatmentSelection",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d4a1cac6-cb05-4090-b6f6-ebcebd21b81b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d608dcce-2c48-4999-b8f8-88c6b147998f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c8c9e776-3edb-4e9e-a121-163dbbb8916f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1662ed53-2273-4464-a5a5-31fc188d6ef4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2e5fdcbc-ed0a-4939-b979-06a6ce82f317",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a285ca34-70fc-4d1d-8484-9686cbc22296",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0c6f0d6d-cf13-4a3a-9ddd-0d6fcaa64c34",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

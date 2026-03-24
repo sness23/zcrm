@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderType",
+  "name": "Sales Order Type",
+  "@type": "Class",
+  "description": "Classifies a Sales Order as a New, Renewal or Change order",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "20c2f338-45ce-3952-a644-b8b26ab49ca9",
+    "@type": "Shape",
+    "targetClass": "SalesOrderType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3c4ba1e1-2b3c-3a89-b4a1-d608378e717f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2fd2e62f-4013-49a9-b030-1b958d7c3e44",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5a8fe5c6-d208-392f-9ae4-25563a1d29a5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d41fd35e-4450-46e6-aeee-37fe95ccd25f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e9661183-437d-345e-94d3-c7bca3df7f8b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ab2a4439-d1a0-4cdc-b8b8-76ca1b6ec8af",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b6e7d61e-d333-37f6-b98e-8fe7c1dc4370",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f44edb37-09ac-3b3a-84a8-34f48a57ccef",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

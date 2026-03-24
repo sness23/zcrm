@@ -1,0 +1,79 @@
+{
+  "@id": "PartyNoMergeReason",
+  "name": "Party No Merge Reason",
+  "@type": "Class",
+  "description": "Why could the party functionally not be merged with another party definition e.g. legal reason, line of business concern",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+    "@type": "Shape",
+    "targetClass": "PartyNoMergeReason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "93fd13f5-d4dc-30f7-a85c-cb20fae33bb4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f5ee6607-b8aa-39f8-a814-5a947b53a919",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c14c89f6-a639-3e90-a94b-52aecdc6bcda",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "33dabded-3ebd-4131-87c7-93d6d315fb31",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "29b373c7-7d16-312f-a101-7e6d42a18f1e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0e1b1712-3447-4f8f-af6f-02d2828a8654",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6eb5c79a-dfb9-304b-a1b4-99a450e73eed",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e19924b1-da31-3fc1-9f5d-922183c5a50c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

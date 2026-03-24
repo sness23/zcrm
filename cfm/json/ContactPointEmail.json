@@ -1,0 +1,124 @@
+{
+  "@id": "ContactPointEmail",
+  "name": "Contact Point Email",
+  "@type": "Class",
+  "description": "Email address for a party e.g. email info@northerntrailoutfitters.com",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "emailLatestBounceReasonText",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "emailAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "emailDomain",
+      "@type": "Property"
+    },
+    {
+      "@id": "emailMailBox",
+      "@type": "Property"
+    },
+    {
+      "@id": "emailLatestBounceDateTime",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "892a1e9e-fd79-36d3-9aa6-51bffdfaa982",
+    "@type": "Shape",
+    "targetClass": "ContactPointEmail",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "db670000-1c6e-30fb-8614-9db41272e9d1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7110ce6a-398d-33e8-b1b7-2026b87fa912",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7b7c45fd-9b23-4313-8282-d27395f2e484",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ea58d3b2-5d3f-3ea9-bd51-47da6b92d864",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "48c78bc3-fee2-4767-a8a8-52791ffbe09c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "729660a2-6886-33b5-96c9-1588c35b0c4b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "emailMailBox",
+        "@id": "f695321a-fcd1-3468-b273-be5f6572e884",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "emailLatestBounceReasonText",
+        "@id": "755eb727-095f-3644-a727-5d7c9de08a3c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "emailLatestBounceDateTime",
+        "@id": "44b69146-7a77-3bcf-a378-4e4765d23f9a",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "emailDomain",
+        "@id": "0b0b3810-c2d0-3eff-91d9-b5cacf5cf90d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "emailAddress",
+        "@id": "798c76be-24c7-3a38-917b-0a85c0d98228",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f0561752-3e48-3dd8-a0ba-18a29dae9741",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

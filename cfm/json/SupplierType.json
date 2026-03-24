@@ -1,0 +1,79 @@
+{
+  "@id": "SupplierType",
+  "name": "Supplier Type",
+  "@type": "Class",
+  "description": "Types of suppliers e.g. retailer, distributor, service partner, manufacturer",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "supplierTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1cef3132-33c4-3939-bb68-a65e2a84acba",
+    "@type": "Shape",
+    "targetClass": "SupplierType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7e33f4f1-97a8-3b97-949e-ce1a626f0aac",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "supplierTypeName",
+        "@id": "409a7760-6533-31d1-911a-68706402a138",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4d12bd01-b66a-39ff-8297-322f000be0bb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d8d05060-2095-4000-ad6d-6477e796322b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "df3defaa-7e50-3f6f-bbba-71def0f4f702",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "58f85145-4650-4989-9d9d-03e7df421418",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0e233d67-6e5a-31f9-9e08-ca106be21e91",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "45fbdf5b-5db0-31c4-b13f-b68e02ed6a56",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

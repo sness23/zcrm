@@ -1,0 +1,68 @@
+{
+  "@id": "DigitalWalletType",
+  "name": "Digital Wallet Type",
+  "@type": "Class",
+  "description": "Types of digital wallets include Apple Pay, Android Pay and Paypal.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "aea60d65-445e-4b7b-9b1b-9240e72bce2e",
+    "@type": "Shape",
+    "targetClass": "DigitalWalletType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d2bfd24a-867c-4dad-a4e4-83b6085c468f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0e432ae0-f502-4e2e-bdbd-1ca387da6834",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b2f0063c-c4ae-4fdf-86c6-e2d7a09ed064",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "186d1fd5-672a-4505-ac6c-7ccbcd7a2f14",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ccceba7a-4025-4383-8000-56471d4b4e18",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f4174a29-f88b-4161-8101-ea5958de5c8c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "94ec6f6f-324b-46c6-9212-3d187b19c443",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "PaymentGatewayInteractionType",
+  "name": "Payment Gateway Interaction Type",
+  "@type": "Class",
+  "description": "Reasons for accessing the Payment Gateway, including authorization, Sale and Void.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "67009809-560e-4303-9d5d-862bbc905443",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayInteractionType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ff6f833a-6f27-4d0d-ac2c-5ded713fd756",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b7e642dc-1c1b-4949-a7a7-6b1d233f294c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "78a1ab09-2faa-4636-abeb-7fe1736b85b9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "55b85b64-1835-4131-b676-7c1ea3c0eccf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "38e17340-575a-4353-b0f0-bb478d152f89",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "039e0d4e-d82b-4b4b-a767-feb2166dbfe5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0f5e08e6-b99c-46e6-b070-b6509a87fb5f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "9a7fbf34-e732-4060-88c8-e84e9fef7007",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "99d38ca1-4fae-45b5-aaaa-5690d55b868f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

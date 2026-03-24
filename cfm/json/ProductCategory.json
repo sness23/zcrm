@@ -1,0 +1,131 @@
+{
+  "@id": "ProductCategory",
+  "name": "Product Category",
+  "@type": "Class",
+  "description": "A catalog consist of many categories e.g. shoes, tshirts",
+  "subjectArea": "Product",
+  "entityGroup": "ProductCatalog",
+  "properties": [
+    {
+      "@id": "activeFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "parentCategoryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCatalogId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+    "@type": "Shape",
+    "targetClass": "ProductCategory",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "479ba8eb-09a7-3b71-afe1-91faa93bb7e8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCatalogId",
+        "@id": "b643843f-dce0-34c5-a8e5-cc9cdea9cb7e",
+        "node": "f5f24373-d952-3688-88c9-ab66ee0b0bcd",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "parentCategoryId",
+        "@id": "7656bb01-5adf-379c-b90b-59e639c7fa5d",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "8ddeab44-aa61-3da7-95c8-7ca37c71ecb3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e31a8cd4-6742-3a3d-94ee-bd911bf8e8c6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0eb98434-6713-4b0b-9d5d-c6381d89f81b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "196cb8df-c084-313c-bafb-291070a73835",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c490c42c-87db-4717-9252-6b5c3cb7e5a8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "902574cc-6add-34f0-8caf-5091657f3f84",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c6b087cc-5c57-3e59-be41-023b5ee0dd98",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "activeToDate",
+        "@id": "cb6bc19e-4e4b-3b0a-83e1-a47c114ddbc1",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeFromDate",
+        "@id": "c79b7dda-86ca-3068-9fa4-f2182c8dbf64",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductCategoryAttributeSets",
+        "node": "75d0dbe4-ffc9-398f-b452-4d73f2328c47",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductCategoryTranslations",
+        "node": "bf0749a0-c02a-3ad0-9a34-f00197a8d146",
+        "minCount": "1"
+      }
+    ]
+  }
+}

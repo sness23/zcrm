@@ -1,0 +1,201 @@
+{
+  "@id": "PartyAdditionalName",
+  "name": "Party Additional Name",
+  "@type": "Class",
+  "description": "Under what name is a person also known as( AKA), under what alternate name is a business doing business as (DBA)",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "middleName",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyAdditionalNameTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualFullName",
+      "@type": "Property"
+    },
+    {
+      "@id": "suffixName",
+      "@type": "Property"
+    },
+    {
+      "@id": "secondLastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "beginEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "firstName",
+      "@type": "Property"
+    },
+    {
+      "@id": "lastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "organizationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "endEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "organizationLegalName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1bdf119f-eb91-3bb3-b033-71b18fded3bf",
+    "@type": "Shape",
+    "targetClass": "PartyAdditionalName",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a290fa4a-5062-31d7-bb81-9ee451e70756",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "suffixName",
+        "@id": "be6381d2-6238-4e2e-8f0f-5b00a051e025",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "secondLastName",
+        "@id": "56918d6c-c580-4929-88c8-e261856453e8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "a4c5e897-bc44-3da3-96c3-c41e37f2587b",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyAdditionalNameTypeId",
+        "@id": "778c6200-542f-4c7c-afef-6ccec9bf33a6",
+        "node": "7951f344-c4de-3fa1-9d15-9582577f9176",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "organizationName",
+        "@id": "4820e371-9dda-43f3-b0f0-08c3c3e623fb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "organizationLegalName",
+        "@id": "f71e7db5-cecb-4fef-9050-5b86984ae85d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "92104737-36c9-3f28-870b-0bfd0dd8c541",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "middleName",
+        "@id": "a5c66704-9c3f-4787-aeee-25572f0b5c24",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastName",
+        "@id": "43d1c184-14cb-4090-8747-c859a007ab29",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "6dc0538f-68c7-3a6f-89de-3513451e1e29",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualFullName",
+        "@id": "7de1ddf4-87e1-49c9-a323-a29241ce8538",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "03efd033-b605-4a5a-9818-3e4da3d5e5ed",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "894f74e9-9de7-33bb-901a-749d843bd1c7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "firstName",
+        "@id": "2423343d-604a-4686-9717-a2313779a179",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "24bd3835-c3a0-4000-a525-7c169da6f356",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "91d99d91-3a94-3783-a08e-b73d10600654",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "endEffectiveDate",
+        "@id": "7ec0ceb2-3942-4010-8949-315772d450a0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "04e055d9-492f-3fb2-b199-6055a2c7e72e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "beginEffectiveDate",
+        "@id": "392f21e8-d8f4-4878-bcfc-3004557a7445",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

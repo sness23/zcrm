@@ -1,0 +1,68 @@
+{
+  "@id": "PaymentInvoiceApplicationType",
+  "name": "Payment Invoice Application Type",
+  "@type": "Class",
+  "description": "Payments are either applied, or un-applied to invoices.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "89b4ee47-a9b0-4c9c-ac6c-bddaf9ab5220",
+    "@type": "Shape",
+    "targetClass": "PaymentInvoiceApplicationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "9331bae9-d34d-4e7e-9656-5a24afb2643b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "045c7c90-67ad-49b9-8c8c-9dc22eb4341f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "028cae6d-fc4c-41c1-ac6c-633b4c5af3d7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "7f85895d-e0a6-4cac-9313-5b4da71b2769",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d8e24554-89bb-4313-8808-f8182ac4dc9d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "cac37343-7d45-4aaa-8484-dd2a5ee469ec",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "abf14479-6a77-42d2-88c8-a290fab689e4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

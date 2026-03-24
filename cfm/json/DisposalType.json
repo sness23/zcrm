@@ -1,0 +1,68 @@
+{
+  "@id": "DisposalType",
+  "name": "Disposal Type",
+  "@type": "Class",
+  "description": "How is the product to be disposed of e.g. recycle, return, throw-away",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a4ec54fb-5414-35a8-b96a-c7efac00028f",
+    "@type": "Shape",
+    "targetClass": "DisposalType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2fea4880-b1cc-4818-9f1f-6047ffd288ba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c02d7e48-3d24-4aba-99d9-e9fa4e8463c9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "de857982-085a-4020-b737-750fa707a4fa",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6e60bd47-17b1-4080-9bdb-22bf9d7b0e77",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4da80810-8ca5-41f1-9c5c-ceaa9b905d44",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6ea766a4-7190-44a4-b636-3d4eed2e5d60",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "471ead7b-717e-41a1-8080-896071d88f7d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

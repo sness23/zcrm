@@ -1,0 +1,84 @@
+{
+  "status": 0,
+  "result": {
+    "totalSize": 3,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v59.0/sobjects/Account/0011a00000Xyz123"
+        },
+        "Id": "0011a00000Xyz123",
+        "Name": "Acme Corporation",
+        "Type": "Customer - Direct",
+        "Industry": "Technology",
+        "Website": "https://acme.com",
+        "Phone": "(415) 555-1234",
+        "BillingStreet": "123 Main Street",
+        "BillingCity": "San Francisco",
+        "BillingState": "CA",
+        "BillingPostalCode": "94105",
+        "BillingCountry": "USA",
+        "AnnualRevenue": 50000000,
+        "NumberOfEmployees": 500,
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-01-15T10:30:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-10-01T14:22:00.000+0000",
+        "LastModifiedById": "0051a00000User002",
+        "Description": "Leading technology company specializing in AI and cloud solutions. Key partner since 2024."
+      },
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v59.0/sobjects/Account/0011a00000Xyz456"
+        },
+        "Id": "0011a00000Xyz456",
+        "Name": "Global Industries Inc",
+        "Type": "Customer - Channel",
+        "Industry": "Manufacturing",
+        "Website": "https://globalindustries.com",
+        "Phone": "(212) 555-9876",
+        "BillingStreet": "456 Park Avenue",
+        "BillingCity": "New York",
+        "BillingState": "NY",
+        "BillingPostalCode": "10022",
+        "BillingCountry": "USA",
+        "AnnualRevenue": 120000000,
+        "NumberOfEmployees": 1200,
+        "ParentId": null,
+        "OwnerId": "0051a00000Owner2",
+        "CreatedDate": "2024-02-20T08:15:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-09-15T11:45:00.000+0000",
+        "LastModifiedById": "0051a00000User003"
+      },
+      {
+        "attributes": {
+          "type": "Account",
+          "url": "/services/data/v59.0/sobjects/Account/0011a00000Xyz789"
+        },
+        "Id": "0011a00000Xyz789",
+        "Name": "StartupCo",
+        "Type": "Prospect",
+        "Industry": "Technology",
+        "Website": "https://startupco.io",
+        "Phone": "(650) 555-4321",
+        "BillingStreet": "789 Innovation Way",
+        "BillingCity": "Palo Alto",
+        "BillingState": "CA",
+        "BillingPostalCode": "94301",
+        "BillingCountry": "USA",
+        "AnnualRevenue": 5000000,
+        "NumberOfEmployees": 45,
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-08-10T16:20:00.000+0000",
+        "CreatedById": "0051a00000User002",
+        "LastModifiedDate": "2024-10-05T09:30:00.000+0000",
+        "LastModifiedById": "0051a00000User002",
+        "Description": "Emerging startup in the AI space. Potential customer."
+      }
+    ]
+  }
+}

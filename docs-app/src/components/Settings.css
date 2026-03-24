@@ -1,0 +1,137 @@
+.settings-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000040;
+}
+
+.settings-header {
+  background: linear-gradient(135deg, #000040 0%, #1a0040 50%, #6b21a8 100%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.back-button {
+  background: rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.back-button:hover {
+  background: rgba(139, 92, 246, 0.3);
+  border-color: rgba(139, 92, 246, 0.5);
+  transform: translateX(-2px);
+}
+
+.settings-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.settings-content {
+  flex: 1;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.settings-section {
+  background: #0a0050;
+  border: 1px solid #2a0070;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.settings-section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e0e0e0;
+  padding: 16px 20px;
+  margin: 0;
+  background: linear-gradient(to bottom, #1a0060 0%, #0a0040 100%);
+  border-bottom: 1px solid #2a0070;
+}
+
+.settings-table {
+  padding: 0;
+}
+
+.settings-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.settings-table tr {
+  border-bottom: 1px solid #2a0070;
+}
+
+.settings-table tr:last-child {
+  border-bottom: none;
+}
+
+.settings-label {
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b0b0b0;
+  width: 200px;
+  background: #0a0040;
+  vertical-align: top;
+}
+
+.settings-value {
+  padding: 16px 20px;
+  font-size: 13px;
+  color: #d0d0d0;
+  vertical-align: top;
+}
+
+.settings-value-mono {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #a0a0a0;
+  word-break: break-all;
+}
+
+.settings-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #e0e0e0;
+  background: #000040;
+  border: 1px solid #2a0070;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.settings-select:hover {
+  border-color: #6b21a8;
+}
+
+.settings-select:focus {
+  border-color: #6b21a8;
+  box-shadow: 0 0 0 3px rgba(107, 33, 168, 0.2);
+}
+
+.settings-select option:disabled {
+  color: #606060;
+}

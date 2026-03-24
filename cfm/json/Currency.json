@@ -1,0 +1,99 @@
+{
+  "@id": "Currency",
+  "name": "Currency",
+  "@type": "Class",
+  "description": "A system of money in general use in a particular country.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "iSOCurrencyCodeNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "iSOCurrencyCodeAlphanumericText",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+    "@type": "Shape",
+    "targetClass": "Currency",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d1242854-03e5-3928-b44c-4a433dd855be",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "63651c63-281f-3139-976e-be47fa64f97e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "be05d85a-e885-3374-bfd4-051c06f1559f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iSOCurrencyCodeNumber",
+        "@id": "849a24a6-f59e-4898-9858-ab52fe5ee126",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "iSOCurrencyCodeAlphanumericText",
+        "@id": "ea4ff9b9-ed8d-49f9-8101-9e3108e1a1fd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c3ebad5a-f363-4626-a666-1606d26ba012",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "94bab401-bf3d-3148-baa0-a1365508d6ed",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "227817f8-8471-4242-a9a9-c333294bdbf1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1a068e82-63f7-354e-88d7-743434662b46",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "78bc4432-81ce-3b75-8dd9-9f795ff8d8d8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

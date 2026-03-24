@@ -1,0 +1,118 @@
+{
+  "@id": "PartyHierarchyMember",
+  "name": "Party Hierarchy Member",
+  "@type": "Class",
+  "description": "The participation of a Party in a Party Hierarchy. Any Party could be a member of more than one hierarchy.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "membershipEndDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyHierarchyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "membershipStartDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cfc6a4e5-640d-4313-9c1c-1730d4dfbcaf",
+    "@type": "Shape",
+    "targetClass": "PartyHierarchyMember",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1c3f09a3-1d69-48b8-9cdc-8994cd4c1962",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "1d859ad5-325a-42a2-acec-caff0df66ac5",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyHierarchyId",
+        "@id": "2737a370-1f7c-49c9-9757-1f3386d0da09",
+        "node": "567b0149-f489-4171-bd3d-2ebbbb1419de",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a6e38f44-0f0e-4fef-ad6d-00fc71878252",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "membershipStartDate",
+        "@id": "b92beceb-4527-4f9f-a7a7-20e9a7c241ae",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "membershipEndDate",
+        "@id": "bafe0a89-d25e-44c4-8444-ed9167306d9f",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "50e7bbfc-9aed-4e8e-9ddd-e8008f9b63ea",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "228a077c-e2a9-4121-8d8d-6dc8fd63a229",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "60752bff-e4fb-4b8b-9e1e-4a264a0ab221",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1bc9d549-2089-4d1d-9818-2ff4701bfbec",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c1d2142d-b20f-47c7-8747-3424d221de0b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d551928f-a9a6-48a8-8b4b-f2bc363646c3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "ServiceType",
+  "name": "Service Type",
+  "@type": "Class",
+  "description": "What type of service is this e.g. rental, subscription, labor",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "be030082-cf47-37dc-a878-35420f883c62",
+    "@type": "Shape",
+    "targetClass": "ServiceType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ec04a891-d11b-46a6-9191-29b6833edbea",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a8229dd4-4ce4-3ed2-9456-d8cfcfed43f9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1cdb007e-e239-4595-9696-c654e2b55102",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "480c70bb-001b-4161-8bcb-01703923ee2b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "61ee36c5-b6d5-3e02-88fd-b6be0a144d59",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2e0e9a4a-b760-44e4-bc3c-a15a35d27a41",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8ccc11d9-a796-47c7-80c0-fe3c65fe9578",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e659e135-ec35-4171-9e1e-09acc9ead278",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

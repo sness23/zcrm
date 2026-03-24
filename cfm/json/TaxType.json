@@ -1,0 +1,79 @@
+{
+  "@id": "TaxType",
+  "name": "Tax Type",
+  "@type": "Class",
+  "description": "Tax Types include estimated, actual, local and state",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4c32e0f6-5ff8-4323-afef-c5e93a9db9db",
+    "@type": "Shape",
+    "targetClass": "TaxType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "51ff6cd0-cfbe-42c2-a666-e9e11a555592",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b859fcb6-6793-4595-8d4d-7a857ebef3f4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "83aec8f1-5b4c-4e0e-ab6b-aac1a5a9048a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c8009621-3efc-4818-acac-3f3878245f11",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a8f0ef23-6d9c-4070-9656-828a1750e2e1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2248a139-fa4c-4808-ad6d-1b4bbdac0440",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "bc132df2-ba19-4aba-a2a2-73b0ea4391a5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "55ef93b1-526a-4f3f-af2f-afd9cc346f57",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

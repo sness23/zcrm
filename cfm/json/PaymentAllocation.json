@@ -1,0 +1,100 @@
+{
+  "@id": "PaymentAllocation",
+  "name": "Payment Allocation",
+  "@type": "Class",
+  "description": "A Payment Application may be further broken down, to allocate payment funds to one or more line items within an Invoice or Credit Memo",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentAllocationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedPaymentAllocationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "930b73ef-d0cd-4f9f-9d9d-c2da8cbeb383",
+    "@type": "Shape",
+    "targetClass": "PaymentAllocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "fac28b84-d686-4a7a-80c0-17acd0a2860d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedPaymentAllocationId",
+        "@id": "9487a4cd-b9be-45d5-84c4-1e98387f24aa",
+        "node": "930b73ef-d0cd-4f9f-9d9d-c2da8cbeb383",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAllocationName",
+        "@id": "37700996-4df6-4232-a7e7-7f2e4de941f9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8a1c2545-0338-4e0e-ad2d-bcee9d4c1349",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d71a51a9-e131-4858-aeee-a00525648109",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "753f09d9-2b23-47e7-baba-26916f876c91",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "da3378af-d0ca-4313-ac2c-fa68cc9692b5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "21fb8a0b-bdc4-4a0a-8bcb-855061770145",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "88edb37e-ce19-4111-b434-bbcef3fb2e3e",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "bedb0479-a5f2-4484-b7f7-ecf45d154f7c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

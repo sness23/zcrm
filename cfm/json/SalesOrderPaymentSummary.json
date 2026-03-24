@@ -1,0 +1,186 @@
+{
+  "@id": "SalesOrderPaymentSummary",
+  "name": "Sales Order Payment Summary",
+  "@type": "Class",
+  "description": "One or more Payments having the same Payment Method, that have been applied to a single Sales Order.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "authorizationReversalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "availableToApplyBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "authorizationAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "unappliedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "capturedAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8a206d53-8696-42d2-a666-de78ebd6a9a5",
+    "@type": "Shape",
+    "targetClass": "SalesOrderPaymentSummary",
+    "properties": [
+      {
+        "path": "unappliedAmount",
+        "@id": "34780014-3e8b-4272-9595-9de34e10b714",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "a398fcd2-00c9-42b2-a767-5bc260329007",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderId",
+        "@id": "3a994d93-d516-4161-bb3b-c7b122b00aa6",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodId",
+        "@id": "bfb22775-aaa7-4101-8505-0428814395bd",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAmountCurrency",
+        "@id": "98915f4f-efce-4464-9656-fd45380f3a14",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentAmount",
+        "@id": "d49a6f72-bc4c-4b4b-80c0-4356cd1e4824",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "8ae6da66-f891-4717-9898-fc6da87163fe",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "01f67cb1-d88b-4101-a6e6-a15024553576",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "66741a1f-5f10-4f5f-a7e7-4cf1c6cbeb1a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "708bf226-fd49-4f4f-b8f8-601d94c35626",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "cef9a123-0304-4494-9b9b-5da21e2e25cb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "16dc8903-3491-4999-abeb-9acc83cc0107",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b2491d69-039a-45b5-8101-e7e37b73b68d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "capturedAmount",
+        "@id": "95ab9d02-8a78-4f1f-9a1a-810e7ad9121c",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "availableToApplyBalanceAmount",
+        "@id": "7a63468d-3464-47c7-a8a8-ec85f61a4912",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "authorizationReversalAmount",
+        "@id": "1d2aeb5d-0dda-4262-bfff-ec1aec98dcfd",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "authorizationAmount",
+        "@id": "0b4dc3eb-4f10-4999-80c0-5e65b6a5b5e6",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "appliedAmount",
+        "@id": "702e98f5-612d-4c6c-a363-fbd4f6a70b36",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "PaymentAuthorizations",
+        "node": "ff78bf12-66f1-4b1b-8f4f-d51ac7ec884f",
+        "minCount": "1"
+      }
+    ]
+  }
+}

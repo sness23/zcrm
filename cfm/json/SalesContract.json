@@ -1,0 +1,68 @@
+{
+  "@id": "SalesContract",
+  "name": "Sales Contract",
+  "@type": "Class",
+  "description": "An agreement between a buyer and seller covering the sale and delivery of goods, securities, and other personal property",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "05fbb755-be05-4444-b676-4c1e47625254",
+    "@type": "Shape",
+    "targetClass": "SalesContract",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "aecf1bae-a501-4c5c-a4e4-a6de81b82f1f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "99f9d10e-81ed-4696-aaaa-73d89ce3e053",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d9aadad1-75ac-4a1a-a929-bae933f6d2a5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f73c60a7-3347-4fef-9999-ac3c5c7a56af",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "541408be-66d0-4838-9959-b8c8301b530f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c305caad-8e9b-4c3c-ae6e-ed99fb47b7b6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ee5e4424-60e6-4c0c-a0e0-e7a6e675e5d7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "Hobby",
+  "name": "Hobby",
+  "@type": "Class",
+  "description": "What is the primary hobby of the person e.g. skiing, running, swimming",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "hobbyName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0788d91c-38a5-38ef-b869-1661668bbbdb",
+    "@type": "Shape",
+    "targetClass": "Hobby",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a4e23210-404c-3bcd-8087-ffe91887d7eb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "846b760d-5a49-3b52-b9e7-53f5fb501da8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c40ca0c5-cab9-4232-b070-cefed0fbcc3a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2752a004-efe0-3404-a386-85851176baa0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "hobbyName",
+        "@id": "cceddeaf-c062-335a-9f1f-bec2950231b6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3f5c0f0a-c361-4404-b838-ff8ea51f219b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "57c30c3b-9e7a-3fb0-8b3a-04696516359f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "394b7c20-257e-3952-afe1-10f78ee9f794",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

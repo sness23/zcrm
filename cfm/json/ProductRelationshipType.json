@@ -1,0 +1,90 @@
+{
+  "@id": "ProductRelationshipType",
+  "name": "Product Relationship Type",
+  "@type": "Class",
+  "description": "What are the types of relationships available e.g. bundled with/bundled in, substitute for/substitute of",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "parentProductRoleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "childProductRoleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "788d6faa-7dd7-3a4a-b985-4b4cad8f379d",
+    "@type": "Shape",
+    "targetClass": "ProductRelationshipType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a1fc0590-8f1c-36dc-8b14-6f0dca31a8c8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "parentProductRoleId",
+        "@id": "0cfbf77c-d091-3edf-9f72-ca16a711dc1b",
+        "node": "5d274eff-cffb-3246-8064-d7b17f46462e",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c5904f45-2ea9-3b96-8524-49e665f2d76d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ddf2469b-2406-4161-8888-b94be65b675c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "702064d2-da9e-30fa-8e06-b13d9141c31f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ffb9c874-7e0f-4515-9616-f026878c5bd5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "cc6d9a5e-6322-33d4-bf07-68ae9c328179",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "594781d4-cb8f-38ec-a3a1-fda4a0a0cdd6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "childProductRoleId",
+        "@id": "405b7084-ddf2-3e05-b1d3-d08141674141",
+        "node": "5d274eff-cffb-3246-8064-d7b17f46462e",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

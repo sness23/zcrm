@@ -1,0 +1,90 @@
+{
+  "@id": "PaymentGatewayAuthorizationLog",
+  "name": "Payment Gateway Authorization Log",
+  "@type": "Class",
+  "description": "A log record of all requests made to financial institutions, made via the payment gateway, to authorize payments.",
+  "subClassOf": "PaymentGatewayInteractionLog",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "fe62b08a-d05d-4fdf-b8f8-00beea483cf5",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayAuthorizationLog",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "807182ca-2cee-4f0f-8aca-5a4b08be570a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationId",
+        "@id": "3ee9869a-6b89-43b3-81c1-d2a388ae4ae4",
+        "node": "ff78bf12-66f1-4b1b-8f4f-d51ac7ec884f",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f8da808e-e277-4b2b-97d7-643b7e367300",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "bd1121d5-eda5-4414-8aca-f2873e714c3f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a4a905c9-7d5d-4b6b-85c5-ff6dbe204deb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4b71cd25-2723-4434-bcbc-275deeb23977",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "33732db4-fdc7-4292-8989-d1e4050f02f5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ec100ca6-3777-40b0-8a8a-105140bb46df",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "389e4ee1-31d2-4bcb-84c4-119b106875b6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "@id": "ProductRepairCertification",
+  "name": "Product Repair Certification",
+  "@type": "Class",
+  "description": "A credential that is required to make approved repairs on a product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "31422ef4-08ff-43c3-a424-44555883be3d",
+    "@type": "Shape",
+    "targetClass": "ProductRepairCertification",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "52fae973-83c3-4292-8242-ab0007572ca8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "a8a8b3d5-0b65-4bbb-9cdc-eb984fe60816",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "57dad309-c462-4131-ae6e-f84cfb22aecc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f328f763-ef8b-4e9e-b2f2-9c444e0e66f8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "33ac2f5e-0d8e-43b3-97d7-4c1bb0c3edd3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2103a1be-da12-40e0-b3b3-843aa1253cbb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ea11eb82-4441-4454-97d7-bed1ff41b11c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

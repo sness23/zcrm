@@ -1,0 +1,79 @@
+{
+  "@id": "ProspectRating",
+  "name": "Prospect Rating",
+  "@type": "Class",
+  "description": "The customers prospect rating, for example Hot, Warm, or Cold.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "prospectRatingName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b250d23a-3ea3-3561-979d-2af558c3579b",
+    "@type": "Shape",
+    "targetClass": "ProspectRating",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "78fa365b-e01f-3105-91a7-71d177dbd4e0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "prospectRatingName",
+        "@id": "f490422e-1a14-3a75-b8b6-7215c3ecec67",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "bce2ecef-55ff-3906-9f0f-d40c706c31cc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "be5014f5-be9a-48b8-8d0d-baebaf2589f9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "491680af-cc64-323f-be2f-0e50b33047b2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "291ff609-8da2-4d1d-b272-da50d9e8e21a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f12628ab-22eb-3361-a58c-a86fe486bba8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "31a5bd3e-68ec-36ca-85d1-cbc48f2c5944",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

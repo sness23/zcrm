@@ -1,0 +1,89 @@
+{
+  "@id": "AttributeSet",
+  "name": "Attribute Set",
+  "@type": "Class",
+  "description": "A set of attributes e.g. an attribute set for shoes, another for shirts",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d993fe8d-c6df-340a-a03f-76ce6c78665c",
+    "@type": "Shape",
+    "targetClass": "AttributeSet",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ba136ddd-e5d5-4d9d-b5f5-9f224b56f0c7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "904ea598-238f-35e4-a5df-715ef210be9d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "48314623-aeba-4c3c-8989-785511d6ab04",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "007cf989-1125-4d3d-8f4f-63ed55ca33b8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b6afbbea-aac7-3e3d-9b90-7587a133f0ce",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "50f662aa-ed49-4505-bf3f-491419d84fdd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "18713489-3033-4292-9757-7ffc689e62b9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3abf53ed-9399-40e0-8303-7343443a7b40",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "AttributeSetTranslations",
+        "node": "c5be5e9d-ac6e-3b71-9bff-a7fb1497895f",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductAttributeValues",
+        "node": "cde2ab14-aee5-3bcf-babd-a55ecb872f1f",
+        "minCount": "1"
+      }
+    ]
+  }
+}

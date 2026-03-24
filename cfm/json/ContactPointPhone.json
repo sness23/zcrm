@@ -1,0 +1,203 @@
+{
+  "@id": "ContactPointPhone",
+  "name": "Contact Point Phone",
+  "@type": "Class",
+  "description": "Phone number for a party e.g. phone 123-4567",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "primaryPhoneTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "countryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "deviceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isSMSCapable",
+      "@type": "Property"
+    },
+    {
+      "@id": "isFaxCapable",
+      "@type": "Property"
+    },
+    {
+      "@id": "formattedE164PhoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "formattedNationalPhoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "telephoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "areaCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "countryName",
+      "@type": "Property"
+    },
+    {
+      "@id": "shortCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "formattedInternationalPhoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "extensionNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "phoneCountryCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+    "@type": "Shape",
+    "targetClass": "ContactPointPhone",
+    "properties": [
+      {
+        "path": "telephoneNumber",
+        "@id": "56811239-55cd-3556-a83e-b63159c80d49",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "eb0c962b-bce4-37d9-9e40-f3e53f9699c4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shortCode",
+        "@id": "e51ace37-a78e-3295-b0d7-63331cf75fc2",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryPhoneTypeId",
+        "@id": "c89e2c2c-e73a-3460-a5a0-1620bce164f4",
+        "node": "6ea34fac-12b7-32ec-9d6b-93e19ef64129",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "phoneCountryCode",
+        "@id": "f5cf657c-8f6b-30ec-9f3e-40fc986e119f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1329109c-0cc3-39c9-aaf5-804097f63ee3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isSMSCapable",
+        "@id": "8a4d4d5d-6ef4-3ca5-afe8-dbef85bb1019",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isFaxCapable",
+        "@id": "bcce188e-824c-3cfb-a202-10d6b309bca4",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fa9916d0-255e-4efe-8a4a-704e2b803574",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e43e357f-3ac9-3247-8a08-e7da1f32d6d3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "formattedNationalPhoneNumber",
+        "@id": "d3e529d8-511a-3394-9efd-ae63d51edbfd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "formattedInternationalPhoneNumber",
+        "@id": "d44ebb22-6cc6-35ac-b9b7-2593dd02fcf4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "formattedE164PhoneNumber",
+        "@id": "f24fa67c-717b-3180-9145-78da0b581ca7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "faa14d31-94d4-4565-9494-848b52a560e6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f3db1e56-834a-3f68-903d-deeefa391d3a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "extensionNumber",
+        "@id": "332ea376-1da9-3f95-9579-1dded193df5e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "160b7b5d-ea8d-3c6a-9014-ffcf36856043",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "countryName",
+        "@id": "20fb4041-a327-4b5b-b8b8-0e6d89c24eca",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "areaCode",
+        "@id": "c9323d42-feb0-3e66-bba5-bc5e323d3e22",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

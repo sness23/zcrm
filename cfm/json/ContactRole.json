@@ -1,0 +1,79 @@
+{
+  "@id": "ContactRole",
+  "name": "Contact Role",
+  "@type": "Class",
+  "description": "Responsibilities that a Contact can have with respect to something, such as the relationship of a Contact to an Account. For example Decision Maker, or Advisor",
+  "subjectArea": "Account",
+  "entityGroup": "AccountConfiguration",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3e0c1d7d-abf4-4383-bc3c-977221762b65",
+    "@type": "Shape",
+    "targetClass": "ContactRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "25335be8-a78d-4313-9d1d-5a3db94f5a9b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2f08ed56-7f29-4252-ae2e-a83c17f1a4cf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "77092ef7-f2b0-4606-9d9d-9deb03af3d59",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "43dcefa3-2e9c-4ada-af2f-1a81c8f8ac2e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "487e0243-89a4-4515-8686-0b0210707e74",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1a332c68-af92-4f7f-ba7a-bc31b13ab42b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "7a925769-808f-4a6a-8383-47ae01db9f12",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "265938e1-cbf0-4464-9b1b-9a2095d437f5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

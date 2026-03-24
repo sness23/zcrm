@@ -1,0 +1,57 @@
+{
+  "@id": "ProductAdverseEffect",
+  "name": "Product Adverse Effect",
+  "@type": "Class",
+  "description": "Did use of the product have any adverse effects e.g., allergy, breathing problem.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [],
+  "schema": {
+    "@id": "f65cfdc5-89d7-4a5a-8f8f-cf80f599e0a4",
+    "@type": "Shape",
+    "targetClass": "ProductAdverseEffect",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b99456ca-d79f-4262-a363-338578c0d54e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2a4e1230-35b9-4b4b-bbfb-4ef5c8d9bf22",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "86c92ca3-9498-40e0-bd3d-b2f394115a8a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1e23f7d4-3552-4939-98d8-0db62d2b3405",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0ada837a-c0da-41a1-ba7a-fab8685b600a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "77b31a12-49b0-4484-a3e3-b006208fe9fc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

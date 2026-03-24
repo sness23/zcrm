@@ -1,0 +1,79 @@
+{
+  "@id": "Religion",
+  "name": "Religion",
+  "@type": "Class",
+  "description": "Religion e.g. Islam, Samaritanism, Syncretic, Christian",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "religionName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5f90ffe9-deb3-339a-9fcd-bbb7c52844e7",
+    "@type": "Shape",
+    "targetClass": "Religion",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "10e6b354-3afb-3137-bcca-22d484879b05",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "religionName",
+        "@id": "b6e769e7-fe4c-3e00-9009-d7cdabec0900",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b8160145-1a52-3e35-b339-d419086ee62a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a26daf67-1c57-4eae-9e1e-f41c71513968",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6f2b22a3-b741-3e8c-9224-84455dea1237",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "663cfc92-b081-44e4-9d9d-7c8f5e4c378b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c8d1bf93-f236-389e-ad1c-30040202191b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "610ea9d0-85b8-3d15-8fd9-79ab9f52f62c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

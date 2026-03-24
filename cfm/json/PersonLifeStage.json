@@ -1,0 +1,79 @@
+{
+  "@id": "PersonLifeStage",
+  "name": "Person Life Stage",
+  "@type": "Class",
+  "description": "E.g. newborn, infant, child, teen, adolescent, adult, mature, elderly",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "personLifeStageName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "105e6c61-6cdd-3553-b474-aeeb43dd63b1",
+    "@type": "Shape",
+    "targetClass": "PersonLifeStage",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "34dcf64a-ea73-3de3-ba9c-4fab9bb6adf4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personLifeStageName",
+        "@id": "a0fca7bf-3a02-3c6b-bd42-02c56aadcbf1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d818627f-c4f8-38b4-8a90-e963753ebd81",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "07594c07-e93a-4565-95d5-e74d32e49f38",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5480bff0-9591-3ebf-9a54-e57f2703fb87",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "664b3bee-2b8d-4c9c-b2b2-f591d87bb73a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ff9ccd55-1134-3e2d-aca9-8b6bcd35a838",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a9215677-79cf-3809-a6de-d192a1ab27ba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

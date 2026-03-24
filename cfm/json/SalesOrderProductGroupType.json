@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderProductGroupType",
+  "name": "Sales Order Product Group Type",
+  "@type": "Class",
+  "description": "Reasons for grouping products together on sales orders, for example products that ship together.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "009b424f-225a-44f4-ba3a-2178f1300f73",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductGroupType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7aa3b4bd-8f9d-40e0-acec-93306fb4960f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "9d1354d5-91ab-4cac-b737-76b5d392dea8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8d0dc20f-dbaf-4292-a6a6-441e6e7ce91d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "aecfee80-6341-49c9-8484-1cd4d417d040",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "899ce6fb-9577-44f4-a626-c8170eadeb56",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4145ee5f-0351-4b5b-8585-5f87584f14e0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "413485bc-63fd-4f9f-a969-2ace1b8a460a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "63d07e9b-76f9-4747-ba7a-3f8642a3a1d4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "@id": "Supplier",
+  "name": "Supplier",
+  "@type": "Class",
+  "description": "Information about a party playing role of supplier e.g. vendor ranking",
+  "subClassOf": "PartyRole",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "activeFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractOnTimeDeliveryRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractWeightPercent",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionCustomerServiceRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractProductReturnRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionWeightScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveProductPriceRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "operatingHoursId",
+      "@type": "Property"
+    },
+    {
+      "@id": "supplierType",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractProductQualityRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "supplierScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveCostAvoidanceRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractInvoiceAccuracyRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveWarrantyRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractWeightScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractSourcingCycleDays",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionTechnicalSupportRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveWeightPercent",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractSLAIssueRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveWeightScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "isCarrier",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractDeliveryCorrectnessRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "contractBudgetCostRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionEthicsRank",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionWeightPercent",
+      "@type": "Property"
+    },
+    {
+      "@id": "supplierSpend",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitiveMarketingRank",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b1ab0944-e7f5-399a-a951-5661f6196d28",
+    "@type": "Shape",
+    "targetClass": "Supplier",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "45a40aa6-224f-326c-82df-ebb7e6b60450",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "supplierType",
+        "@id": "ee71dfdc-3269-36f4-b000-c9b8d3efa385",
+        "node": "1cef3132-33c4-3939-bb68-a65e2a84acba",
+        "maxCount": "1"
+      },
+      {
+        "path": "supplierSpend",
+        "@id": "ab4259f8-b4f3-3cf8-af4f-c5b47e820a6b",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "supplierScore",
+        "@id": "502bf506-7e75-3d6e-a217-0fc9dea3f32f",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionWeightScore",
+        "@id": "535e347a-6422-30d8-bb9b-d78b37878555",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionWeightPercent",
+        "@id": "faa05727-0d4e-35e7-a40a-be1cfdc65367",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionTechnicalSupportRank",
+        "@id": "aee0b414-e563-317f-b188-0d66702429c1",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionEthicsRank",
+        "@id": "f640ee62-6905-39a7-99f8-deb2e8f40836",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionCustomerServiceRank",
+        "@id": "9070864e-128a-3b8c-a8cd-b755cb55480b",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "dc292355-29e0-4ada-82c2-427dc0794dbf",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fb982898-cc65-3d94-950e-f102f0d7d238",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isCarrier",
+        "@id": "769f8b64-94ce-3197-9915-df6eba5d6424",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "8d7571db-1e57-4818-a121-932ea40510d7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e711f256-2792-3f94-a762-9b340f6c6a44",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "8e1bf539-20ef-4f0f-b1b1-316c9f048828",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "4fdffd35-7e83-379f-b77f-3a3b807dccfc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "65db64e9-d3b3-3d4e-a2e8-9fb56e8f72e9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contractWeightScore",
+        "@id": "85f500df-8962-379f-8f8b-bd77dda91cf0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractWeightPercent",
+        "@id": "c709ff5b-e030-3b50-ae9e-67b1bb591481",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractSourcingCycleDays",
+        "@id": "2075d494-9247-3cc1-8b23-903a403a4ea4",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractSLAIssueRate",
+        "@id": "bc5a17a0-2f63-3165-9434-a061b9465ceb",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractProductReturnRate",
+        "@id": "6eae0b93-b9cc-30ba-9927-f649eb6a8248",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractProductQualityRate",
+        "@id": "c07a8743-7d01-3871-8fd4-208eb32fb689",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractOnTimeDeliveryRate",
+        "@id": "ba52e906-6579-3950-b39c-922f6a88e7ca",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractInvoiceAccuracyRate",
+        "@id": "43c7976e-a483-3770-88de-113a3ddc958b",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractDeliveryCorrectnessRate",
+        "@id": "3394b876-5eb7-3d9d-89be-9871776e0578",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "contractBudgetCostRate",
+        "@id": "bac45bb7-0d5e-3aba-9dc3-0bf1e84e12f7",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveWeightScore",
+        "@id": "0828b9a0-8d25-3b5f-b789-e328b35c5f24",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveWeightPercent",
+        "@id": "4302e819-0a90-3f65-8404-e0366b1cca55",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveWarrantyRank",
+        "@id": "55448a6c-d300-3b3d-9bef-b55eb8c07db8",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveProductPriceRank",
+        "@id": "6dea2150-5a43-399e-82cd-1580880539ea",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveMarketingRank",
+        "@id": "53925656-e333-3880-b78c-b9db082f1ecb",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitiveCostAvoidanceRank",
+        "@id": "a9672ac8-869d-3839-8271-38189ea40365",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeToDate",
+        "@id": "c9e4690d-a76c-34f5-9f94-6a5dfbce60ef",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeFromDate",
+        "@id": "d46dd030-cc09-37bf-90ea-3b3eaacc8887",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

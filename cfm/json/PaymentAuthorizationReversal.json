@@ -1,0 +1,264 @@
+{
+  "@id": "PaymentAuthorizationReversal",
+  "name": "Payment Authorization Reversal",
+  "@type": "Class",
+  "description": "An authorization reversal is a message that alerts the issuer that part or all of a sale has been cancelled and the authorization hold should be rescinded.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "customerAuthorizationReversalPhone",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationReversalStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "authorizationReversalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayResultId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationProcessingModeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInternalResultCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInternalReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "capturePaymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "macAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "iPAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationReversalName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "requestDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationReversalCommentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerAuthorizationReversalEmail",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1bb15276-0000-4fdf-9757-6b101ce480fb",
+    "@type": "Shape",
+    "targetClass": "PaymentAuthorizationReversal",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3eb7da8d-ea02-4070-82c2-745a0653e4a9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "requestDate",
+        "@id": "3922c4de-3e60-4414-a161-981f2aa1cd94",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayResultId",
+        "@id": "55fa4023-08f1-41d1-9c5c-ea66fa67b7dd",
+        "node": "9b0f3886-5b43-4111-a6a6-1191e20389b4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayReferenceNumber",
+        "@id": "62a0a807-7b1f-4a5a-9616-f106f041fcda",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInternalResultCodeId",
+        "@id": "94c61f24-c65a-4f5f-af2f-558f990d42ce",
+        "node": "3d19b5ea-7c4d-40c0-8505-5a857c5eee32",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInternalReferenceNumber",
+        "@id": "ac0a3bd9-c9cc-4fdf-bb3b-dd092dcbcda3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayDate",
+        "@id": "dc9c9e4d-41c8-4ece-87c7-c6ac25742497",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationReversalStatusId",
+        "@id": "09a3b110-9ee9-41d1-8808-b67f69306137",
+        "node": "0e19af50-e733-4848-9b9b-1830c49340d5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationReversalName",
+        "@id": "bf7867e4-1956-4f9f-a1e1-6e5113d30c3d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationReversalCommentText",
+        "@id": "8e8c396e-6eb6-4070-a868-af7787ec49ea",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationProcessingModeId",
+        "@id": "ebb552b7-43c3-44a4-b979-d21f16bb14eb",
+        "node": "28e32192-ce6d-4bbb-b7b7-761e0f37c02d",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationId",
+        "@id": "93a9a5e1-d1f6-4818-8707-883e6211718a",
+        "node": "ff78bf12-66f1-4b1b-8f4f-d51ac7ec884f",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "macAddress",
+        "@id": "85a2ef35-be30-4a3a-b030-c269a67d2e6a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5bb25f28-787c-46b6-9f9f-4ce41b5f544f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iPAddress",
+        "@id": "04c7eafe-fb0b-4fcf-afef-498ba48ac67c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "52282edf-cb04-4363-aaea-2f5777484fd6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2c609490-9456-41d1-8707-6fde7caaaaf7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "044f4ae8-4044-4b9b-b1b1-6280a6fb9486",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "83318907-e466-4f4f-8545-316d646dfffa",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "0144496b-284b-47f7-a565-8f8a2cb34b88",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "customerAuthorizationReversalPhone",
+        "@id": "913906b2-2be3-4a0a-9c5c-c515d49be2a5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerAuthorizationReversalEmail",
+        "@id": "94178b2a-33f8-4535-9353-d6fe4601cf4e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "37d30694-7b47-46a6-b636-f9f2bb73e27f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "capturePaymentId",
+        "@id": "bbe12e63-aac2-4aca-97d7-1f6a3883ef09",
+        "node": "f667136c-1a92-4282-9555-66186aced3a4",
+        "maxCount": "1"
+      },
+      {
+        "path": "authorizationReversalAmount",
+        "@id": "a3c5868e-44e6-4f8f-a4a4-ef84cd705355",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentGatewayAuthReversalLogs",
+        "node": "ac62aa31-55c2-4121-acac-709538862744",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "InternalResultCode",
+  "name": "Internal Result Code",
+  "@type": "Class",
+  "description": "Salesforce internal result code. Maps to one or more gateway result code values.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7a0f75c7-a74f-4616-8949-84c4f86cbbf2",
+    "@type": "Shape",
+    "targetClass": "InternalResultCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "703cca52-afb6-4919-aaaa-a996366121cc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a1a2580b-f6c7-4d5d-9919-19dac910d6c1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "08d970b4-d8ac-4c9c-8d8d-56d05a46d33d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "914b8075-2c27-4ede-bf3f-8cd9ebc05c8e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4ff9d23e-5310-4b4b-bebe-c0bc06efb64a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c9211fa7-704a-4212-bb3b-22ed0f284949",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "cadc509d-a1d2-44d4-8646-4478387bf396",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1b982cba-4c09-4808-8686-9be7fc6b5920",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

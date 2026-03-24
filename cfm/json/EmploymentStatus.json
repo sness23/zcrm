@@ -1,0 +1,68 @@
+{
+  "@id": "EmploymentStatus",
+  "name": "Employment Status",
+  "@type": "Class",
+  "description": "What type of employment status the worker have e.g. full time",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8b01627b-a341-36ee-a13b-6d98d04d3e84",
+    "@type": "Shape",
+    "targetClass": "EmploymentStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "cad99788-07e0-3f2d-80d8-d2eb00e785ac",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e0e39749-9be7-35a1-81f6-ec48b0e2dd60",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "dd063305-b7ce-4747-bc3c-c1eeb456297a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e3a68488-ed33-3601-bf6a-14202ae4cbbe",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1c002b38-aafd-4666-bd3d-1e5c337b2638",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f91e1552-f241-3266-864f-d7eac2ca6083",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "76c6efce-a7bc-3486-8a74-d9e4a9f8aa4f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

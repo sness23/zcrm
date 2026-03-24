@@ -1,0 +1,79 @@
+{
+  "@id": "IncomeRange",
+  "name": "Income Range",
+  "@type": "Class",
+  "description": "What is the income range the person is part of",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "incomeRangeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5513e3b6-2471-3c80-8697-b3689513d724",
+    "@type": "Shape",
+    "targetClass": "IncomeRange",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6dde3ddc-0f8e-317c-a96b-1107c4697de5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a887fa06-ecde-32e2-852f-b8abc81bfa99",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "incomeRangeName",
+        "@id": "f565ed1f-98a7-375d-bb39-9d898e8bda54",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "349c8d1c-c10f-4282-baba-df15b1f5a738",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4263b24b-ad89-3d56-98ee-1cd9eb6c8da5",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "99b671b1-b66c-4b4b-b4b4-fa62bcc0aa83",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6dd4f247-9ecf-3997-b5cc-140b0787dbd2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "bd27a0f8-7add-39be-8542-83d8579a86a5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

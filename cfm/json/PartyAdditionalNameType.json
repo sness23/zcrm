@@ -1,0 +1,79 @@
+{
+  "@id": "PartyAdditionalNameType",
+  "name": "Party Additional Name Type",
+  "@type": "Class",
+  "description": "E.g. Also-Known-As(AKA), Doing-Business-As(DBA)",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7951f344-c4de-3fa1-9d15-9582577f9176",
+    "@type": "Shape",
+    "targetClass": "PartyAdditionalNameType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "62433310-39bf-3c4b-aed7-76f7cf473bcd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c2a88240-c69d-3353-ac74-74e38b8b5b6d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fac47933-529c-3210-a08c-5a3abc4779ff",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6fea7035-34ab-45c5-a4a4-8efbeea7947c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d1474bde-7d84-3a25-aadd-34a3eef2993f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d7b212ae-3f59-4fcf-8686-d62fa3db2224",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "aea94539-1dcd-391d-8950-0e13ef666acb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "00874cb5-47c7-30a8-b995-56226d84691f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

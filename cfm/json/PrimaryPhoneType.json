@@ -1,0 +1,78 @@
+{
+  "@id": "PrimaryPhoneType",
+  "name": "Primary Phone Type",
+  "@type": "Class",
+  "description": "Is it primarily a 'Home', 'Business', 'Fax', 'Mobile' or 'Other' phone",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6ea34fac-12b7-32ec-9d6b-93e19ef64129",
+    "@type": "Shape",
+    "targetClass": "PrimaryPhoneType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "520d8b22-2151-3513-befc-7e720947c4fa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "9863b004-5378-3034-a774-bc3c7b210388",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "78acdc5c-8f92-3bd1-bf98-c589bdcefe24",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "609c797f-d82b-41f1-9d9d-deda611fc2b8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c7e83da7-c85c-301e-9ca6-7bf97c0be24f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "cde4e37a-7900-4303-9ddd-ac0ee36616ab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "52fbd008-4bf7-3dc5-b369-67b933d576d5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d41b573b-2156-3bfb-b079-b87457d15d46",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

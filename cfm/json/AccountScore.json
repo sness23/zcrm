@@ -1,0 +1,91 @@
+{
+  "@id": "AccountScore",
+  "name": "Account Score",
+  "@type": "Class",
+  "description": "A value, derived from models and/or data that has been collected, about an Account. Examples could include bronze, platinum and silver, based on past revenue or Low, Medium or High, based on a scoring of attrition risk",
+  "subClassOf": "Score",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "61cc1c1d-835c-4aea-8747-35ebfe095f30",
+    "@type": "Shape",
+    "targetClass": "AccountScore",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "596936f7-9827-4919-9ede-f184294a4949",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "8a7a972f-a613-4474-81c1-59b2bb1307a2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "05cb693a-6632-4606-8d8d-16257743dee4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2968e282-0362-4faf-a121-7da13300adaf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e65491a6-ec6c-4b7b-a6a6-72493fcc04eb",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "86895257-2793-48d8-a222-e3b849a6eaa4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "48f1d2ff-f1cd-4090-8e4e-ae3488fe0a8a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2cface16-cb9f-4faf-9d1d-da3e4bf08e4f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "4e3ebc41-2941-4a1a-83c3-885b819b50d3",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

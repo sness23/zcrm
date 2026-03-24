@@ -1,0 +1,79 @@
+{
+  "@id": "CustomerStatus",
+  "name": "Customer Status",
+  "@type": "Class",
+  "description": "What status is this customer in e.g. lead, qualified lead, customer, inactive customer, non recoverable customer",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c9d6b8a3-8085-3867-91f5-ba2ff8f186ad",
+    "@type": "Shape",
+    "targetClass": "CustomerStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e60fcdba-c376-38c3-a247-61449cf43f8c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c37f5cc5-4839-300e-8847-772f7595c269",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0947af34-fe33-3312-8115-448df5627bec",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d059effe-7f84-4aaa-94d4-2f176a05346d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3621e62a-1234-3d71-a516-233f68fa8423",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "35d611a1-4af5-4d5d-ae2e-06ceb88c910e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "704d20f3-5dcd-34ad-9ef6-d460eaa0c5c8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "8eac80bd-7514-39cd-bfc3-c129241268fb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

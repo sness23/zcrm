@@ -1,0 +1,113 @@
+{
+  "@id": "AlternatePayment",
+  "name": "Alternate Payment",
+  "@type": "Class",
+  "description": "Other methods of payment. Examples include Giropay, Bancontact, Klarna",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "paymentGatewayTokenText",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "emailAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "authorizationProcessingModeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8098f61c-acc9-4aba-a020-c57ea363392e",
+    "@type": "Shape",
+    "targetClass": "AlternatePayment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2f80f1fe-5dc3-49c9-94d4-7d40ec524bb3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayTokenText",
+        "@id": "3438166d-1261-4ede-9a1a-887d0c03bf4c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f0026e2f-2828-4e3e-9090-304716f56b72",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b992cfc8-5f93-4616-b8f8-31f2ba899ed3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2d0b8ff0-a142-4595-a666-c27adf4da1a4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8bfa3b51-4872-4aaa-a424-679da7a87827",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4b5df581-0a78-4ccc-8dcd-3b7d4ea97d86",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "53f7fa28-3efd-4a0a-aded-00bd23f6854f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "emailAddress",
+        "@id": "c40f1e3b-64a7-4313-9252-d04c716b3da1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "65f55555-4deb-4e3e-8303-446c06d52369",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "authorizationProcessingModeId",
+        "@id": "3528c159-5325-4cec-9a9a-a57ebed86214",
+        "node": "28e32192-ce6d-4bbb-b7b7-761e0f37c02d",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

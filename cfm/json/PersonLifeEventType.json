@@ -1,0 +1,79 @@
+{
+  "@id": "PersonLifeEventType",
+  "name": "Person Life Event Type",
+  "@type": "Class",
+  "description": "Type of life event e.g. graduation date, divorce date",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "personLifeEventTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ae3be357-644c-3e6e-9e43-d60fa895b02b",
+    "@type": "Shape",
+    "targetClass": "PersonLifeEventType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3804031d-a614-3870-ae2d-4047c80129da",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personLifeEventTypeName",
+        "@id": "af4b7472-5695-3d9c-8baa-d9bbcb36f73e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c6155866-c77a-391d-9790-91271a308eba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5a82aebc-7ba1-4beb-afef-faca6ddfcaad",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0fc77251-dd54-3334-b04d-1b7a006de3c3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4cc84694-f2be-49f9-8040-10461a2d0dd2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ce73c189-5456-3e25-afd7-64ffaa87ea43",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "699e0a55-c5c8-3e82-9cef-506a0de34fd2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "ProductEnvironmentRequirement",
+  "name": "Product Environment Requirement",
+  "@type": "Class",
+  "description": "Does the product need to be stored e.g. in freezer, in hot water",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7fba5ab0-7d0d-33f3-85d3-561f397be96d",
+    "@type": "Shape",
+    "targetClass": "ProductEnvironmentRequirement",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "07b69628-5bbb-3a1d-9407-7dd9bfad0c26",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e49e8b11-ff26-3b5f-89bd-fc616dd8167c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a2ddfdd8-10ca-3f37-b564-0745486a3e36",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "dcfa757c-4718-4989-b8b8-1c208ea93f70",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f0f48659-0112-3317-9ce7-3cd3585c3af4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c0d141a4-de47-4c0c-9d1d-131354aef7bc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6412c865-669a-3de1-903a-eda0fc6ca996",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4f1047bb-68c2-3734-8a4f-878c610dc5e8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

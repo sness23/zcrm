@@ -1,0 +1,33 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "identifyingPropertyGroup",
+    "name": "identifying Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "salesOrderProductPriceAdjustmentId",
+        "@type": "Property",
+        "description": "The adjustment on the Sales Order Product for which the tax has been calculated",
+        "name": "Sales Order Product Price Adjustment",
+        "range": "SalesOrderProductPriceAdjustment"
+    },{
+        "@id": "paymentScheduleStatus",
+        "@type": "Property",
+        "description": "Values for Payment Schedule Status include Open, Closed and Cancelled.",
+        "name": "Name",
+        "range": "DataType"
+    },{
+        "@id": "id",
+        "@type": "Property",
+        "description": "primary Key",
+        "name": "Payment Schedule Item Id",
+        "range": "DataType"
+    },{
+        "@id": "name",
+        "@type": "Property",
+        "description": "Name of a Payment Schedule Item",
+        "name": "name",
+        "range": "DataType"
+    }
+    ]
+}

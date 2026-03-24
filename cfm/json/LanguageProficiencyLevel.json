@@ -1,0 +1,68 @@
+{
+  "@id": "LanguageProficiencyLevel",
+  "name": "Language Proficiency Level",
+  "@type": "Class",
+  "description": "How well an individual can speak, read or write the language e.g. Limited, Good, Excellent",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9939c7b0-4614-383d-95a4-887d3824f022",
+    "@type": "Shape",
+    "targetClass": "LanguageProficiencyLevel",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "c2f6764a-606d-4bbb-a8a8-a66be2523356",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "78878870-6438-4a0a-b939-bd388fc64456",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "30775412-11cd-44d4-b3b3-bebc4ecddc38",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "dc33276b-2603-4363-befe-09e7df5f0c4a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "05270e7d-eced-4e4e-9e5e-0ed29d6c6048",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "bab16711-4730-4b0b-9d1d-e93e5a66187b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "08acc19d-cb42-4777-a020-585810573829",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

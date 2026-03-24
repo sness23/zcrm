@@ -1,0 +1,68 @@
+{
+  "@id": "OrderReason",
+  "name": "Order Reason",
+  "@type": "Class",
+  "description": "The customer motive for ordering placing an order, such as replacement, new purchase, upgrade",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a12498b6-4177-45c5-8fcf-aeef129bd4f9",
+    "@type": "Shape",
+    "targetClass": "OrderReason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8deb043f-e818-4bcb-a626-8fc1ca691fa2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a530e88d-35ac-4ece-a2a2-8dbc91e3bd67",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "21f2f5b6-02a4-4666-b939-829eedd033cc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "982b0500-2086-4131-b2f2-981463bc3720",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "66f040d0-a5c2-4434-9b9b-8e4f2af76987",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "550de432-6a45-4b3b-b070-9c4df232aad5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "443a9935-c27c-4bcb-9191-59749c469fd0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

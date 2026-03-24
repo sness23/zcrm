@@ -1,0 +1,90 @@
+{
+  "@id": "ShipmentProductPriceAdjustmentTax",
+  "name": "Shipment Product Price Adjustment Tax",
+  "@type": "Class",
+  "description": "A tax on the price of a Sales Order Product.",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "shipmentProductPriceAdjustmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f9578695-49e4-47c7-a969-457d617ac758",
+    "@type": "Shape",
+    "targetClass": "ShipmentProductPriceAdjustmentTax",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "72837e61-7712-4e5e-8909-157feccbcfdc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentProductPriceAdjustmentId",
+        "@id": "3c9b4e33-cbdd-4e9e-b030-112a9372834a",
+        "node": "ea1dc2fb-8c4e-4101-9c1c-c4b97228f63f",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "6eddef69-bce6-4555-abeb-7451fa28233c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ae556761-fc87-4080-a626-560c9ad90d72",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "74fc3968-787d-4fff-a121-91f69c404ac2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f704f785-4ded-4afa-9fdf-e6042560cf17",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dcfbe1a5-5161-4545-9e9e-f437d9ea021a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "629805b2-5710-46c6-ad2d-6f3e346a2e49",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c3ffb579-c54f-4161-9151-358c6476e46d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

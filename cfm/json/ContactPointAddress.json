@@ -1,0 +1,227 @@
+{
+  "@id": "ContactPointAddress",
+  "name": "Contact Point Address",
+  "@type": "Class",
+  "description": "Mailing address for a party e.g. 123 Main St, Big City, CA12345, USA",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "addressLine1",
+      "@type": "Property"
+    },
+    {
+      "@id": "postalCodeText",
+      "@type": "Property"
+    },
+    {
+      "@id": "countryRegionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "addressLine4",
+      "@type": "Property"
+    },
+    {
+      "@id": "stateProvinceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "addressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isUsedForBilling",
+      "@type": "Property"
+    },
+    {
+      "@id": "postalCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "geoLatitude",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactPhoneId",
+      "@type": "Property"
+    },
+    {
+      "@id": "addressLine3",
+      "@type": "Property"
+    },
+    {
+      "@id": "physicalLocationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "countryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "geoLongitude",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "addressLine2",
+      "@type": "Property"
+    },
+    {
+      "@id": "countryName",
+      "@type": "Property"
+    },
+    {
+      "@id": "isUsedForShipping",
+      "@type": "Property"
+    },
+    {
+      "@id": "stateProvinceName",
+      "@type": "Property"
+    },
+    {
+      "@id": "cityName",
+      "@type": "Property"
+    },
+    {
+      "@id": "cityId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+    "@type": "Shape",
+    "targetClass": "ContactPointAddress",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "331b50ad-2978-3e8a-8e11-2a588ff309c2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "stateProvinceName",
+        "@id": "77604d70-0f4b-3333-a062-65e417871afe",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "postalCodeText",
+        "@id": "4f8ae6f4-4940-3ae1-a3a3-e95ae396567b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "81f65835-7e3c-3d83-858a-ddbb533edfc0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isUsedForShipping",
+        "@id": "0df8b1c8-0080-3887-adda-4e95a5500238",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isUsedForBilling",
+        "@id": "1146a7ae-fb1a-31a7-bb61-0664271e1a1f",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "79c765a0-6d68-4818-8606-1f35896624ec",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "dc5b1204-dfba-3ca9-8c8a-962ddd6544d1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "geoLongitude",
+        "@id": "3335a3cc-ab9b-4181-a060-18ef0eda0e6d",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "geoLatitude",
+        "@id": "70334251-6d9a-4242-9c9c-21b3dc8e42cf",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "68ad512a-cb33-49d9-9b1b-19d953a794bb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c6f53ce3-15af-3c89-b095-63a82ec33015",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "91fb64f3-7a27-3e5d-93d1-9ca513bdfd14",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "countryName",
+        "@id": "823ca6e1-846d-30b7-9bbe-75d90f413031",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "contactPhoneId",
+        "@id": "babdba6b-29b6-3423-bc9a-9d1ea7b189b8",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "cityName",
+        "@id": "7689653b-b840-31a6-a667-8a2c816c8e9d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "addressLine4",
+        "@id": "4bdf41de-90ff-37be-b868-83b94da897c9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "addressLine3",
+        "@id": "d1b7c622-e303-32f4-8104-c5f33d044c91",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "addressLine2",
+        "@id": "aa14d323-5fa8-30fb-8997-3be5f3a7e35b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "addressLine1",
+        "@id": "1f3c0dab-e2bd-3e26-b2b4-d063e3ea4b53",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

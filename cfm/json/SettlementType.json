@@ -1,0 +1,78 @@
+{
+  "@id": "SettlementType",
+  "name": "Settlement Type",
+  "@type": "Class",
+  "description": "Types of settlements: Payment, Refund, Payment Cancellation, Refund Cancellation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "settlementTypeCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a431dd0d-7426-44d4-8787-ac7208763828",
+    "@type": "Shape",
+    "targetClass": "SettlementType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "88333b73-a958-4ded-9858-c5bc3a0d001d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "settlementTypeCode",
+        "@id": "25f5d690-dd7d-42b2-aeae-7ade48eccbdb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4cea7d5a-7ec0-4aaa-a8a8-f9c0280e2258",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a2ebc943-a344-4d7d-a6a6-ebfbe619e868",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "15077a0f-8c15-4575-9d9d-075340aecfb9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3b4310a4-785f-4aaa-a8e8-1c52e4f00a5a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "45f577b6-74f1-4eae-b333-392b5e703662",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4c78503a-8322-4d9d-b4b4-088e9d0efd64",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

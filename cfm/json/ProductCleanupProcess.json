@@ -1,0 +1,79 @@
+{
+  "@id": "ProductCleanupProcess",
+  "name": "Product Cleanup Process",
+  "@type": "Class",
+  "description": "If product is e.g. spilled are there special cleanup process required",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1135ca5f-8442-30ba-8b21-044601f08e80",
+    "@type": "Shape",
+    "targetClass": "ProductCleanupProcess",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "252d56a4-40c9-4838-9d5d-c61e9faef42a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c6a96d5a-e092-3d6b-8417-bfa043ce9ab5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1957c12f-84cf-4a2a-a565-a4c99860e4bd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c25efa22-13e3-44b4-a565-48887731222b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4277a52f-f25d-3ac7-b28c-a597afaa1d87",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "eb935657-489e-4717-a525-1aed95bcee5f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2c8e6b26-6f3e-4e7e-a4a4-c08951c8d150",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a14e5b4b-9fd8-4cbc-b9f9-d167d10f9577",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

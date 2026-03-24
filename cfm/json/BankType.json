@@ -1,0 +1,68 @@
+{
+  "@id": "BankType",
+  "name": "Bank Type",
+  "@type": "Class",
+  "description": "Bank types include retail, commercial and investment",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3466e6d9-86e3-40b0-8ece-74f79d982249",
+    "@type": "Shape",
+    "targetClass": "BankType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "47c058e7-3814-4545-a9e9-07780a2eda6e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "aba98ec8-8d72-4afa-8383-18084a6fa199",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2317159d-2d0b-4d2d-a767-2bc4ae213c65",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "658dfd93-51f2-4929-ba7a-c87b383c29e7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f3331a1c-dfa1-4aea-ad6d-0dadc4a02489",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a7b09298-a39c-4191-8383-0273654c6b31",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f0f9e349-cf27-4c5c-8b0b-48642ba40dd1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

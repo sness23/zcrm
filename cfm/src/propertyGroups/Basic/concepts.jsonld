@@ -1,0 +1,741 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "BasicPropertyGroup",
+    "name": "Basic Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "productSortingRuleId",
+        "@type": "Property",
+        "description": "Rules for displaying of products within a Campaign, that are based on factors such as keyword searches done by campaign members, or rankings of product categories.",
+        "name": "Product Sorting Rule",
+        "range": "ProductSortingRuleType"
+    },{
+        "@id": "salesOrderTypeId",
+        "@type": "Property",
+        "description": "The type of order: Change, Renewal or Amendment.",
+        "name": "Sales Order Type",
+        "range": "SalesOrderType"
+    },{
+        "@id": "paymentAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Payment Amount",
+        "name": "Payment Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "contactPointAddressId",
+        "@type": "Property",
+        "description": "If the identity document is associated with an address, such as the shipping address, then this field provides that relationship",
+        "name": "Contact Point Address",
+        "range": "ContactPointAddress"
+    },{
+        "@id": "partyIdentificationtId",
+        "@type": "Property",
+        "description": "The related Identity Document, which is related to a Sales Order Product, usually to document authorization to make a type of purchase.",
+        "name": "Party Identification",
+        "range": "PartyIdentification"
+    },{
+        "@id": "salesOrderProduct",
+        "@type": "Property",
+        "description": "User who created the record",
+        "name": "Sales Order Product",
+        "range": "SalesOrderProduct"
+    },{
+        "@id": "shipmentProductCount",
+        "@type": "Property",
+        "description": "How many ShipmentProducts (items) were packed into the package.",
+        "name": "Shipment Product Count",
+        "range": "DataType"
+    },{
+        "@id": "shipmentProductDescription",
+        "@type": "Property",
+        "description": "Description of the package",
+        "name": "Shipment Product Description",
+        "range": "DataType"
+    },{
+        "@id": "cookieIdText",
+        "@type": "Property",
+        "description": "An identifier that is specific to a cookie generated in a web browser for a particular application, for example the cookie for Facebook on the Chrome browser on one specific computer.",
+        "name": "Cookie Id",
+        "range": "DataType"
+    },{
+        "@id": "accountId",
+        "@type": "Property",
+        "description": "How the party want to interact with your enterprise e.g. have multiple billing accounts",
+        "name": "Account",
+        "range": "Account"
+    },{
+        "@id": "geoLatitude",
+        "@type": "Property",
+        "description": "Geographical Latitude for the place",
+        "name": "Geo Latitude",
+        "range": "DataType"
+    },{
+        "@id": "geoLongitude",
+        "@type": "Property",
+        "description": "Geographical Longitude for the place",
+        "name": "Geo Longitude",
+        "range": "DataType"
+    },{
+        "@id": "contactPointId",
+        "@type": "Property",
+        "description": "Individual Scores may be specific to one of an Individual's many contact points, for example one email or one telephone number.",
+        "name": "Contact Point",
+        "range": "ContactPoint"
+    },{
+        "@id": "globalPartyId",
+        "@type": "Property",
+        "description": "Reference to the global party, used for cross system master data management",
+        "name": "Global Party",
+        "range": "GlobalParty"
+    },{
+        "@id": "noMergeReasonId",
+        "@type": "Property",
+        "description": "Reasons why functionally same party records could not be merged e.g. doctor / patient",
+        "name": "No Merge Reason",
+        "range": "PartyNoMergeReason"
+    },{
+        "@id": "partyTypeId",
+        "@type": "Property",
+        "description": "The type of party e.g. organization, individual, group, unknown",
+        "name": "Party Type",
+        "range": "PartyType"
+    },{
+        "@id": "primaryAccountId",
+        "@type": "Property",
+        "description": "Reference to the main account the party use for doing business with us in any capacity (role)",
+        "name": "Primary Account",
+        "range": "Account"
+    },{
+        "@id": "expiryDate",
+        "@type": "Property",
+        "description": "Date identification expires",
+        "name": "Expiry Date",
+        "range": "DataType"
+    },{
+        "@id": "identificationNumber",
+        "@type": "Property",
+        "description": "Actual value of identification e.g. driver license B1234456",
+        "name": "Identification Number",
+        "range": "DataType"
+    },{
+        "@id": "issuedAtLocation",
+        "@type": "Property",
+        "description": "Where was the identification issued",
+        "name": "Issued At Location",
+        "range": "DataType"
+    },{
+        "@id": "issuedByAuthority",
+        "@type": "Property",
+        "description": "What authority issued the identification",
+        "name": "Issued By Authority",
+        "range": "DataType"
+    },{
+        "@id": "issuedDate",
+        "@type": "Property",
+        "description": "Date identification issues",
+        "name": "Issued Date",
+        "range": "DataType"
+    },{
+        "@id": "partyIdentificationTypeId",
+        "@type": "Property",
+        "description": "Type of identification e.g. passport, driver license, rewards membership",
+        "name": "Party Identification Type",
+        "range": "PartyIdentificationType"
+    },{
+        "@id": "partyRoleId",
+        "@type": "Property",
+        "description": "Optionally, in what role/capacity is the party in for this specific document e.g. social security card captured in context of being a worker",
+        "name": "Party Role",
+        "range": "PartyRole"
+    },{
+        "@id": "verifiedDate",
+        "@type": "Property",
+        "description": "Date identification was verified",
+        "name": "Verified Date",
+        "range": "DataType"
+    },{
+        "@id": "partyId",
+        "@type": "Property",
+        "description": "Reference to the party playing the role",
+        "name": "Party",
+        "range": "Party"
+    },{
+        "@id": "educationName",
+        "@type": "Property",
+        "description": "Name of education",
+        "name": "Education Name",
+        "range": "DataType"
+    },{
+        "@id": "graduationDate",
+        "@type": "Property",
+        "description": "When did person graduate from this education",
+        "name": "Graduation Date",
+        "range": "DataType"
+    },{
+        "@id": "institutionName",
+        "@type": "Property",
+        "description": "Name of instituation where education was given",
+        "name": "Institution Name",
+        "range": "DataType"
+    },{
+        "@id": "schoolDaysMissedNumber",
+        "@type": "Property",
+        "description": "The number of days the student did not attend or was counted as not present",
+        "name": "School Days Missed",
+        "range": "DataType"
+    },{
+        "@id": "annualIncome",
+        "@type": "Property",
+        "description": "How much money was made for this employment",
+        "name": "Annual Income",
+        "range": "DataType"
+    },{
+        "@id": "employerAddressLine1",
+        "@type": "Property",
+        "description": "First line of address e.g. street number and street name",
+        "name": "Employer Address Line 1",
+        "range": "DataType"
+    },{
+        "@id": "employerAddressLine2",
+        "@type": "Property",
+        "description": "Second line of an address e.g building or suite number",
+        "name": "Employer Address Line 2",
+        "range": "DataType"
+    },{
+        "@id": "employerAddressLine3",
+        "@type": "Property",
+        "description": "Third line of an address",
+        "name": "Employer Address Line 3",
+        "range": "DataType"
+    },{
+        "@id": "employerAddressLine4",
+        "@type": "Property",
+        "description": "Forth line of an address",
+        "name": "Employer Address Line 4",
+        "range": "DataType"
+    },{
+        "@id": "employerCityName",
+        "@type": "Property",
+        "description": "Free text name of the city, town or village",
+        "name": "Employer City Name",
+        "range": "DataType"
+    },{
+        "@id": "employerContactPointAddressId",
+        "@type": "Property",
+        "description": "Optional reference to the address of employer",
+        "name": "Employer Contact Point Address",
+        "range": "ContactPointAddress"
+    },{
+        "@id": "employerName",
+        "@type": "Property",
+        "description": "Name of employer",
+        "name": "Employer Name",
+        "range": "DataType"
+    },{
+        "@id": "employerPhoneNumber",
+        "@type": "Property",
+        "description": "Phone number to employer.",
+        "name": "Employer Phone Number",
+        "range": "DataType"
+    },{
+        "@id": "employerPostalCodeText",
+        "@type": "Property",
+        "description": "Free text value of postal code",
+        "name": "Employer Postal Code Text",
+        "range": "DataType"
+    },{
+        "@id": "employmentStatusId",
+        "@type": "Property",
+        "description": "Status of this employment e.g. student, part time, employed, unemployed, retired",
+        "name": "Employment Status",
+        "range": "EmploymentStatus"
+    },{
+        "@id": "endDate",
+        "@type": "Property",
+        "description": "Date employment ended",
+        "name": "End Date",
+        "range": "DataType"
+    },{
+        "@id": "occupationText",
+        "@type": "Property",
+        "description": "What type of occupation was the job for",
+        "name": "Occupation Text",
+        "range": "DataType"
+    },{
+        "@id": "positionText",
+        "@type": "Property",
+        "description": "What position was held for this employment",
+        "name": "Position Text",
+        "range": "DataType"
+    },{
+        "@id": "startDate",
+        "@type": "Property",
+        "description": "Date employment started",
+        "name": "Start Date",
+        "range": "DataType"
+    },{
+        "@id": "spokenProficiencyLevelId",
+        "@type": "Property",
+        "description": "How well the individual can speak the language",
+        "name": "Spoken Proficiency Level",
+        "range": "LanguageProficiencyLevel"
+    },{
+        "@id": "writtenProficiencyLevelId",
+        "@type": "Property",
+        "description": "How well the individual can write the language",
+        "name": "Written Proficiency Level",
+        "range": "LanguageProficiencyLevel"
+    },{
+        "@id": "individualId",
+        "@type": "Property",
+        "description": "Reference to party that have a life event happened",
+        "name": "Individual",
+        "range": "Individual"
+    },{
+        "@id": "personLifeEventDateTime",
+        "@type": "Property",
+        "description": "When the life event is know to have happened",
+        "name": "Person Life Event Date Time",
+        "range": "DataType"
+    },{
+        "@id": "personLifeEventTypeId",
+        "@type": "Property",
+        "description": "Reference to the life event taking place e.g. got married, new car",
+        "name": "Person Life Event Type",
+        "range": "PersonLifeEventType"
+    },{
+        "@id": "personLifeEventTypeName",
+        "@type": "Property",
+        "description": "Life events a person can have e.g. get married, bought new car",
+        "name": "Person Life Event Type Name",
+        "range": "DataType"
+    },{
+        "@id": "creationReasonId",
+        "@type": "Property",
+        "description": "Why is the uncategorized party created",
+        "name": "Creation Reason",
+        "range": "UncategorizedPartyCreationReason"
+    },{
+        "@id": "originalSourceRecordId",
+        "@type": "Property",
+        "description": "The actual id value instance for the place in the originating system",
+        "name": "Original Source Record Id",
+        "range": "DataType"
+    },{
+        "@id": "originalSourceSystemId",
+        "@type": "Property",
+        "description": "What system did this information originate from",
+        "name": "Original Source System Id",
+        "range": "DataType"
+    },{
+        "@id": "uncategorizedPartyLabel",
+        "@type": "Property",
+        "description": "What label value is assigned to this unknown party",
+        "name": "Uncategorized Party Label",
+        "range": "DataType"
+    },{
+        "@id": "measurementSystemId",
+        "@type": "Property",
+        "description": "Values of Measurement System: Metric, Imperial, United States",
+        "name": "Measurement System",
+        "range": "MeasurementSystem"
+    },{
+        "@id": "competitorFromDate",
+        "@type": "Property",
+        "description": "When did we first identify this party as a competitor",
+        "name": "Competitor From Date",
+        "range": "DataType"
+    },{
+        "@id": "competitorLeverageOpportunities",
+        "@type": "Property",
+        "description": "What do we have that we can leverage against the competitor",
+        "name": "Competitor Leverage Opportunities",
+        "range": "DataType"
+    },{
+        "@id": "competitorObjectives",
+        "@type": "Property",
+        "description": "What main objectives are driving the competitor against us",
+        "name": "Competitor Objectives",
+        "range": "DataType"
+    },{
+        "@id": "competitorStrengths",
+        "@type": "Property",
+        "description": "What are the competitors strengths",
+        "name": "Competitor Strengths",
+        "range": "DataType"
+    },{
+        "@id": "competitorTheats",
+        "@type": "Property",
+        "description": "What threats are the competitor bringing against us",
+        "name": "Competitor Theats",
+        "range": "DataType"
+    },{
+        "@id": "competitorToDate",
+        "@type": "Property",
+        "description": "When did we no longer regard this party as a competitor",
+        "name": "Competitor To Date",
+        "range": "DataType"
+    },{
+        "@id": "competitorWeaknesses",
+        "@type": "Property",
+        "description": "What are the competitors clear weaknesses",
+        "name": "Competitor Weaknesses",
+        "range": "DataType"
+    },{
+        "@id": "endDateTIme",
+        "@type": "Property",
+        "description": "When the status no longer is in effect",
+        "name": "End Date Time",
+        "range": "DataType"
+    },{
+        "@id": "startDateTime",
+        "@type": "Property",
+        "description": "When the status started be effective",
+        "name": "Start Date Time",
+        "range": "DataType"
+    },{
+        "@id": "salesAmount",
+        "@type": "Property",
+        "description": "Total value of all products the seller sold for us",
+        "name": "Sales Amount",
+        "range": "DataType"
+    },{
+        "@id": "salesAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Sales Amount",
+        "name": "Sales Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "sellerTypeId",
+        "@type": "Property",
+        "description": "Is the seller e.g. reseller, distributor, wholesaler, sales partner",
+        "name": "Seller Type",
+        "range": "SellerType"
+    },{
+        "@id": "activeFromDate",
+        "@type": "Property",
+        "description": "Date from which we established the party as a supplier",
+        "name": "Active From Date",
+        "range": "DataType"
+    },{
+        "@id": "activeToDate",
+        "@type": "Property",
+        "description": "Date at which we decided the party is no longer a supplier",
+        "name": "Active To Date",
+        "range": "DataType"
+    },{
+        "@id": "isCarrier",
+        "@type": "Property",
+        "description": "True if the supplier is a transportation carrier e.g. FedEx, UPS",
+        "name": "Is Carrier",
+        "range": "DataType"
+    },{
+        "@id": "supplierScore",
+        "@type": "Property",
+        "description": "Calculated by (contract weight*score) + (satisfaction weight * score) + (cost weight percentage * score)",
+        "name": "Supplier Score",
+        "range": "DataType"
+    },{
+        "@id": "supplierSpend",
+        "@type": "Property",
+        "description": "Total cost amount spent on procuring products from supplier",
+        "name": "Supplier Spend",
+        "range": "DataType"
+    },{
+        "@id": "supplierType",
+        "@type": "Property",
+        "description": "Type of Supplier e.g. Retailer, Distributor, Manufacturer, Merchant",
+        "name": "Supplier Type",
+        "range": "SupplierType"
+    },{
+        "@id": "householdDissolvedDate",
+        "@type": "Property",
+        "description": "When was the houshold dissolved",
+        "name": "Household Dissolved Date",
+        "range": "DataType"
+    },{
+        "@id": "householdFormedDate",
+        "@type": "Property",
+        "description": "When was the household formed",
+        "name": "Household Formed Date",
+        "range": "DataType"
+    },{
+        "@id": "householdMemberCount",
+        "@type": "Property",
+        "description": "How many members are there in the household",
+        "name": "Household Member Count",
+        "range": "DataType"
+    },{
+        "@id": "id",
+        "@type": "Property",
+        "description": "Primary key value of the household",
+        "name": "Household Id",
+        "range": "DataType"
+    },{
+        "@id": "handlingFeeAmount",
+        "@type": "Property",
+        "description": "The amount being charged to handle the payment.",
+        "name": "Handling Fee Amount",
+        "range": "DataType"
+    },{
+        "@id": "authorizationProcessingModeId",
+        "@type": "Property",
+        "description": "Mode to determine if the payment is processed by Salesforce Payment Platform or is an external authorization that is being recorded in our platform.",
+        "name": "Authorization Processing Mode",
+        "range": "AuthorizationProcessingMode"
+    },{
+        "@id": "emailAddress",
+        "@type": "Property",
+        "description": "An email address that is used for validation and processing of payments.",
+        "name": "Email Address",
+        "range": "DataType"
+    },{
+        "@id": "paymentGatewayTokenText",
+        "@type": "Property",
+        "description": "A number or value generated by the issuer that serves as a proxy for the actual payment card number",
+        "name": "Payment Gateway Token",
+        "range": "DataType"
+    },{
+        "@id": "billToCity",
+        "@type": "Property",
+        "description": "City name of the address of the person to be billed.",
+        "name": "Bill to City",
+        "range": "DataType"
+    },{
+        "@id": "billToFirstName",
+        "@type": "Property",
+        "description": "First or given name of the person to be billed.",
+        "name": "Bill to First Name",
+        "range": "DataType"
+    },{
+        "@id": "billToLastName",
+        "@type": "Property",
+        "description": "Last or family name of the person to be billed.",
+        "name": "Bill to Last Name",
+        "range": "DataType"
+    },{
+        "@id": "billToStreet",
+        "@type": "Property",
+        "description": "First line of street address of the person to be billed.",
+        "name": "Bill to Street",
+        "range": "DataType"
+    },{
+        "@id": "billToStreet2",
+        "@type": "Property",
+        "description": "Second line of street address of the person to be billed.",
+        "name": "Bill to Street 2",
+        "range": "DataType"
+    },{
+        "@id": "cardHolderName",
+        "@type": "Property",
+        "description": "The full name of the person to whom the card was issued, as shown on the card.",
+        "name": "Card Holder Name",
+        "range": "DataType"
+    },{
+        "@id": "cardToken",
+        "@type": "Property",
+        "description": "A number or value generated by the issuer that serves as a proxy for the actual payment card number",
+        "name": "Card Token",
+        "range": "DataType"
+    },{
+        "@id": "companyName",
+        "@type": "Property",
+        "description": "Name of a company which employs the bill-to card user.",
+        "name": "Company Name",
+        "range": "DataType"
+    },{
+        "@id": "creditCardExpired",
+        "@type": "Property",
+        "description": "True if the payment card has expired.",
+        "name": "Credit Card Expired",
+        "range": "DataType"
+    },{
+        "@id": "derivedCardTypeCode",
+        "@type": "Property",
+        "description": "Stores values similar to Payment Card Type, but is determined by application logic using the the Card BIN.",
+        "name": "Derived Card Type Code",
+        "range": "DataType"
+    },{
+        "@id": "expirationMonth",
+        "@type": "Property",
+        "description": "The month of the payment card expiration date.",
+        "name": "Expiration Month",
+        "range": "DataType"
+    },{
+        "@id": "expirationYear",
+        "@type": "Property",
+        "description": "The year of the payment card expiration date.",
+        "name": "Expiration Year",
+        "range": "DataType"
+    },{
+        "@id": "issueNumber",
+        "@type": "Property",
+        "description": "A 3 or 4-digit number printed on the back of the payment card.",
+        "name": "Issue Number",
+        "range": "DataType"
+    },{
+        "@id": "maskedNumber",
+        "@type": "Property",
+        "description": "The complete payment credit card number, in masked format.",
+        "name": "Masked Number",
+        "range": "DataType"
+    },{
+        "@id": "numberLastDigits",
+        "@type": "Property",
+        "description": "The last 4 digits of the payment card number, in clear text.",
+        "name": "Number Last Digits",
+        "range": "DataType"
+    },{
+        "@id": "paymentCardTypeId",
+        "@type": "Property",
+        "description": "Defines a list of approved Payment Card Types (e.g. Visa, Mastercard, etc).",
+        "name": "Payment Card Type",
+        "range": "PaymentCardType"
+    },{
+        "@id": "accountID",
+        "@type": "Property",
+        "description": "One of many possible Accounts belonging to the Party that uses the payment method for payments",
+        "name": "Account",
+        "range": "Account"
+    },{
+        "@id": "paymentMethodStatus",
+        "@type": "Property",
+        "description": "Reference data set row for Payment Method Status",
+        "name": "Payment Method Status",
+        "range": "PaymentMethodStatus"
+    },{
+        "@id": "maxPerPeriodAmount",
+        "@type": "Property",
+        "description": "The maximum transaction amount, for all transactions during a transaction period, that are accepted by the seller for this Payment Method.",
+        "name": "Max Per Period Amount",
+        "range": "DataType"
+    },{
+        "@id": "maxPerPeriodAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Max Per Period Amount",
+        "name": "Max Per Period Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "maxPerPeriodTransactionCount",
+        "@type": "Property",
+        "description": "The maximum number of transactions accepted by the seller for this Payment Method.",
+        "name": "Max Per Period Transaction Count",
+        "range": "DataType"
+    },{
+        "@id": "maxTransactionAmount",
+        "@type": "Property",
+        "description": "The maximum transaction amount accepted by the seller for this Payment Method Type.",
+        "name": "Max Transaction Amount",
+        "range": "DataType"
+    },{
+        "@id": "mediaType",
+        "@type": "Property",
+        "description": "e.g. paper, magnetic card,",
+        "name": "Media Type",
+        "range": "DataType"
+    },{
+        "@id": "typeDescription",
+        "@type": "Property",
+        "description": "Description of Payment Method Type",
+        "name": "Type Description",
+        "range": "DataType"
+    },{
+        "@id": "typeRequiredIdentification",
+        "@type": "Property",
+        "description": "e.g. none, drivers license",
+        "name": "Type Required Identification",
+        "range": "DataType"
+    },{
+        "@id": "useMinimumAgeYear",
+        "@type": "Property",
+        "description": "e.g. 16, 18",
+        "name": "Use Minimum Age Year",
+        "range": "DataType"
+    },{
+        "@id": "notesText",
+        "@type": "Property",
+        "description": "The reason why the voucher was issued.",
+        "name": "Notes",
+        "range": "DataType"
+    },{
+        "@id": "usedDate",
+        "@type": "Property",
+        "description": "The date the voucher was used.",
+        "name": "Used Date",
+        "range": "DataType"
+    },{
+        "@id": "voucherDefinitionId",
+        "@type": "Property",
+        "description": "The master voucher from which instance vouchers awarded to individual people are derived.",
+        "name": "Voucher Definition",
+        "range": "VoucherDefinition"
+    },{
+        "@id": "description",
+        "@type": "Property",
+        "description": "Description of a Voucher Definition",
+        "name": "Description",
+        "range": "DataType"
+    },{
+        "@id": "discountPercent",
+        "@type": "Property",
+        "description": "The reduction in price a voucher holder is entitled to expressed as a fraction of the original price.",
+        "name": "Discount Percent",
+        "range": "DataType"
+    },{
+        "@id": "effectiveDate",
+        "@type": "Property",
+        "description": "The date the voucher goes into effect.",
+        "name": "Effective Date",
+        "range": "DataType"
+    },{
+        "@id": "expirationDate",
+        "@type": "Property",
+        "description": "The date the voucher expires.",
+        "name": "Expiration Date",
+        "range": "DataType"
+    },{
+        "@id": "expirationPeriodNumber",
+        "@type": "Property",
+        "description": "Based on the Expiration Period UOM, how many days, weeks, months, etc until the voucher expires.",
+        "name": "Expiration Period",
+        "range": "DataType"
+    },{
+        "@id": "expirationPeriodUOM",
+        "@type": "Property",
+        "description": "What time period is used to define expiration, for example days, weeks or months.",
+        "name": "Expiration Period UOM",
+        "range": "TimeUOM"
+    },{
+        "@id": "faceValueAmount",
+        "@type": "Property",
+        "description": "The value, in currency of the Voucher, for example $10.00.",
+        "name": "Face Value Amount",
+        "range": "DataType"
+    },{
+        "@id": "voucherExpirationTypeId",
+        "@type": "Property",
+        "description": "Voucher Expiration Type: fixed date or Expiration Period UOM.",
+        "name": "Voucher Expiration Type",
+        "range": "VoucherExpirationType"
+    },{
+        "@id": "voucherStatusId",
+        "@type": "Property",
+        "description": "Values of Voucher Status include: Issued, expired, redeemed, and cancelled",
+        "name": "Voucher Status",
+        "range": "VoucherStatus"
+    },{
+        "@id": "voucherTypeId",
+        "@type": "Property",
+        "description": "Values of Voucher Type include: accrual, redemption, and manual action",
+        "name": "Voucher Type",
+        "range": "VoucherType"
+    },{
+        "@id": "name",
+        "@type": "Property",
+        "description": "Values of Voucher Type will include: accrual, redemption, and manual action",
+        "name": "Name",
+        "range": "DataType"
+    }
+    ]
+}

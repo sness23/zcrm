@@ -1,0 +1,78 @@
+{
+  "@id": "PartyHierarchyType",
+  "name": "Party Hierarchy Type",
+  "@type": "Class",
+  "description": "Types of Party Hierarchies e.g., Legal, Accounting.",
+  "subjectArea": "Party",
+  "entityGroup": "PartySetup",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a95a8410-534d-4c8c-85c5-c1a0ac1ad4f1",
+    "@type": "Shape",
+    "targetClass": "PartyHierarchyType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "637ac9a0-9965-4cac-8989-0a359c0193e9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "d1494638-bb19-48b8-9454-e40b5da61149",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "cfb2ab2d-f867-4717-9d5d-400011164f2d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5f403863-61d2-4b3b-9f5f-633687b7f50c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9f15b46c-8333-4747-9313-e168b9c08cea",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "bcb14274-f8d7-4c4c-8ece-9cdee8a87798",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e73da629-46d5-46e6-be3e-a6369ffe4ae8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f2cfdb26-4448-48c8-85c5-b8bbf1484bab",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

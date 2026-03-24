@@ -1,0 +1,77 @@
+{
+  "@id": "ProductRepairSkill",
+  "name": "Product Repair Skill",
+  "@type": "Class",
+  "description": "A proficiency that is required to fix or adjust a product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "skillId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "eaee2eea-0c01-4989-a060-552149c22e4a",
+    "@type": "Shape",
+    "targetClass": "ProductRepairSkill",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3b8f2f29-df7f-4e8e-ac2c-3259a0274f44",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "ea611fdc-379a-43d3-a6a6-1457732652a0",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8a546235-d0c2-4ddd-b8f8-4498a0bdf294",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3283c0ab-d48a-49f9-9111-f0745578a051",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b51d5e68-2c72-4beb-a5e5-18dea28aa7d2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b932ac8e-ab08-4313-8ece-962044c98ca0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "78a18d84-00df-4eae-b4f4-753d88101a69",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

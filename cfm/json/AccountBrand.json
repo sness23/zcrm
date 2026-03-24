@@ -1,0 +1,79 @@
+{
+  "@id": "AccountBrand",
+  "name": "Account Brand",
+  "@type": "Class",
+  "description": "The association of an Account to one Business Brand. Business Brand and Account have a many-to-many relationship.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "businessBrandId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "58d8d3e4-a639-4666-b676-1f77f223b9df",
+    "@type": "Shape",
+    "targetClass": "AccountBrand",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e1f078eb-8214-4cdc-a525-3e1f74430d1d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3f4c944e-3adb-47c7-ad6d-59e481c08e47",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "63be64e6-b13c-4cbc-a8a8-6a179f1dd3be",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4ca7d345-687d-4aaa-b9b9-cbbea37a1608",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "61ce0a3a-6823-4040-9292-c6a3e91289ed",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "401671e9-19df-4484-a0e0-cc99393ec4b2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "businessBrandId",
+        "@id": "d78862c0-9e26-4c3c-8101-cd67fda7779c",
+        "node": "88f2834c-272e-4373-adad-0a1e464711dc",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "5b5948d2-7cc9-4b1b-8000-d0ef93080265",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

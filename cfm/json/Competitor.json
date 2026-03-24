@@ -1,0 +1,250 @@
+{
+  "@id": "Competitor",
+  "name": "Competitor",
+  "@type": "Class",
+  "description": "Information about a party playing role of competitor e.g. strength(in products), weaknesses(in offerings), opportunities (to overtake), threats(to our business)",
+  "subClassOf": "PartyRole",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "competitorStrengths",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorTheats",
+      "@type": "Property"
+    },
+    {
+      "@id": "assetTurnoverRatio",
+      "@type": "Property"
+    },
+    {
+      "@id": "netProfitMargin",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorObjectives",
+      "@type": "Property"
+    },
+    {
+      "@id": "currentRatio",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "ptoENumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorWeaknesses",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorLeverageOpportunities",
+      "@type": "Property"
+    },
+    {
+      "@id": "cashFlowGrowth",
+      "@type": "Property"
+    },
+    {
+      "@id": "adKeywords",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialMediaPostRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "competitorFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "adReachRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "assetReturnRatio",
+      "@type": "Property"
+    },
+    {
+      "@id": "pressMentionsRate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "13094444-d191-3ac8-aac8-7b5e4ea7f276",
+    "@type": "Shape",
+    "targetClass": "Competitor",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8b513732-669e-4737-9d1d-5d1ea2f2695b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialMediaPostRate",
+        "@id": "bd7ec576-6657-38cc-b94d-325f575cab4e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "ptoENumber",
+        "@id": "74f4a6e6-3ed6-35b4-9610-107619237c24",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "pressMentionsRate",
+        "@id": "7894d263-b83a-3404-9718-08efcec0b258",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "47936ef7-3560-4434-bbbb-b44f6de21962",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "netProfitMargin",
+        "@id": "a255f648-1698-3537-b126-f7f7e3d7527a",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4176cd19-bcf2-41f1-88c8-d0a643518b57",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b657ebda-891c-4e8e-9f5f-f79cf897f5be",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9df19746-296e-3fd4-8120-50cabb83d0b8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2451f223-fc7a-4151-a565-2bfad57fb046",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "03e9bc4b-b108-41e1-91d1-dd7f205d63a8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "currentRatio",
+        "@id": "f5ba7fb0-5e5d-3a97-8d68-420fcd1f3316",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2cbaebef-21b3-4767-8383-edccc4c46794",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "competitorWeaknesses",
+        "@id": "1b3e6fc0-a3c8-3c96-9ebd-1ba9a3b5fcab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorToDate",
+        "@id": "a5de778e-850e-3c11-a2c8-f64c81cecd70",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorTheats",
+        "@id": "e1f1424e-abcb-4c3c-bb7b-be43c4c829af",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorStrengths",
+        "@id": "07e6fbfd-5c07-3f73-9fcd-a8199aa1cd35",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorObjectives",
+        "@id": "469e82ba-96c1-35c5-87cc-a7d0f9ffcb91",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorLeverageOpportunities",
+        "@id": "3609e7d4-f41f-3a49-bcc5-cceb3e15883d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "competitorFromDate",
+        "@id": "85204bc0-13c2-32d6-92f6-5746acb6076b",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "cashFlowGrowth",
+        "@id": "bcf4370d-f3f9-3f41-a8cd-f1c68318dec4",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "assetTurnoverRatio",
+        "@id": "be8ab084-dcf4-344a-9b25-f4fe84f52f64",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "assetReturnRatio",
+        "@id": "897ff34b-c4fb-3d0c-a2f6-777ffb5b2b05",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "adReachRate",
+        "@id": "f6e8a609-6a11-32c5-9c65-ab6a27dcf8b0",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "adKeywords",
+        "@id": "408d3abb-dc18-397e-9889-111ef8e1df1f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

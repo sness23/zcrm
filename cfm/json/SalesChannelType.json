@@ -1,0 +1,79 @@
+{
+  "@id": "SalesChannelType",
+  "name": "Sales Channel Type",
+  "@type": "Class",
+  "description": "Standard ways of selling products such as web, retail, direct marketing, etc",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5ae0f454-3504-41c1-9a5a-046dc50bf5a4",
+    "@type": "Shape",
+    "targetClass": "SalesChannelType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "423b7ed1-3a87-4555-baba-b61cf248555d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "01eb41ca-dc63-4dad-bd3d-d309d10ba5bc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fccf380a-2260-4eee-9595-ba995e7fd8e9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4314aee9-2238-4878-97d7-1e5a88c9a330",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f3b210b7-1b56-4686-a828-3872597613e8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "738bd758-5674-4cac-9c5c-1d5fc1cf7487",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2c3b7deb-f9a3-4cbc-a868-3db86d689660",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "106fd167-57f8-4cdc-87c7-a60382489ce8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

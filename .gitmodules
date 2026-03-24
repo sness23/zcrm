@@ -1,0 +1,12 @@
+[submodule "vault"]
+	path = vault
+	url = git@github.com:sness23/doibio0_vault
+[submodule "cfm"]
+	path = cfm
+	url = git@github.com:sness23/cloudinformationmodel.git
+[submodule "pocketz"]
+	path = pocketz
+	url = git@github.com:sness23/pocketz
+[submodule "doibio0_vault"]
+	path = doibio0_vault
+	url = git@github.com:sness23/doibio0_vault

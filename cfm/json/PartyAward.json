@@ -1,0 +1,78 @@
+{
+  "@id": "PartyAward",
+  "name": "Party Award",
+  "@type": "Class",
+  "description": "An accolade that has been bestowed on a Party.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "awardIssuerName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a79e61ff-34e5-46c6-80c0-15f72cba35a8",
+    "@type": "Shape",
+    "targetClass": "PartyAward",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "531537f5-812d-41b1-9353-51ff720c26bc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0cd75f78-e56c-4858-aaea-0340a184a861",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "188a07b3-630e-4b3b-8c0c-ad2735b78f8a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f03bd3ae-0c10-4f4f-9454-7c3de468935c",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5220e5f8-42a9-4747-9111-ad30ae98b831",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c85d3a0b-8886-4232-8202-5336dbfd8a06",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "052d1d9a-2e43-4979-a7e7-4db2ca493438",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "awardIssuerName",
+        "@id": "c20c3ba1-f9fb-44c4-8585-51103500a7d5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

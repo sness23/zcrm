@@ -1,0 +1,57 @@
+{
+  "@id": "BusinessBrand",
+  "name": "Business Brand",
+  "@type": "Class",
+  "description": "A business unit, often associated with a name under which products are marketed. Business Brands may exist in a hierarchy, for Pottery Barn Kids is a child or brand Pottery Barn.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [],
+  "schema": {
+    "@id": "88f2834c-272e-4373-adad-0a1e464711dc",
+    "@type": "Shape",
+    "targetClass": "BusinessBrand",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "dc736042-4a40-4000-b6b6-01e37aa48a95",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e2b71c46-74d3-4151-8c8c-8f2044ba0116",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "39bcf8fd-895d-41f1-9818-551d9d78b258",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "510bc6d6-87e5-4e7e-a727-0abddb5f9df1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9631e4de-26ae-4757-9414-0c8780abd556",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "233116be-9e95-45e5-acec-c612a0de751b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

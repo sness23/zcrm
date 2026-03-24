@@ -1,0 +1,78 @@
+{
+  "@id": "TemperatureUOM",
+  "name": "Temperature UOM",
+  "@type": "Class",
+  "description": "Unit of Measure for temperature e.g. Celcius, Fahrenheit",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "measurementSystemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d73db017-49d9-343d-be13-5c06bd8af61b",
+    "@type": "Shape",
+    "targetClass": "TemperatureUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "84b9e154-c5cf-4cdc-bdfd-97ebd0c52a5a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "measurementSystemId",
+        "@id": "76e23c8a-b142-4a2a-8282-a6d90f22a51a",
+        "node": "9503249c-384a-4212-8d0d-712bdca393d2",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2454e519-14be-47f7-8404-ec6fa4386308",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "30abd653-e56d-4989-9212-c44ff371e019",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "740c4f26-03d7-4969-abab-b800ae03ad49",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ecf04a4f-2553-4bbb-93d3-5aa1bcce6017",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a7701fc0-17d0-48a8-be7e-7585c2711756",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ee252354-c1f0-4494-b8b8-9865be86b119",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

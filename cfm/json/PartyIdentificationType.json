@@ -1,0 +1,115 @@
+{
+  "@id": "PartyIdentificationType",
+  "name": "Party Identification Type",
+  "@type": "Class",
+  "description": "The type of identification e.g driving license number, birth certificate, rewards membership",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "identifierTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalSourceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyIdentificationTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "implementerType",
+      "@type": "Property"
+    },
+    {
+      "@id": "createdDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "parentPartyIdentificationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalRecordId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "397a0710-00c6-3823-ae3f-cd7127ad0c8c",
+    "@type": "Shape",
+    "targetClass": "PartyIdentificationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "42d8ca3e-f521-3194-bf0c-7fe19c31659f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyIdentificationTypeName",
+        "@id": "94f7dc0c-0290-31c3-ae4f-e83a863b381f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "parentPartyIdentificationTypeId",
+        "@id": "5b0fb9a1-7a35-40e0-9010-7b8b88e1720a",
+        "node": "397a0710-00c6-3823-ae3f-cd7127ad0c8c",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "907a6e5e-e85a-32dc-bfaf-1f0b2ceb37ed",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementerType",
+        "@id": "8efad34d-d4c6-4bcb-8dcd-8de818d4b2fe",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "identifierTypeName",
+        "@id": "b16bcea0-32b7-4beb-befe-83266e82b396",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5e209baf-35f2-3a8d-8e5c-ac52434a0118",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d14ba78a-2b1c-41a1-8787-1bce6020ca3b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a099ba3b-5e16-3155-8d8e-6fde733f6409",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "56173d9e-e3f8-3217-893c-a41d49b70bc6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

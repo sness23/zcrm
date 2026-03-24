@@ -1,0 +1,171 @@
+.properties-panel {
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+  font-size: 13px;
+}
+
+.properties-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  user-select: none;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.properties-toggle {
+  color: #666;
+  font-size: 10px;
+  width: 12px;
+  display: inline-block;
+}
+
+.properties-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.properties-count {
+  color: #999;
+  font-size: 11px;
+  margin-left: auto;
+}
+
+.properties-content {
+  padding: 8px 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.property-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s ease;
+}
+
+.property-row:hover {
+  background: #f8f8f8;
+}
+
+.property-row:last-child {
+  border-bottom: none;
+}
+
+.property-key {
+  color: #666;
+  font-weight: 500;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.property-value {
+  color: #333;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 12px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.property-display {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.property-display:hover {
+  background: #e8e8e8;
+}
+
+.property-edit {
+  width: 100%;
+}
+
+.property-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 2px solid #6366f1;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 12px;
+  outline: none;
+  background: white;
+  color: #333;
+}
+
+.property-edit-hint {
+  font-size: 10px;
+  color: #999;
+  margin-top: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Type-specific styles */
+.property-row.link .property-display {
+  color: #6366f1;
+}
+
+.property-link {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.property-link:hover {
+  text-decoration: underline;
+}
+
+.property-row.boolean .property-boolean {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.property-row.empty .property-empty {
+  color: #999;
+  font-style: italic;
+}
+
+.property-row.number .property-display {
+  color: #059669;
+}
+
+.property-row.array .property-display,
+.property-row.object .property-display {
+  font-size: 11px;
+  color: #7c3aed;
+}
+
+/* Scrollbar styling */
+.properties-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.properties-content::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.properties-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.properties-content::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "ProductGender",
+  "name": "Product Gender",
+  "@type": "Class",
+  "description": "Is product intended for e.g. females, unisex",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8d75cb3a-6622-318a-9401-d2f5a3dfe1c3",
+    "@type": "Shape",
+    "targetClass": "ProductGender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "be8e77df-53c1-49a9-8000-57a8b07f3cae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "da41e2b3-eda5-3a8b-8452-00b7083d0d91",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f0170ea8-0ec4-49f9-a828-fb6138ab5e8d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "52564026-86e0-4616-9010-d365f0bd036e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2a543ac4-23d3-3ae9-8a3c-3508aeddb165",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "12a2ab85-7bfb-4656-8303-ece9b4e8a7d5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c0022348-4035-41e1-9515-974422b628b8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1f85c06f-5d10-46f6-83c3-ce1561f0a528",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

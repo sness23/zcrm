@@ -1,0 +1,79 @@
+{
+  "@id": "UncategorizedPartyCreationReason",
+  "name": "Uncategorized Party Creation Reason",
+  "@type": "Class",
+  "description": "Why can party not yet be categorized e.g. was cash buyer, got social handle only",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "uncategorizedPartyCreationReasonName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "019c8776-a321-3b41-a20d-ce7738806570",
+    "@type": "Shape",
+    "targetClass": "UncategorizedPartyCreationReason",
+    "properties": [
+      {
+        "path": "uncategorizedPartyCreationReasonName",
+        "@id": "e7977d03-0db3-3191-a440-0600bf465344",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "501022d7-bf31-37eb-be81-568451638f05",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "37b8a2a6-70d0-3da7-a496-2375a8f691cc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7ad31cee-8d10-45c5-a4a4-6ecb0cc50b19",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5cbb27b1-33fa-35b0-b9aa-77b06a1fbfb7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "60005b6d-a3a0-4efe-b434-81ca14286f91",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a0b4adc3-0154-3663-8084-b54eed84e784",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "64322f25-4604-3428-94d9-ff2eef0c7890",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

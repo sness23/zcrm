@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentAuthInternalResultCode",
+  "name": "Payment Authorization Internal Result Code",
+  "@type": "Class",
+  "description": "Codes used by the internal system to identify the state of a Payment Gateway Authorization request. Maps to one or more gateway result codes",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3d19b5ea-7c4d-40c0-8505-5a857c5eee32",
+    "@type": "Shape",
+    "targetClass": "PaymentAuthInternalResultCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "39af1b31-1a53-4a2a-a262-c7f267ddb440",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "44d15865-4697-4868-97d7-ec080ffdc7be",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "cd7fb217-ae64-4fbf-a1a1-a75016e292e4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0001cbec-d927-4505-8303-e5d3ecf8f4ff",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "14e11946-b143-44a4-b6b6-016a5142e554",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3e9b609d-c5ed-4999-8f0f-d54e78182eae",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "65c131fa-2237-4707-ae2e-dedef17c76a3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fa5d15bc-677f-4dad-ac6c-dc4bb59224b9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

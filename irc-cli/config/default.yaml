@@ -1,0 +1,36 @@
+# FS-CRM IRC Configuration
+
+# Display settings
+theme: default
+show_timestamps: true
+show_event_ids: true
+timestamp_format: "HH:mm"
+date_format: "MMM DD"
+
+# Behavior
+auto_scroll: true
+notification_sound: false
+poll_interval: 5000  # ms
+max_buffer_size: 1000  # events per channel
+
+# Data sources
+api_url: http://localhost:9600
+vault_path: ../vault
+watch_logs: true
+use_database: false
+
+# Pinned channels
+pinned: []
+
+# Aliases
+aliases:
+  j: join
+  i: info
+  s: search
+  q: quit
+  l: list
+  h: help
+
+# Window settings
+sidebar_width: 25
+sidebar_visible: true

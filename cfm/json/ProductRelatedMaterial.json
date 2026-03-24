@@ -1,0 +1,68 @@
+{
+  "@id": "ProductRelatedMaterial",
+  "name": "Product Related Material",
+  "@type": "Class",
+  "description": "Association of two products that together form a component, which is not classified as Sales, Service or Marketing related. Often a Bill of Material used to manufacture another Product.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "59c98ea8-1944-47e7-b979-01c84c6e9255",
+    "@type": "Shape",
+    "targetClass": "ProductRelatedMaterial",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "c12eadd1-5382-4161-92d2-e3e1a5480165",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "64a186da-3fc1-4d0d-9bdb-818b141872c9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b9c4e70f-6946-4747-b030-63756dcdbccd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fa329d03-1011-4e1e-b2f2-2206cf0b59a4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "99b8b99a-bebb-4131-95d5-7ea106e25211",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "002d63e8-e020-42a2-8989-4c6669aa1427",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "284c912e-e591-4818-8646-86eb5307469d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

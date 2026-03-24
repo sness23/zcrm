@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentAuthorizationStatus",
+  "name": "Payment Authorization Status",
+  "@type": "Class",
+  "description": "-",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0e19af50-e733-4848-9b9b-1830c49340d5",
+    "@type": "Shape",
+    "targetClass": "PaymentAuthorizationStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7b20fa65-8d57-4a7a-a1a1-f50fae5ce7a0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c2a7cc14-a7ca-44b4-91d1-2d1402cb7fb6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0385e204-565e-4171-82c2-fb5f596882a4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "155a3691-0030-40e0-a0a0-0dad20359f4d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3d266466-0c73-4959-9f1f-f699f0da779f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c09d529a-caa2-4737-b272-21b63cb118b5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "20bd0423-a345-46e6-b6b6-002b1f63c15f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0844baa2-3967-4d0d-b131-b38784e58777",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

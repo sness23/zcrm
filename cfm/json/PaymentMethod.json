@@ -1,0 +1,149 @@
+{
+  "@id": "PaymentMethod",
+  "name": "Payment Method",
+  "@type": "Class",
+  "description": "A means by which a buyer compensates a seller for a purchased good or service.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountID",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodType",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodStatus",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+    "@type": "Shape",
+    "targetClass": "PaymentMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f755164c-7fe5-3600-947d-adf68ceba2ef",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodType",
+        "@id": "ec54cbbb-9e1c-4131-a727-cab116349c84",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8098f61c-acc9-4aba-a020-c57ea363392e"
+              },
+              {
+                "@id": "9779dc3a-2073-4fef-8e8e-3022bbe9afe2"
+              },
+              {
+                "@id": "7638adb1-e8d9-4dfd-8b0b-ca9dfbd48f6e"
+              },
+              {
+                "@id": "d71675a6-ef0c-4373-8202-da2097dc6e97"
+              },
+              {
+                "@id": "ee988b63-7ce2-47e7-ae2e-240aa4f2c1d5"
+              },
+              {
+                "@id": "3fc674ae-cdf8-44c4-a262-a7adfc7e738c"
+              },
+              {
+                "@id": "421afded-28c7-3c9b-9663-6bf71d6e7cba"
+              },
+              {
+                "@id": "0328a352-04b0-30f7-b21e-072ce8773b45"
+              },
+              {
+                "@id": "6b63a00e-7e9c-4c5c-bd3d-6cdec25ada84"
+              },
+              {
+                "@id": "65b55e8c-49b8-4cfc-9a9a-ad2794728e3b"
+              },
+              {
+                "@id": "1dcf6a90-d49d-4080-a626-80af26fd471c"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodStatus",
+        "@id": "8d57b15f-7742-3623-9458-f5941edf13ba",
+        "node": "a0908e19-22a9-3de8-8ab3-76126f608b9a",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "58e3686e-710d-47e7-a222-f62cf303c37c",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2ca13abd-ee58-3844-9c0a-3ac3bbba0238",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "186ba0d4-c151-4c4c-8aca-b774e31ae8b7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "36f2e41d-c2d2-3e38-8065-7c7ab99de611",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6f0dfea3-bb7a-4b4b-8505-8a7501239282",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "88870e41-b8a3-3bf3-894f-9d06944ed557",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0ba9f9bf-903c-3797-bfd6-7b1ff48f61c7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountID",
+        "@id": "dca0de24-cb79-47a7-9fdf-2f860414ff00",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

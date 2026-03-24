@@ -1,0 +1,77 @@
+{
+  "@id": "ProductCategorySortingRule",
+  "name": "Product Category Sorting Rule",
+  "@type": "Class",
+  "description": "Product display rules that are based on the category or categories to which various products belong, and how these are ranked",
+  "subClassOf": "ProductSortingRule",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCategorySortingRuleText",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCategoryId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "bb0cd73c-8ae5-4878-8707-87df3b22d5b4",
+    "@type": "Shape",
+    "targetClass": "ProductCategorySortingRule",
+    "properties": [
+      {
+        "path": "productCategorySortingRuleText",
+        "@id": "656e352a-54c4-42f2-8383-4d196a04b158",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCategoryId",
+        "@id": "dbfd99d6-7a95-4686-b333-7b1967daf242",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d17990ea-cc8d-4b4b-b373-7ac0ed01bef2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b6edd293-98d0-47e7-abeb-a8b59d353a9b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e00ce33e-135a-4535-ab2b-895fc5bc3fac",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3d8a6772-058e-48a8-ad2d-43e98085befc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "37b810eb-1575-4474-80c0-0ac071c16174",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

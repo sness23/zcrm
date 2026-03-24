@@ -1,0 +1,54 @@
+{
+  "@id": "KeywordSearchSortingRule",
+  "name": "Keyword Search Sorting Rule",
+  "@type": "Class",
+  "description": "Product display rules that are based on keyword search searches that have led a user to a campaign.",
+  "subClassOf": "ProductSortingRule",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "keywordSearchSortingRuleText",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cd780f7d-2541-4b8b-9151-32d40a77bb99",
+    "@type": "Shape",
+    "targetClass": "KeywordSearchSortingRule",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7733f2a2-b06c-4dbd-a7e7-3de39e940edd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "keywordSearchSortingRuleText",
+        "@id": "442181c4-2061-4414-92d2-3efd48b5e7b8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "83c00383-dbfd-4767-8f0f-2ecd35a8bce8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2c162311-2a76-4868-aaaa-f59d2d26ecd9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

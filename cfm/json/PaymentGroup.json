@@ -1,0 +1,117 @@
+{
+  "@id": "PaymentGroup",
+  "name": "Payment Group",
+  "@type": "Class",
+  "description": "Payment Group provides a way to associate payments and payment gateway events, where the payment is not associated with a Sales Order.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "totalAuthorizationAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGroupNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalReversalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalPaymentAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "756cd379-a7e2-41b1-96d6-2e0cc621f228",
+    "@type": "Shape",
+    "targetClass": "PaymentGroup",
+    "properties": [
+      {
+        "path": "totalReversalAmount",
+        "@id": "2141fb66-1f1c-4a0a-b9b9-2c695b5c115d",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalPaymentAmount",
+        "@id": "4b978001-dcbc-48b8-98d8-14b36489579d",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalAuthorizationAmount",
+        "@id": "18ee674a-eb25-4bdb-b535-7826545b4c75",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "237fdce0-449a-48f8-84c4-fadba6394a66",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGroupNumber",
+        "@id": "127a7e11-5b2d-4e4e-abeb-deb4e25b2398",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "70a80b40-6afb-4010-ba7a-8585795e7a36",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "40f92cde-64d6-4aca-a020-354105148830",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b792e110-8d3a-4f3f-a6a6-6e7847ea7d53",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ca7f8907-8a4d-47c7-ad2d-78680369e312",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "bab0fa59-9cd7-4545-be7e-184084824679",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "047e5c03-30a9-45a5-9515-7fb49ac84535",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentAuthorizations",
+        "node": "ff78bf12-66f1-4b1b-8f4f-d51ac7ec884f",
+        "minCount": "1"
+      }
+    ]
+  }
+}

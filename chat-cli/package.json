@@ -1,0 +1,28 @@
+{
+  "name": "chat-cli",
+  "version": "1.0.0",
+  "description": "Simple CLI chat app for Slack integration",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "chat-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["chat", "cli", "slack"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

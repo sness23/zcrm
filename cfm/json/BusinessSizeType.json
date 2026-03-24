@@ -1,0 +1,79 @@
+{
+  "@id": "BusinessSizeType",
+  "name": "Business Size Type",
+  "@type": "Class",
+  "description": "How big is the business e.g. small, medium, enterprise",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "businessSizeTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e808df21-03ac-362c-a012-5ac47cece148",
+    "@type": "Shape",
+    "targetClass": "BusinessSizeType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "9f05ecaf-da85-3b91-bc38-b55578da04ae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e5db8f67-a857-32c3-b17b-620dc3cc8124",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3e7a40f9-d69a-41f1-9656-2b52fcc86261",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6fd6b5e3-279c-36df-bf30-3da924fd8f82",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0c32057f-b4f3-4171-a3a3-455492dd5554",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "953aad3a-297a-3559-9547-daf7ae3d95b5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1bf6f7e1-09c9-3c63-89db-5f7ea7120e42",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "businessSizeTypeName",
+        "@id": "8559cf31-7368-3da1-a6f2-a0dc5ceaa186",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

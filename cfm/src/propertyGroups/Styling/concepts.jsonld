@@ -1,0 +1,51 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "StylingPropertyGroup",
+    "name": "Styling Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "ageId",
+        "@type": "Property",
+        "description": "Is product intended for e.g. newborns, teenagers",
+        "name": "Age",
+        "range": "ProductAge"
+    },{
+        "@id": "colorId",
+        "@type": "Property",
+        "description": "What is the primary color of the product",
+        "name": "Color",
+        "range": "Color"
+    },{
+        "@id": "fabricId",
+        "@type": "Property",
+        "description": "Is product mainly in one fabric e.g. cotton, leather",
+        "name": "Fabric",
+        "range": "ProductFabric"
+    },{
+        "@id": "genderId",
+        "@type": "Property",
+        "description": "Is product intended for e.g. females, unisex",
+        "name": "Gender",
+        "range": "ProductGender"
+    },{
+        "@id": "patternId",
+        "@type": "Property",
+        "description": "Is product in a certain pattern e.g. checkered, striped",
+        "name": "Pattern",
+        "range": "ProductPattern"
+    },{
+        "@id": "seasonId",
+        "@type": "Property",
+        "description": "Is product intended for e.g. winter, summer",
+        "name": "Season",
+        "range": "ProductSeason"
+    },{
+        "@id": "styleId",
+        "@type": "Property",
+        "description": "Is product generally deemed e.g. slim, regular",
+        "name": "Style",
+        "range": "ProductStyle"
+    }
+    ]
+}

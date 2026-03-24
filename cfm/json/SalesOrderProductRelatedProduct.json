@@ -1,0 +1,123 @@
+{
+  "@id": "SalesOrderProductRelatedProduct",
+  "name": "Sales Order Product Related Product",
+  "@type": "Class",
+  "description": "How are two products related to eachother e.g. bundled with/bundled in, substitute for/substitute of",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "childRelationshipTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProduct1Id",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProduct2Id",
+      "@type": "Property"
+    },
+    {
+      "@id": "parentRelationshipTypeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d4682e1b-8b23-4202-9555-9958a2196a3b",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductRelatedProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7071ab9a-0d8f-4090-bdfd-932160e49c60",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProduct2Id",
+        "@id": "97ca5ef1-8026-4464-aaaa-1f265b7b471e",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProduct1Id",
+        "@id": "7ede8478-d23c-47c7-8585-e159ad170f7f",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "parentRelationshipTypeId",
+        "@id": "4c770cf7-16fc-4fbf-bc3c-0225e9595026",
+        "node": "f77b5802-4289-4434-9454-f2fe002e7dc6",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "dfee47d8-9c39-4282-a9a9-e70024a122f6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e5b5caa5-7fb3-49f9-b232-8bb1a471cca1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "39c97755-3547-41c1-8909-40488788eaab",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ee44d091-6dbb-4363-baba-7388439fbf6e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "89b759bf-a1c6-45b5-b676-65666a8cdf30",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a93fd129-f7ca-4f1f-a525-21515c8bea83",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "43d8f4d0-d62c-4373-97d7-b4b31d2d1e30",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "childRelationshipTypeId",
+        "@id": "aad5fdac-bad9-40e0-8a4a-fd2adc443c85",
+        "node": "f77b5802-4289-4434-9454-f2fe002e7dc6",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

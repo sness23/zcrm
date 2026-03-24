@@ -1,0 +1,90 @@
+{
+  "@id": "PaymentGatewayResultCode",
+  "name": "Payment Gateway Result Code",
+  "@type": "Class",
+  "description": "The response from the Payment Gateway.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9b0f3886-5b43-4111-a6a6-1191e20389b4",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayResultCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2596915c-2432-4aea-9494-97bb1ac366f3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "4a491941-84d2-4d5d-9252-c0854743407b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "330834eb-4cf9-4464-a4e4-2de625e3321b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ef7b5e8c-83a2-4c7c-8bcb-19ae9c10fe53",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "128bbfe4-b192-49b9-a2e2-635552b125e2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f312d36e-6770-42c2-bdfd-3fd827416fc4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "189e9927-c172-4faf-8444-d762e168bf98",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "0db60da7-5d3c-4121-8606-cef443fddcca",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6fc8d01a-de05-45f5-9252-be2b05b45f95",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "BankAccountType",
+  "name": "Bank Account Type",
+  "@type": "Class",
+  "description": "Types of bank accounts include checking, savings, deposit, money market.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "02261429-d4d8-4aea-b373-bf3ed37404af",
+    "@type": "Shape",
+    "targetClass": "BankAccountType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3c61bd47-686e-4f3f-adad-f647793d7be4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f4df0165-0074-4818-bf3f-6df345698002",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f802a7ab-c1c4-4aba-bf3f-7cffe7edf8fa",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4656ea05-ef9e-4aca-9151-292a50c36ba1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c8a409cf-8b95-4181-b030-f4c20abb9144",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6f50dc6d-548a-4ded-8686-4c102708f7ea",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "13e68454-fb4a-41b1-b333-958be84ad04f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

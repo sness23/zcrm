@@ -1,0 +1,78 @@
+{
+  "@id": "PartyAccreditation",
+  "name": "Party Accreditation",
+  "@type": "Class",
+  "description": "Authority or approval that has been granted to a Party.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "accreditationIssuerName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3b725f08-e48c-4747-9c9c-3abd8945546c",
+    "@type": "Shape",
+    "targetClass": "PartyAccreditation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "9e851406-bc25-4747-9f9f-d69edabed17b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "6eebf23f-85ef-40e0-9090-4c6573308fde",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "56a7898f-9b8f-4414-a363-6b1e4fedd8c9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2c6efc90-28b6-4aca-8a4a-5f314e7aa6c2",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9c5904b2-df60-4e2e-b2b2-dfeb734b8807",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "4ffdbb46-4db4-42a2-9757-4c6844df5c39",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "dba8d20b-5e83-4484-ae6e-4933f74bfb9a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accreditationIssuerName",
+        "@id": "c3090ca4-88f1-47c7-9696-c9977e1159d0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

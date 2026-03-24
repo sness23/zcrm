@@ -1,0 +1,79 @@
+{
+  "@id": "ProductSortingRuleType",
+  "name": "Product Sorting Rule Type",
+  "@type": "Class",
+  "description": "Multiple products may be displayed in a digital campaign. The order of presentation can be determined in various ways, including keyword searchs that drove a person to the campaign, or pre-defined categories that are associated with products.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "47408e52-f5ba-4ada-9d9d-22b9fc070257",
+    "@type": "Shape",
+    "targetClass": "ProductSortingRuleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "597807cf-713a-44b4-b272-c310fc12b014",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2b628b43-d64e-4858-9959-d8851bf30934",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e1006f35-1358-4dad-9191-965c3ace6ac0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c092c76d-7e30-43c3-b9f9-2935f3683935",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "7a73a47f-21ee-4353-aaaa-59def4c4506d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6b0c677d-98f4-4808-adad-5f9b707f8ba3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8a9a0ac6-9feb-45b5-a0e0-41be93409d81",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4a16bb60-aeab-44a4-82c2-5de1c5ca3b5b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

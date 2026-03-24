@@ -1,0 +1,158 @@
+{
+  "@id": "UncategorizedParty",
+  "name": "Uncategorized Party",
+  "@type": "Class",
+  "description": "A party we may be, or will be, dealing with but we do not know who they are yet e.g. Social Handle 'TrustedNews' which we do not yet know if a person or a business but complain about our company so we want to log a case to investigate further. E.g. an ord",
+  "subClassOf": "Party",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "originalSourceRecordId",
+      "@type": "Property"
+    },
+    {
+      "@id": "creationReasonId",
+      "@type": "Property"
+    },
+    {
+      "@id": "uncategorizedPartyLabel",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "originalSourceSystemId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d",
+    "@type": "Shape",
+    "targetClass": "UncategorizedParty",
+    "properties": [
+      {
+        "path": "uncategorizedPartyLabel",
+        "@id": "b115aa27-6470-3370-8bc2-64ba9ad9b229",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "6762e0aa-8fed-3e41-9622-ea3d1d8094ea",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "originalSourceSystemId",
+        "@id": "798ce055-1cc8-36c5-8b3d-fec11180caa1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "originalSourceRecordId",
+        "@id": "2c859968-1e19-3bb0-9a80-66509f64ac7c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5b890acf-5254-3deb-8472-47cfbdc85b89",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2f021b37-cf73-4bfb-8383-06170c8905b7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e1b55a18-1991-3bdf-ae95-9443194e3975",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c4f67768-ae31-4a5a-bc7c-7c667d7bc6e9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2a80df10-4f52-314a-adb9-02a65de460dd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creationReasonId",
+        "@id": "1e4be0cc-a98d-3cbc-9588-d5eeb801bfa7",
+        "node": "019c8776-a321-3b41-a20d-ce7738806570",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "122f31dd-b098-3f08-ba2d-943642f3ba72",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "primaryAccountId",
+        "@id": "2b09d028-3806-3e8d-b535-84de73c15c91",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyTypeId",
+        "@id": "b9e4fe6f-e9a9-3e52-8c73-cefeab1157ce",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f"
+              },
+              {
+                "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1"
+              },
+              {
+                "@id": "4663a141-a405-38e8-a479-0607c0054909"
+              },
+              {
+                "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "b5870980-da7b-4454-9555-a23d6ecf993f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "noMergeReasonId",
+        "@id": "b277d008-4fc3-3b54-8a4d-ef69fde21a50",
+        "node": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+        "maxCount": "1"
+      },
+      {
+        "path": "globalPartyId",
+        "@id": "9e32edb4-a0a6-3023-9e5c-642cfa5ed7bb",
+        "node": "211175d5-0ebf-3a61-bab9-6c23c5d5f54f",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

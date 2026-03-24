@@ -1,0 +1,89 @@
+{
+  "@id": "HeightUOM",
+  "name": "Height Unit Of Measure",
+  "@type": "Class",
+  "description": "What unit of mesure is used for height e.g. inches, centimeter",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "heightUOMName",
+      "@type": "Property"
+    },
+    {
+      "@id": "measurementSystemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "feded462-47c4-4b9b-a727-50f1ba61bdb6",
+    "@type": "Shape",
+    "targetClass": "HeightUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a8d267c2-1b2b-4ded-9a1a-6c0947ee8a2c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "measurementSystemId",
+        "@id": "ef1fd3ad-a1e5-4b1b-a020-b915cd35bf60",
+        "node": "9503249c-384a-4212-8d0d-712bdca393d2",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2fc35a9f-56f7-4bab-b676-64105bde370c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ca4bab07-cb1f-4ede-8888-0199e40399dd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d49ccbb8-a4ec-4c5c-9898-5f0cd5e16f82",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "heightUOMName",
+        "@id": "fc49f379-7a7e-42d2-8303-f7e1f4c22573",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "423be77f-6656-4fcf-9999-47f6adc444d1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "58a3df2f-9c4c-4bcb-a2e2-3b8339c2fe29",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "61d99501-318f-4c3c-b333-0b72967ce8c8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

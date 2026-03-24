@@ -1,0 +1,79 @@
+{
+  "@id": "Gender",
+  "name": "Gender",
+  "@type": "Class",
+  "description": "Female, Male, Other",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "11c4bce4-8e3f-38c0-83be-24f20287bbc1",
+    "@type": "Shape",
+    "targetClass": "Gender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "96d0a95c-3de5-373f-81c8-aba0cde5fd8e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c3c8be4a-1b51-4373-b939-a03a2d1db891",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5aac0e77-bbb3-397d-85eb-522d037beb14",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1d7c7b74-c70e-4393-bcfc-6f29943fd94a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "223b5c59-f4f2-392e-8cd3-74273aa19c91",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ea98cf1b-282e-49f9-b1f1-3660d73fa100",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "65fde678-2c0e-32cf-904b-df8cd222b426",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "27e338fe-75b5-31e8-b873-e6a93f09e1c9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

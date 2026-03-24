@@ -1,0 +1,101 @@
+{
+  "@id": "SalesOrderProductGroupAssignment",
+  "name": "Sales Order Product Group Assignment",
+  "@type": "Class",
+  "description": "Sales Order Product Group Assignment represents each Sales Order Product that is part of a Sales Order Product Group.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a1a86042-a565-43f3-9858-629f24a58784",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductGroupAssignment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e43cc3a1-ee1d-4383-b9f9-e3f8bdeeab04",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductId",
+        "@id": "b0e850bb-7fda-4020-8343-3f025bd53164",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductGroupId",
+        "@id": "af0ebf95-cd41-49f9-a969-4d0d9e5e1d5a",
+        "node": "7784c047-fed3-46e6-9898-afb9d189b411",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e2d2a917-2813-4f1f-b0b0-4432b7baab71",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f60c6e58-16d3-41b1-9e1e-69780f295f0e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "eeeb615a-c42b-4fdf-a5a5-a8ad65361250",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3d1c2747-ff4a-4313-b030-ab5a8e4568d0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c7132159-d45c-4dfd-8282-4b2f1350fa36",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "46db5922-4b64-46e6-b272-fdfca11dd3fd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c709b276-ac3d-4b2b-bd3d-a4343fcd2897",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

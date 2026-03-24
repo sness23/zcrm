@@ -1,0 +1,21 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "GeographyPropertyGroup",
+    "name": "Geography Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "geoCodeLatitude",
+        "@type": "Property",
+        "description": "Latitude to the center of address",
+        "name": "Geo Code Latitude",
+        "range": "DataType"
+    },{
+        "@id": "geoCodeLongitude",
+        "@type": "Property",
+        "description": "Longitude to the center of the address",
+        "name": "Geo Code Longitude",
+        "range": "DataType"
+    }
+    ]
+}

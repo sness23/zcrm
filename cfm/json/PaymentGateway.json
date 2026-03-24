@@ -1,0 +1,121 @@
+{
+  "@id": "PaymentGateway",
+  "name": "Payment Gateway",
+  "@type": "Class",
+  "description": "Holds the payment gateway merchant details which are used to interact external payment systems.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentGatewayCommentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "systemCredentialId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayProviderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2d0e1bae-275c-4141-bfff-d75d61515cff",
+    "@type": "Shape",
+    "targetClass": "PaymentGateway",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "31e58456-d369-44c4-abab-799cfcbdeb2f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemCredentialId",
+        "@id": "03310e92-a3c6-4a8a-b5b5-e9dcf884b9f4",
+        "node": "6614779f-1c5d-4565-bfff-b5325bbcbf71",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentGatewayStatusId",
+        "@id": "c314ae76-2814-4cac-a363-a3b3af9c549e",
+        "node": "e171e2cb-30f0-4c8c-8c0c-f0c962b39d19",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayProviderId",
+        "@id": "242c3fa1-ca81-4f2f-a363-20954d1855d0",
+        "node": "cc22e940-9ebf-4b2b-bfff-ac1e5a67b3ad",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayCommentText",
+        "@id": "6a79efb7-3903-4191-8242-11886ac0a427",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1c9964c8-2386-4676-8f4f-074c89e68098",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b2edbc5b-2959-44d4-bf7f-2b968b31f98f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b2772cda-6961-4878-92d2-ce052ea1cca4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "49349291-ba9f-4969-b5f5-c14a846af6ad",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "394deb0f-0d41-4323-b6b6-6b2720b70784",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "094b6661-9c4c-4b6b-b272-4a8f968ecd00",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a4c462aa-0fd1-46a6-8c4c-bca4f2bf14e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "@id": "SalesModel",
+  "name": "Sales Model",
+  "@type": "Class",
+  "description": "Sales Model defines standard ways of repeating sales, if that is applicable. Standard sales models are One-Time, Evergreen (automatic renewal) and Termed Subscription.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a442409a-f53d-4e2e-ba7a-1bc12d19a2be",
+    "@type": "Shape",
+    "targetClass": "SalesModel",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "58f8e769-afca-42c2-8949-025bb48e70a9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "5bcce0f1-75ed-4171-91d1-60b484ac6714",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a581545b-6e3c-4616-a9e9-61cc2ebb4b8a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "04fa6840-aa72-46b6-abab-5faf799ee384",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ba21bce4-6e07-4ada-bb3b-5712d7a48f3c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c9acc380-efd8-4c3c-bbbb-35003ab87786",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "d6ad26cf-9c28-4d7d-b777-9a5293a213b9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f64dda1a-59b9-4b6b-82c2-d862c85584b0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductSalesModels",
+        "node": "ea4e0105-b3d2-4525-aded-80292a94f8f0",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "ProductStyle",
+  "name": "Product Style",
+  "@type": "Class",
+  "description": "Is product generally deemed e.g. slim, regular",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e22ed16b-f873-3300-9c4b-99853038848e",
+    "@type": "Shape",
+    "targetClass": "ProductStyle",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "51f36f71-b997-4212-ad2d-da622d4af306",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "7c101367-6319-384f-b522-3ca1d4a38c7f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "cb970dc8-a8d6-4b8b-9393-d4e2ff8f5d95",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2d423323-487d-4434-9c1c-093f700392df",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b8b6e5e4-a9e9-3059-b22b-b780b0f5f05e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "80d58054-733a-48e8-8888-38a8c14c3907",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0d19dcb8-1f8c-4bfb-a7e7-f4e1851bf8bb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "176ea378-c74d-4efe-94d4-84bdb2c06957",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

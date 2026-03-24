@@ -1,0 +1,79 @@
+{
+  "@id": "ProductSecurityRequirement",
+  "name": "Product Security Requirement",
+  "@type": "Class",
+  "description": "Any special security required for handling or selling e.g. need security guards",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9362709c-3a34-3155-8a5b-1d54ede33c05",
+    "@type": "Shape",
+    "targetClass": "ProductSecurityRequirement",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "446a19da-ef43-31d0-aaa1-c8454a1c8710",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "87fb9fc4-b9c8-3688-a92d-484f233e27bb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "be290d27-fd64-3dae-850d-dc1a7d1c6269",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "cc008894-335e-4090-a5e5-07e5befe161a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fa6c0a37-f204-39f3-acee-b2a08050db0d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "912ee96f-536e-4f5f-8909-f21d183fc556",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "603d9db9-fab9-3d6a-8c04-368fe4ecae19",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "661e5966-e082-331d-89a5-3dfe247058d6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

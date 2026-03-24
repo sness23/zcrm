@@ -1,0 +1,80 @@
+{
+  "@id": "ProductAttribute",
+  "name": "Product Attribute",
+  "@type": "Class",
+  "description": "An attribute defined part of a product e.g. show lace length for product Snike",
+  "subClassOf": "DataAttribute",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e96be536-d615-386c-9052-352c9feb3082",
+    "@type": "Shape",
+    "targetClass": "ProductAttribute",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b800477d-ed0d-3cf7-a6ce-487101216e72",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "1faea9b7-2a9d-3eb2-9fe3-c8dd967c757c",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "76e48f50-002a-3e30-b836-9450266395eb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0cd4fc52-26e2-4434-9414-589ece50010b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e8c37bfe-4d6f-390a-84aa-9c0d919b753f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ab81bacf-2c07-4757-a7e7-6c4e33b5e817",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b5dbd920-d979-30e3-9568-72c47ee6eca5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1caa7db9-416f-3871-accc-07d90a21969c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

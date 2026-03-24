@@ -1,0 +1,132 @@
+{
+  "@id": "GatewayProviderPaymentMethodType",
+  "name": "Gateway Provider Payment Method Type",
+  "@type": "Class",
+  "description": "This setup entity maintains gateway supported payment methods and respective implementations.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentGatewayProviderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodTypeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8fb2c0fc-e9eb-4686-8b8b-8e2cf2d92f7f",
+    "@type": "Shape",
+    "targetClass": "GatewayProviderPaymentMethodType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a02d0e67-1eb1-4a9a-a666-c8e02afde4da",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodTypeId",
+        "@id": "ff949038-ecce-4131-9c5c-5dfb049da0e0",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8098f61c-acc9-4aba-a020-c57ea363392e"
+              },
+              {
+                "@id": "9779dc3a-2073-4fef-8e8e-3022bbe9afe2"
+              },
+              {
+                "@id": "7638adb1-e8d9-4dfd-8b0b-ca9dfbd48f6e"
+              },
+              {
+                "@id": "d71675a6-ef0c-4373-8202-da2097dc6e97"
+              },
+              {
+                "@id": "ee988b63-7ce2-47e7-ae2e-240aa4f2c1d5"
+              },
+              {
+                "@id": "3fc674ae-cdf8-44c4-a262-a7adfc7e738c"
+              },
+              {
+                "@id": "421afded-28c7-3c9b-9663-6bf71d6e7cba"
+              },
+              {
+                "@id": "0328a352-04b0-30f7-b21e-072ce8773b45"
+              },
+              {
+                "@id": "6b63a00e-7e9c-4c5c-bd3d-6cdec25ada84"
+              },
+              {
+                "@id": "65b55e8c-49b8-4cfc-9a9a-ad2794728e3b"
+              },
+              {
+                "@id": "1dcf6a90-d49d-4080-a626-80af26fd471c"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayProviderId",
+        "@id": "2a287b5e-f61f-4aba-bdfd-ff4875ebed1e",
+        "node": "cc22e940-9ebf-4b2b-bfff-ac1e5a67b3ad",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a5372254-f908-4a0a-8040-adef289f630d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "25198640-da37-4494-bbbb-9b86b29a9eca",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "09de616f-b6e8-4171-8aca-38a06deb05cc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9d055f66-161f-4525-abeb-4ef9dc229412",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "829b9a66-9a53-4a4a-bc3c-f40fbdd810d9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e3ca7f85-e644-4909-adad-7779c13de025",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

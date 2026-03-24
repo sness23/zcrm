@@ -1,0 +1,68 @@
+{
+  "@id": "ResidenceCaptureMethod",
+  "name": "Residence Capture Method",
+  "@type": "Class",
+  "description": "How was residence country captured i.e. user provided or derived based on IP address",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3d87c68e-08dc-33b1-96d2-5b26ea971f9b",
+    "@type": "Shape",
+    "targetClass": "ResidenceCaptureMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5971fcb2-0fbe-4080-b8f8-54b34fe601f8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c8ea84de-2e93-45a5-a828-404238415a5c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c14df8db-e624-4484-9757-9eb70e1f720d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e513ecde-7ef6-4545-9999-59d3e0ded063",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f6177c33-94ff-4ded-a929-ce16975917b1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a94cb9e0-8227-4fbf-8b8b-d65debeabded",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "87900f03-3477-40e0-8545-3bc3c128e43e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

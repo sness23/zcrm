@@ -1,0 +1,87 @@
+{
+  "@id": "AttributeValue",
+  "name": "Attribute Value",
+  "@type": "Class",
+  "description": "A predefine set of values for a product attribute e.g. shoe lace length 10, 12, 14 centimeter",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "attributeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "defaultImageId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f6ed0882-f86c-3b62-8f6e-6301d6262cc2",
+    "@type": "Shape",
+    "targetClass": "AttributeValue",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "62f00a3a-6a79-30c3-9e30-0577da0cf284",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "22f114a9-9020-3cf0-b302-8eb42a361b99",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b9ee3831-849c-4898-a020-7e6ce176fdf1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ead86a02-c3d8-330a-b9b6-3abfc424e475",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c79ba9d3-d4f0-4929-b575-f9e1739907a3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "880686bd-bcce-3d57-b881-200ac7314164",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "defaultImageId",
+        "@id": "bb4f476b-01b7-3fba-8596-cfaedbf1c4a8",
+        "node": "e2d7d201-a749-3981-bfb6-57ba4026bcd5",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3886caf2-20f9-3b2f-90a3-69ca731810cd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "AttributeValueTranslations",
+        "node": "7fc6820b-71e1-323c-b2dc-ec510b0ef615",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "OwnershipVerificationType",
+  "name": "Ownership Verification Type",
+  "@type": "Class",
+  "description": "Methods for verifying a customer's ownership of an asset.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8906d287-543e-4a2a-a363-b734dc96d6f6",
+    "@type": "Shape",
+    "targetClass": "OwnershipVerificationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a63d22e6-6544-4000-a565-7040011fe31f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3042a831-d40f-46d6-befe-b29bd8a930a6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "560eaaae-e645-4151-8303-2e52960d8b92",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "053afdce-a12e-4c7c-bc7c-261fec2a8cca",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0aaa7a68-b65e-4c8c-b8f8-b62685f607b6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "eb18fb84-3ba9-4d3d-b2b2-3a483f666fc7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e6f2fd95-54c8-4dfd-ab2b-0e4ecc90e609",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

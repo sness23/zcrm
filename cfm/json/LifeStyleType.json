@@ -1,0 +1,79 @@
+{
+  "@id": "LifeStyleType",
+  "name": "Life Style Type",
+  "@type": "Class",
+  "description": "Life style e.g. modern, corporate, suburban, religious, workaholic, outdoors",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "lifeStyleTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3e2c35be-d804-3057-b1e7-10f8f94bcebd",
+    "@type": "Shape",
+    "targetClass": "LifeStyleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a7798008-a56c-387c-805c-b953a7f57344",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lifeStyleTypeName",
+        "@id": "ed52b300-f043-3227-8c75-5e076f9d892c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2e1e60f4-aa84-3ea7-9809-cb1ab507d8b3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6270b57e-7db2-44a4-b333-4fc13047b931",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9679a1c0-8da3-372e-ba32-d29b3dd4768c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2d8348b0-af06-4d8d-b9f9-117500e476ae",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "832d9c0a-6ed8-3c11-9f8f-ddf19083cfe3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "bcf4e136-0f0b-3d45-92aa-bc044a069a6e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "BankCheckType",
+  "name": "Bank Check Type",
+  "@type": "Class",
+  "description": "Check types include Personal and Business",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c9a68169-f85f-48a8-8181-c354a09835f3",
+    "@type": "Shape",
+    "targetClass": "BankCheckType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d5bc8482-723c-4626-aeee-d429376a9937",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ee7a51cc-a931-4363-aaea-70cb0c2adf4d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "703aabc3-b6f9-42b2-9b1b-67677f0f6d09",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6e4b08bf-ccac-4c7c-9515-ce2ec0789964",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "8164a4e6-5e1e-4090-9252-9c074f38de89",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "76a68b6a-e78e-4888-80c0-6471c6df3d37",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "188c1dd7-342b-4f7f-81c1-b70f22a962b3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "SocialNetworkProvider",
+  "name": "Social Network Provider",
+  "@type": "Class",
+  "description": "Who provides the service for the social persona e.g. Twitter, Facebook",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialNetworkProviderName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7064203e-8a40-3ece-8405-1211a8abc5c1",
+    "@type": "Shape",
+    "targetClass": "SocialNetworkProvider",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "40a614ba-8f30-37e6-a796-365259207868",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialNetworkProviderName",
+        "@id": "ffb300f2-c5c5-3d63-b83b-ccaa7ff8df00",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ddb0bfe4-d9bc-3552-9606-6f7956b4d668",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4b8ddb25-450e-4f8f-9ada-c78e3f31a8ed",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1ca864c5-b6f6-3cff-b2ca-27b86f1effa9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2eb0142d-1a1c-4d7d-9959-45b1edf27934",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "784f8c78-38a0-359a-8434-c57fdcb794de",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "192b38b9-7bc3-3b9b-8373-b6bbe6aad05a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "ProductPattern",
+  "name": "Product Pattern",
+  "@type": "Class",
+  "description": "Is product in a certain pattern e.g. checkered, striped",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9ca0be31-0280-3c98-acf4-debb28d46730",
+    "@type": "Shape",
+    "targetClass": "ProductPattern",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "46172163-b015-4424-9797-9b776e3195b0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "9ffd0042-038e-3fbf-a641-6874bacbb2c8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f7b0fea8-4ee6-4858-ac2c-d567a7e58767",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f16fd3b9-0577-4e9e-9b1b-3af63aa78e9d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "22fc1c6d-b76b-3ef5-b323-f3ed49d1c2e7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2e050c7d-f3fb-4e9e-8dcd-3772d4968178",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2483617a-0658-43b3-adad-29de3948a0d9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0981ef56-4a0b-4717-9050-84db75eaa68c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

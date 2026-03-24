@@ -1,0 +1,79 @@
+{
+  "@id": "LeadStatus",
+  "name": "Lead Status",
+  "@type": "Class",
+  "description": "Status code for this converted lead e.g. open, worked, closed",
+  "subjectArea": "Party",
+  "entityGroup": "Lead",
+  "properties": [
+    {
+      "@id": "leadStatusName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3ab83dd2-5c46-381a-b9a6-d8e609e98322",
+    "@type": "Shape",
+    "targetClass": "LeadStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "dddd4258-129d-309c-906b-8667bd15c5c9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "leadStatusName",
+        "@id": "99af4752-a64c-3521-be44-0c4360ade57b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "aabd2d84-d473-39bf-8fb8-5678fc128c98",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ea239d0c-2b1c-4f5f-bfff-727e65fd0017",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fc7e89c6-ca14-3310-bbe7-2b47aab13141",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b313ac01-2f9c-4fbf-9fdf-a083f9fcc86f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ca62da3f-a2df-3bd9-a5e9-0c3365939b81",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "11a06491-2001-3fa3-979c-79a95d266286",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

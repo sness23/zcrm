@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderProductStatus",
+  "name": "Sales Order Product Status",
+  "@type": "Class",
+  "description": "The status of a line component of a Sales Order",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e2f084fb-1ae2-3c3b-84a1-54186da19db5",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3ae01ee9-f1d7-33f5-bafb-79a174fb268b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a77cb351-98b4-3883-bc60-818c1bd6620c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "82fbaa40-65c7-332d-ab9f-ba7b284477ad",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "17564e4c-9e45-45f5-a323-f52b1fb8caf5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "bf772371-7ecc-39d8-999f-22c2a7008c2d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "597fdc4f-3826-45b5-9656-820808f8aeb0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b477801a-d211-37da-bd44-533019fb80a8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "641e76e8-7d9b-310d-a1d7-7244dbde03a2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

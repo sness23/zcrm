@@ -1,0 +1,80 @@
+{
+  "@id": "VoucherExpirationType",
+  "name": "Voucher Expiration Type",
+  "@type": "Class",
+  "description": "Voucher Expiration Type: fixed date or Expiration Period UOM.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "11e13307-b83d-4646-b232-61cc10b247f1",
+    "@type": "Shape",
+    "targetClass": "VoucherExpirationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d28acad0-066b-46f6-8242-d307ecefdd2e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a95ac6e8-697c-47b7-8e0e-300f4711768a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "19df3792-9cd8-4070-b0b0-e93e2934b119",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "16c7b9d6-425a-4a9a-9b1b-50b5bde69a7f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2bd40477-738e-4bab-a6e6-6c99ba382141",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e2924550-912f-4bab-84c4-d5617d52e660",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "af978424-e2f3-4d7d-8c0c-a1251d3adad6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6d0dc7ff-e271-4d2d-b232-3bfa1da2d176",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

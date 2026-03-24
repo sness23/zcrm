@@ -1,0 +1,246 @@
+{
+  "@id": "PersonEmployment",
+  "name": "Person Employment",
+  "@type": "Class",
+  "description": "Information about an employee",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "employerAddressLine4",
+      "@type": "Property"
+    },
+    {
+      "@id": "positionText",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerCountryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerAddressLine1",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerAddressLine3",
+      "@type": "Property"
+    },
+    {
+      "@id": "occupationText",
+      "@type": "Property"
+    },
+    {
+      "@id": "endDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerName",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerPhoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "startDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerStateProvinceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerContactPointAddressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "employmentStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerPostalCodeText",
+      "@type": "Property"
+    },
+    {
+      "@id": "annualIncome",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerAddressLine2",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    },
+    {
+      "@id": "employerCityName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b9d8a679-fee6-3baa-b7dd-667ea4c6bf4c",
+    "@type": "Shape",
+    "targetClass": "PersonEmployment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "767b778e-8cd7-3e64-8b7c-136a779fbeb2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "startDate",
+        "@id": "657242ca-6ab7-39ed-af84-1498328b1a00",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "positionText",
+        "@id": "59f9e07a-d4b9-3120-9dd5-84abe9cee9c3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "occupationText",
+        "@id": "4688ce2e-73a4-38e1-8e29-c822ad58b2a1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fab3a939-6a1e-31ad-a2b5-efe73705bccf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "bb682d61-7562-3599-9f82-f7aebbf97a7b",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0bd2bfa6-13ba-47b7-bfff-cfadbe513322",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "93a7ec02-cb5e-3b32-9d80-96bd1781f3e3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7eb1e192-00db-4888-9b9b-85ac74b8dd4b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8989f795-1667-3b52-b7ee-e9b2ab789d6d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "endDate",
+        "@id": "efa819ae-3a6f-367e-a20a-ebe4509dcb73",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "employmentStatusId",
+        "@id": "dd018b7a-86df-31f0-ab5c-8093c3877004",
+        "node": "8b01627b-a341-36ee-a13b-6d98d04d3e84",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "employerPostalCodeText",
+        "@id": "84708337-f934-3e5d-bee4-ab21c827edef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerPhoneNumber",
+        "@id": "94c3ad41-b593-3d5a-8048-de3e006fd797",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "employerName",
+        "@id": "f1f5d424-0491-3756-935c-6218462c9fbb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "employerContactPointAddressId",
+        "@id": "5d802554-9cda-374d-88a9-cf690fa65c93",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerCityName",
+        "@id": "e09b77d3-2143-36fe-8dab-4e14b15f9106",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerAddressLine4",
+        "@id": "3d55d944-f967-3ffc-a057-72692885b930",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerAddressLine3",
+        "@id": "d60dbba1-e796-387c-a81b-b5565323af96",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerAddressLine2",
+        "@id": "03ed6f9c-89a4-38ae-a0a7-543fd757de4e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employerAddressLine1",
+        "@id": "0f73fb1b-93a6-38c4-a230-c8f8a2176b88",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3a32f8b9-aab9-39fe-8618-fcee2d9db3b2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "annualIncome",
+        "@id": "08f7d21c-aa62-3f21-9ad9-81b4b04955b1",
+        "datatype": "xsd:integer",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

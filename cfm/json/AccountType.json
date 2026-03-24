@@ -1,0 +1,79 @@
+{
+  "@id": "AccountType",
+  "name": "Account Type",
+  "@type": "Class",
+  "description": "What type of trade account e.g. loyalty account, business credit account, layaway, short term rental",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "accountTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2a2aae1e-d305-3ce7-bfa5-bdafd396532e",
+    "@type": "Shape",
+    "targetClass": "AccountType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6e4538c9-aa00-4f8f-99d9-3e9694df26a8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "25a5dc4f-9521-4050-bb7b-c65d981a73dd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b2db6dca-0ef0-4767-8a4a-c412df62451b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1026e8c8-ce5c-3c0d-aade-2b33e5fd54d7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9610f4b4-b6b3-4c0c-a323-4f93921dcd51",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "16ec8b31-d31b-43c3-9797-bcbadcbe3ef3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7f093202-1b8d-4808-bafa-740349773a40",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountTypeName",
+        "@id": "18127a95-2de7-3e33-afa7-5e8bcf5a09c7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

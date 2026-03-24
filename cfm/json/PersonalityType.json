@@ -1,0 +1,79 @@
+{
+  "@id": "PersonalityType",
+  "name": "Personality Type",
+  "@type": "Class",
+  "description": "Personality e.g. impulsive, compulsive, authoritative, ambitious, introverted",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "personalityTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "59b53c67-21d9-3a7f-b2d4-e2002e5ef535",
+    "@type": "Shape",
+    "targetClass": "PersonalityType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a727afd9-c367-39e9-a446-e60b9a313bed",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personalityTypeName",
+        "@id": "dee3bf89-2b2b-353c-b19e-4037672c95dc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "dd29abf9-bb64-3682-9167-50cbdec3a945",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "284642cf-f374-4101-8b8b-8232a90f9d22",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8089dc0c-c197-305c-94cd-9e45d624649f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "14b60cea-6c3b-4707-ac2c-b14859cdb11d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "28945034-60fe-3d95-81ec-ec4880581798",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a5890070-7c7d-301f-8459-a6cca9248ad3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "@id": "TaxExemptionCertificate",
+  "name": "Tax Exemption Certificate",
+  "@type": "Class",
+  "description": "Documentation that attests that a person or organization is exempt from certain forms of taxation.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "exemptionCertificateNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "issuerName",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "exemptionEndDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "exemptionBeginDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d5e457ad-1410-4040-a2a2-5c1895cd426b",
+    "@type": "Shape",
+    "targetClass": "TaxExemptionCertificate",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "56e8d9ef-13d7-4aba-8f8f-9dd3a9a743a3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "64e567ba-6d52-4b5b-bebe-5363f10419ca",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "dbb74fbc-1fd0-4494-8242-502a07e393b4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "issuerName",
+        "@id": "1f237a37-098a-4e7e-9f1f-03dbf837e467",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a011ea99-19bc-4c1c-91d1-ad77b6bc52b4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0a7d29b7-2976-4a9a-8848-0b51a995d265",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3c0626e9-34e8-43a3-be7e-08766be14a44",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2f1b9314-7afe-4cec-9b1b-95739cd16272",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "exemptionEndDate",
+        "@id": "8306034c-56eb-40b0-b737-34277b282b90",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "exemptionCertificateNumber",
+        "@id": "47302e6b-c2cf-4444-a1a1-da8705f5ad21",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "exemptionBeginDate",
+        "@id": "22ddd227-c0f3-4cac-89c9-6b7c412d8688",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "c3bb87ab-087f-4aca-8141-6a7c480f7c14",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d6b593d6-8c18-4545-a5a5-39f41265abb2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

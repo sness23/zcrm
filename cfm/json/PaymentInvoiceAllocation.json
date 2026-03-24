@@ -1,0 +1,111 @@
+{
+  "@id": "PaymentInvoiceAllocation",
+  "name": "Payment Invoice Allocation",
+  "@type": "Class",
+  "description": "Facilitates applying a Payment Application to the line items of an Invoice.",
+  "subClassOf": "PaymentAllocation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentInvoiceApplicationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentInvoiceAllocationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "invoiceBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b67f7b58-f309-4434-9a1a-e49a37b26f0b",
+    "@type": "Shape",
+    "targetClass": "PaymentInvoiceAllocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "33f99a80-85de-48a8-8141-6f0ffda43a09",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentInvoiceApplicationId",
+        "@id": "965c8cbd-3d09-48d8-bd7d-5ca5baa5f63a",
+        "node": "e8a4748d-55c2-4727-b7f7-2032f674bdb0",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentInvoiceAllocationName",
+        "@id": "24d612c2-67cb-4ece-9454-6cb303837a9c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "724f069a-7627-4fef-9cdc-7115ceb89671",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "invoiceBalanceAmount",
+        "@id": "87ff90bd-9d2c-4e5e-a6e6-c88cd82b5438",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "becec7ad-7859-4989-a8e8-e988d48142c8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "86cbabb9-a8bf-47f7-b333-d7502d914d74",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "104a9f12-a271-46d6-b939-a1380c7d10e8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d1c10444-d0b2-45a5-9ddd-ba3e66141551",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6013c613-0e43-4969-9e5e-15c703f20e7b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "appliedAmount",
+        "@id": "3022e9ca-7f0e-4737-8181-07fdb00d1eca",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

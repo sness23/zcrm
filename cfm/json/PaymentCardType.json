@@ -1,0 +1,78 @@
+{
+  "@id": "PaymentCardType",
+  "name": "Payment Card Type",
+  "@type": "Class",
+  "description": "The clearing house such as Visa or Mastercard that supports the payment card.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentCardTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "da81de2d-27f0-3e1a-93be-a6d833e5434e",
+    "@type": "Shape",
+    "targetClass": "PaymentCardType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1bed3a72-1a7d-4a5a-8686-5a7fab4cc468",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentCardTypeName",
+        "@id": "c7ab6c8c-326c-4717-9f9f-0b19b4b5fcd8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2822f6b4-1ef8-47a7-b272-c9286576aa83",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c9f57c87-5fc6-42f2-9353-7589a5be6eb4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "431c3503-afaa-4beb-b0f0-38194cde466e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "29e0999a-308b-4cec-8f4f-87ceefb3aeec",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f27f3c6f-1b31-45e5-a929-bb3384a8ce6f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4bd4b439-fe36-4404-8303-0d061758a288",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

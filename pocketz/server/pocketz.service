@@ -1,0 +1,32 @@
+[Unit]
+Description=Pocketz URL Capture Service
+Documentation=https://github.com/sness23/pocketz
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=sness
+Group=sness
+WorkingDirectory=$HOME/github/sness23/pocketz/server
+
+# Main process
+ExecStart=/usr/bin/node server.js
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Environment configuration
+EnvironmentFile=/etc/pocketz/pocketz.env
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pocketz
+
+# Security
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

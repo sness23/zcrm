@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentPolicyStatus",
+  "name": "Payment Policy Status",
+  "@type": "Class",
+  "description": "The state of readiness or availability of a Payment Policy to be used in payment transactions. Enum values are: Active, Inactive",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "15a548e5-652a-4252-8606-7f1ab7557a56",
+    "@type": "Shape",
+    "targetClass": "PaymentPolicyStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "853cd943-7ccb-4eee-a8a8-78d7cf29ba61",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "5d9265da-5d16-4929-9c1c-5d61b5eaf30e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ca80c92f-f517-4050-a161-58189f14fb6d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "cf1237cd-39d4-4525-9818-e5f7ef52bb3e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "44803dd3-bc56-4ccc-9a5a-aa9cb0797940",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5b4da81b-b7f8-4777-8404-47fc6b9c9af2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "3e826eab-590a-4353-8686-2195e16efda7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "caf7f88d-b0f5-41a1-85c5-95a28fbaa2c6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

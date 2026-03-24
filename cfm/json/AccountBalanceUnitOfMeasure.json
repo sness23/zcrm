@@ -1,0 +1,79 @@
+{
+  "@id": "AccountBalanceUnitOfMeasure",
+  "name": "Account Balance Unit of Measure",
+  "@type": "Class",
+  "description": "What is the unit of measure for current account balance e.g. money, points, miles, visits",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "accountBalanceUOMName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d5436d5a-229b-3440-8489-119417471d42",
+    "@type": "Shape",
+    "targetClass": "AccountBalanceUnitOfMeasure",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "bbede1c3-0916-3c44-9dee-138cdb22200c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d1634c74-0bdf-30cf-8062-17df6beaccb7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d5eb8678-4dc8-4010-9999-32bceb121771",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e66396fd-0d6f-3251-b237-96e7a28ffcf5",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ac428bc0-61c0-47f7-8585-95e70872c403",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "30d29cd7-5022-368c-9d11-328f6b93a85c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e8ad3e51-b473-3f72-9e68-8850d3c85bf1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountBalanceUOMName",
+        "@id": "d54315db-c37f-3db2-97e7-e2ca29c58901",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

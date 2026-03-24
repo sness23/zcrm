@@ -1,0 +1,119 @@
+{
+  "status": 0,
+  "result": {
+    "totalSize": 4,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "Contact",
+          "url": "/services/data/v59.0/sobjects/Contact/0031a00000Abc123"
+        },
+        "Id": "0031a00000Abc123",
+        "FirstName": "Jane",
+        "LastName": "Doe",
+        "Name": "Jane Doe",
+        "Title": "CEO",
+        "Department": "Executive",
+        "Email": "jane.doe@acme.com",
+        "Phone": "(415) 555-1235",
+        "MobilePhone": "(415) 555-9999",
+        "AccountId": "0011a00000Xyz123",
+        "ReportsToId": null,
+        "MailingStreet": "123 Main Street",
+        "MailingCity": "San Francisco",
+        "MailingState": "CA",
+        "MailingPostalCode": "94105",
+        "MailingCountry": "USA",
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-01-15T11:00:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-09-20T10:15:00.000+0000",
+        "LastModifiedById": "0051a00000User001",
+        "Description": "Primary contact at Acme Corporation. Decision maker for technology purchases."
+      },
+      {
+        "attributes": {
+          "type": "Contact",
+          "url": "/services/data/v59.0/sobjects/Contact/0031a00000Abc456"
+        },
+        "Id": "0031a00000Abc456",
+        "FirstName": "Bob",
+        "LastName": "Smith",
+        "Name": "Bob Smith",
+        "Title": "CTO",
+        "Department": "Engineering",
+        "Email": "bob.smith@acme.com",
+        "Phone": "(415) 555-1236",
+        "MobilePhone": "(415) 555-8888",
+        "AccountId": "0011a00000Xyz123",
+        "ReportsToId": "0031a00000Abc123",
+        "MailingStreet": "123 Main Street",
+        "MailingCity": "San Francisco",
+        "MailingState": "CA",
+        "MailingPostalCode": "94105",
+        "MailingCountry": "USA",
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-01-16T09:30:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-10-01T14:20:00.000+0000",
+        "LastModifiedById": "0051a00000User002",
+        "Description": "Technical decision maker. Reports to Jane Doe."
+      },
+      {
+        "attributes": {
+          "type": "Contact",
+          "url": "/services/data/v59.0/sobjects/Contact/0031a00000Abc789"
+        },
+        "Id": "0031a00000Abc789",
+        "FirstName": "Alice",
+        "LastName": "Johnson",
+        "Name": "Alice Johnson",
+        "Title": "VP of Operations",
+        "Department": "Operations",
+        "Email": "alice.johnson@globalindustries.com",
+        "Phone": "(212) 555-9877",
+        "MobilePhone": "(212) 555-7777",
+        "AccountId": "0011a00000Xyz456",
+        "ReportsToId": null,
+        "MailingStreet": "456 Park Avenue",
+        "MailingCity": "New York",
+        "MailingState": "NY",
+        "MailingPostalCode": "10022",
+        "MailingCountry": "USA",
+        "OwnerId": "0051a00000Owner2",
+        "CreatedDate": "2024-02-21T10:00:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-09-10T15:30:00.000+0000",
+        "LastModifiedById": "0051a00000User003"
+      },
+      {
+        "attributes": {
+          "type": "Contact",
+          "url": "/services/data/v59.0/sobjects/Contact/0031a00000Def123"
+        },
+        "Id": "0031a00000Def123",
+        "FirstName": "Charlie",
+        "LastName": "Brown",
+        "Name": "Charlie Brown",
+        "Title": "Founder & CEO",
+        "Department": "Executive",
+        "Email": "charlie@startupco.io",
+        "Phone": "(650) 555-4322",
+        "MobilePhone": "(650) 555-6666",
+        "AccountId": "0011a00000Xyz789",
+        "ReportsToId": null,
+        "MailingStreet": "789 Innovation Way",
+        "MailingCity": "Palo Alto",
+        "MailingState": "CA",
+        "MailingPostalCode": "94301",
+        "MailingCountry": "USA",
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-08-10T17:00:00.000+0000",
+        "CreatedById": "0051a00000User002",
+        "LastModifiedDate": "2024-10-03T11:15:00.000+0000",
+        "LastModifiedById": "0051a00000User002"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "@id": "TradeInTender",
+  "name": "Trade In Tender",
+  "@type": "Class",
+  "description": "Payment taking the form of goods or services, rather than a financial instrument, to compensate the Seller.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "65b55e8c-49b8-4cfc-9a9a-ad2794728e3b",
+    "@type": "Shape",
+    "targetClass": "TradeInTender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "12a4f7b9-e841-4999-b131-d8acde3847ae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9e28af5a-e852-42c2-8d8d-a74e83ad42ea",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a0b13cfb-695f-4010-9f5f-a3bb78100e21",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "82409d0b-9baa-4c4c-abeb-2b6a25f482da",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b2bb4bb9-2d34-4989-b676-37371823931e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8a0c62ae-f740-45d5-aded-0a87be9bc234",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b4c14511-b3e9-49f9-8585-93bcfff47eb4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

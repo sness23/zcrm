@@ -1,0 +1,79 @@
+{
+  "@id": "FreightTerms",
+  "name": "Freight Terms",
+  "@type": "Class",
+  "description": "Standard freight term e.g. Free On Board Shipping Point (FOB), CIF",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "freightTermsName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "afd6fedf-0684-380a-b7bb-c1c26638145e",
+    "@type": "Shape",
+    "targetClass": "FreightTerms",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "150fd785-1739-366a-961e-803464e58a7e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ba44fd99-d284-37da-a28b-2fe0243ab3a7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "8ebcb71b-5a88-4f2f-9959-ebcae9cc97a8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1006cecf-80bf-3e47-ace4-d8c3c92e5d8d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "freightTermsName",
+        "@id": "691c8317-6091-332a-a563-d21c4fd1d2bf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ca2f854e-a0ab-4909-b2b2-f9d060b83b66",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "badd8774-bf51-37ee-999b-eef5bfba5d27",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "42cf4785-e86c-3d95-836c-67757be57f2d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

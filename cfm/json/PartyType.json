@@ -1,0 +1,78 @@
+{
+  "@id": "PartyType",
+  "name": "Party Type",
+  "@type": "Class",
+  "description": "The type of party e.g. organization, individual, group, unknown",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b7565ee2-feea-31c6-8e8f-c84ec08cc370",
+    "@type": "Shape",
+    "targetClass": "PartyType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "73788e08-c28b-4fbf-8e8e-8a537ebe669a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "17bcf3af-f50d-4181-a626-9b13da36291f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "99209778-4539-4505-8a0a-7a0fa1bb1c24",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e9215e25-1352-4828-8343-62555747a2ec",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6d733fd2-ba76-4b7b-b7b7-9791d5844bd9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ea9800a9-26d3-4444-bfbf-e5cccfe535d5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f59d78c7-93b9-4222-9f9f-d0de840673da",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "191f065f-26c6-4202-8d0d-5235c5b7fb6c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

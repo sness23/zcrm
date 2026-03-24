@@ -1,0 +1,89 @@
+{
+  "@id": "PaymentGatewayAuthReversalLog",
+  "name": "Payment Gateway Authorization Reversal Log",
+  "@type": "Class",
+  "description": "A log record of all requests made to financial institutions, made via the payment gateway, to cancel payment authorizations.",
+  "subClassOf": "PaymentGatewayInteractionLog",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationReversalId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ac62aa31-55c2-4121-acac-709538862744",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayAuthReversalLog",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "77c46301-c856-4cdc-9616-ebdfd1c2a7b5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationReversalId",
+        "@id": "1636d4f2-71e5-4cbc-a969-1907438b9f0a",
+        "node": "1bb15276-0000-4fdf-9757-6b101ce480fb",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "3fb6ae81-af57-4353-8303-faae6fc389f1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "01ef0a19-4e27-4868-b878-0d4323463b46",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7b751e30-454e-4cec-ac2c-e20c2867b120",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ccf837d6-30b1-4262-8808-de9db1d36cec",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "47e57f62-fa03-4f3f-a020-fd396f0fdc72",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "60268d33-cecd-44a4-b676-21d4c72c3311",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "737517c0-db4b-4626-a020-01d85cce7daa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

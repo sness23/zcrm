@@ -1,0 +1,68 @@
+{
+  "@id": "MarketingRelatedProduct",
+  "name": "Marketing Related Product",
+  "@type": "Class",
+  "description": "Association of two products using only the Product Relationship Types which are valid for Marketing-type products.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2ac64d28-31b8-40e0-9494-ffae96638f76",
+    "@type": "Shape",
+    "targetClass": "MarketingRelatedProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4dd4f631-1613-4525-bf7f-d0a94a0e0860",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "cdd056c0-e7ea-48e8-83c3-048c61497382",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "523f4b15-decf-49e9-8000-993dda33c0bd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ce7b15db-0f08-4202-8484-31248343cf5f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2a6f26a4-9689-4aba-83c3-5734ea025a9b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "34cc4aaf-9f46-4e2e-b8b8-304f9239646d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9dc6316d-40ee-40d0-83c3-a692af2b6c8f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

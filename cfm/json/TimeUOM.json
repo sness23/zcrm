@@ -1,0 +1,79 @@
+{
+  "@id": "TimeUOM",
+  "name": "Time UOM",
+  "@type": "Class",
+  "description": "Time duration e.g. days, weeks, years",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "78e6e75a-4354-30e8-9803-741a0d98d1b5",
+    "@type": "Shape",
+    "targetClass": "TimeUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ecbb7aca-5b3e-4262-adad-0e417824b399",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "97f47fcd-d8af-3bbf-9996-f173f1339f0c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5cf5fc3f-5426-4181-a9e9-8e240203f9a5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2f618d00-dc60-4101-85c5-4bd5d0db169b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "18e4a845-7b71-3619-b976-b2ad2adf1f79",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "833f9a72-3876-4979-b272-098d58bdc55f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "96871262-a0e6-4b1b-9212-6a1fa4704862",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c405e12c-4ec4-4101-8787-cc8d1b57da3f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

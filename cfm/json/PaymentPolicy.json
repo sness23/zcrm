@@ -1,0 +1,117 @@
+{
+  "@id": "PaymentPolicy",
+  "name": "Payment Policy",
+  "@type": "Class",
+  "description": "This entity stores policy information for an org or an account which can be used to automate the process of payment application to invoice based on business needs.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentPolicyStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentPolicyTreatmentSelectionId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "af102a4e-df8a-4787-afaf-a4b84fba6a0c",
+    "@type": "Shape",
+    "targetClass": "PaymentPolicy",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a9001354-b897-4080-9818-cdce3bd7db29",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentPolicyTreatmentSelectionId",
+        "@id": "99bcedee-6268-40c0-b8b8-b17896ec1363",
+        "node": "1f75a968-5204-4b2b-9f5f-9c3ca54d39b9",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentPolicyStatusId",
+        "@id": "b3720f03-a4f5-4ece-baba-929f17178f49",
+        "node": "15a548e5-652a-4252-8606-7f1ab7557a56",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e4bec915-7cc8-46e6-9414-0a08b049ea27",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8b25193d-aa26-4f9f-9717-6859269ff3d6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "bb239a18-9958-4626-8808-d00c76a4147c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c1c98d69-ee6d-4bfb-b5b5-a0c598d1cbe9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4556eb66-2ca9-4e5e-8c0c-0823c1a6eb18",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "07ab5ff5-4ee3-4d1d-8686-0b8b9addf4b6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "60e00976-e786-4999-aaea-78c37a475343",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "441c702a-8ce3-4232-8c8c-f2115f41fc19",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentTreatments",
+        "node": "8c66c435-7484-4a6a-9ede-f02de8ab0b08",
+        "minCount": "1"
+      }
+    ]
+  }
+}

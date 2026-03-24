@@ -1,0 +1,93 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "PricingPropertyGroup",
+    "name": "Pricing Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "currencyCode",
+        "@type": "Property",
+        "description": "Currency code for the order. This currency code is used for all child objects such as the sales order product, sales order price adjustments, etc.",
+        "name": "Currency Code",
+        "range": "Currency"
+    },{
+        "@id": "orderinsuranceAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Order insurance Amount",
+        "name": "Order insurance Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "taxationPolicy",
+        "@type": "Property",
+        "description": "Enum for the type of tax calculation to use. VAT uses gross and US tax uses net.",
+        "name": "Taxation Policy",
+        "range": "DataType"
+    },{
+        "@id": "totalAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Total Amount",
+        "name": "Total Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "totalProductAmountCurrencyId",
+        "@type": "Property",
+        "description": "Currency for Total Product Amount",
+        "name": "Total Product Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "totalProductTaxAmountCurrencyId",
+        "@type": "Property",
+        "description": "Currency for Total Product Tax Amount",
+        "name": "Total Product Tax Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "discountAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Discount Amount",
+        "name": "Discount Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "listPriceAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for List Price Amount",
+        "name": "List Price Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "listPriceQuantityUOMId",
+        "@type": "Property",
+        "description": "The unit of measure for the list price when the product is a physical product. Box, case and palette could be examples... are some examples",
+        "name": "List Price Quantity Unit of Measure",
+        "range": "QuantityUOM"
+    },{
+        "@id": "listPriceTermUOMId",
+        "@type": "Property",
+        "description": "The unit of measure for the list price when the product is a subscription with a term. Yearly, quaterly, monthly, etc... are some examples",
+        "name": "List Price Term Unit of Measure",
+        "range": "ProductValidityTimePeriodUOM"
+    },{
+        "@id": "orderedQuantity",
+        "@type": "Property",
+        "description": "Number of units of this order product.",
+        "name": "Ordered Quantity",
+        "range": "DataType"
+    },{
+        "@id": "subscriptionRenewalMonthQuantity",
+        "@type": "Property",
+        "description": "Determines how often a new order is placed, in months, if this Order Item is a subscription.",
+        "name": "Subscription Renewal Month Quantity",
+        "range": "DataType"
+    },{
+        "@id": "unitPriceAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Unit Price Amount",
+        "name": "Unit Price Amount Currency",
+        "range": "Currency"
+    },{
+        "@id": "unitTaxAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Unit Tax Amount",
+        "name": "Unit Tax Amount Currency",
+        "range": "Currency"
+    }
+    ]
+}

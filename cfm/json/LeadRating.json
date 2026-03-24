@@ -1,0 +1,79 @@
+{
+  "@id": "LeadRating",
+  "name": "Lead Rating",
+  "@type": "Class",
+  "description": "Rating of the lead e.g. warm, cold",
+  "subjectArea": "Party",
+  "entityGroup": "Lead",
+  "properties": [
+    {
+      "@id": "leadRatingName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8fde03ba-df90-3fd0-8d93-99d869c24fca",
+    "@type": "Shape",
+    "targetClass": "LeadRating",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "14ad54bb-7c45-3f48-9d80-984f1601800a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "leadRatingName",
+        "@id": "0dd73427-b2d8-36a2-86cb-b7ca2f84a918",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0b2d4112-883a-39f9-87f4-d0464b1d0a3b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "83bf61d9-a29c-43d3-8545-79530c04637f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "95ef0cee-71f2-357c-9cdd-782097fe5e70",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5197c971-b4b4-4868-9c9c-24178696ea34",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f74191b9-dd1e-3cc2-ba2a-cbaf3b44ec68",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b7ef2edd-768c-3810-8f82-8096aefb9a1b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "@id": "AffiliationGroup",
+  "name": "Affiliation Group",
+  "@type": "Class",
+  "description": "An arbitrary, non legal entity, that group a set of parties e.g. The Local Neighborhood Watch Group, the Girl Scout Cookie Selling Group, All Volunteers of Dreamland",
+  "subClassOf": "Party",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f",
+    "@type": "Shape",
+    "targetClass": "AffiliationGroup",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "86d2396f-fb15-318d-aa4f-edd426547c41",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2c0c0fa2-3804-3a4d-9c1e-014b6d0ecee7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9d6812b8-d7b4-36a0-b56f-8225ebfa41e4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ab2c508f-1771-4a4a-8e0e-48d9e9c78489",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "49b1d02f-ee45-33e2-964b-ed3560011bd4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "479bd0fd-a60d-4888-b979-3b1dfa693438",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "3afb05c0-d244-3830-8e27-54e9b690d8e3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "610e8360-607c-3e8d-988c-e12bec0faa90",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "primaryAccountId",
+        "@id": "2b09d028-3806-3e8d-b535-84de73c15c91",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyTypeId",
+        "@id": "b9e4fe6f-e9a9-3e52-8c73-cefeab1157ce",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f"
+              },
+              {
+                "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1"
+              },
+              {
+                "@id": "4663a141-a405-38e8-a479-0607c0054909"
+              },
+              {
+                "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "b5870980-da7b-4454-9555-a23d6ecf993f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "noMergeReasonId",
+        "@id": "b277d008-4fc3-3b54-8a4d-ef69fde21a50",
+        "node": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+        "maxCount": "1"
+      },
+      {
+        "path": "globalPartyId",
+        "@id": "9e32edb4-a0a6-3023-9e5c-642cfa5ed7bb",
+        "node": "211175d5-0ebf-3a61-bab9-6c23c5d5f54f",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

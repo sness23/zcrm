@@ -1,0 +1,68 @@
+{
+  "@id": "QuantityScheduleType",
+  "name": "Quantity Schedule Type",
+  "@type": "Class",
+  "description": "The type of the quantity schedule, if the product has one i.e. Divide, Repeat",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9ad8e7ca-0a50-32a7-9d35-3553f24d5740",
+    "@type": "Shape",
+    "targetClass": "QuantityScheduleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ac22ef53-06ab-4f7f-b575-bc309a37ce38",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "91c2b56a-6c18-48e8-a868-598aea8b621c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5732b890-9d86-4858-b434-b54c312abf40",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "14d04ec8-d289-4959-b1f1-561d6a7c827e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "aad8baab-090b-4252-b434-84eae924caef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "acba0b00-5424-4dcd-8fcf-4742457855bf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9e60865a-0ddf-4414-9bdb-c61a2ffa38a1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

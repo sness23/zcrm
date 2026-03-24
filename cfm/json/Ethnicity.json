@@ -1,0 +1,79 @@
+{
+  "@id": "Ethnicity",
+  "name": "Ethnicity",
+  "@type": "Class",
+  "description": "Cultural background e.g. black, white, hispanic, asian, native american, mixed",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "ethnicityName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "12874a87-aab7-3d77-8298-ecb2c3f1c940",
+    "@type": "Shape",
+    "targetClass": "Ethnicity",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a128cb1c-9e24-3672-8b74-546318090dbb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "df6c3b82-6ff0-3df8-a55e-3e263b77e869",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a515525f-fffe-4969-9313-7a17985bdf15",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b34617d0-4e8a-3797-94c0-9463f171db3c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2db8d15e-0e9c-4beb-ba3a-18059e939e94",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8ea732a6-0f14-3bc3-88df-8ec9c08a673f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "ethnicityName",
+        "@id": "4727742e-f9de-3ec2-b4d7-83eb95bfcd4c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "158386ba-3a77-3219-9d09-15c799a6dc8e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

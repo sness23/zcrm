@@ -1,0 +1,77 @@
+{
+  "@id": "ProductServiceCampaign",
+  "name": "Product Service Campaign",
+  "@type": "Class",
+  "description": "A customer messaging plan related to repairs that a specific product requires",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "promotionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a6fcf26a-e516-4c5c-b0b0-1e2c69b46db2",
+    "@type": "Shape",
+    "targetClass": "ProductServiceCampaign",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b07bcb68-38b0-41e1-8303-090c386fc1c8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "7432f0fc-610c-47c7-8c8c-62e07f92948b",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "be8677d1-2cf7-4444-9919-ce2c72049c98",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e7b85490-ca86-4a7a-8545-a344f37a4ff2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5129e2b2-a7e2-4484-b5f5-e1ff6dd3ca8e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9b0df8fe-9fc3-4c6c-94d4-15d3ea51b86e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "86a6a6bd-f51f-41d1-a767-0a12f7609cfa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

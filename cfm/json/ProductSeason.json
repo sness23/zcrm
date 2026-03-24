@@ -1,0 +1,79 @@
+{
+  "@id": "ProductSeason",
+  "name": "Product Season",
+  "@type": "Class",
+  "description": "Is product intended for e.g. winter, summer",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e9e569f7-7a4c-32c7-ba31-72073ab47406",
+    "@type": "Shape",
+    "targetClass": "ProductSeason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "74bfcf2c-5cf1-4757-a5a5-f85eae22ec68",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "09d5358b-640a-3404-9fb3-f811a0900225",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "57ff1a27-7936-45b5-8f0f-06dc2e86b254",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f1e4b047-fa72-4f3f-a424-c51b0f677d0f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5682a4d3-3711-386b-ad02-668a9581df3c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c5ebd063-1c7d-46c6-8f8f-ec3dd9825d60",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "4947f3d1-16e8-4bfb-99d9-ff7752d59cc3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f103f15d-1b7e-4030-9191-45f279073e34",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

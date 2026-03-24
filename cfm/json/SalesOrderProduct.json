@@ -1,0 +1,739 @@
+{
+  "@id": "SalesOrderProduct",
+  "name": "Sales Order Product",
+  "@type": "Class",
+  "description": "A component of a Sales Order that identifies a product or service that will be sold to the customer",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "isAutomaticallyRenewed",
+      "@type": "Property"
+    },
+    {
+      "@id": "recurringPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "billingTreatmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isBonusProduct",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalLineAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalLineAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "giftOrderMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "unitPriceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "requestedEndDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductAdjustedTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "listPriceQuantityUOMId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDistributedTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "listPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDistributedAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderManualAdjustmentSubTotalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalUnitPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "giftRecipientTelephoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "adjustedDeliveryTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "originalOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderProductNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "quantityOrderedUOMId",
+      "@type": "Property"
+    },
+    {
+      "@id": "lineAdjustmentSubTotalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "requestedStartDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "unitTaxAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "segmentIndexNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalAdjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "segmentIndexId",
+      "@type": "Property"
+    },
+    {
+      "@id": "listPriceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "unitPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "listPriceTermUOMId",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderedQuantity",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "shippingCostAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "handlingCostAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDistributedAdjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalManualAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalProductTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "deliveryTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "quoteLineItemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "subscriptionTermUnitId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalRecurringPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "quantityFulfilled",
+      "@type": "Property"
+    },
+    {
+      "@id": "isBundleRoot",
+      "@type": "Property"
+    },
+    {
+      "@id": "commentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "allocatedQuantity",
+      "@type": "Property"
+    },
+    {
+      "@id": "subscriptionRenewalMonthQuantity",
+      "@type": "Property"
+    },
+    {
+      "@id": "availableQuantity",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderDeliveryGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderAdjustmentSubTotalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "pricebookEntryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "promisedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "shippingTaxAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalListPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "discountAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductReasonId",
+      "@type": "Property"
+    },
+    {
+      "@id": "sellerAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isGift",
+      "@type": "Property"
+    },
+    {
+      "@id": "provisioningDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "subscriptionTermQuantity",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProduct",
+    "properties": [
+      {
+        "path": "unitTaxAmountCurrency",
+        "@id": "34f49860-2998-3ade-b671-86cd549cb495",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "unitPriceAmountCurrency",
+        "@id": "d45e3eb6-7b51-310a-a14f-27654f72f617",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "unitPriceAmount",
+        "@id": "2b82b46d-bc49-3487-af0a-6c044ea15647",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalUnitPriceAmount",
+        "@id": "4ab532be-0324-44d4-8181-fee92c78d6aa",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalTaxAmount",
+        "@id": "571bfbeb-b7fa-44d4-b535-33fcd50d7c1f",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalRecurringPriceAmount",
+        "@id": "71724914-939c-4020-9f9f-48f021b1faaa",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalProductTaxAmount",
+        "@id": "8dd3d863-5743-4fdf-8dcd-41151b082479",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalPriceAmount",
+        "@id": "789c9faf-5e8b-4868-ac2c-246c763fa094",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalManualAdjustmentAmount",
+        "@id": "a1b3e719-cd55-4454-a8a8-3254c41e87f4",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalListPriceAmount",
+        "@id": "668d74ff-830c-4bcb-bdbd-5330e7585819",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalLineAmount",
+        "@id": "59dda693-1c19-4cfc-a8e8-14f613bb38ee",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalLineAdjustmentAmount",
+        "@id": "e702a770-8ccd-4f9f-85c5-57fda1eab2c9",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDistributedTaxAmount",
+        "@id": "533b7c6e-9086-49d9-a1e1-9d6d517f1fde",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDistributedAdjustmentTaxAmount",
+        "@id": "6a34b209-babb-4626-abab-33b0c578afa7",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDistributedAdjustmentAmount",
+        "@id": "05328aab-3b42-4b8b-9e5e-a963bfecbfbc",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalAdjustmentTaxAmount",
+        "@id": "29b55d01-79d3-4515-80c0-245b3b97dfd6",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalAdjustmentAmount",
+        "@id": "c8384a7d-552f-4585-afaf-3d80339dabd5",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "301bf4ac-5650-38d1-8caf-ac75f0380927",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "subscriptionTermUnitId",
+        "@id": "d20a1e42-0f04-4454-a1e1-a3756386352a",
+        "node": "277ad160-ac8f-3622-aa33-85c7950e340f",
+        "maxCount": "1"
+      },
+      {
+        "path": "subscriptionTermQuantity",
+        "@id": "fce90752-353a-4080-a4a4-81a37d77633c",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "subscriptionRenewalMonthQuantity",
+        "@id": "be778073-98b0-42c2-8f0f-764196c728f0",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "shippingTaxAmountCurrency",
+        "@id": "42bf3a9c-2466-3b0e-b7a8-4297151d7b07",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "shippingCostAmountCurrency",
+        "@id": "031e5770-95e8-3728-a078-177f1c0fc5a4",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "sellerAccountId",
+        "@id": "244abae6-1bbf-40b0-ba3a-5492af1b0510",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "segmentIndexNumber",
+        "@id": "098fb761-f414-4d0d-a363-0d0d02a0bce9",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "segmentIndexId",
+        "@id": "2332c42c-94fe-4efe-a4a4-b6cbafd12fdf",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesOrderProductStatusId",
+        "@id": "8b82d3a0-3dd9-373f-8de1-4e7b5fe19934",
+        "node": "e2f084fb-1ae2-3c3b-84a1-54186da19db5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductReasonId",
+        "@id": "bf5e421b-1c38-4414-9151-85c3f4c93862",
+        "node": "db79ecd1-bba1-4b5b-ac2c-0cc63ecf6b31",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesOrderProductAdjustedTaxAmount",
+        "@id": "9410098e-3ced-4fff-b1b1-268647a3fc42",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesOrderId",
+        "@id": "19dc24f3-8b5b-3bd2-8449-fd32b94551fa",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderDeliveryGroupId",
+        "@id": "789bd7f4-a142-49a9-8a4a-9dc3e1ebca67",
+        "node": "a749188b-b632-3d84-9ea4-1f106c97518e",
+        "maxCount": "1"
+      },
+      {
+        "path": "requestedStartDate",
+        "@id": "0acad2d7-e6c8-4a6a-9454-091b016f027d",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "requestedEndDate",
+        "@id": "e9440036-ceed-4faf-8949-73e0f70087fe",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "recurringPriceAmount",
+        "@id": "a272a7a3-2465-4fbf-9ddd-787c57166dba",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "quantityOrderedUOMId",
+        "@id": "8eddf9e5-6b2b-42e2-9696-4cd7ca395d74",
+        "node": "e5804eef-defe-3262-9ca9-a69179d5fad3",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "quantityFulfilled",
+        "@id": "84c1b435-7cf8-3363-a46d-75668dd07b6b",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "provisioningDate",
+        "@id": "1e5615a9-9d38-49a9-ae2e-ed445089bb83",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "promisedDate",
+        "@id": "72177c55-5929-39b2-b7c5-07d0819f3e9d",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "6971ac8f-5b57-3557-b0d5-4aa68a203054",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "originalOrderProductId",
+        "@id": "dba3f3f7-af9f-4707-af2f-8c04692074dc",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1"
+      },
+      {
+        "path": "orderProductNumber",
+        "@id": "702a46e6-c8cd-31c8-81e3-9ffc9b997948",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "orderManualAdjustmentSubTotalAmount",
+        "@id": "99e4af80-b9c5-4f6f-b1f1-e4a5ab37cb19",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "orderedQuantity",
+        "@id": "2c945556-6ff5-3772-a266-84f9127a9741",
+        "datatype": "xsd:decimal",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "orderAdjustmentSubTotalAmount",
+        "@id": "652d8b61-a897-4b3b-8545-28c45575f8b6",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "listPriceTermUOMId",
+        "@id": "1806a79c-9496-4666-8ece-8151da5ad485",
+        "node": "277ad160-ac8f-3622-aa33-85c7950e340f",
+        "maxCount": "1"
+      },
+      {
+        "path": "listPriceQuantityUOMId",
+        "@id": "b01ffc2b-f47c-44e4-8a8a-4a9eac3ccc59",
+        "node": "e5804eef-defe-3262-9ca9-a69179d5fad3",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "listPriceAmountCurrency",
+        "@id": "33e6105b-ae62-32ac-8c77-266f686636d3",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "listPriceAmount",
+        "@id": "d1498eba-6219-3069-aa7f-d8bf7b88ee2d",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "lineAdjustmentSubTotalAmount",
+        "@id": "cb7df6be-17f2-40f0-a3a3-7b1e50adda8d",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "36f41be3-6940-33d8-ab32-07a72d772039",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isGift",
+        "@id": "f11ebdb0-efd8-4878-b777-dd074b0aeca3",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isBundleRoot",
+        "@id": "b4e16151-19ff-4353-ba7a-ef3d52e733b5",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isBonusProduct",
+        "@id": "df2bcbcd-e3f8-41a1-9414-7c974602a1e8",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isAutomaticallyRenewed",
+        "@id": "5bc1aeba-7607-4000-a6a6-25354ee1a936",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "88805442-4b4b-4a9a-8f0f-59e29ea404ee",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "bb12e26b-2db9-3ea3-9b81-bb0910959bc3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "handlingCostAmountCurrency",
+        "@id": "46dd44c5-c54a-346e-9c1d-b6911b8f08cc",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "giftRecipientTelephoneNumber",
+        "@id": "5cb0f2a6-5ebf-42f2-a969-69fd9b438d80",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "giftOrderMessageText",
+        "@id": "b01020bf-1803-4787-96d6-7f2080a80acd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7dc0e0b7-0990-4aaa-9c5c-8c1a27ac158c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2120eb6c-7073-3ee7-8bef-2a4b12751a3b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "discountAmountCurrency",
+        "@id": "6059a863-3c16-3f85-9623-a70225185718",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "4f71196b-08f7-3977-a9f3-1fd9831e23a6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "deliveryTaxAmount",
+        "@id": "bb815d1a-f5a8-4cac-ae6e-83c4bc54c33b",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7643b66e-0f79-36a1-97fb-f396007b3636",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "commentText",
+        "@id": "cdda2302-a587-4d9d-98d8-bd4af7298a91",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "availableQuantity",
+        "@id": "f0450e7d-dc1b-31a2-9765-eb18d15ecbea",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "allocatedQuantity",
+        "@id": "86f28957-14bb-3527-b749-777c7fa2924e",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "adjustedDeliveryTaxAmount",
+        "@id": "b32f17f8-73a2-4f5f-8545-0ee57526184c",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "SalesOrderProductAttributeValues",
+        "node": "7d7e04ad-e125-4707-b5b5-46d4b53d2d4e",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductIdentifications",
+        "node": "bac5b306-f0ff-41b1-9e9e-2ed2639f3282",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductNotes",
+        "node": "7ec54e1f-369d-4f1f-97d7-5424492e612b",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductPriceAdjustments",
+        "node": "7d255f2b-21ec-4e0e-8383-bd08a2f9fe0a",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductRelatedProducts",
+        "node": "d4682e1b-8b23-4202-9555-9958a2196a3b",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductTaxes",
+        "node": "75c72c59-39c8-4c4c-b333-73f76ced30a1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

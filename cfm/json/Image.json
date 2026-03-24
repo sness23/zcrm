@@ -1,0 +1,110 @@
+{
+  "@id": "Image",
+  "name": "Image",
+  "@type": "Class",
+  "description": "Entity that holds Images",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "imageAlternateText",
+      "@type": "Property"
+    },
+    {
+      "@id": "imageViewType",
+      "@type": "Property"
+    },
+    {
+      "@id": "imageTitle",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "imageURL",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e2d7d201-a749-3981-bfb6-57ba4026bcd5",
+    "@type": "Shape",
+    "targetClass": "Image",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a6edb643-55da-334a-a6c1-82803cd5b002",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5d0f6430-b17b-31d8-ab2c-835ad5829d8e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "36ddbb1f-1597-4858-bfff-d2b597d4e117",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "imageViewType",
+        "@id": "3ff082dc-67db-3802-ba30-56123d2354d6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "imageURL",
+        "@id": "20e74b4b-519d-309e-9680-e4bb6c738c55",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "imageTitle",
+        "@id": "24404779-f857-3128-80ff-88d59a360545",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "imageAlternateText",
+        "@id": "bb800b58-8830-325e-b73d-f30370321c95",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b210c43e-5794-3167-8071-09b26e93cb90",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "de3ed338-586e-4aaa-b8b8-163f016e84ef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a4cf2cc8-ae2f-3cab-921c-a93d66da361f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "097482ab-0d08-35c7-afb9-4086e92b4b79",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

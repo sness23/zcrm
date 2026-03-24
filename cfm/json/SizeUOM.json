@@ -1,0 +1,89 @@
+{
+  "@id": "SizeUOM",
+  "name": "Size UOM",
+  "@type": "Class",
+  "description": "Sizes available to select e.g. XS, S, M, L, XL",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "measurementSystemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "da30fe0a-a99b-3cdf-9b9d-ec651cde2867",
+    "@type": "Shape",
+    "targetClass": "SizeUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4ff205ba-72b2-3d47-ba85-d6d7348f5969",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "17412c86-d796-399e-815d-580ca6e0af7b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "measurementSystemId",
+        "@id": "47c88207-4f69-4676-bb3b-7dd7c9560a62",
+        "node": "9503249c-384a-4212-8d0d-712bdca393d2",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3eabd296-77c0-3ac1-a45c-f13bf5977b1d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4553d8cd-1d1e-4282-8f8f-235e100ad73a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "723d8ae4-863c-35f1-bfcb-96d6de3caac0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d64a4b64-a92d-47b7-a0e0-9bdfde342dab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e2838637-7b7d-3b06-89c8-52eb73a8909a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1cd85add-8e11-3690-bccc-5c7f2a531076",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

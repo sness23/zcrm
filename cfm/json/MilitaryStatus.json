@@ -1,0 +1,79 @@
+{
+  "@id": "MilitaryStatus",
+  "name": "Military Status",
+  "@type": "Class",
+  "description": "Unknown, no military service, vietnam veteran, other veteran, active reserve, retired, active duty",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "militaryStatusName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "20bdfd2e-b765-3a66-93d8-7ccc54dda95c",
+    "@type": "Shape",
+    "targetClass": "MilitaryStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "fcc821ad-d77c-3491-ae96-79aa55c1833b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "militaryStatusName",
+        "@id": "c86ca4e4-be5b-3010-9716-66e90a71a566",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e0a963ec-e836-330a-bba8-9fbc84ddf1d3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7898c007-cb0b-4393-ac2c-5ad3898fe2cd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "dcab37c4-8826-3228-8674-6a007e7882bf",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5d2eee1d-9fa1-4272-b373-d2d42ce2275c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c177ac99-77e6-3ad0-b5f4-1d16346229af",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "53b36496-53fc-393e-b9f7-9011a42a6c2a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

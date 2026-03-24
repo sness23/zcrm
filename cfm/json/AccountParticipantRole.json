@@ -1,0 +1,79 @@
+{
+  "@id": "AccountParticipantRole",
+  "name": "Account Participant Role",
+  "@type": "Class",
+  "description": "Jobs or tasks that a system user may play with respect to one or more Accounts. For example Account Owner, Account Viewer or Account Servicer",
+  "subjectArea": "Account",
+  "entityGroup": "AccountConfiguration",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "edd86c1f-a211-4eae-bdfd-42a515783052",
+    "@type": "Shape",
+    "targetClass": "AccountParticipantRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7f4c2c14-9896-4424-bc7c-f50f5358d41b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "97573dbf-f85e-4d2d-b3b3-685bb73c549b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "500b44ca-2dd2-41c1-b474-b137da11ffdd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3dc1d5f3-0cc7-4aca-8c8c-ec2aef99c306",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "669ff3ca-882d-4bcb-8f8f-b63857026ff2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "590bb634-54d3-49e9-b1f1-23a50785c5ca",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "8032fb02-44e5-4c3c-a363-39b88a8f725d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f5585898-d994-4777-ab2b-6a2d986fd71f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

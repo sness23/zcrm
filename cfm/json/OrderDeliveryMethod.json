@@ -1,0 +1,100 @@
+{
+  "@id": "OrderDeliveryMethod",
+  "name": "Order Delivery Method",
+  "@type": "Class",
+  "description": "Standardized methods for transferring purchased products or services to the destination of fulfillment. Delivery methods are characterized by the means of transportation used, and by the delivering organization or group.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "externalSourceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalRecordId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b734fc6b-e50d-3066-a5a0-9344dddfd605",
+    "@type": "Shape",
+    "targetClass": "OrderDeliveryMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "724a172f-f410-42f2-a060-8056f72cf4c7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "ec5427c5-91db-46e6-b9b9-3987da149820",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "56ba9f8a-fc71-3876-9983-9f8f881893b9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "24a8d51b-b7a7-4424-a8a8-0849c1d91991",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "883eab72-e872-47f7-8e4e-0633c7840ad6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "93489809-ac1f-3d69-835e-d07b6e90da4e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4117a4ee-994b-44b4-a323-057756aa0b58",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a6264af6-07c8-4b0b-b575-ddc2db4d2b6b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "29d90388-141b-4777-b2f2-9911a646e48f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

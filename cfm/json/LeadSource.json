@@ -1,0 +1,79 @@
+{
+  "@id": "LeadSource",
+  "name": "Lead Source",
+  "@type": "Class",
+  "description": "Source from which the lead was obtained e.g. sales partner Western Outfitters Inc",
+  "subjectArea": "Party",
+  "entityGroup": "Lead",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "leadSourceName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8aa02fa0-bbf5-34a2-a36b-49dc81f32706",
+    "@type": "Shape",
+    "targetClass": "LeadSource",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "12f4ba29-42c2-32eb-9666-1b5830fa9fd5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "leadSourceName",
+        "@id": "936cb0f0-959f-389e-94ea-ca87bcd54dc3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "505cd87a-3453-3f9f-8b46-379ae9bf1a08",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a89095fc-9a46-4fef-9d1d-3cc0f2229281",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8bd7d455-40dc-33c3-8093-d49b7caf5e25",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c13ee47e-3b28-4a9a-92d2-47ea96c40dda",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "54ede97b-62e9-357c-9c48-257971c24c52",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cd259bad-6c05-3978-b32c-9887bcb445e2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

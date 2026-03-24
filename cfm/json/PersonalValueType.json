@@ -1,0 +1,79 @@
+{
+  "@id": "PersonalValueType",
+  "name": "Personal Value Type",
+  "@type": "Class",
+  "description": "Personal value e.g. family-oriented, materialistic, spiritual, idealistic, careerist",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "personalValueTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f4e9a31a-0df3-3a66-afd9-386a85a8c77b",
+    "@type": "Shape",
+    "targetClass": "PersonalValueType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ed0f2727-e1b1-37a1-ab45-16ddf2ee706f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personalValueTypeName",
+        "@id": "0c241fca-16f6-3741-bb89-c88f42d15505",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fdce2875-9645-345f-b036-46c340732963",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6371c26f-568f-4f6f-b8f8-cef1baff0bb8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ba48f264-078a-3de3-a2af-977c59f3cfac",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2512c980-42c5-4878-8444-904f0ae3e0f5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "be46a7db-4879-3ae9-a982-56eba91c159d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7ba40200-745f-3678-99e1-d147d23529ee",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

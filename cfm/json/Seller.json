@@ -1,0 +1,408 @@
+{
+  "@id": "Seller",
+  "name": "Seller",
+  "@type": "Class",
+  "description": "Information about a party playing role of seller e.g. customer satisfaction score",
+  "subClassOf": "PartyRole",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "jointBusinessPlanExist",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "marketingDevelopmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "sellerTierId",
+      "@type": "Property"
+    },
+    {
+      "@id": "marketingDevelopmentAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "sellerTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "trainingParticipationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "newCustomerAcquisitionCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "opportunityInvolvementCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "leadGenerationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "eventParticipationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "productReturnRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryCityId",
+      "@type": "Property"
+    },
+    {
+      "@id": "opportunityWinRate",
+      "@type": "Property"
+    },
+    {
+      "@id": "successStoryCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "trialParticipationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "averageConvertedLeadAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "demonstationsGivenCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "communityParticipationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "estimatedPartnerGrossMargin",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryIndustryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditRating",
+      "@type": "Property"
+    },
+    {
+      "@id": "inventoryValueAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "trainingCertificactionCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "majorPostSaleSupportNeeded",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerSatisfactionScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "inventoryValueAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "systemLoginCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "documentationDownloadCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "averageConvertedLeadAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "satisfactionScore",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "247da134-f1e6-3a7b-95d2-5c6ba3d373a2",
+    "@type": "Shape",
+    "targetClass": "Seller",
+    "properties": [
+      {
+        "path": "trialParticipationCount",
+        "@id": "5ad571da-398f-3428-ae5f-a5ae81ed210b",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "trainingParticipationCount",
+        "@id": "dc0b198d-59c6-3a28-a816-7899334f522e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "trainingCertificactionCount",
+        "@id": "24c7b88a-ddbd-4999-b474-ca9a9bb3d950",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "100529ff-0ba4-3289-9f3c-6c5da3470e5e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemLoginCount",
+        "@id": "2c41bd01-5e22-315c-8e2b-8c6bf46ad9f1",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "successStoryCount",
+        "@id": "4efc8a37-a146-394d-ab0d-45b030beb0eb",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "sellerTypeId",
+        "@id": "c99f9506-7020-3b9a-8a75-27f66819924b",
+        "node": "0034174d-0ca3-37f0-af3e-dea5f167c8d1",
+        "maxCount": "1"
+      },
+      {
+        "path": "sellerTierId",
+        "@id": "a152951a-11fb-4d3d-9bdb-db087f327873",
+        "node": "118c5da0-6ca0-4707-aaea-8fa850a8c594",
+        "maxCount": "1"
+      },
+      {
+        "path": "satisfactionScore",
+        "@id": "d638bc8f-dbe1-3b79-a112-79fb14697c1d",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesAmountCurrency",
+        "@id": "4a4ef740-7629-3cd8-9a6e-ff778dab375c",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesAmount",
+        "@id": "e5a60ddc-1b93-39b6-8e3f-ba990e3a6381",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "productReturnRate",
+        "@id": "50ae6ad9-2783-3ce6-80bb-7c4118748770",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "c474730a-7147-4d3d-a6a6-cebb2dfd271f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "opportunityWinRate",
+        "@id": "840351f7-f6ec-3bfc-b5e6-3e302a72a726",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "opportunityInvolvementCount",
+        "@id": "bcb856d4-3871-3b96-a928-3de3ce887be0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "newCustomerAcquisitionCount",
+        "@id": "c8ca321c-4181-3a2a-b8da-2bbb4df675e0",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "marketingDevelopmentAmountCurrency",
+        "@id": "b6dec6f9-dae1-35e4-887d-026ae424b294",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "marketingDevelopmentAmount",
+        "@id": "c724957b-ca8a-3f6f-b4fa-59bc53c5c1c1",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "majorPostSaleSupportNeeded",
+        "@id": "76d02a3f-ab99-3de5-8c02-2e5629eef8cc",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "leadGenerationCount",
+        "@id": "5aae7cc6-6f43-3c58-ba56-3710b837f787",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "985119cc-71fa-319e-a58c-7037e7a7ad1d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "jointBusinessPlanExist",
+        "@id": "c1f888a6-e57a-3433-8bb0-099859a8dfbe",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "inventoryValueAmountCurrency",
+        "@id": "4e54cc51-4e7e-3e16-9c3e-174fc5a7147f",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "inventoryValueAmount",
+        "@id": "d27c8254-8f7e-3f28-bb9a-d491363668db",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c5064013-1cd2-4c5c-b4b4-22449d2b9a49",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9c6b365c-3049-3882-b953-45dcb2c03ec1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e7c831e2-c485-4c9c-9c9c-cfa0ca492721",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "4f2c96aa-16fb-3f6f-aabf-48a99f76f975",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "eventParticipationCount",
+        "@id": "d30fb9a0-5f1a-31a7-9b33-393f76bbec1c",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "estimatedPartnerGrossMargin",
+        "@id": "9c8e1b2a-a5c3-35bd-adef-8917a1679acd",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "documentationDownloadCount",
+        "@id": "2aa2a222-bff9-3ad5-8d7d-e8ddb707db2a",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "demonstationsGivenCount",
+        "@id": "f2cbccdf-f32c-4d3d-afaf-36ce94de70ab",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerSatisfactionScore",
+        "@id": "adb22d11-4ec6-338c-b705-aef68dd0bfbe",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditRating",
+        "@id": "d59e0834-d04e-3e1b-9d01-e40c0610219a",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "38bc1b35-6f56-317e-a6ef-58246ea7c49d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "communityParticipationCount",
+        "@id": "0eb0d180-ff7c-3cc1-baf0-7945fda721fd",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "averageConvertedLeadAmountCurrency",
+        "@id": "e7c9798a-d88e-3bbc-8268-bf499c630aa0",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "averageConvertedLeadAmount",
+        "@id": "555071e2-8c08-3097-bb25-89fe531c6055",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeToDate",
+        "@id": "a8cdec23-fe8f-36ba-91f1-db5cc6638d7a",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeFromDate",
+        "@id": "72790078-cc4e-3932-9bd7-ef18d8aa9784",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

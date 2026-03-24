@@ -1,0 +1,84 @@
+{
+  "@id": "EntitlementProduct",
+  "name": "Entitlement Product",
+  "@type": "Class",
+  "description": "The association of a Product with an Entitlement Policy",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "entitlementPolicyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4f20318d-2383-4909-aaaa-6e4350a23810",
+    "@type": "Shape",
+    "targetClass": "EntitlementProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "81c21aa4-927f-4303-b737-7e9cd4fe9ea2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "086c930e-ec67-4e6e-baba-a23434978e74",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c00025f8-6353-4ece-9656-1b6a28cc6dd0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "adf6fdff-d3be-44a4-a0a0-f4cdca14ae3b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "017907ea-d212-4727-9bdb-616b5179d12f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d30e26c5-b55c-4181-80c0-293b6e59558b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "entitlementPolicyId",
+        "@id": "9b936cdb-ec1e-4686-9b5b-469a88d3263f",
+        "node": "a0e35753-0ed8-4faf-a525-48373f13c793",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cc175699-7268-40a0-8d8d-5f34af9e5877",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

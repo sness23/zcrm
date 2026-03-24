@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderChangeType",
+  "name": "Sales Order Change Type",
+  "@type": "Class",
+  "description": "The reason for a revision of an earlier sales order, e.g. quantity change, new distributed adjustment, new line adjustmenmt, etc.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderChangeTypeCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "991626f7-c999-4010-8747-ef6d22442681",
+    "@type": "Shape",
+    "targetClass": "SalesOrderChangeType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0c27a131-937d-4b6b-b5b5-78185ef62237",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderChangeTypeCode",
+        "@id": "3727689e-37bf-44e4-abeb-e8aef585a8f1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "981b9b94-aee1-4232-b7b7-edebcb73fdcf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f48bbe53-029d-45d5-9c1c-e8067d79bb0a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "7324f9de-258e-4d8d-bafa-86186ecb5169",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0e1ed823-0853-4777-bfff-bb8d795e7220",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a21df092-6981-40a0-a626-c97d4450bdda",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d13f87a0-4def-4858-9696-1479024b3c91",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

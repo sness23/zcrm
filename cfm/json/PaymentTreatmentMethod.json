@@ -1,0 +1,101 @@
+{
+  "@id": "PaymentTreatmentMethod",
+  "name": "Payment Treatment Method",
+  "@type": "Class",
+  "description": "Represents a specific algorithm or method to apply. For example - pay for taxes first, pay for charges first, pay for oldest due invoice first etc. It can also point to a rule based on which application can be done. Treatment has a method.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentTreatmentMethodName",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentMethodDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentMethodCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "dfaf03f8-76a3-41a1-be7e-33b77631f79c",
+    "@type": "Shape",
+    "targetClass": "PaymentTreatmentMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d1a24cbd-c4ba-4484-a3a3-b2977745fc7e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentMethodName",
+        "@id": "f9265fcc-a5bb-4747-a5e5-0938c87b3041",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentMethodDescription",
+        "@id": "1f981d17-4dbd-4b0b-8b4b-2aacb1dcec37",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentMethodCode",
+        "@id": "dcfbebd1-4451-4efe-9f1f-25757e343a5f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b45516e3-5788-4beb-8b0b-f3029d590c03",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "07f1d385-05a4-4141-9c1c-f42574657aa9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a88e5abd-13c4-4c4c-9b5b-583e3911c8a9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7e384660-d2f4-40e0-9313-10056fc9fecc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "453024c4-c3d9-42b2-9151-fe74fb6fd427",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "5c89ec5c-5e97-4bcb-acec-0521bd524b0d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

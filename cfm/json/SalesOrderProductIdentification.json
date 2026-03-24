@@ -1,0 +1,112 @@
+{
+  "@id": "SalesOrderProductIdentification",
+  "name": "Sales Order Product Identification",
+  "@type": "Class",
+  "description": "Associates a form of Party Identification, such as a medical license, with a Sales Order Product. For any products that can be ordered, but which require a license or other form of identification, this records what that identification was.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyIdentificationtId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactPointAddressId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "bac5b306-f0ff-41b1-9e9e-2ed2639f3282",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductIdentification",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "15dd7d95-c5c0-4bfb-8242-b29dbd5f3c66",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductId",
+        "@id": "eda8fdf0-337a-4d6d-b434-7c7ade05aed5",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyIdentificationtId",
+        "@id": "2c327290-1e05-4757-9c9c-58372f99a5f6",
+        "node": "2b917855-5d55-3358-8cba-ee9e73588e0e",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "fe1f3bef-f9eb-48f8-9a9a-df840aaa15f4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1ef131a0-9015-4030-8505-6db930bf38e6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3ca75220-3136-4161-bbfb-19db23a3c17e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0cb9cf50-8cac-4373-8d8d-c161eb3b3d38",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "33969cb8-f8da-47e7-8989-20c00e5f78a5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "42c65eca-4431-4b9b-afef-a70d4997b32f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c770a23b-55dc-4717-8d0d-56d5f29b8b89",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactPointAddressId",
+        "@id": "24164139-e713-4838-b030-de948f7d586f",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

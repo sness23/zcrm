@@ -1,0 +1,68 @@
+{
+  "@id": "RevenueScheduleType",
+  "name": "Revenue Schedule Type",
+  "@type": "Class",
+  "description": "The type of the revenue schedule, if the product has one i.e. Divide, Repeat",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3b1fce97-41cf-377e-a2c1-8bffcb73cf5c",
+    "@type": "Shape",
+    "targetClass": "RevenueScheduleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "78f88aad-425e-4838-b1f1-f8a41e31214d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4d1acd89-f14c-4fbf-8a0a-afded9ec9ed4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4fee4d51-e445-4d8d-8545-b5e17053df5c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5ef6af57-8753-4dbd-b777-b687b9838a3d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d4967590-e7ef-4323-9d5d-8d69a3fcc4df",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9180cc3f-21f2-49d9-9bdb-148a8937d000",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0a728af7-456c-40d0-b4f4-7d4710659d4a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

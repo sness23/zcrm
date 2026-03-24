@@ -1,0 +1,472 @@
+{
+  "@id": "Organization",
+  "name": "Organization",
+  "@type": "Class",
+  "description": "A company we intend, or are, doing business with e.g. Northern Trail Outfitters USA. Can also be a lower level business than a company e.g. Northern Trail Outfitters - Calfornia USA. If there some form of a (apply to Americ) DUNS number for it, then it is",
+  "subClassOf": "Party",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "taxId",
+      "@type": "Property"
+    },
+    {
+      "@id": "marketCapitalizationAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "legalName",
+      "@type": "Property"
+    },
+    {
+      "@id": "bankruptcyHistoryFlag",
+      "@type": "Property"
+    },
+    {
+      "@id": "incorporationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "bankruptcyDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "legalOrganizationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "dUNSNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "bankruptcyEmergenceDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryIndustryName",
+      "@type": "Property"
+    },
+    {
+      "@id": "iSICId",
+      "@type": "Property"
+    },
+    {
+      "@id": "annualRevenueAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "annualRevenueCurrencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "terminationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "annualRevenueAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "legalIncorporationJurisdiction",
+      "@type": "Property"
+    },
+    {
+      "@id": "dandBCompanyName",
+      "@type": "Property"
+    },
+    {
+      "@id": "ownershipId",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryBusinessLanguageId",
+      "@type": "Property"
+    },
+    {
+      "@id": "legalStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "stockTickerSymbol",
+      "@type": "Property"
+    },
+    {
+      "@id": "bankruptcyTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "marketCapitalizationAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "businessName",
+      "@type": "Property"
+    },
+    {
+      "@id": "nAICSId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "companyType",
+      "@type": "Property"
+    },
+    {
+      "@id": "employeeCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "dunnandBradstreetRating",
+      "@type": "Property"
+    },
+    {
+      "@id": "businessSizeTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "stockExchangeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "fiscalYearEndMonthDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "closedForBusinessDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "sICId",
+      "@type": "Property"
+    },
+    {
+      "@id": "openForBusinessDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "yearStarted",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4663a141-a405-38e8-a479-0607c0054909",
+    "@type": "Shape",
+    "targetClass": "Organization",
+    "properties": [
+      {
+        "path": "yearStarted",
+        "@id": "b27f11aa-361a-3e80-af2b-bfe6ed725883",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "terminationDate",
+        "@id": "cdf996ca-92c8-39c9-a80e-7e11919a8329",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxId",
+        "@id": "b6e07332-78c7-3857-ab65-20d3f7141e4c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "3838c0b2-8b3b-30c0-98a7-00876f7b9fe6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "stockTickerSymbol",
+        "@id": "4b85b80a-be20-3913-ada0-2901300da651",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "stockExchangeName",
+        "@id": "55d69fb3-9185-31ec-8325-cf65cd03f129",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "sICId",
+        "@id": "ede2e118-662f-3c36-9f6b-6fb782ba2c09",
+        "node": "c0db389c-ee5d-3f52-8807-48270df8ddd5",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryIndustryName",
+        "@id": "bc087cc4-74ce-3740-b4a9-c274baae1f3c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "ownershipId",
+        "@id": "148fa8e3-600c-3229-8a52-df65a7ac56a1",
+        "node": "ad61d9f7-0c5c-3156-9c1a-9ef1e43bc84d",
+        "maxCount": "1"
+      },
+      {
+        "path": "openForBusinessDate",
+        "@id": "69938dcc-bcc2-370b-8cc4-1834343d1a89",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "nAICSId",
+        "@id": "25f98a8b-926f-3544-bff2-e9615de4d0ad",
+        "node": "dc0245c7-66ff-3f56-a084-b8ab604288ba",
+        "maxCount": "1"
+      },
+      {
+        "path": "marketCapitalizationAmountCurrency",
+        "@id": "b61a8601-83bf-33c8-af15-5439fe2042f0",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "marketCapitalizationAmount",
+        "@id": "e660efc0-515a-3609-bef3-74d753f89876",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "legalStatusId",
+        "@id": "96de04bc-aabf-3bda-aa19-5309bd02c2d9",
+        "node": "12c6fe45-41af-3461-b6f2-a2f11a02170a",
+        "maxCount": "1"
+      },
+      {
+        "path": "legalOrganizationTypeId",
+        "@id": "f748c0f7-0b72-3ea0-ae41-751ff64e8c9f",
+        "node": "99f3275e-db2c-32a8-b349-3d5e2ac7c541",
+        "maxCount": "1"
+      },
+      {
+        "path": "legalName",
+        "@id": "ee7df5ff-7abe-3115-b374-b95e1dfd7e42",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "legalIncorporationJurisdiction",
+        "@id": "b33d136c-d707-3239-b505-83488099bac0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "13a811ce-7c1a-3651-bab5-01225842e45c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iSICId",
+        "@id": "066dee21-0144-3c95-918e-484493451df2",
+        "node": "d3c6518e-179c-3b24-98ba-ce5c2a69f0af",
+        "maxCount": "1"
+      },
+      {
+        "path": "incorporationDate",
+        "@id": "6cb82dec-39f0-31b6-bbb1-90d5481d283c",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "bc4d33bc-8ec3-4cec-b6b6-a9ed7ab7f7f7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "862b2a8d-4466-3e50-abfb-c9e565725501",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "fiscalYearEndMonthDate",
+        "@id": "70f87746-48a8-33ce-8a25-70835944a5d5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "588b69a5-9fe7-47c7-be7e-1c15ec0a0ed7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "bb231d1b-f410-3fc1-a33e-67e4e82e9260",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "employeeCount",
+        "@id": "2556b957-2291-346e-a42d-80a011277308",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "dUNSNumber",
+        "@id": "92413c45-07e2-3922-983f-ce9d5d88a00d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "dunnandBradstreetRating",
+        "@id": "8890ef43-d271-39f3-9bfc-0fb00db7be20",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "e6149ce9-6044-3efd-a6aa-1211c7f11f2b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "dandBCompanyName",
+        "@id": "3c8405a4-13db-3ec2-82d0-4a625a3c0789",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3349f989-0b79-38b1-8d26-d16c69e84308",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "companyType",
+        "@id": "155daec0-3e19-3594-b8b8-23d64fb5c35e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "closedForBusinessDate",
+        "@id": "c66a57d0-eae6-34eb-96b7-96127dd01735",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "businessSizeTypeId",
+        "@id": "29271119-e4d9-3a74-ad03-1232334aad2e",
+        "node": "e808df21-03ac-362c-a012-5ac47cece148",
+        "maxCount": "1"
+      },
+      {
+        "path": "businessName",
+        "@id": "94ae3aac-62de-3b3c-81ac-8299e7c18a69",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "bankruptcyTypeId",
+        "@id": "52e21a67-a841-3601-b2b9-564a1b92aa26",
+        "node": "f0f06dcc-68df-3eb6-afc7-14454ce99aa4",
+        "maxCount": "1"
+      },
+      {
+        "path": "bankruptcyHistoryFlag",
+        "@id": "97072c21-6627-362c-9851-f86f2733ffff",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "bankruptcyEmergenceDate",
+        "@id": "68dff4e2-7377-35a4-b44f-bf01458c4ef2",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "bankruptcyDate",
+        "@id": "fd3b2fe7-444c-3a8b-9ad5-db8f36967b3b",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "annualRevenueCurrencyId",
+        "@id": "3d807349-4aed-390e-8453-9be936ada5e3",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "annualRevenueAmountCurrency",
+        "@id": "ef7245de-bd2c-3b88-a9eb-17993879208f",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "annualRevenueAmount",
+        "@id": "9b19af71-2576-3f99-8a69-61b8cf1ead5e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryAccountId",
+        "@id": "2b09d028-3806-3e8d-b535-84de73c15c91",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyTypeId",
+        "@id": "b9e4fe6f-e9a9-3e52-8c73-cefeab1157ce",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f"
+              },
+              {
+                "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1"
+              },
+              {
+                "@id": "4663a141-a405-38e8-a479-0607c0054909"
+              },
+              {
+                "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "b5870980-da7b-4454-9555-a23d6ecf993f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "noMergeReasonId",
+        "@id": "b277d008-4fc3-3b54-8a4d-ef69fde21a50",
+        "node": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+        "maxCount": "1"
+      },
+      {
+        "path": "globalPartyId",
+        "@id": "9e32edb4-a0a6-3023-9e5c-642cfa5ed7bb",
+        "node": "211175d5-0ebf-3a61-bab9-6c23c5d5f54f",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

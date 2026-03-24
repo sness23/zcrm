@@ -1,0 +1,83 @@
+{
+  "@id": "ContactPointType",
+  "name": "Contact Point Type",
+  "@type": "Class",
+  "description": "Contain the fixed list of types a contact point can be of e.g. phone, email",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "optInPriority",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a5d643b7-df85-3755-9390-d2a4673fefe4",
+    "@type": "Shape",
+    "targetClass": "ContactPointType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2cd15d97-604d-3613-b3f6-13cdb0449066",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "optInPriority",
+        "@id": "5ccb7b4b-4ec3-3911-8999-9617495a542d",
+        "datatype": "xsd:integer",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1dd94994-6c08-3ea3-99fb-5e917abe812a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a5af291a-3768-3f64-9447-0793f64d6120",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "24b1db2e-e42f-3499-adde-dfb3db00efea",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "02aec691-0589-4969-8404-dc41ba2b1348",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "816d46db-9935-36c1-aa14-a8ab6e19d220",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "bfdf4bdc-b3a7-3c52-8822-227fe6ba222a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

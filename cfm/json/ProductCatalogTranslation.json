@@ -1,0 +1,94 @@
+{
+  "@id": "ProductCatalogTranslation",
+  "name": "Product Catalog Translation",
+  "@type": "Class",
+  "description": "Translated attributes for a product catalog",
+  "subjectArea": "Product",
+  "entityGroup": "ProductCatalog",
+  "properties": [
+    {
+      "@id": "localeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "translatedName",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCatalogId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4417d614-26ef-379b-9cc2-e927cf57c4d7",
+    "@type": "Shape",
+    "targetClass": "ProductCatalogTranslation",
+    "properties": [
+      {
+        "path": "translatedName",
+        "@id": "73d71b91-9568-3c4d-9ac1-fbf4aa587bf1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "8c7b0e64-e365-4010-8ccc-ea0a608b4cbc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCatalogId",
+        "@id": "2fb89967-2c41-3793-ad7e-60171256255c",
+        "node": "f5f24373-d952-3688-88c9-ab66ee0b0bcd",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b571670e-bf85-4e6e-8989-067159c317d3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6fe2abf3-519e-48e8-b8f8-fd1f211fcb93",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "14cb9774-8869-3c7a-9c2b-21cf2ff2e485",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "82f61d63-91a0-4020-9d9d-562cdc970981",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b5798dd4-6789-4282-8a8a-9254d70ece22",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "576f5045-5d24-4a7a-b131-628c13669bf7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

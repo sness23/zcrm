@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentTreatmentStatus",
+  "name": "Payment Treatment Status",
+  "@type": "Class",
+  "description": "A payment treatment status is either Active or Inactive.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5d0177a1-2380-49a9-9717-7778d6c4c7c5",
+    "@type": "Shape",
+    "targetClass": "PaymentTreatmentStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b2824843-f879-4434-9818-08565fc5c360",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "6b75d5f7-9028-4e5e-8d0d-7958ab72e199",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "654cef1b-689c-4636-9818-1982b629ddca",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e82cd27f-a8dc-4717-a969-80a0a8bbb035",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b63279a7-72bd-40c0-b737-7d4d2cab9d92",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "8173a06b-9fe1-45e5-9696-9100f99ee1b5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6b0a104a-cc05-4a7a-b5b5-a06cd0372c8a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "355c25d6-eebe-4c0c-b6f6-57c8d4d6983f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

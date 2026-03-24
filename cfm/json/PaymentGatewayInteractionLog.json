@@ -1,0 +1,188 @@
+{
+  "@id": "PaymentGatewayInteractionLog",
+  "name": "Payment Gateway Interaction Log",
+  "@type": "Class",
+  "description": "A log record of all messages exchanged with merchants made via the payment gateway, for authorizations and payments.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentGatewayMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInteractionTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInteractionLogName",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayResultId",
+      "@type": "Property"
+    },
+    {
+      "@id": "internalReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "internalResultCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayAVSCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInteractionStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayAuthorizationCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e9c5f3d9-f557-45a5-bf3f-019ac42865a9",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayInteractionLog",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7314e8b9-0382-4f3f-8f0f-c7e6831437df",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayResultId",
+        "@id": "15db534c-abd1-4070-9a1a-b8a0a7f037b9",
+        "node": "9b0f3886-5b43-4111-a6a6-1191e20389b4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayReferenceNumber",
+        "@id": "de4acab1-a41c-4494-ba3a-3e81bd3851be",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayMessageText",
+        "@id": "80a760dd-6d76-4fcf-a767-ec479f3c4017",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentGatewayInteractionTypeId",
+        "@id": "3694b032-299e-4d4d-86c6-bb8d80a21b64",
+        "node": "67009809-560e-4303-9d5d-862bbc905443",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInteractionStatusId",
+        "@id": "72c8e3a3-fb95-4f4f-aeee-2e3524cf2742",
+        "node": "71c43206-94bf-4777-8646-5299606733f9",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInteractionLogName",
+        "@id": "5204f9f6-a2bd-4080-9414-84513501ad84",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayDate",
+        "@id": "a721e4ae-00e2-4e7e-afef-e561016cb42c",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayAVSCode",
+        "@id": "3008ca3d-fc76-4a8a-9959-3cf932c95e7e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayAuthorizationCode",
+        "@id": "0e567acd-56eb-4ece-aaaa-e3060ea1d531",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3e95fe87-efbb-4333-b676-3a2dec85660b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "internalResultCodeId",
+        "@id": "fbe0c4bd-933e-4343-bbbb-e324d543f357",
+        "node": "7a0f75c7-a74f-4616-8949-84c4f86cbbf2",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "internalReferenceNumber",
+        "@id": "921fdcc0-e5f4-4212-8848-aa0bc5ec350f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c862096c-7c5d-4c9c-9a1a-cdb6b16e348a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d8986c14-7d4b-4060-ba3a-aec3f77ca6c2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "03649017-9f34-4838-b0f0-16a5a3044bf3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "65db3764-8e7e-45c5-8aca-91582cd348ba",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "edb00a79-476c-4faf-8dcd-63a05678a33b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

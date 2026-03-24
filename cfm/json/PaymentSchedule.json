@@ -1,0 +1,191 @@
+{
+  "@id": "PaymentSchedule",
+  "name": "Payment Schedule",
+  "@type": "Class",
+  "description": "A payment schedule represents a collection of different payments that a customer wants to collect at different times.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "commentsText",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalRequestedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "canceledAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "defaultPaymentMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "availableRequestedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "defaultPaymentAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentScheduleStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "remainingToBeProcessedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "currencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "invoiceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalProcessedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalLineRequestedAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "21b1c930-1321-4dad-aa2a-74500cbeb2a4",
+    "@type": "Shape",
+    "targetClass": "PaymentSchedule",
+    "properties": [
+      {
+        "path": "totalRequestedAmount",
+        "@id": "7e2cfff7-26b1-4343-9454-1107cf84f610",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalProcessedAmount",
+        "@id": "c291c8af-1fec-4b4b-8707-15b090ad96dd",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalLineRequestedAmount",
+        "@id": "d9a0d9bb-a633-4646-b434-c100512d5a72",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "05758179-e741-4575-8181-257dc5b51a69",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderId",
+        "@id": "98f7ef5b-e1d8-4b8b-a1e1-a9ef85c065da",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1"
+      },
+      {
+        "path": "remainingToBeProcessedAmount",
+        "@id": "3bd325b8-1673-4a2a-a464-2eca7bb1f8d3",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentScheduleStatusId",
+        "@id": "5ead85ea-6147-4555-8e8e-f9600bfc5b48",
+        "node": "bf198602-b17c-4b9b-9696-f173d5f4425a",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3b05b7d8-a5d2-48f8-9b1b-0bafa2566dc3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "cddeef7b-62c5-42e2-8f0f-c2eaece1eaff",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f3f239e8-d291-4a5a-8989-ad77929d704e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f506d002-7b9d-45e5-b777-4735e41b97f4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "defaultPaymentMethodId",
+        "@id": "c1c4eae1-a90d-4818-a323-a4bdeb13f2c8",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1"
+      },
+      {
+        "path": "defaultPaymentAccountId",
+        "@id": "27052977-3bec-4343-9717-efe50ab2239f",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "currencyId",
+        "@id": "bc55bbdd-5176-4303-bebe-74f15e0b266a",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "29abe94c-3efd-4f3f-8e4e-ca4948946898",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "commentsText",
+        "@id": "e53dcc68-1c4b-4363-95d5-fc99dc379cde",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "canceledAmount",
+        "@id": "1af60e89-93e4-4efe-9656-0fe70c209cc7",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "availableRequestedAmount",
+        "@id": "fbaaef39-3945-4afa-b474-43e463c9c772",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "PaymentScheduleStatuses",
+        "node": "bf198602-b17c-4b9b-9696-f173d5f4425a",
+        "minCount": "1"
+      }
+    ]
+  }
+}

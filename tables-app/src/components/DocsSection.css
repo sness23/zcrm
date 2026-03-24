@@ -1,0 +1,204 @@
+/* Inline section wrapper */
+.docs-section-inline {
+  margin-top: 0;
+}
+
+.section-loading,
+.section-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #b0b0b0;
+  font-size: 13px;
+}
+
+.empty-hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #808080;
+}
+
+.section-error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #f0b0ff;
+}
+
+.retry-button {
+  background: linear-gradient(135deg, #6b21a8 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+
+.retry-button:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  box-shadow: 0 2px 8px rgba(107, 33, 168, 0.4);
+}
+
+
+.edit-button {
+  background: linear-gradient(135deg, #6b21a8 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.edit-button:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  box-shadow: 0 2px 8px rgba(107, 33, 168, 0.4);
+}
+
+/* Editor toolbar styles */
+.document-editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #1a0060;
+  border: 1px solid #2a0070;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0;
+}
+
+.editor-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.editor-icon {
+  font-size: 16px;
+}
+
+.editor-title span:last-child {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.editor-status {
+  margin-right: 12px;
+  font-size: 11px;
+}
+
+.status-saving {
+  color: #fbbf24;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.status-saved {
+  color: #10b981;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Editor content styles */
+.document-editor-content {
+  border: 1px solid #2a0070;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+/* Override MDEditor dark mode styles to match our theme */
+.document-editor-content .w-md-editor {
+  background: #1a0060 !important;
+  color: #d0d0d0 !important;
+  border: none !important;
+}
+
+.document-editor-content .w-md-editor-toolbar {
+  background: #0a0050 !important;
+  border-bottom: 1px solid #2a0070 !important;
+}
+
+.document-editor-content .w-md-editor-toolbar button {
+  color: #d0d0d0 !important;
+}
+
+.document-editor-content .w-md-editor-toolbar button:hover {
+  background: #2a0070 !important;
+  color: #e0e0e0 !important;
+}
+
+.document-editor-content .w-md-editor-text-pre,
+.document-editor-content .w-md-editor-text-input,
+.document-editor-content .w-md-editor-text-input textarea,
+.document-editor-content .w-md-editor-text-pre > code {
+  background: #1a0060 !important;
+  color: #d0d0d0 !important;
+}
+
+.document-editor-content textarea.w-md-editor-text-input,
+.document-editor-content .w-md-editor textarea.w-md-editor-text-input {
+  color: #d0d0d0 !important;
+  -webkit-text-fill-color: #d0d0d0 !important;
+}
+
+.document-editor-content .w-md-editor-preview {
+  background: #0a0050 !important;
+  color: #d0d0d0 !important;
+}
+
+.document-editor-content .wmde-markdown {
+  background: transparent !important;
+  color: #d0d0d0 !important;
+}
+
+.document-editor-content .wmde-markdown h1,
+.document-editor-content .wmde-markdown h2,
+.document-editor-content .wmde-markdown h3 {
+  color: #e0e0e0 !important;
+  border-bottom-color: #4a1a70 !important;
+}
+
+.document-editor-content .wmde-markdown a {
+  color: #8b5cf6 !important;
+}
+
+.document-editor-content .wmde-markdown code {
+  background: #0a0040 !important;
+  color: #c4b5fd !important;
+}
+
+.document-editor-content .wmde-markdown pre {
+  background: #0a0040 !important;
+  border: 1px solid #2a0070 !important;
+}
+
+/* Scrollbar styling for editor */
+.document-editor-content ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.document-editor-content ::-webkit-scrollbar-track {
+  background: #0a0050;
+}
+
+.document-editor-content ::-webkit-scrollbar-thumb {
+  background: rgba(107, 33, 168, 0.3);
+  border-radius: 4px;
+}
+
+.document-editor-content ::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}

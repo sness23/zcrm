@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderProductPriceAdjuType",
+  "name": "Sales Order Product Price Adjustment Type",
+  "@type": "Class",
+  "description": "The type of Sales Order Product Price Adjustment: OrderProduct, Distributed (from order-level), or manual",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductPriceAdjustmentTypeCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8a9788b9-fcb5-4c6c-8bcb-3a37cb16f018",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductPriceAdjuType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d19dc7ab-1718-4bbb-9656-fa22db539166",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductPriceAdjustmentTypeCode",
+        "@id": "2954b0dd-963f-4a3a-a727-bab393f9e6e6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fc945719-0011-45e5-8181-fd3263dc1f89",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6ac826eb-cbdc-4999-9c9c-c89bed63bef4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3e3cfb31-e12c-4363-8f0f-c61b629660b3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c1ee3ef2-6472-4020-a727-069e4ab7add7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ab5b0404-3a51-4f2f-9818-76377742db13",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "00d144f5-a014-4545-bd3d-c416a35e80de",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

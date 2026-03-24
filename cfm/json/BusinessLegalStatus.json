@@ -1,0 +1,79 @@
+{
+  "@id": "BusinessLegalStatus",
+  "name": "Business Legal Status",
+  "@type": "Class",
+  "description": "Legal or tax standing e.g. commercial, non-profit, academic, government",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "12c6fe45-41af-3461-b6f2-a2f11a02170a",
+    "@type": "Shape",
+    "targetClass": "BusinessLegalStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f32cd17a-5da2-3827-9079-d81eae4598ba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "fa7eed0d-1d29-37d9-8c3a-ccb2b69de707",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0341b150-b4d5-388e-81c8-ead176d16849",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3306b9ac-f43f-4282-a1a1-e29d96d93f85",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "38481f30-e4ca-35a7-b4c0-c7260842dd0e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f69be8c6-e4bf-48d8-9252-6aaf79906970",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c13e509b-307c-3704-bd7a-8ebffe255e40",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "69b05819-9c9a-3dbc-9cc0-c64bd5ef60b5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

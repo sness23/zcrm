@@ -1,0 +1,122 @@
+{
+  "@id": "PaymentTreatment",
+  "name": "Payment Treatment",
+  "@type": "Class",
+  "description": "This entity has the information which controls the way in which payment can be applied based on a legal entity or workflow. A policy has multiple treatments associated.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentPolicyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentName",
+      "@type": "Property"
+    },
+    {
+      "@id": "internalBusinessUnitLegalEntityId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentStatusId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8c66c435-7484-4a6a-9ede-f02de8ab0b08",
+    "@type": "Shape",
+    "targetClass": "PaymentTreatment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "fd403c74-960e-4b4b-b2f2-a39f2f01ffd2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentStatusId",
+        "@id": "bf5ddc6e-f358-4c8c-9999-94bcf327891a",
+        "node": "5d0177a1-2380-49a9-9717-7778d6c4c7c5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentName",
+        "@id": "53cf59f4-0b82-4252-9252-c669f1f6e085",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentTreatmentMethodId",
+        "@id": "0699356f-f45c-4ece-b3f3-9ef744e2baa5",
+        "node": "dfaf03f8-76a3-41a1-be7e-33b77631f79c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentPolicyId",
+        "@id": "9267d3b5-5dd8-4a3a-8d0d-ef8a41119fb2",
+        "node": "af102a4e-df8a-4787-afaf-a4b84fba6a0c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9be71937-007d-4787-bcfc-9795e41221d9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "internalBusinessUnitLegalEntityId",
+        "@id": "e36f1bf1-dc4d-4f5f-bb3b-7e9fa58ac782",
+        "node": "ac847633-d1de-4707-8d8d-bfbc69e7987a",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e3ab9139-b4a6-4949-a424-89c2ec395a3d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8d2c6860-2b9c-4252-9454-359495e59346",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b96d46b7-a119-4181-a4e4-0b1680addd2e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d0922872-5eb6-4fef-bf7f-7170d1a74ff1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2e103220-fbd6-4040-acac-7a6107b85bc6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

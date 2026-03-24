@@ -1,0 +1,79 @@
+{
+  "@id": "AccountRelationshipRole",
+  "name": "Account Relationship Role",
+  "@type": "Class",
+  "description": "Reasons for associating two accounts via Account Relationship include: Implementation Partner, and Sales Partner",
+  "subjectArea": "Account",
+  "entityGroup": "AccountConfiguration",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "03f975bb-828e-4696-96d6-fcb120ff8cec",
+    "@type": "Shape",
+    "targetClass": "AccountRelationshipRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3e5985e6-5447-4252-90d0-65f99092a08c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "3edb5a9a-5d11-4e8e-ac6c-a208ea65ed1e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "729ebf7a-bea2-4ccc-8a4a-91189c69c69b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0644300a-0aee-4dfd-9656-282e82aa42e7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "a1f140cf-0d02-4e1e-bb7b-258cd2dfc24d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0ab8ac6c-bc3e-4d1d-a9a9-263097d6a0e7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "346b1998-dab4-4b4b-bd7d-3eb5c64a4b14",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e794208d-b48e-4080-9bdb-d027c01803dd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

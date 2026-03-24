@@ -1,0 +1,110 @@
+{
+  "@id": "ShipmentProductPriceAdjustment",
+  "name": "Shipment Product Price Adjustment",
+  "@type": "Class",
+  "description": "A change to the price of an ordered product or service that is made after Fulfillment.",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "adjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "adjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "shipmentProductPriceAdjustmentAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ea1dc2fb-8c4e-4101-9c1c-c4b97228f63f",
+    "@type": "Shape",
+    "targetClass": "ShipmentProductPriceAdjustment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1dbd081b-8c50-4050-b5b5-079591272adb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentProductPriceAdjustmentAmount",
+        "@id": "9f961166-ab42-4909-a020-7f855f33979b",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a1ae7a81-0302-49b9-8747-5065f647b92e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5856ee60-715f-4666-b8b8-1c7302f30f50",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ae31d86d-8485-4eae-ac6c-5bcc75c365a9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6081e075-ff57-4e1e-ab6b-6ddd97813af6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "15ac0482-9e31-48c8-ae2e-6672cb247f4e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "862cae73-2ec3-4c1c-8ccc-35769b4507e3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "620ab7da-e654-44a4-9858-52ac635460af",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "adjustmentTaxAmount",
+        "@id": "273d8d78-5222-4848-9919-86f10ff05702",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "adjustmentAmount",
+        "@id": "ac3ebb3e-4844-4030-80c0-8b5bb6d518e9",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

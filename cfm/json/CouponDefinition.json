@@ -1,0 +1,224 @@
+{
+  "@id": "CouponDefinition",
+  "name": "Coupon Definition",
+  "@type": "Class",
+  "description": "A model from which instances of coupons can be printed or sent electronically.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "maxRedmPerCodeCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "expirationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "redmTimePeriodCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "isProductSpecific",
+      "@type": "Property"
+    },
+    {
+      "@id": "validFromDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasCaseSensitiveCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponUseTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "validToDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxRedmPerCustCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "isCustomerSpecific",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxRedmPerTimePeriodCount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "27576bc4-c000-49c9-83c3-a0b521e48ed2",
+    "@type": "Shape",
+    "targetClass": "CouponDefinition",
+    "properties": [
+      {
+        "path": "validToDateTime",
+        "@id": "adb0322d-6ff4-4575-afef-235367e4c47b",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "validFromDateTime",
+        "@id": "3cad8985-7039-4747-b9f9-e41cd2c091c7",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "ea6c5c12-9a67-4575-9d5d-56eaec7178f9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "redmTimePeriodCount",
+        "@id": "a335fa53-bbb2-47f7-b777-340bff76c200",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "adc3af6d-90bf-40a0-8505-19c0b703f52c",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "812bdaff-084c-43f3-a161-e6f23a6848e5",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f5feb389-55c7-46f6-9050-c2717a1acd56",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxRedmPerTimePeriodCount",
+        "@id": "b86a914f-714c-4cdc-8181-72c5935b735b",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxRedmPerCustCount",
+        "@id": "d53639c4-4938-48e8-8c4c-f86b2e66b2ba",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxRedmPerCodeCount",
+        "@id": "e3eaa9d6-201c-4bab-8d0d-e67c84665a78",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8d2b3bb4-41c5-4f4f-8909-3be3b2eeb7ed",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isProductSpecific",
+        "@id": "bdb21f8b-f27b-49a9-bbbb-210d327df920",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isCustomerSpecific",
+        "@id": "56192e54-97b2-42e2-b4b4-8a6c3269d994",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2ca3ffa6-4a9c-49a9-91d1-6bf2bbacc933",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "95508bb1-8c3c-4a3a-b636-55c14ede7e30",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "hasCaseSensitiveCode",
+        "@id": "ad540218-1c56-4c7c-a121-958d9326e64d",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "8d46650b-7060-4606-8ece-f701397d6864",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "dba456c4-7c38-40e0-9959-53674a4cfcda",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "expirationDate",
+        "@id": "e2c7ab94-bfb9-4cbc-bcfc-4cce387ccfe6",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d5898dfa-f338-48c8-8000-399d48eaa704",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "couponUseTypeId",
+        "@id": "97ece887-083f-49f9-9292-beafa128fb2e",
+        "node": "6c98602d-a74a-4888-8404-aa778e421dda",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "couponCount",
+        "@id": "96088547-13d6-4e6e-af2f-c4df14b2a7e5",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "Coupons",
+        "node": "ee988b63-7ce2-47e7-ae2e-240aa4f2c1d5",
+        "minCount": "1"
+      }
+    ]
+  }
+}

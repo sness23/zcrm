@@ -1,0 +1,114 @@
+{
+  "@id": "ProductFeature",
+  "name": "Product Feature",
+  "@type": "Class",
+  "description": "An element or component of a product.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "minimumOptionCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCategoryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "maximumOptionCount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "beb82313-0ecd-4454-8f0f-8f0ea709113a",
+    "@type": "Shape",
+    "targetClass": "ProductFeature",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "38c4933c-5c82-49e9-aded-aab6d6b99785",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "63d445a8-2cd1-4191-b9f9-4d7aafa5556e",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCategoryId",
+        "@id": "a456f456-90e2-4e8e-a262-3161e996e49b",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "3c08fbf1-a476-4fcf-b575-b658062c10c4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "minimumOptionCount",
+        "@id": "1b106726-be58-4b0b-b030-0fbf8374df2f",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "maximumOptionCount",
+        "@id": "7337845c-3908-47e7-a5a5-6d0c21296fef",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "800ebdd8-ca3e-4c7c-b777-3a137c133082",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2804ab43-cdb6-4cdc-81c1-1ae48863c220",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "70197aac-7787-4949-8444-7299de9839a2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e3917951-2060-40c0-a464-0dd9fd9dda6c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "133954e3-a8de-4d2d-a1e1-afc5fcb99803",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

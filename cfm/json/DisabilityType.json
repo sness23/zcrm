@@ -1,0 +1,79 @@
+{
+  "@id": "DisabilityType",
+  "name": "Disability Type",
+  "@type": "Class",
+  "description": "Disability or Impairment e.g. wheel chair bound",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "disabilityTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c27ba8a2-952f-302c-84f8-c5ad978b9df8",
+    "@type": "Shape",
+    "targetClass": "DisabilityType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2a1ce8c2-ade4-3b34-83cb-5bd063cc095e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f304047d-6c21-368f-a70a-171b0353e49a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2ced8149-a56b-4b6b-b232-f12e60d84d06",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "84441758-83d2-34d2-9262-bb5a1f186280",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "49c4887d-3ffe-4101-8bcb-648bb4b60d63",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "35628083-8e72-3903-86ac-fbd215561280",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "disabilityTypeName",
+        "@id": "75de8c5f-6bde-33b2-9f95-4c4d7c7f5b7c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "46d55bc3-8de3-3ab9-81f3-f63d9251883d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

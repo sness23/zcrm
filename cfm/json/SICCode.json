@@ -1,0 +1,79 @@
+{
+  "@id": "SICCode",
+  "name": "SIC Code",
+  "@type": "Class",
+  "description": "4 digit Standard Industry Classification code and a predecessor to using NAICS",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "sICCodeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c0db389c-ee5d-3f52-8807-48270df8ddd5",
+    "@type": "Shape",
+    "targetClass": "SICCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8621a406-d185-3ba8-80f5-47c868131476",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "sICCodeName",
+        "@id": "5a2315cf-f367-3d62-aea6-ce79cfb6be36",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d6519e99-ea9d-3908-bb51-87e9941ebdfb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "40510aba-49be-4070-a5e5-e3165156ae4c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "25ef117c-e387-34a8-9ad6-5fa066eda938",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "a0d600f2-3874-4545-b6b6-b5462661ed09",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9ca51d6c-3d2c-3c9f-877d-2136d42eafd7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "baa91ca7-a4ab-3f32-953f-831e7d28af6a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

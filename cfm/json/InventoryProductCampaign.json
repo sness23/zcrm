@@ -1,0 +1,74 @@
+{
+  "@id": "InventoryProductCampaign",
+  "name": "Inventory Product Campaign",
+  "@type": "Class",
+  "description": "The issues addressed by a Product Service Campaign may include multiple Inventory Products",
+  "subClassOf": "ProductServiceCampaignItem",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "28c83bd4-ce3a-4f8f-9313-613531ccd6b4",
+    "@type": "Shape",
+    "targetClass": "InventoryProductCampaign",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "763c50bf-7117-4d3d-84c4-36ff90f7a5de",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "da050d59-dd40-4898-acac-9f83f47b433d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "447090bb-cae8-4626-9959-37d361ce30e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e6acac53-3056-4616-aded-31dcc90726f7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f468784f-216d-4e4e-96d6-8a0e3fc763f3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7309c921-dec0-4111-a5e5-77bf217f3277",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "8c6e8ee1-e947-4808-8a8a-f1a5ef90bdc9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

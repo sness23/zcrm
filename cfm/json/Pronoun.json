@@ -1,0 +1,88 @@
+{
+  "@id": "Pronoun",
+  "name": "Pronoun",
+  "@type": "Class",
+  "description": "In English grammar, a word such as He, She and They that is used to refer to a specific person",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "pronounId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "eb5612bf-96a3-4777-a7e7-e891c542b109",
+    "@type": "Shape",
+    "targetClass": "Pronoun",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3181131d-d021-4757-90d0-7a8bf5e751e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "pronounId",
+        "@id": "bdfc86e1-ca28-4a8a-9757-d46eb3f52eb3",
+        "node": "eb5612bf-96a3-4777-a7e7-e891c542b109",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a43d5860-c974-4e0e-bbfb-b64385753923",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5c18ee65-53e9-4d9d-a727-df208a1f935d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "30943563-4dfa-4ded-8c4c-8042e782dee7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "27bdedb8-1864-4d2d-9151-b2729f00e5af",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "49198e71-0130-4202-bebe-eb8beb9a6cbd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "54fae6c3-67a9-4fff-bc3c-18dbb982abc5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "baed65e5-2df9-4141-ae2e-67dc411d5a30",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

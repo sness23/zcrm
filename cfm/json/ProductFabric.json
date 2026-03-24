@@ -1,0 +1,79 @@
+{
+  "@id": "ProductFabric",
+  "name": "Product Fabric",
+  "@type": "Class",
+  "description": "Is product mainly in one fabric e.g. cotton, leather",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "aefd16e4-cb01-33a7-a613-1b106eed46a7",
+    "@type": "Shape",
+    "targetClass": "ProductFabric",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "bc282eff-24df-4a4a-8080-7405dd647236",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b9720875-ae27-3476-aac2-fcc9cb12111e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "660b110c-98a8-46d6-bc3c-eca49e034427",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fcba3784-4bc2-4444-97d7-b4377daf489d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d66a387b-7a69-341a-a05e-e78aed05d77a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "885abe3e-b4f3-4484-8585-b8de3ce89c5b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f648bdcb-f560-4646-b5f5-03e8b15f1101",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3d61bf1c-6849-49a9-8686-4db3439511b7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

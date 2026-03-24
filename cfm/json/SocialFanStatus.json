@@ -1,0 +1,79 @@
+{
+  "@id": "SocialFanStatus",
+  "name": "Social Fan Status",
+  "@type": "Class",
+  "description": "What is the standing for a social person amongst fans e.g. Newbie, Mega Star",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialFanStatusName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "67e92990-48ef-3e4c-a6c3-28d912464628",
+    "@type": "Shape",
+    "targetClass": "SocialFanStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f81637c5-1f9d-3348-b5e5-fbb200168127",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialFanStatusName",
+        "@id": "9f2ec767-ab0b-3d94-ac1a-d6a3525301d5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "16495055-c528-39cd-bca9-64947d465255",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "df3544af-1787-42d2-9111-bf29462da488",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c45c7eb2-3fdc-3196-b7b4-619f521aa779",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "025bacff-1819-4858-9c9c-140b0b5fd1d9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9255ebc3-ba0f-3bfa-8c0b-35b1c5cf13f5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "47eb5e3f-7aca-33f4-94e2-3047722d57be",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

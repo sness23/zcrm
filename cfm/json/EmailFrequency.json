@@ -1,0 +1,79 @@
+{
+  "@id": "EmailFrequency",
+  "name": "Email Frequency",
+  "@type": "Class",
+  "description": "The frequency at which the system sends a user a personal email digest e.g. daily, weekly",
+  "subjectArea": "Party",
+  "entityGroup": "Lead",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "af4bb343-deab-36fe-859d-83074d805113",
+    "@type": "Shape",
+    "targetClass": "EmailFrequency",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "22b38088-7659-31f2-9b80-e50171b7407a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "eb2eba81-9874-35aa-9577-3fc922ace76c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f66d4dba-3194-30fc-9e4c-dd759e8ea81e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "380b21a0-266d-4646-b838-ef2bb860b551",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a18272e6-2ebc-3473-af12-ba032a3ccbe8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "eb612646-ed1c-4424-9010-6e018c0a7fcb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "26f7ac60-a29e-3a8f-8004-f1ded1ed1c07",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1e626510-2c45-38c0-8e13-82bb548ded9d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

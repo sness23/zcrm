@@ -1,0 +1,176 @@
+{
+  "@id": "PartyIdentification",
+  "name": "Party Identification",
+  "@type": "Class",
+  "description": "Set of ways to identify a party e.g. driving license, birth certificate",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyIdentificationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "issuedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "identificationNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "expiryDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "issuedByAuthority",
+      "@type": "Property"
+    },
+    {
+      "@id": "verifiedByUserId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "issuedAtLocation",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyRoleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "verifiedDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2b917855-5d55-3358-8cba-ee9e73588e0e",
+    "@type": "Shape",
+    "targetClass": "PartyIdentification",
+    "properties": [
+      {
+        "path": "verifiedDate",
+        "@id": "f45152d5-b16b-37fd-9684-20898d36f146",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "f5415a84-26c9-3359-970e-d5d4285e6bf3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyRoleId",
+        "@id": "4ad75008-9c00-3069-addf-06a36398d280",
+        "node": "7cb990ba-4eba-3824-abd7-0dfb55f76fb1",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyIdentificationTypeId",
+        "@id": "e07b25cd-d927-37e1-ac4c-10ba653aedeb",
+        "node": "397a0710-00c6-3823-ae3f-cd7127ad0c8c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "d88dcb28-6658-3c81-b543-4bbfa4f8c9f8",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "3e896ca1-be03-3755-ba8e-9f8d5797c24f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "99857141-54e7-33fc-9c3c-9451090fbe3d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "issuedDate",
+        "@id": "68da3567-7676-3c20-a02d-4d110b9cb07d",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "issuedByAuthority",
+        "@id": "fea36fc0-51e8-3fe7-bdee-d46273f80f51",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "issuedAtLocation",
+        "@id": "7d214266-a7fc-32ab-adfd-afe5ee3f66d9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "37f13e6c-9357-4323-a323-1f6ca21e5756",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "identificationNumber",
+        "@id": "9f2cafb2-2d97-3e75-b90a-9179481bab08",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4d8ad80d-8d11-3af0-be30-dd9331e1525e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "78d47144-5a12-45b5-b474-8c970490fb01",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c0669b98-469c-384c-8fc2-c6c0f0600b8f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "expiryDate",
+        "@id": "d9a8bd2e-bc3e-3f60-b568-f28adaacc8af",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "52c3b9f9-cf4e-3212-b387-666de9d085e0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

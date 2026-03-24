@@ -1,0 +1,114 @@
+{
+  "@id": "ProductTranslation",
+  "name": "Product Translation",
+  "@type": "Class",
+  "description": "Translated attributes for a product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "localeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "longDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "779e561b-9351-3d7d-b5c4-1c63dcb0e195",
+    "@type": "Shape",
+    "targetClass": "ProductTranslation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e81c7f4c-9123-342c-b20b-fe64c6d3466e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "f83f11c8-18b7-3629-b1a0-903657209791",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "7ef316b0-2ec4-3f5d-9e9a-8735484af01c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "longDescription",
+        "@id": "23452f82-169c-397b-9042-71426aebb607",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9c040b80-d202-3985-9052-9c9da6ca9af1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "26e55874-a80d-48c8-aa6a-4f147be3ab94",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5ae6e2a2-25a3-3323-b7d1-02b8799271a1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e86314f1-247c-4e3e-9919-de4fb63d706e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "376d0851-cb88-3c98-a340-afb0ed354465",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "a8b1dc42-7d80-3519-b0cd-8f0fbcbdf272",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "11dc9be0-2adb-39a6-88a0-7357bcbf6d1a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

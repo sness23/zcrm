@@ -1,0 +1,77 @@
+{
+  "@id": "ContactPointLocation",
+  "name": "Contact Point Location",
+  "@type": "Class",
+  "description": "Physical location for a party e.g. party Northern Trail Outfitters at Standford Shopping Mall",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "locationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "locationId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "702bef9c-a70d-3c44-b15c-a7a9c976d1de",
+    "@type": "Shape",
+    "targetClass": "ContactPointLocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "27b0d872-09d3-3163-99e0-a39e78089cb7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4870027d-41ef-3c99-a5cf-d9849b99ef90",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "110f179e-0f4f-4262-aeae-a63f237a7ff3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fe68ea3b-47d8-3cae-84d6-b77a84369f88",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "74949473-4c32-4bab-bcbc-988f4cade840",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b5b0d6e3-d92d-3df1-afdd-33728afccf92",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e1b28bdb-515d-3aa4-a507-d1b31e5496fe",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

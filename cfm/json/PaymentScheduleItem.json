@@ -1,0 +1,83 @@
+{
+  "@id": "PaymentScheduleItem",
+  "name": "Payment Schedule Item",
+  "@type": "Class",
+  "description": "Each payment schedule line represents one payment that needs to be processed.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentScheduleStatus",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2c01b258-fb05-40f0-a0e0-36a31d57ecf3",
+    "@type": "Shape",
+    "targetClass": "PaymentScheduleItem",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "9622f705-3d50-4d0d-81c1-60b13b050202",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentScheduleStatus",
+        "@id": "fd0e570f-da31-4353-9f1f-c05481a8cae4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentId",
+        "@id": "c2ba3a64-60c2-4fdf-94d4-907f212c96c5",
+        "node": "4b597b6a-3084-3d50-a314-a9a27517b5f1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7625afcc-7c3e-42b2-82c2-cc454cd9a49e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "caf01003-e8ee-47b7-9ddd-2b1fcb879eb3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0d800844-c2f5-43f3-9f5f-fc1044d44ea4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d2d0920f-3c22-4737-ac2c-75fc4ec866a1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "20777b8c-57b8-4bab-9858-71b0fe919afe",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

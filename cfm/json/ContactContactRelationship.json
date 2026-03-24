@@ -1,0 +1,79 @@
+{
+  "@id": "ContactContactRelationship",
+  "name": "Contact Contact Relationship",
+  "@type": "Class",
+  "description": "The association of two Contacts. Examples could include associating two children that are defined beneath a parent's Personal Account, or associating two Account Contact employees of a Business Account as manager/managed.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "contact1Id",
+      "@type": "Property"
+    },
+    {
+      "@id": "contact2Id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "05239f7a-01ab-43e3-bebe-d29f9dd9ad79",
+    "@type": "Shape",
+    "targetClass": "ContactContactRelationship",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "400d2265-ef72-4aca-9b1b-1cd0f68771c5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "080f988e-3986-4939-9797-62950a3c6840",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "870f85cb-6f12-4e0e-a2a2-12d0f0ce111f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "159ccd53-a408-4f9f-8909-3759b60b974e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "12eea1ed-7309-4f4f-8585-10a13ec7216d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7ea6acda-0426-4dbd-b373-456bffc71819",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contact2Id",
+        "@id": "5a990517-3a1d-4fff-9696-ff7ab9e645f8",
+        "node": "cc634de2-8220-4676-b535-1bc70680ff43",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contact1Id",
+        "@id": "b10b1dc7-d8aa-4afa-ba7a-003d86d53e99",
+        "node": "cc634de2-8220-4676-b535-1bc70680ff43",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

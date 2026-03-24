@@ -1,0 +1,167 @@
+{
+  "@id": "Tax",
+  "name": "Tax",
+  "@type": "Class",
+  "description": "A charge that is imposed by a government entity for public purposes. Types are aligned to phases of the process: SalesOrderTax, FulfillmentProductTax and ShipmentProductTax",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderTaxTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressStateProvinceCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressStreet1Text",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxErrorMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxClassId",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressStreet2Text",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressCountryCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressCityName",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxRatePercent",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxAddressPostalCodeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "fc768184-12bb-49d9-9f5f-ea30815da3ce",
+    "@type": "Shape",
+    "targetClass": "Tax",
+    "properties": [
+      {
+        "path": "taxRatePercent",
+        "@id": "b48ddbe6-8fdc-4252-a424-2da615c93d32",
+        "datatype": "cim:percentage",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "taxErrorMessageText",
+        "@id": "aa36f343-9e72-41b1-a525-0cbbb261fce7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressStreet2Text",
+        "@id": "af18fe01-d466-49d9-a5a5-916d808a9b5e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressStreet1Text",
+        "@id": "8c7cd417-7b12-4303-9a1a-25399c07ff5f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressCityName",
+        "@id": "2e8558e1-1b93-4f1f-b939-efe2b0a4efc9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "523a7bfc-55be-4030-a868-d661fb749a7f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderTaxTypeId",
+        "@id": "62035151-b788-4363-9f9f-1e1d9ca6f50e",
+        "node": "4c32e0f6-5ff8-4323-afef-c5e93a9db9db",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderTaxAmount",
+        "@id": "ba5618d5-7f8f-4686-9090-df5945948246",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "909dd8b9-8eb3-4444-b878-05c5600a42fa",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0cb9441d-9845-4a5a-bc3c-617ec66b1fb8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "05595e26-cb07-4a2a-bc3c-3f8c7b5adced",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f5705d40-c4d9-46a6-8101-93315d035c9f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "772ccbbd-2da4-4a5a-9090-a309432b9569",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "eda96953-a10f-4636-91d1-9dc4488cf9b1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "5dbab24b-3554-48e8-b171-4268497fb243",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

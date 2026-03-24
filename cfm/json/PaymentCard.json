@@ -1,0 +1,261 @@
+{
+  "@id": "PaymentCard",
+  "name": "Payment Card",
+  "@type": "Class",
+  "description": "A payment system issued by a financial instutition to a customer that allows its owner (the cardholder) to access funds in designated bank accounts",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "billToStreet2",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentCardTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToPostalCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToFirstName",
+      "@type": "Property"
+    },
+    {
+      "@id": "companyName",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToCity",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToLastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToStreet",
+      "@type": "Property"
+    },
+    {
+      "@id": "cardHolderName",
+      "@type": "Property"
+    },
+    {
+      "@id": "issueNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "derivedCardTypeCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToStateProvinceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "expirationYear",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "expirationMonth",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditCardExpired",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "billToCountryID",
+      "@type": "Property"
+    },
+    {
+      "@id": "maskedNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "numberLastDigits",
+      "@type": "Property"
+    },
+    {
+      "@id": "cardToken",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0328a352-04b0-30f7-b21e-072ce8773b45",
+    "@type": "Shape",
+    "targetClass": "PaymentCard",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e0025542-e882-45c5-ad6d-83320b82b99c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentCardTypeId",
+        "@id": "012e7791-436a-3914-be4e-4dbf55ec5934",
+        "node": "da81de2d-27f0-3e1a-93be-a6d833e5434e",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "numberLastDigits",
+        "@id": "65500ef4-112a-30d9-9427-c6a284dd471e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "859a773d-d939-46e6-9e1e-0d67d6776bc1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "maskedNumber",
+        "@id": "3004ed3b-db3f-38a9-b6c5-27785977e754",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b861473a-1bb6-4c8c-aa2a-1ed55bcfcb52",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "issueNumber",
+        "@id": "4fee9b63-68f4-3469-8336-cd21e5567fa1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "36829813-950a-4bab-8848-ada895cc14c7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4dd2c633-2a91-39eb-9441-251abd052c47",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9a5d4fe4-2b07-4b0b-94d4-ae44234bf2e0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "358512c0-08e0-46e6-9595-e3d7be4a8435",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "expirationYear",
+        "@id": "e399ea02-8faa-3cc1-ae21-5f88032f3f81",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "expirationMonth",
+        "@id": "e7260311-fc9f-3b3d-90d6-6ec8479d6155",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "derivedCardTypeCode",
+        "@id": "3ad22229-13ea-4999-b1f1-a74415ae048b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditCardExpired",
+        "@id": "0002bf67-dde3-3357-89da-972d8cc7d077",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0bacd850-3ca2-4020-a424-8259c46628c6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "companyName",
+        "@id": "609c21ae-3717-4151-8a8a-012c312174ca",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "cardToken",
+        "@id": "8fe5e0ac-bcdd-316a-8ff1-fe19b0920c3e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "cardHolderName",
+        "@id": "2252dcdc-f5d1-3909-81f1-65fe36fce187",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "billToStreet2",
+        "@id": "39883f23-c30c-4707-9555-207c240cd0e8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "billToStreet",
+        "@id": "16363ddf-cc16-42f2-9757-8ed3aa37e06b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "billToLastName",
+        "@id": "69d1d22e-6ec7-4404-b272-2138d2766b67",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "billToFirstName",
+        "@id": "302b4a23-a6a6-4212-a929-c56034034295",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "billToCity",
+        "@id": "e7464c69-14c6-4c8c-8646-c0fb2f37ebab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

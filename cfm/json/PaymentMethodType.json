@@ -1,0 +1,158 @@
+{
+  "@id": "PaymentMethodType",
+  "name": "Payment Method Type",
+  "@type": "Class",
+  "description": "The category of payment method, such as payment card, check or digital wallet.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "typeDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "typeRequiredIdentification",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxTransactionAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxPerPeriodTransactionCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxPerPeriodAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "maxPerPeriodAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "useMinimumAgeYear",
+      "@type": "Property"
+    },
+    {
+      "@id": "mediaType",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d7307018-123e-34a2-a7e1-47eb86a59e99",
+    "@type": "Shape",
+    "targetClass": "PaymentMethodType",
+    "properties": [
+      {
+        "path": "useMinimumAgeYear",
+        "@id": "4c9eb1cd-b711-36c7-bf0e-6492d1c38606",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "typeRequiredIdentification",
+        "@id": "90cef9b4-f375-3261-a197-9a1f25ab456b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "typeDescription",
+        "@id": "037067ca-6c62-3bd4-8fc4-10c4f8c86fd6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "1b61d8b3-986f-4343-9ddd-e6901adb6db9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e6f97902-557c-39a6-8c64-ff84c6f26c9a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "mediaType",
+        "@id": "fb2fb3bb-ca8f-39d7-ae23-05ba890ec323",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxTransactionAmount",
+        "@id": "1ccd26b9-2e68-4313-9252-8d7f81b9382d",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxPerPeriodTransactionCount",
+        "@id": "f29ccec7-9521-4ede-84c4-0ae278c4331b",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxPerPeriodAmountCurrency",
+        "@id": "8e2976a5-c02d-3da4-ae9f-075114c5aa0f",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "maxPerPeriodAmount",
+        "@id": "a91cd257-3b16-4b5b-8242-9702f0542fa0",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0b61e5ab-4a6b-4d8d-b333-c7bea14bff75",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7c1443be-d591-4898-8101-aaf91487a7d9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "31f908d4-b56c-339e-8311-81f7e1902980",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "71d8ce14-b563-49e9-a4a4-ddbbf7c42b28",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "206461b0-23e3-4f3f-a424-a964b1f01c85",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f162bf02-9347-4d1d-aded-f13bc0886112",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

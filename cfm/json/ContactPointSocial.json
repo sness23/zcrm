@@ -1,0 +1,135 @@
+{
+  "@id": "ContactPointSocial",
+  "name": "Contact Point Social",
+  "@type": "Class",
+  "description": "Social handle for a party e.g. trustednews at twitter",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "socialNetworkProviderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialFanStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "profilePictureURL",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialHandleName",
+      "@type": "Property"
+    },
+    {
+      "@id": "socialHandleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "followersCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "353a7757-502d-32f7-b648-b542b05adf57",
+    "@type": "Shape",
+    "targetClass": "ContactPointSocial",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "53d6d43d-7a43-31fe-b6d9-0c51f46a6b6e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialNetworkProviderId",
+        "@id": "6099d362-3a2e-3944-b0cd-c1d7dbf6557e",
+        "node": "7064203e-8a40-3ece-8405-1211a8abc5c1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialHandleName",
+        "@id": "dd7f8b70-ca8e-342e-a9be-15655c935d9e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialHandleId",
+        "@id": "239a01e6-1f1f-3a0f-850b-a2d8fdb6f158",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "socialFanStatusId",
+        "@id": "a0e539b1-2d42-399b-b8dc-5bc9ae91e28d",
+        "node": "67e92990-48ef-3e4c-a6c3-28d912464628",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "profilePictureURL",
+        "@id": "2620be4a-1571-3800-b239-32f159685d4e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e27163aa-b1c4-3562-ae91-7f2403760117",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9a6d2148-ea48-45c5-9ada-f03144946530",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "684baa21-d8b1-37c3-b0e5-5bfde8cb2d83",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "followersCount",
+        "@id": "7443d9a8-c388-3e1b-9f9c-cc17e6f25b7d",
+        "datatype": "xsd:integer",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3d5e76bc-657e-42b2-8bcb-ceff14a52b68",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b97e2582-2fab-396f-8052-b12d1d9f8ec9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ba9b16de-bb31-3150-b3d2-7c00c6cecf1c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

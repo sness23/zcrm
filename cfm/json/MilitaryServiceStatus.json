@@ -1,0 +1,68 @@
+{
+  "@id": "MilitaryServiceStatus",
+  "name": "MilitaryServiceStatus",
+  "@type": "Class",
+  "description": "Has the person served in the military e.g. unknown, yes, no",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ceaae7a3-eaa3-3433-844d-a5ee03767dba",
+    "@type": "Shape",
+    "targetClass": "MilitaryServiceStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "b8093658-fcaa-4000-82c2-b093b4d93088",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "18ebff62-5638-47a7-af2f-ac9762d9fec3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fb866d5b-4f16-4989-b939-9a6797aee17c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0fa669e2-17b1-4aaa-8bcb-f7c5a46f7e5a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c3b09f84-52d8-41a1-8a0a-37222bc40089",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "27f7aeee-d54a-4262-94d4-8b9352df0bb2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c60183b4-34f3-42c2-94d4-2db7a69f4c16",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

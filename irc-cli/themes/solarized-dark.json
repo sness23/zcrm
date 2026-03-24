@@ -1,0 +1,18 @@
+{
+  "name": "solarized-dark",
+  "description": "Solarized Dark theme",
+  "background": "#002b36",
+  "foreground": "#839496",
+  "timestamp": "#586e75",
+  "nick": ["#268bd2", "#2aa198", "#859900", "#b58900"],
+  "channelActive": "#fdf6e3 on #073642",
+  "channelInactive": "#586e75",
+  "divider": "#073642",
+  "statusBar": "#002b36 on #839496",
+  "create": "#859900",
+  "update": "#b58900",
+  "delete": "#dc322f",
+  "error": "#dc322f",
+  "success": "#859900",
+  "pending": "#cb4b16"
+}

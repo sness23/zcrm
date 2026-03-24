@@ -1,0 +1,104 @@
+{
+  "@id": "AttributeValueTranslation",
+  "name": "Attribute Value Translation",
+  "@type": "Class",
+  "description": "Translated attributes for an attribute value",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "attributeValueId",
+      "@type": "Property"
+    },
+    {
+      "@id": "translatedAttributeValue",
+      "@type": "Property"
+    },
+    {
+      "@id": "localeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "translatedAttributeValueDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7fc6820b-71e1-323c-b2dc-ec510b0ef615",
+    "@type": "Shape",
+    "targetClass": "AttributeValueTranslation",
+    "properties": [
+      {
+        "path": "translatedAttributeValueDescription",
+        "@id": "b5431612-5b5d-4272-a2e2-276f47d63512",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "translatedAttributeValue",
+        "@id": "1ef74387-654f-3b08-b909-8f95e3cfdfd2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "9ccbbafd-71e6-4bab-9656-415fe9fe9755",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1bde2b07-6320-4a0a-9353-83937f4596b3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7e29bc61-7863-4c4c-9c1c-5d5980ef4e80",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d18c8058-dd02-3ef1-a2f7-5c821be2554a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c16038cf-9428-4383-8000-bb8e636843fb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "878fc145-77c0-41c1-82c2-562759079d87",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2a5da2de-6c72-41e1-9555-6678b0ff97ef",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "attributeValueId",
+        "@id": "ace78a8f-c494-37d0-9a5f-b0bcc3db5479",
+        "node": "f6ed0882-f86c-3b62-8f6e-6301d6262cc2",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

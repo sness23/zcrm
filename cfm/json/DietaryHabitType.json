@@ -1,0 +1,79 @@
+{
+  "@id": "DietaryHabitType",
+  "name": "Dietary Habit Type",
+  "@type": "Class",
+  "description": "Dietary habit e.g. kosher food eater",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "dietaryHabitTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7522e850-5914-34a6-a495-5a17714f82bb",
+    "@type": "Shape",
+    "targetClass": "DietaryHabitType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "50d58162-ffe0-3601-a6a9-133b9908923f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c5b1e046-402c-3f62-8108-c317df5e97cb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "da0da824-ad84-4a4a-9515-a93fa2b2cf99",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "70be7f21-7442-3eea-9c9d-487f21a41b28",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "01df27ed-2edd-4343-a525-f78a0a760c3f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "cf3c801b-8106-385a-ba35-7e34390dd58a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "dietaryHabitTypeName",
+        "@id": "014e1182-9768-3a99-b567-47ba1c6536c5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "91269fbc-a4d4-3b2a-913d-67ef11d95313",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

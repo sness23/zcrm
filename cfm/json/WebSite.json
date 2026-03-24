@@ -1,0 +1,79 @@
+{
+  "@id": "WebSite",
+  "name": "Web Site",
+  "@type": "Class",
+  "description": "A site that is hosted on the internet",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a0919917-2a30-3f76-9760-c57c49f17bbe",
+    "@type": "Shape",
+    "targetClass": "WebSite",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "fb4ca61e-5a75-32e6-9760-a2972f03cedf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "0578f873-6a81-40b0-a363-150a667ce678",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3000b485-5f4f-309e-9472-a5995bf188a3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "29fb7217-9ecc-4cec-8242-1e0f70cfeab5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6fb4e11c-7718-38d4-bfbc-c5a9fab72680",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "cbdf897a-23f2-4cfc-9797-eb98dba4b535",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0d2df23e-47c6-3705-88a2-3926a9cbdb24",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6ade200e-1a7a-3874-949e-d14a36828d4c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

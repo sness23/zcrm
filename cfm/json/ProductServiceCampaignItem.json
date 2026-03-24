@@ -1,0 +1,88 @@
+{
+  "@id": "ProductServiceCampaignItem",
+  "name": "Product Service Campaign Item",
+  "@type": "Class",
+  "description": "A purpose of Product Service Campaign may be to inform customers about multiple issues, which could relate to either Inventory Products or Product Assets.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "returnOrderItemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productServiceCampaignId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "98d19b13-4779-4eee-ba7a-e8312e140984",
+    "@type": "Shape",
+    "targetClass": "ProductServiceCampaignItem",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5c317b89-9226-4818-8e8e-6593aee54f09",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productServiceCampaignId",
+        "@id": "b9f3cdea-77e0-4f9f-8202-8f902348b15e",
+        "node": "a6fcf26a-e516-4c5c-b0b0-1e2c69b46db2",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c9b452d2-c2b1-4737-b737-b5aa9797e728",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "713fc52c-820a-4fbf-a1e1-5916b9c40b4c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "530c9875-6327-4818-a2a2-2a29b4fa8807",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "130926bc-8981-4e6e-9151-5b5c0e2d8114",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "944e07a1-44d7-4c3c-befe-f230fbe34129",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "8c9bb02d-8a00-4555-bc7c-e8bb3dfc4e58",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

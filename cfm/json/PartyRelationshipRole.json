@@ -1,0 +1,79 @@
+{
+  "@id": "PartyRelationshipRole",
+  "name": "Party Relationship Role",
+  "@type": "Class",
+  "description": "What role does a party play in the relationshp e.g. Household of, Household member",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyRelationshipRoleName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "61edc0e7-183c-3f38-b980-df323b1e16ff",
+    "@type": "Shape",
+    "targetClass": "PartyRelationshipRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ae6baeb9-c5ba-3292-9eb2-04ba21823556",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyRelationshipRoleName",
+        "@id": "bf177ed2-ed26-3418-aa1a-6ed153a5b9dd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a5a0a109-7a1b-36a0-a1a4-9a0e5e3d21cf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2b38501c-560e-4282-b777-0dbd839b4e06",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e430faa2-1db4-3ba1-aaf9-b3296e6e552a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0fb84929-cd55-4575-abab-7810e717faf8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0a37ddfb-a7d4-3cfc-aff5-4164b551bdaa",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "81aad4c9-ca09-3611-af64-6a24a7cd5265",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

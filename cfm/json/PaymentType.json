@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentType",
+  "name": "Payment Type",
+  "@type": "Class",
+  "description": "Idnetifies the Payment as either a Capture Payment or Refund Payment",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2fa1a799-297a-4f9f-9fdf-9c2a60cfd235",
+    "@type": "Shape",
+    "targetClass": "PaymentType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4cb24f68-345d-4282-b676-f5909d4a4c29",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "105b9096-a76f-4faf-b232-6698cb538681",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "9a611d15-88d2-4c0c-acac-08330e1e8743",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c322ab15-1e66-4e8e-a161-ce98bbfe767d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "42e05bcb-8c3c-4b0b-a020-75504a63c9a7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6bef72ac-506f-4d4d-8989-fa2dfa50fe45",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "994b2e9c-cb57-4bfb-b1f1-60c813be0802",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2e883cfe-7edb-4e6e-a5a5-ffec50336404",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

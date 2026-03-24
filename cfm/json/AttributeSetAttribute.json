@@ -1,0 +1,68 @@
+{
+  "@id": "AttributeSetAttribute",
+  "name": "Attribute Set Attribute",
+  "@type": "Class",
+  "description": "Defines a set of extension attributes that comprise the Attribute Set",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6677900f-d639-4202-94d4-8ab3e9d356c2",
+    "@type": "Shape",
+    "targetClass": "AttributeSetAttribute",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "72dd15cb-9008-4cfc-b2b2-70354f0184dc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b3dd58c2-f8b7-4131-8282-3e25c3af0580",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f1ea851c-73fc-43e3-b1b1-6cbf72b83a24",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e8fa09dd-c9cf-4848-8505-e93785b48284",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "83d66875-befa-4111-9c9c-d9e0605885e4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "65f2de18-2c3d-4f2f-8c4c-a1f5fabf191c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3e408e5c-6143-4b3b-afaf-d4985607ab16",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

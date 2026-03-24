@@ -1,0 +1,90 @@
+{
+  "@id": "AccountPartner",
+  "name": "Account Partner",
+  "@type": "Class",
+  "description": "State what partner (account) is related to/have access to another account",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partnerAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "34e3fbec-a505-38b7-a164-78fe705dec3b",
+    "@type": "Shape",
+    "targetClass": "AccountPartner",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f2e31d11-16c6-3e8a-ba47-d27a7cc57aae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partnerAccountId",
+        "@id": "9ee2d7e1-0236-33a1-b277-f705f7351cae",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "aa444f0e-3430-30ab-afa3-242be925c323",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6a37c7ec-263b-42b2-bc7c-2cfd111f564e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "13a0298a-454b-3ba9-b35e-e9a88e38eb89",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9d756991-7d47-4000-8141-df4af8baa60c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "15cdc151-3c0e-34e8-b85e-5206a66663d0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f93cd0be-9ff1-3051-a9ef-7f39c2445835",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "03fd540e-2a72-3a3f-a8f9-5902f120c964",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

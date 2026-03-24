@@ -1,0 +1,69 @@
+{
+  "@id": "CheckTender",
+  "name": "Check Tender",
+  "@type": "Class",
+  "description": "A written, dated and signed instrument that contains an unconditional order from the drawer (a bank) to pay a definite sum of money to the seller.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d71675a6-ef0c-4373-8202-da2097dc6e97",
+    "@type": "Shape",
+    "targetClass": "CheckTender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7568030f-1538-4292-99d9-879c5659a459",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "b6eddf2d-a31a-4dfd-aded-790bc50e1927",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9ef5d671-f77d-4616-8989-b91fb5667fdc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d39292b5-2ef2-4151-a6a6-2271851a2494",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "28bfe502-c49e-44c4-8242-15046755fa46",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "68ead778-743e-4a4a-90d0-76d292779524",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "986ed07e-0314-4747-8303-d560defebfa9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "nord",
+  "description": "Nord theme",
+  "background": "#2E3440",
+  "foreground": "#D8DEE9",
+  "timestamp": "#4C566A",
+  "nick": ["#88C0D0", "#A3BE8C", "#EBCB8B", "#B48EAD"],
+  "channelActive": "#ECEFF4 on #3B4252",
+  "channelInactive": "#616E88",
+  "divider": "#3B4252",
+  "statusBar": "#2E3440 on #D8DEE9",
+  "create": "#A3BE8C",
+  "update": "#EBCB8B",
+  "delete": "#BF616A",
+  "error": "#BF616A",
+  "success": "#A3BE8C",
+  "pending": "#D08770"
+}

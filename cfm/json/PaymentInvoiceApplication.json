@@ -1,0 +1,109 @@
+{
+  "@id": "PaymentInvoiceApplication",
+  "name": "Payment Invoice Application",
+  "@type": "Class",
+  "description": "Facilitates applying/unapplying payment balance to an Invoice.",
+  "subClassOf": "PaymentApplication",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentInvoiceApplicationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "invoiceBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "invoiceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentInvoiceApplicationName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e8a4748d-55c2-4727-b7f7-2032f674bdb0",
+    "@type": "Shape",
+    "targetClass": "PaymentInvoiceApplication",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f854f8a8-89e0-4626-9090-0e6cf96d6bca",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentInvoiceApplicationTypeId",
+        "@id": "5b98b27b-cbc1-4c7c-8787-a0fde45dce38",
+        "node": "89b4ee47-a9b0-4c9c-ac6c-bddaf9ab5220",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentInvoiceApplicationName",
+        "@id": "02aeac6d-10f5-4b7b-b8f8-1dff11bca09f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "395d5186-734b-4363-b1b1-cca382397a85",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "invoiceBalanceAmount",
+        "@id": "10b264da-28ba-4c3c-9b9b-eb47915853f7",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9b837d58-cd34-4555-b777-0772ec543b80",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "46335361-aaa9-40d0-98d8-7fafffa30355",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "34bd360e-4e1d-4999-a929-de1d4cd18293",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a130bf9e-5382-4111-9959-ee20b4fe2770",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cdc19fab-1d4d-4bab-9f1f-58744482f3cc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentInvoiceAllocations",
+        "node": "b67f7b58-f309-4434-9a1a-e49a37b26f0b",
+        "minCount": "1"
+      }
+    ]
+  }
+}

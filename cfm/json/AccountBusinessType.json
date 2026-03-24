@@ -1,0 +1,78 @@
+{
+  "@id": "AccountBusinessType",
+  "name": "Account Business Type",
+  "@type": "Class",
+  "description": "The primary business purpose or kinds of transactions for which the Account is used. Examples include Charge Account, Rebate Account and Rental Account.",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "58a7bb0c-1865-4ada-a0a0-949a66dcdbdc",
+    "@type": "Shape",
+    "targetClass": "AccountBusinessType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0f24a116-aebb-48b8-bb7b-933e1ebdde98",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f809f62b-480f-4878-b333-a550ed53e8e6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "67914ac6-904f-4949-ad6d-87ed75311b2d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3da0b273-476f-47f7-a8a8-c162eac1af64",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "35815295-d586-40d0-a5e5-1cc85a1817fa",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1aa17aa9-bc27-4373-90d0-591359abdb2e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "026a8373-6196-4cac-bbbb-d5c66caa359e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "292463ba-c2ee-4484-aded-181a78bce3be",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

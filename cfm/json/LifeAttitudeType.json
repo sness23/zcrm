@@ -1,0 +1,79 @@
+{
+  "@id": "LifeAttitudeType",
+  "name": "Life Attitude Type",
+  "@type": "Class",
+  "description": "Life attitude e.g. innovator, believer, achiever, experience, survivor",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "lifeAttitudeTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "22bef8a4-5694-3465-aaab-377d356cf758",
+    "@type": "Shape",
+    "targetClass": "LifeAttitudeType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "f3542efc-d528-3be8-ab50-ca6c941d25aa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lifeAttitudeTypeName",
+        "@id": "75d52323-ed64-3350-bf88-8763da04c3a6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2ccf523a-409b-3062-817e-f80961b85830",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2bc1e7c9-8a6c-4f8f-a7a7-7ac241063aa0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "43f14afc-f806-399a-b639-fe77171daa99",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "741706c6-7aab-4aea-ac2c-d816d906d0bb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "506a5cdd-cd7f-3ca0-b6a1-c011f3453e69",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c02cdb68-56f3-3e47-8b52-2a3644b4d035",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "@id": "ProductAssetConversionAction",
+  "name": "Product Asset Conversion Action",
+  "@type": "Class",
+  "description": "When the sale of a product converts it into an Asset for the customer, Product Asset Conversion Action defines how this will be done. Examples include: one per Sales Order Line Item that ordered it, and one per all order instances.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1ea6e0b9-f0ec-4989-81c1-720e261af940",
+    "@type": "Shape",
+    "targetClass": "ProductAssetConversionAction",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "66a03d48-1c1e-4cbc-b939-3015b8410d86",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "fa029c8e-2995-4ada-9ede-05f76a38e81a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "270a6ff1-8ae8-47e7-8383-286761335a4e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2f9c6c8c-1d29-4111-9494-1cb1f90ee47a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8798d1fd-c592-4d8d-9050-e6b36041591d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7e9323bc-f6f8-42f2-9b5b-d1e3f1b863cf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "35f924d3-ecfc-4f9f-8989-b9ffd03d352b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

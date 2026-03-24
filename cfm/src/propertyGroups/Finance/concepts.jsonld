@@ -1,0 +1,21 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "FinancePropertyGroup",
+    "name": "Finance Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "stockLedgerValuationAmount",
+        "@type": "Property",
+        "description": "What is the total value of this goods as we hold it in stock",
+        "name": "Stock Ledger Valuation Amount",
+        "range": "DataType"
+    },{
+        "@id": "stockLedgerValuationAmountCurrency",
+        "@type": "Property",
+        "description": "Currency for Stock Ledger Valuation Amount",
+        "name": "Stock Ledger Valuation Amount Currency",
+        "range": "Currency"
+    }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "ProductCategoryAttributeSet",
+  "name": "Product Category Attribute Set",
+  "@type": "Class",
+  "description": "Assignment of an Attribute Set to a Product Category e.g. the Shoe attribute set assigned to the Shoes category",
+  "subjectArea": "Product",
+  "entityGroup": "ProductCatalog",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productCategoryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "attributeSetId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "75d0dbe4-ffc9-398f-b452-4d73f2328c47",
+    "@type": "Shape",
+    "targetClass": "ProductCategoryAttributeSet",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1e9c5835-7f80-4727-b676-3d7e9fba4c90",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productCategoryId",
+        "@id": "6562e883-b331-33fd-8f2e-bec9087939c8",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "82273583-c26b-4cdc-b636-9e2b71efa002",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1100faa4-829f-48e8-b535-8848515fc78f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "66f3f94d-ef21-38a4-b3a1-fb156cbf7f28",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c0e2c864-2eca-4c0c-a4a4-bbeab0a9f0f7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "999916c0-7aa5-4aba-b7b7-01a6a2af0291",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "07ef8c41-9104-4a4a-baba-c7aca61b3686",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "attributeSetId",
+        "@id": "af66a5a5-6bc1-35e3-8f83-c4a9a817cd07",
+        "node": "d993fe8d-c6df-340a-a03f-76ce6c78665c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

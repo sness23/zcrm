@@ -1,0 +1,69 @@
+{
+  "@id": "PrepaidCard",
+  "name": "Prepaid Card",
+  "@type": "Class",
+  "description": "Payment via a card that you use to access money that you load onto it in advance, or which is loaded by a vendor (voucher).",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6b63a00e-7e9c-4c5c-bd3d-6cdec25ada84",
+    "@type": "Shape",
+    "targetClass": "PrepaidCard",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d8605c31-aec1-4989-8505-a14611dea4fc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f4d43faa-f238-4beb-82c2-2d03cbb6e636",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "020869f9-74e2-4faf-b777-8f5be3c6f07c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5aa89bbb-05e0-4c1c-9616-8ed5b2f365c4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "f729cd8b-201c-4e3e-bf3f-7ea55fcd9b0e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "eba515bd-c6bb-4e9e-a424-8d966cf64002",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "06f12627-28bd-40c0-8bcb-eda9ec6cb9ba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

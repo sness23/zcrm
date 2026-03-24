@@ -1,0 +1,113 @@
+{
+  "@id": "PartyHierarchy",
+  "name": "Party Hierarchy",
+  "@type": "Class",
+  "description": "A grouping of parties into levels, where a Party contains any number of Parties at the level below, and may belong to one Party at the level above. Legal incorporation and Accounting rules are reasons for organizing hierarchies of parties in this way.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyHierarchyTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyHierarchyStartDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyHierarchyEndDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "567b0149-f489-4171-bd3d-2ebbbb1419de",
+    "@type": "Shape",
+    "targetClass": "PartyHierarchy",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "e9f239da-b7e2-4737-9a1a-976552946677",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyHierarchyTypeId",
+        "@id": "35e01413-d605-46f6-8141-cd225ba63905",
+        "node": "a95a8410-534d-4c8c-85c5-c1a0ac1ad4f1",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyHierarchyStartDate",
+        "@id": "8efb2b0d-d9c3-4e5e-9656-16ecd07d6b4f",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyHierarchyEndDate",
+        "@id": "97ceec58-e3de-4535-9858-36131677fb0b",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "fd667bd1-ae2a-4dcd-93d3-c82b341a1539",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c4258b21-7474-4f3f-a424-a196108b038f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "302420ba-8185-4e9e-a323-3e985e3be661",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3765836f-68b9-4a6a-9b1b-abc4c6a8b60c",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "24420682-ed8e-4b0b-bcbc-ead875fb1728",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7030ef93-5f58-49f9-8343-edabe9ff758a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f3f8523d-ce49-45f5-90d0-fb1cbb92a717",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "PartyHierarchyMembers",
+        "node": "cfc6a4e5-640d-4313-9c1c-1730d4dfbcaf",
+        "minCount": "1"
+      }
+    ]
+  }
+}

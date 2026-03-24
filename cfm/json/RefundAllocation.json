@@ -1,0 +1,198 @@
+{
+  "@id": "RefundAllocation",
+  "name": "Refund Allocation",
+  "@type": "Class",
+  "description": "Facilitates applying/unapplying a capture payment, or a credit memo to a Refund Payment.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "refundAllocationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "allocatedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundPaymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundAllocationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedRefundAllocationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "unappliedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "effectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasBeenUnapplied",
+      "@type": "Property"
+    },
+    {
+      "@id": "refundBalanceAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d3a95850-9d7a-44e4-9393-0773e1726677",
+    "@type": "Shape",
+    "targetClass": "RefundAllocation",
+    "properties": [
+      {
+        "path": "unappliedDate",
+        "@id": "55d513cd-5aaa-4161-9f9f-bd0251a68f29",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "cf8f2d36-0d1c-4868-b939-e7ee08840aac",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedRefundAllocationId",
+        "@id": "de66efbb-c0ad-4aea-aa6a-d1091e7b29ff",
+        "node": "d3a95850-9d7a-44e4-9393-0773e1726677",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "refundPaymentId",
+        "@id": "69922b70-5ca2-4121-b3f3-173e24761c4c",
+        "node": "abc3bd3e-efa7-4373-9010-6902768639fd",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "refundBalanceAmount",
+        "@id": "0e8b02ba-21e2-4464-a626-b51818a7d737",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "refundAllocationTypeId",
+        "@id": "4d14bef8-6994-4aba-8686-c0588800fead",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "e0b743e5-fad5-4e6e-8d4d-936609a8f551"
+              },
+              {
+                "@id": "d88d3599-9e17-45a5-a4e4-fa4e28fbbf15"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "refundAllocationName",
+        "@id": "6f1d4457-e049-4b9b-9252-ec580ea50c61",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3745a258-2445-4373-88c8-d9147e6fb770",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e1ad20ed-b87a-4838-9292-261edfe32398",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "137f5358-4948-4111-8848-86309d3e7efe",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "hasBeenUnapplied",
+        "@id": "3340902b-66b1-4d9d-a9e9-2b84cee366d2",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7a50c531-0013-4b1b-b272-a3d97d586855",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1b595c00-df19-4878-9e1e-dad584aa6b18",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "6bb9daa2-5e9c-42a2-b777-3d1fa6b3ca1f",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "effectiveDate",
+        "@id": "987ee79e-b07d-4898-8202-b7873c3d7cf7",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "426b3fce-da98-4a1a-98d8-911d791f5d95",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "appliedDate",
+        "@id": "246ec56f-c7a5-40c0-aaaa-d6a49d39e028",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "allocatedAmount",
+        "@id": "96291eb8-360b-4d7d-bfff-da6bf4d28cc5",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

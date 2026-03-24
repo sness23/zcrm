@@ -1,0 +1,132 @@
+{
+  "@id": "SalesOrderProductAttributeValue",
+  "name": "Sales Order Product Attribute Value",
+  "@type": "Class",
+  "description": "A customer's chosen value for the value of an attribute that is defined on the master product. For example size = Large for a clothing item.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "productAttributeValueId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productAttributeValueDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "productAttributeValueText",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productAttributeValueNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "productAttributeValueURL",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7d7e04ad-e125-4707-b5b5-46d4b53d2d4e",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductAttributeValue",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "93c722aa-db7e-4d9d-9111-11c5edfedccf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductId",
+        "@id": "b7fb7832-aae3-4636-bd3d-fd0de2cb1927",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productAttributeValueURL",
+        "@id": "c0a07d20-8a74-45d5-b0b0-e1dc3eeb6bed",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "productAttributeValueText",
+        "@id": "d7656606-2453-4595-bfbf-07c061a67c10",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productAttributeValueNumber",
+        "@id": "57206eb7-ac30-4808-97d7-44e9aa3c4c59",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "productAttributeValueId",
+        "@id": "9d717732-cbfe-4040-9696-7d3fbc783d26",
+        "node": "cde2ab14-aee5-3bcf-babd-a55ecb872f1f",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productAttributeValueDate",
+        "@id": "53b632df-e507-4101-9cdc-e3c707622eca",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5d547661-c023-4a0a-b333-01b3d5caf19b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "50d0c8bd-d2ef-4c3c-8989-003a12012fa4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3612a220-ed74-4888-b838-69997485e051",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "36d7d33f-4a6d-4404-b5f5-7927246363d3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "545eef31-bb0f-4222-acec-b80703936a06",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "226a4adb-3caf-4b4b-baba-9818edff1b05",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

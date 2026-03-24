@@ -1,0 +1,101 @@
+{
+  "@id": "PersonLifeEvent",
+  "name": "Person Life Event",
+  "@type": "Class",
+  "description": "Major events a person had in their lives e.g. graudation date, marriage date",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "personLifeEventTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "personLifeEventDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4f089b0a-9f3f-3f79-b73e-fd2dd77ae43c",
+    "@type": "Shape",
+    "targetClass": "PersonLifeEvent",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3a31485b-25e3-3754-8dcd-fcbff35797dc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personLifeEventTypeId",
+        "@id": "4ccdde67-4f5c-39a5-a003-3ec1d54a68d7",
+        "node": "ae3be357-644c-3e6e-9e43-d60fa895b02b",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personLifeEventDateTime",
+        "@id": "74d7feaf-332e-380b-8c24-36c8cc8b741b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "71711c37-8492-36a2-aeed-25a5987f05f2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "ef282bbf-b603-306d-8987-fb1a5073ac49",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e5972dc4-d96f-4030-b8b8-86bde3f29950",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "16178872-c313-386b-b242-dc121f786c47",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ac88b591-8b82-4aca-a8a8-0dfde109546d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7aa8a003-b531-3329-9301-adf554418561",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "26642451-ab61-3834-8081-0a916a62b2a6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

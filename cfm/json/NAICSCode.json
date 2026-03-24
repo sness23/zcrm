@@ -1,0 +1,79 @@
+{
+  "@id": "NAICSCode",
+  "name": "NAICS Code",
+  "@type": "Class",
+  "description": "6 digit North American Industry Code",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "nAICSCodeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "dc0245c7-66ff-3f56-a084-b8ab604288ba",
+    "@type": "Shape",
+    "targetClass": "NAICSCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6bebbd11-ee4e-3d8d-835a-0e7189d8cce2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "nAICSCodeName",
+        "@id": "e9999663-95a8-3e3f-83a2-c4214dce6a9d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2636d0b4-f2d9-3097-a784-c60aa01d615c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "49574ef6-00c2-4757-9353-f1cea16e6118",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "56c68819-0b63-3d12-b0bf-13b7330147f8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4e48e71a-17cb-4424-bfff-900589f95b73",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "86227fad-7181-3124-be1f-25fa058cf394",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "180a74d1-5ab1-3223-9a71-21d094effd5d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

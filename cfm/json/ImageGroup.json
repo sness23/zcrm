@@ -1,0 +1,78 @@
+{
+  "@id": "ImageGroup",
+  "name": "Image Group",
+  "@type": "Class",
+  "description": "A grouping of images",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7076f041-0718-396f-9ac2-b7d57a9861b7",
+    "@type": "Shape",
+    "targetClass": "ImageGroup",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ce4c058a-70b3-4dad-8888-22f8bd543646",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a968fe60-8eb6-3fd9-ae35-d1682cfb4e73",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7a478813-348b-4979-a020-c63dd01599f0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "44341db4-5a10-40b0-8989-1dd17707ed99",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4b400353-755f-3498-adca-1020eda04b2b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "96ae8c8b-10e0-4151-a8e8-93c409be557c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7b5d92ac-b122-4ddd-8d4d-5150b4b2b291",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d4a143a2-2e0d-4676-be3e-2fbbe432fa61",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

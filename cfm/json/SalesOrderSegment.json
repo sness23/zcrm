@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderSegment",
+  "name": "Sales Order Segment",
+  "@type": "Class",
+  "description": "A sub-period of an overall subscription which has pricing associated with it",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "71442465-8a98-4f1f-bafa-e4933c0fd476",
+    "@type": "Shape",
+    "targetClass": "SalesOrderSegment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8dc24546-59e7-4a2a-9050-e879b6c8a3b4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e4cc4f95-7276-47f7-8a0a-d6a0cfd7ab42",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8a6a8b78-9efb-4fbf-a929-95bfee688493",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "18eb8a01-60e0-4383-b1b1-adde5a05bee0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b691556b-bf30-4464-8383-043635aee680",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0df4d550-35b4-4bcb-aaea-604c366e41ee",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f5e3296c-006c-4c1c-9252-7957ff1da1e2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7a8ccd0c-063e-48c8-a8e8-af1bb64ac7a5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

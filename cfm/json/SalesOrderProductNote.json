@@ -1,0 +1,100 @@
+{
+  "@id": "SalesOrderProductNote",
+  "name": "Sales Order Product Note",
+  "@type": "Class",
+  "description": "A document accompanying a Sales Order that lists the description, quantity of the goods to be delivered or other information.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "noteText",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProduct",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7ec54e1f-369d-4f1f-97d7-5424492e612b",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductNote",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0a5131db-2ab0-4cec-bfff-35d82772a4cb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProduct",
+        "@id": "84cecaf8-5dac-4dfd-94d4-624032eda176",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "noteText",
+        "@id": "8bfb05b6-96d8-45d5-9b9b-091b321c1701",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3decd297-53d1-4414-a969-b5b0ce885cc4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b6048c1b-2319-45f5-b5f5-3ec903b3994e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5f8abb1d-b824-4696-a565-45ea56ba580c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "75bc91f7-c312-4686-98d8-3872b6798c12",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "37511939-bd38-4b2b-af2f-249c39ec753e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "90e4fff0-e9e1-4343-bfff-496dc1724b44",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3d4f0bb9-ad98-4414-a161-4579ca43caba",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

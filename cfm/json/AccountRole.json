@@ -1,0 +1,57 @@
+{
+  "@id": "AccountRole",
+  "name": "Account Role",
+  "@type": "Class",
+  "description": "An Account is created to facilitate a business relationship, and Account Role stores data specific to a certain type of business relationship, for example Employee, Patient, Healthcare Provider or Household",
+  "subjectArea": "Account",
+  "entityGroup": "AccountConfiguration",
+  "properties": [],
+  "schema": {
+    "@id": "2754b2e8-417c-4ebe-af6f-eed41689f33d",
+    "@type": "Shape",
+    "targetClass": "AccountRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5bd022de-2efa-45d5-baba-5a7c7990358d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "03b0848d-cc36-49b9-acec-0046e6ee8e3f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ba650e8f-94e0-4636-8a4a-9283faafd95c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "692d7f12-4d21-4818-b636-5fb1a1fd98fb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d001f7d8-e078-4d9d-a8e8-e379478c2343",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fb1e2b2c-c061-4bdb-90d0-1c7c226c29f4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

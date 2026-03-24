@@ -1,0 +1,68 @@
+{
+  "@id": "ServiceRelatedProduct",
+  "name": "Service Related Product",
+  "@type": "Class",
+  "description": "Association of two products using only the Product Relationship Types which are valid for Service-related products.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0d35e2c6-c3d0-4b5b-a1a1-49c63c26bf0a",
+    "@type": "Shape",
+    "targetClass": "ServiceRelatedProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "066b20d3-1b1e-41b1-89c9-3d02a613c39e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ed21e3cd-e948-4c7c-8040-2cb7a70a279e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "4d7a9a18-00ac-4767-9353-82b552723c34",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "19c0363d-5854-4272-b9f9-872df53a1207",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9a2df767-c070-4515-b9b9-392981821f84",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7d7296aa-651d-48a8-9919-3d76499bd4ce",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "aa4283c1-205c-4131-aa6a-5ffa039a154d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

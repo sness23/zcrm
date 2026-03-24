@@ -1,0 +1,165 @@
+{
+  "@id": "PriceAdjustmentGroup",
+  "name": "Price Adjustment Group",
+  "@type": "Class",
+  "description": "Supertype of: Sales Order Price Adjustment, Sales Order Product Price Adjustment, and FulfillmentOrderProductPriceAdjustment",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "adjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "promotionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderPriceAdjustmentTypeID",
+      "@type": "Property"
+    },
+    {
+      "@id": "isManuallyApplied",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponId",
+      "@type": "Property"
+    },
+    {
+      "@id": "reasonText",
+      "@type": "Property"
+    },
+    {
+      "@id": "originalPriceAdjustmentGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "priceAdjustmentMethodId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e6debaf3-c5a8-4d2d-8444-3e27f960e9a1",
+    "@type": "Shape",
+    "targetClass": "PriceAdjustmentGroup",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1379976a-bf7a-40d0-9515-e9d79fef5bac",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderPriceAdjustmentTypeID",
+        "@id": "fd62073a-0cde-4a8a-8f4f-ef1b1add1411",
+        "node": "55ab903c-b415-44a4-8d0d-9ea8b1338290",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "reasonText",
+        "@id": "f147aadf-f5af-4939-8c0c-a1c428f822c8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "priceAdjustmentMethodId",
+        "@id": "1ff6a76a-e636-4d1d-b5f5-da0da7258ccd",
+        "node": "7ddd73b9-2f0c-4a5a-a9e9-3b3821b6c0f4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "originalPriceAdjustmentGroupId",
+        "@id": "2c198123-da09-4a4a-9c5c-4cef4861267a",
+        "node": "e6debaf3-c5a8-4d2d-8444-3e27f960e9a1",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "7129d1e8-16ab-41e1-95d5-865ebabeb361",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "31a0f87e-2580-4171-8383-6d7a956fb8da",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isManuallyApplied",
+        "@id": "6bacd9f6-73d6-4979-9b9b-27e13bce8d06",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "59ba3e97-1754-47e7-b3b3-6923f3cba481",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "775b53cc-9278-4828-a363-ffded6a3ea45",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0d90f173-6922-4525-a121-829aacdf1701",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d06a7c50-bda9-4c1c-b5f5-7e59278c5282",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "00a0ca7d-b64f-4020-b979-8c260eec35dc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9347ac58-6d50-4a2a-8747-49e6876f3aea",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "couponId",
+        "@id": "b2d68d5f-ac16-4e0e-8808-71bd45661475",
+        "node": "ee988b63-7ce2-47e7-ae2e-240aa4f2c1d5",
+        "maxCount": "1"
+      },
+      {
+        "path": "adjustmentAmount",
+        "@id": "b17f0934-d146-4cbc-a1e1-68c1786c511f",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

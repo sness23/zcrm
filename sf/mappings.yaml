@@ -1,0 +1,711 @@
+# Salesforce to FS-CRM Field Mappings
+# This file defines how Salesforce fields map to FS-CRM frontmatter fields
+
+# Global mappings that apply to all objects
+global:
+  # Always preserve the original Salesforce ID
+  Id:
+    target: sf_id
+    type: string
+    pattern: "^[a-zA-Z0-9]{18}$"
+    required: true
+
+  # Track sync timestamp
+  LastModifiedDate:
+    target: sf_synced_at
+    type: date-time
+    transform: iso8601
+
+  # Standard audit fields
+  CreatedDate:
+    target: created_at
+    type: date-time
+    transform: iso8601
+
+  CreatedById:
+    target: created_by_sf_id
+    type: string
+
+  LastModifiedById:
+    target: updated_by_sf_id
+    type: string
+
+  # Owner field (common to most objects)
+  OwnerId:
+    target: owner_sf_id
+    type: string
+    resolve:
+      object: User
+      link_field: owner
+
+  # System fields to skip
+  skip_fields:
+    - SystemModstamp
+    - IsDeleted
+    - MasterRecordId
+    - LastActivityDate
+    - LastViewedDate
+    - LastReferencedDate
+
+# Object-specific mappings
+objects:
+  # ============================================================================
+  # ACCOUNT
+  # ============================================================================
+  Account:
+    fs_entity: Account
+    id_prefix: acc
+
+    fields:
+      Name:
+        target: name
+        type: string
+        required: true
+
+      # Rename 'Type' to avoid conflict with entity type
+      Type:
+        target: account_type
+        type: string
+
+      Industry:
+        target: industry
+        type: string
+
+      Website:
+        target: website
+        type: string
+        format: uri
+
+      Phone:
+        target: phone
+        type: string
+
+      Fax:
+        target: fax
+        type: string
+
+      AnnualRevenue:
+        target: annual_revenue
+        type: number
+
+      NumberOfEmployees:
+        target: employee_count
+        type: integer
+
+      Description:
+        target: description
+        type: string
+        # Description goes to markdown body instead of frontmatter
+        to_body: true
+
+      # Billing Address (compound)
+      BillingStreet:
+        target: billing_street
+        type: string
+
+      BillingCity:
+        target: billing_city
+        type: string
+
+      BillingState:
+        target: billing_state
+        type: string
+
+      BillingPostalCode:
+        target: billing_postal_code
+        type: string
+
+      BillingCountry:
+        target: billing_country
+        type: string
+
+      # Shipping Address (compound)
+      ShippingStreet:
+        target: shipping_street
+        type: string
+
+      ShippingCity:
+        target: shipping_city
+        type: string
+
+      ShippingState:
+        target: shipping_state
+        type: string
+
+      ShippingPostalCode:
+        target: shipping_postal_code
+        type: string
+
+      ShippingCountry:
+        target: shipping_country
+        type: string
+
+      # Parent Account relationship
+      ParentId:
+        target: parent_account_sf_id
+        type: string
+        resolve:
+          object: Account
+          link_field: parent_account
+
+  # ============================================================================
+  # CONTACT
+  # ============================================================================
+  Contact:
+    fs_entity: Contact
+    id_prefix: con
+
+    fields:
+      # Name fields
+      FirstName:
+        target: first_name
+        type: string
+
+      LastName:
+        target: last_name
+        type: string
+        required: true
+
+      # Computed name field
+      Name:
+        target: name
+        type: string
+        required: true
+
+      Title:
+        target: title
+        type: string
+
+      Department:
+        target: department
+        type: string
+
+      # Contact info
+      Email:
+        target: email
+        type: string
+        format: email
+
+      Phone:
+        target: phone
+        type: string
+
+      MobilePhone:
+        target: mobile_phone
+        type: string
+
+      Fax:
+        target: fax
+        type: string
+
+      # Account relationship
+      AccountId:
+        target: account_sf_id
+        type: string
+        required: true
+        resolve:
+          object: Account
+          link_field: account
+
+      # Reports To relationship
+      ReportsToId:
+        target: reports_to_sf_id
+        type: string
+        resolve:
+          object: Contact
+          link_field: reports_to
+
+      # Mailing Address
+      MailingStreet:
+        target: mailing_street
+        type: string
+
+      MailingCity:
+        target: mailing_city
+        type: string
+
+      MailingState:
+        target: mailing_state
+        type: string
+
+      MailingPostalCode:
+        target: mailing_postal_code
+        type: string
+
+      MailingCountry:
+        target: mailing_country
+        type: string
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+  # ============================================================================
+  # LEAD
+  # ============================================================================
+  Lead:
+    fs_entity: Lead
+    id_prefix: led
+
+    fields:
+      FirstName:
+        target: first_name
+        type: string
+
+      LastName:
+        target: last_name
+        type: string
+        required: true
+
+      Name:
+        target: name
+        type: string
+        required: true
+
+      Company:
+        target: company
+        type: string
+        required: true
+
+      Title:
+        target: title
+        type: string
+
+      Email:
+        target: email
+        type: string
+        format: email
+
+      Phone:
+        target: phone
+        type: string
+
+      MobilePhone:
+        target: mobile_phone
+        type: string
+
+      Website:
+        target: website
+        type: string
+        format: uri
+
+      LeadSource:
+        target: lead_source
+        type: string
+
+      Status:
+        target: status
+        type: string
+
+      Rating:
+        target: rating
+        type: string
+
+      Industry:
+        target: industry
+        type: string
+
+      NumberOfEmployees:
+        target: employee_count
+        type: integer
+
+      AnnualRevenue:
+        target: annual_revenue
+        type: number
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+      # Address
+      Street:
+        target: street
+        type: string
+
+      City:
+        target: city
+        type: string
+
+      State:
+        target: state
+        type: string
+
+      PostalCode:
+        target: postal_code
+        type: string
+
+      Country:
+        target: country
+        type: string
+
+  # ============================================================================
+  # OPPORTUNITY
+  # ============================================================================
+  Opportunity:
+    fs_entity: Opportunity
+    id_prefix: opp
+
+    fields:
+      Name:
+        target: name
+        type: string
+        required: true
+
+      AccountId:
+        target: account_sf_id
+        type: string
+        required: true
+        resolve:
+          object: Account
+          link_field: account
+
+      Amount:
+        target: amount
+        type: number
+
+      CloseDate:
+        target: close_date
+        type: date
+        required: true
+
+      StageName:
+        target: stage
+        type: string
+        required: true
+
+      Probability:
+        target: probability
+        type: integer
+
+      Type:
+        target: opportunity_type
+        type: string
+
+      LeadSource:
+        target: lead_source
+        type: string
+
+      NextStep:
+        target: next_step
+        type: string
+
+      ForecastCategory:
+        target: forecast_category
+        type: string
+
+      IsClosed:
+        target: is_closed
+        type: boolean
+
+      IsWon:
+        target: is_won
+        type: boolean
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+  # ============================================================================
+  # CAMPAIGN
+  # ============================================================================
+  Campaign:
+    fs_entity: Campaign
+    id_prefix: cmp
+
+    fields:
+      Name:
+        target: name
+        type: string
+        required: true
+
+      Type:
+        target: campaign_type
+        type: string
+
+      Status:
+        target: status
+        type: string
+
+      StartDate:
+        target: start_date
+        type: date
+
+      EndDate:
+        target: end_date
+        type: date
+
+      ExpectedRevenue:
+        target: expected_revenue
+        type: number
+
+      BudgetedCost:
+        target: budgeted_cost
+        type: number
+
+      ActualCost:
+        target: actual_cost
+        type: number
+
+      ExpectedResponse:
+        target: expected_response
+        type: number
+
+      NumberSent:
+        target: number_sent
+        type: integer
+
+      IsActive:
+        target: is_active
+        type: boolean
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+      # Parent Campaign
+      ParentId:
+        target: parent_campaign_sf_id
+        type: string
+        resolve:
+          object: Campaign
+          link_field: parent_campaign
+
+  # ============================================================================
+  # CASE
+  # ============================================================================
+  Case:
+    fs_entity: Case
+    id_prefix: cse
+
+    fields:
+      CaseNumber:
+        target: case_number
+        type: string
+
+      Subject:
+        target: name
+        type: string
+        required: true
+
+      Status:
+        target: status
+        type: string
+
+      Priority:
+        target: priority
+        type: string
+
+      Type:
+        target: case_type
+        type: string
+
+      Reason:
+        target: reason
+        type: string
+
+      Origin:
+        target: origin
+        type: string
+
+      AccountId:
+        target: account_sf_id
+        type: string
+        resolve:
+          object: Account
+          link_field: account
+
+      ContactId:
+        target: contact_sf_id
+        type: string
+        resolve:
+          object: Contact
+          link_field: contact
+
+      ParentId:
+        target: parent_case_sf_id
+        type: string
+        resolve:
+          object: Case
+          link_field: parent_case
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+      IsClosed:
+        target: is_closed
+        type: boolean
+
+  # ============================================================================
+  # TASK
+  # ============================================================================
+  Task:
+    fs_entity: Activity
+    id_prefix: act
+
+    fields:
+      Subject:
+        target: name
+        type: string
+        required: true
+
+      Status:
+        target: status
+        type: string
+
+      Priority:
+        target: priority
+        type: string
+
+      ActivityDate:
+        target: due_date
+        type: date
+
+      WhoId:
+        target: who_sf_id
+        type: string
+        # WhoId can reference Contact or Lead
+        resolve:
+          polymorphic: true
+          link_field: related_to
+
+      WhatId:
+        target: what_sf_id
+        type: string
+        # WhatId can reference Account, Opportunity, etc.
+        resolve:
+          polymorphic: true
+          link_field: regarding
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+      IsClosed:
+        target: is_completed
+        type: boolean
+
+  # ============================================================================
+  # EVENT
+  # ============================================================================
+  Event:
+    fs_entity: Activity
+    id_prefix: act
+
+    fields:
+      Subject:
+        target: name
+        type: string
+        required: true
+
+      StartDateTime:
+        target: start_time
+        type: date-time
+        required: true
+
+      EndDateTime:
+        target: end_time
+        type: date-time
+
+      DurationInMinutes:
+        target: duration_minutes
+        type: integer
+
+      Location:
+        target: location
+        type: string
+
+      IsAllDayEvent:
+        target: is_all_day
+        type: boolean
+
+      WhoId:
+        target: who_sf_id
+        type: string
+        resolve:
+          polymorphic: true
+          link_field: related_to
+
+      WhatId:
+        target: what_sf_id
+        type: string
+        resolve:
+          polymorphic: true
+          link_field: regarding
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+  # ============================================================================
+  # PRODUCT2
+  # ============================================================================
+  Product2:
+    fs_entity: Product
+    id_prefix: prd
+
+    fields:
+      Name:
+        target: name
+        type: string
+        required: true
+
+      ProductCode:
+        target: product_code
+        type: string
+
+      Description:
+        target: description
+        type: string
+        to_body: true
+
+      IsActive:
+        target: is_active
+        type: boolean
+
+      Family:
+        target: product_family
+        type: string
+
+# Transformers for special field types
+transformers:
+  # Address composer - combines multiple address fields into one
+  compose_address:
+    type: compose
+    format: "{street}, {city}, {state} {postal_code}, {country}"
+
+  # Date/time transformations
+  iso8601:
+    type: datetime
+    output_format: "YYYY-MM-DDTHH:mm:ss.SSSZ"
+
+  # Custom field name cleaner
+  strip_custom_suffix:
+    type: regex
+    pattern: "__c$"
+    replacement: ""
+    case: snake_case
+
+  # Picklist to array (for multi-select picklists)
+  split_picklist:
+    type: split
+    delimiter: ";"
+    trim: true
+
+# Field resolution strategy for relationships
+resolution:
+  # Build ID -> Slug mapping in first pass
+  two_pass: true
+
+  # If target doesn't exist, queue for creation
+  create_if_missing: false
+
+  # Polymorphic lookup resolution (for WhoId, WhatId)
+  polymorphic_strategy: query_type_field

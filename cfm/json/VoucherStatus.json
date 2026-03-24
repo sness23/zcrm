@@ -1,0 +1,80 @@
+{
+  "@id": "VoucherStatus",
+  "name": "Voucher Status",
+  "@type": "Class",
+  "description": "Values of Voucher Status include: Issued, expired, redeemed, and cancelled",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "06fa933e-c084-4e5e-9414-c2bf2671f5b2",
+    "@type": "Shape",
+    "targetClass": "VoucherStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "42c41b40-4e2d-4c2c-8e8e-bdd7ed619865",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e350abb1-9c60-4f3f-a161-48df4c57f94e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a8df5192-689e-4ece-9919-d657ae5f33c6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "8212ae7a-2420-40e0-a8e8-1787e3590bc3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6b70cf42-d037-4252-9010-c2de130591ee",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "cc4694ef-fcd7-4aaa-a6e6-44abf40ac7dc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c4b6be45-ddd0-41f1-86c6-0d2172eedd29",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3aa37176-6615-4868-97d7-acb198396026",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

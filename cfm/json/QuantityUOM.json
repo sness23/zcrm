@@ -1,0 +1,79 @@
+{
+  "@id": "QuantityUOM",
+  "name": "Quantity UOM",
+  "@type": "Class",
+  "description": "Quantities available to select from e.g. each, dozen, pair",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e5804eef-defe-3262-9ca9-a69179d5fad3",
+    "@type": "Shape",
+    "targetClass": "QuantityUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "18b2f82d-d8ff-34b9-9d70-15cced4dd74b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e4528f37-0766-3ac9-aa28-bade7a4e8816",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c7acbdd7-efce-3416-9187-f4a582d85256",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3d070c80-d885-4ada-85c5-2f9a6ba3196b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "14f572e0-61d3-3208-9e1c-69c74e489fce",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ea6f6067-2e21-4232-b2b2-0839a5c5b254",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e2ae03fc-bac7-37ef-8342-61d308724898",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "683341a4-76b8-3513-a584-9b6de6726485",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

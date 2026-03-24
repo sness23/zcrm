@@ -1,0 +1,84 @@
+{
+  "@id": "ProductSalesModel",
+  "name": "Product Sales Model",
+  "@type": "Class",
+  "description": "A product may have more than one Sales Model.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "salesModelId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ea4e0105-b3d2-4525-aded-80292a94f8f0",
+    "@type": "Shape",
+    "targetClass": "ProductSalesModel",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "857bb32f-8630-4a3a-9999-51b59be97e86",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesModelId",
+        "@id": "f0177722-54e1-4404-afef-edfea23f453b",
+        "node": "a442409a-f53d-4e2e-ba7a-1bc12d19a2be",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "66566a8e-e9fa-4434-98d8-19ff7ead84cc",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "61ee0847-292c-47b7-a767-4b4142d8b300",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "627e8f89-7dfb-4595-a424-ebd557418ddb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2a9052b1-b269-4f1f-9ddd-1dd783de1f60",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "5bccc543-cc03-4d5d-8a4a-bb65fac91121",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fa46a033-0ed3-4c1c-b3f3-b82ebd3ada32",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

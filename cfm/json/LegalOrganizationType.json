@@ -1,0 +1,79 @@
+{
+  "@id": "LegalOrganizationType",
+  "name": "Legal Organization Type",
+  "@type": "Class",
+  "description": "E.g. Sole proprietor, Partnership, Limited Partnereshp, S-Corporation",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "legalOrganizationTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "99f3275e-db2c-32a8-b349-3d5e2ac7c541",
+    "@type": "Shape",
+    "targetClass": "LegalOrganizationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "1697505d-118a-32b9-9b5c-82077fdaafd0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "legalOrganizationTypeName",
+        "@id": "3415e8ae-3eb3-3a58-bfee-193c2a6afeb6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4e3b376e-99f7-39dc-93cd-2753e575c5aa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "f6895529-174f-4313-b7b7-48f00d7a0eff",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9de5c9c1-560d-38ae-880d-e876302b84ad",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1e73aa56-8e9f-4191-bfff-f0184ac89220",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "dd7c8ee5-8d54-375d-95b2-7de098597762",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "48a6ba82-9e53-3e73-9a2b-fb498cd23c24",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

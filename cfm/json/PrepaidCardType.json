@@ -1,0 +1,68 @@
+{
+  "@id": "PrepaidCardType",
+  "name": "Prepaid Card Type",
+  "@type": "Class",
+  "description": "The type of prepaid voucher: gift card, phone card, meal card, voucher, etc.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "07e1f5e5-c807-4353-8ccc-820e9deeabe7",
+    "@type": "Shape",
+    "targetClass": "PrepaidCardType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7ea19805-06ca-42e2-b575-ccf229c72f03",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "7a8f4fee-7322-4c6c-bd3d-40dfbd0c090e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "dc957526-5908-4383-84c4-5e4faa5b7bbe",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0e536db7-0dde-4212-8484-52a644919049",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "8dbe2ea0-43b9-4313-b373-d340c1f0637c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e402d8cc-ac43-4181-a2e2-07ce9303fad7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e31f0253-9e4c-42b2-b333-a7b888fd2a77",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

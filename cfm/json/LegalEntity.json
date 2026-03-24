@@ -1,0 +1,89 @@
+{
+  "@id": "LegalEntity",
+  "name": "Legal Entity",
+  "@type": "Class",
+  "description": "An organization within the company that has legal standing in the eyes of law, distinct from other organizations.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ac847633-d1de-4707-8d8d-bfbc69e7987a",
+    "@type": "Shape",
+    "targetClass": "LegalEntity",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "704be369-a34c-4909-b373-e5df0ce81543",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "d379a681-04c7-4848-8dcd-b74cda7a55fd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "bdaf3920-6a4f-4e3e-8aca-ab5c4f4b6ffc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "96395680-9b09-48b8-8c8c-8d9826592c4a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "44246d97-b7b1-4888-b575-2e82e2b862a6",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1f82735f-f9e7-4848-a262-e968afe78680",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b29a4201-e944-4313-8dcd-881e8e718ff6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "dfab36bb-e567-4c5c-9353-177b3062ef94",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6379787b-7a57-42a2-b3b3-5986231e7750",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "@id": "SalesOrderSystemStatus",
+  "name": "Sales Order System Status",
+  "@type": "Class",
+  "description": "The state of a Sales Order with respect to systems used to create and process it. This status is not displayed to end-users and changes independently of the customer-facing SalesOrderStatus",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderSystemStatusCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "78766015-c012-46c6-9f5f-ca8b51601966",
+    "@type": "Shape",
+    "targetClass": "SalesOrderSystemStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ba39c0bd-ae0d-4131-9a9a-d237c417ca4e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderSystemStatusCode",
+        "@id": "cd92772e-8345-4252-9999-43e36fc6f8f9",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c5871709-4d7c-4858-9353-d4f288a30dfe",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4dc297bf-7277-4202-bdfd-2a50ade61567",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0cd78eb6-f458-4242-bc3c-f2cb7cab2347",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1c329eff-4bcc-4969-8444-08de145c83b7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "bebed649-c0dd-4c4c-a464-6f9edde30e58",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "43ab9b69-fe92-42e2-b6f6-7d64250ed4c8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e94deca3-bb54-4cfc-a8a8-6b4e1fd3db11",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

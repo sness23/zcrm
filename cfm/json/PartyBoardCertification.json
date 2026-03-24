@@ -1,0 +1,68 @@
+{
+  "@id": "PartyBoardCertification",
+  "name": "Party Board Certification",
+  "@type": "Class",
+  "description": "A designation of achievement that has been bestowed on a Party by a recognized authority.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "173deeb7-615c-4808-9a9a-1d41418d6511",
+    "@type": "Shape",
+    "targetClass": "PartyBoardCertification",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "03255c33-cc8c-4131-9fdf-d2d457acb20f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a32be87e-0907-41e1-b333-96d9e61f790b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "99e90d2e-bb8d-4858-8c4c-8754cad65da3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "21faa430-47e7-4969-a4a4-8bc9013a1c21",
+        "datatype": "cim:id",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1140ab27-1ae0-4696-aded-b52db5b18003",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1d7faf68-5716-4b2b-8040-783ea042b73c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "571805da-b334-4a8a-abab-07df1b848ac1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

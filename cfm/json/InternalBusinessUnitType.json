@@ -1,0 +1,79 @@
+{
+  "@id": "InternalBusinessUnitType",
+  "name": "Internal Business Unit Type",
+  "@type": "Class",
+  "description": "E.g. HQ, Division, Department",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7b6ea76f-2d29-3aa5-b45a-518c45768735",
+    "@type": "Shape",
+    "targetClass": "InternalBusinessUnitType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ccfcab70-1730-31bf-9cf8-e4ecea541400",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "7a9c67ca-7f45-3ad7-9839-f7d0d48e3998",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "15ff395f-ae88-3eac-a2c1-668ad7fcc647",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a6c9a64e-7d47-4ccc-8585-864fd426d713",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8717e5bd-15ce-3671-b2dc-39317a64ee43",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e388c110-6159-4797-8848-27a0cfd61133",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b9dfbd33-d1d1-3919-a7f9-8461396deeeb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9004ca59-7c88-3cd7-85e7-ef8354b81e45",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

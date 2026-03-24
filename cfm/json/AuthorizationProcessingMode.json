@@ -1,0 +1,84 @@
+{
+  "@id": "AuthorizationProcessingMode",
+  "name": "Authorization Processing Mode",
+  "@type": "Class",
+  "description": "Mode to determine if the payment is processed by Salesforce Payment Platform or is an external authorization that is being recorded in our platform.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "28e32192-ce6d-4bbb-b7b7-761e0f37c02d",
+    "@type": "Shape",
+    "targetClass": "AuthorizationProcessingMode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7e204d8e-3fbe-4a4a-b5b5-cdbb7ed1b028",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "319f0bf8-3a9e-40c0-8303-ff571733ed29",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "221913eb-2b2c-4484-b434-8ec02ce4e531",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3df3959f-3c38-4171-8181-ff30196537fc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b86d2245-26e2-4878-b131-d6730c20ddc4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "98aee652-f5c3-4b0b-aeee-56ee884d5e3c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "51669a57-830f-4868-b9b9-96e86166edea",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6d569458-d585-4c5c-8a8a-a13a419778d5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "AlternatePayments",
+        "node": "8098f61c-acc9-4aba-a020-c57ea363392e",
+        "minCount": "1"
+      }
+    ]
+  }
+}

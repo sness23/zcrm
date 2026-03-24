@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentGatewayInteractionStatus",
+  "name": "Payment Gateway Interaction Status",
+  "@type": "Class",
+  "description": "Internal Code for tracking the status of a Gateway request.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "71c43206-94bf-4777-8646-5299606733f9",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayInteractionStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "abd97cd9-61ef-4f0f-8242-77ea8067c350",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "f244ab22-8d88-4717-a0a0-7ef0744aff3b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4222f47b-f5d2-4919-8aca-5dd72a31f1c3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "614c37df-334b-4ede-a1e1-bf78b9a0f4f5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a5e855ea-ed10-46b6-9b1b-482423845baa",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c2c62d3c-cc99-4a8a-a2e2-798ab4ecca6d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f85b0d4b-8135-4111-8282-0bb6c619843a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "569dbd79-3773-48d8-b131-071d3c7c9cbe",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

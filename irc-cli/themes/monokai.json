@@ -1,0 +1,18 @@
+{
+  "name": "monokai",
+  "description": "Monokai-inspired theme",
+  "background": "#272822",
+  "foreground": "#F8F8F2",
+  "timestamp": "#75715E",
+  "nick": ["#66D9EF", "#A6E22E", "#F92672", "#FD971F"],
+  "channelActive": "#F8F8F2 on #49483E",
+  "channelInactive": "#75715E",
+  "divider": "#49483E",
+  "statusBar": "#272822 on #F8F8F2",
+  "create": "#A6E22E",
+  "update": "#FD971F",
+  "delete": "#F92672",
+  "error": "#F92672",
+  "success": "#A6E22E",
+  "pending": "#E6DB74"
+}

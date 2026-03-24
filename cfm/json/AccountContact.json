@@ -1,0 +1,240 @@
+{
+  "@id": "AccountContact",
+  "name": "Account Contact",
+  "@type": "Class",
+  "description": "An individual who has a role specific to an Account.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "otherContactAddressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "reportsToAccountContactId",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactNote",
+      "@type": "Property"
+    },
+    {
+      "@id": "title",
+      "@type": "Property"
+    },
+    {
+      "@id": "departmentName",
+      "@type": "Property"
+    },
+    {
+      "@id": "mailingAddressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "businessPhoneId",
+      "@type": "Property"
+    },
+    {
+      "@id": "lastActivityDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "assistantName",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "indirectRelationAccountContactId",
+      "@type": "Property"
+    },
+    {
+      "@id": "assistantPhone",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactEmailId",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    },
+    {
+      "@id": "homePhoneId",
+      "@type": "Property"
+    },
+    {
+      "@id": "mobilePhoneId",
+      "@type": "Property"
+    },
+    {
+      "@id": "faxPhoneId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0f5c0999-18e5-34e8-87e5-131be51789dc",
+    "@type": "Shape",
+    "targetClass": "AccountContact",
+    "properties": [
+      {
+        "path": "title",
+        "@id": "97da4f31-be00-39a7-8c24-c65988e10297",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "eeee05ea-baef-3570-acd4-5d22004e0e7e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "reportsToAccountContactId",
+        "@id": "3b0ff672-4d52-360d-9f42-0326cf29e308",
+        "node": "0f5c0999-18e5-34e8-87e5-131be51789dc",
+        "maxCount": "1"
+      },
+      {
+        "path": "otherContactAddressId",
+        "@id": "74b3582d-f1b7-39a2-b127-1b4fbeffd58e",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "mobilePhoneId",
+        "@id": "85a0da97-d0e5-3de7-97ca-d2bf7bd31962",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "mailingAddressId",
+        "@id": "fa342e55-6061-3756-afd1-0085968944e8",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3a556d4a-2842-3ecd-82eb-e3826a58ce48",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastActivityDate",
+        "@id": "67197feb-9fb6-38b9-ae15-8b5b702e336c",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "a3238ba6-ac9e-3f7c-9f56-99c3c601b2a3",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "indirectRelationAccountContactId",
+        "@id": "bd21605f-b272-303b-9d5b-7c796b793a71",
+        "node": "0f5c0999-18e5-34e8-87e5-131be51789dc",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fad481ca-646e-4c4c-b939-3bfce82bf0ff",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a7caa68f-60ce-3647-b4b9-7cf799755590",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "homePhoneId",
+        "@id": "d8135299-fd3c-3f7d-a395-efae484a7dda",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "faxPhoneId",
+        "@id": "0275b00e-4922-30a7-915f-a40db8248ee6",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5260a872-158e-48d8-a222-83bc46cb489a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b291f8dc-7a8a-3c10-9051-436b16adb826",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "departmentName",
+        "@id": "1abf4984-fba6-399d-b1e9-b9698ac7d3ce",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "5a9c22b7-600f-3da8-b766-828b4b057dfe",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactNote",
+        "@id": "fe439229-d5fd-34ea-b8ea-2a81813ee66e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "contactEmailId",
+        "@id": "a0e5ac42-4516-3bca-856f-d85f4a4456e3",
+        "node": "892a1e9e-fd79-36d3-9aa6-51bffdfaa982",
+        "maxCount": "1"
+      },
+      {
+        "path": "businessPhoneId",
+        "@id": "abce4f41-9f4e-3dcb-9edd-c11fa5b9fc0e",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "assistantPhone",
+        "@id": "02cb82d2-1bf5-3fbe-bc78-687d7e18656f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "assistantName",
+        "@id": "c651ea2e-f867-375d-8d95-9092ba5b97b1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "be9639c8-d1f9-3dde-baeb-815e23ea2e4a",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

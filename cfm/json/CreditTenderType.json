@@ -1,0 +1,68 @@
+{
+  "@id": "CreditTenderType",
+  "name": "Credit Tender Type",
+  "@type": "Class",
+  "description": "A credit tender is related to either an Account, or to a Purchase Order, but not both. This type code identifies which relationship exists.",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "30d30f50-b109-4646-a4e4-75569776f432",
+    "@type": "Shape",
+    "targetClass": "CreditTenderType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d4375956-7566-4323-bebe-a25430d3b007",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1e10a26f-63f2-4070-be7e-7bca058295e4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b00c6170-2c4d-40d0-bb7b-5ae1ef6dc86f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8a17b7f6-cc2a-4d8d-a5a5-593c07cff7a4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ed736730-df1e-4212-8c4c-a97b9f6a1355",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "77bc4c8d-6c11-4696-9292-f1ec6ef44e1c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ceae770f-1aa8-4b4b-8686-5da5fd8906f4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

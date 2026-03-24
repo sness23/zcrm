@@ -1,0 +1,90 @@
+{
+  "@id": "SalesOrderPriceAdjustment",
+  "name": "Sales Order Price Adjustment",
+  "@type": "Class",
+  "description": "A change to the price of a Sales Order that is made before order fulfillment. A Sales Order Price Adjustment may be comprised of Sales Order Product Price Adjustments that allocate the overall adjustment amount to one or more of the products and services",
+  "subClassOf": "PriceAdjustmentGroup",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalAdjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "15744483-7dd0-4080-b131-f8d79d992a9f",
+    "@type": "Shape",
+    "targetClass": "SalesOrderPriceAdjustment",
+    "properties": [
+      {
+        "path": "totalAdjustmentTaxAmount",
+        "@id": "798e449d-cccb-4fcf-bd3d-c1baa1bae042",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "e3860f5a-745c-42f2-9252-7342dbef8ab3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderId",
+        "@id": "d63a1a7a-e3f1-4c7c-a767-d325ef03a778",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5d57b438-481f-4333-a2e2-046f36d7bfae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b4f44b29-12ab-4424-ad2d-5cd794bb9b71",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "90154aa7-9efa-41b1-8404-66162fc225bc",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "5ef39b76-2c3e-46b6-b131-cb2af69e6e2c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f46747d4-71b5-4cac-98d8-5d4330622430",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "962ee50b-114f-4747-8646-f93f2f8b1c18",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

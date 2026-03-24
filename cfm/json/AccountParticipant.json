@@ -1,0 +1,73 @@
+{
+  "@id": "AccountParticipant",
+  "name": "Account Participant",
+  "@type": "Class",
+  "description": "The relationship of a system user to an Account. For example employees that own or service a customer account",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "userPrincipalId",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountParticipantRoleId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1dd1de23-66cb-4ede-9d1d-bf3eb36f2c23",
+    "@type": "Shape",
+    "targetClass": "AccountParticipant",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6fbd0e0a-b129-4535-a464-d44d43f6fad5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e933a4e0-581f-4626-8a8a-6f5fa593eab9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b36a564b-a894-4aea-8040-a25aa6ba6e6b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "719b5c41-c666-47f7-b1f1-0cbeb84e827e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "19d76b65-10b3-4999-9999-4e56380f151c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "7c83acf0-bdc5-4bfb-b474-76a53ae2cbe4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountParticipantRoleId",
+        "@id": "1d3e276a-6120-4070-8000-a2167570635e",
+        "node": "edd86c1f-a211-4eae-bdfd-42a515783052",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

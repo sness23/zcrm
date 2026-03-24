@@ -1,0 +1,147 @@
+{
+  "@id": "SalesOrderProductPriceAdjustment",
+  "name": "Sales Order Product Price Adjustment",
+  "@type": "Class",
+  "description": "A change to the price of a Sales Order Product that is made before order fulfillment. A Sales Order Product Price Adjustment may stand-alone, or related to an adjustment that has been defined at the overall Sales Order level.",
+  "subClassOf": "PriceAdjustmentGroup",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "adjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductPriceAdjustmentTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "adjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderPriceAdjustmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductPriceAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "priceAdjustmentTierId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7d255f2b-21ec-4e0e-8383-bd08a2f9fe0a",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductPriceAdjustment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "500630e9-107a-4e5e-b777-3720ad3e51d6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductPriceAdjustmentTypeId",
+        "@id": "b5a19131-c918-44e4-8484-6d834496a45a",
+        "node": "8a9788b9-fcb5-4c6c-8bcb-3a37cb16f018",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductPriceAdjustmentAmount",
+        "@id": "c8dda98c-3723-4202-a323-8e2bc764e941",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesOrderProductId",
+        "@id": "e08806bb-9a91-4515-b4b4-5b90a7fe0cf2",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderPriceAdjustmentId",
+        "@id": "e71993a3-3080-41a1-9959-b9dbfa1c7dc5",
+        "node": "15744483-7dd0-4080-b131-f8d79d992a9f",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "714c517c-7188-4c3c-b9b9-22402ab2d952",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7e0b8f9a-7937-4161-9111-dce5dc72bf00",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "559a4fd1-8ecf-4303-9616-a7dc6a5146c5",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "09050673-71b3-4dcd-a1e1-a116d62bfeba",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a82aef5d-bc03-4f5f-8707-dba318a3f15f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "735d412b-7da4-4bfb-9353-70ab2bacda43",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b0e65ff6-753d-4000-80c0-832e739da5d1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "adjustmentTaxAmount",
+        "@id": "2950baae-fe38-4ece-a5e5-dae96de7e80c",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "adjustmentAmount",
+        "@id": "ad1962fc-4d44-47c7-b2f2-5e490c73aa28",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "@id": "SalesOrderProductPriceAdjustmentTax",
+  "name": "Sales Order Product Price Adjustment Tax",
+  "@type": "Class",
+  "description": "A tax on an adjustment to the price of a Sales Order Product.",
+  "subClassOf": "Tax",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductPriceAdjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderProductPriceAdjustmentId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "976f32fb-3ff2-4444-99d9-9dc9d39fc8b3",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductPriceAdjustmentTax",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "653c62c8-7dd9-4000-b333-a8ec8d73bb2b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductPriceAdjustmentTaxAmount",
+        "@id": "7acc5427-c0ad-44d4-8d0d-1395d4bf1da4",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductPriceAdjustmentId",
+        "@id": "f4336ff4-d760-4aca-83c3-117b862a2c7f",
+        "node": "7d255f2b-21ec-4e0e-8383-bd08a2f9fe0a",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "dc98564c-da96-4f8f-9191-d178ac8fb4ac",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8b1ee59f-1d02-4ebe-bebe-22871b7fa8e3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7a5e1d38-c19b-4b3b-9252-d0b5f4a29a21",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a6ab3b9c-8433-4191-af6f-19d2591d68a0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ef5d5060-6aa6-4f7f-a727-abc936b662d8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a763df51-abcc-4b1b-a9a9-325ca1672b14",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "08ca1db5-e833-4787-b1b1-53bcf07bd4df",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "taxRatePercent",
+        "@id": "b48ddbe6-8fdc-4252-a424-2da615c93d32",
+        "datatype": "cim:percentage",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "taxErrorMessageText",
+        "@id": "aa36f343-9e72-41b1-a525-0cbbb261fce7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressStreet2Text",
+        "@id": "af18fe01-d466-49d9-a5a5-916d808a9b5e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressStreet1Text",
+        "@id": "8c7cd417-7b12-4303-9a1a-25399c07ff5f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxAddressCityName",
+        "@id": "2e8558e1-1b93-4f1f-b939-efe2b0a4efc9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesOrderTaxTypeId",
+        "@id": "62035151-b788-4363-9f9f-1e1d9ca6f50e",
+        "node": "4c32e0f6-5ff8-4323-afef-c5e93a9db9db",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderTaxAmount",
+        "@id": "ba5618d5-7f8f-4686-9090-df5945948246",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

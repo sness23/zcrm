@@ -1,0 +1,106 @@
+{
+  "@id": "SalesOrderProductGroup",
+  "name": "Sales Order Product Group",
+  "@type": "Class",
+  "description": "Products may be grouped together for various reasons, such as products that should be shipped together. Every product in a Sales Order Product Group is not required to be a Sales Order Product.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductGroupTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7784c047-fed3-46e6-9898-afb9d189b411",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductGroup",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d86a66df-a0f0-4ded-94d4-24f3cbe8c6b3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductGroupTypeId",
+        "@id": "54d9c130-33a0-4949-bd3d-3ae2191866c2",
+        "node": "009b424f-225a-44f4-ba3a-2178f1300f73",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "01652ab6-eb4d-41d1-aaaa-298443e0c042",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d07dba12-2085-4c8c-9393-a8980591d357",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "078ad4a9-a97a-4181-8e0e-4c92d08ca078",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6dc6eb6f-284e-47d7-b939-28665a3ec3ea",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3a6a669a-b7ea-4cec-a8e8-9732db6f367e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "407692c5-6a88-4444-b3f3-e6ffbc6b363a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "ad082cf6-1843-4999-ae6e-394b3fdb1ed2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cfb8055b-25f3-4696-9ada-f665553761b9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "SalesOrderProductGroupAssignments",
+        "node": "a1a86042-a565-43f3-9858-629f24a58784",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "@id": "SalesOrderDeliveryGroup",
+  "name": "Sales Order Delivery Group",
+  "@type": "Class",
+  "description": "One or more Sales Order Products that share a common Sales Order Delivery Method, and Shipping Address",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "totalDeliveryChargeTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryAdjustmentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "giftMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderDeliveryMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "desiredDeliveryDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalUnitPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "quoteProductGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryAdjustmentTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderDeliveryStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "grandTotalDeliveryAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalPriceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalProductTaxAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryChargeAmountCurrencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "deliveryInstructionsText",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryChargeAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderDeliveryGroupNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "originalDeliveryGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "promisedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountContactId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalDeliveryAmountCurrencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isGift",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactPointAddressId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a749188b-b632-3d84-9ea4-1f106c97518e",
+    "@type": "Shape",
+    "targetClass": "SalesOrderDeliveryGroup",
+    "properties": [
+      {
+        "path": "totalUnitPriceAmount",
+        "@id": "ce3071a5-372d-45f5-87c7-1fcc3bdcc5e7",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalTaxAmount",
+        "@id": "2a538549-bc90-42d2-be3e-5e9b33b39fcd",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalProductTaxAmount",
+        "@id": "c3004364-5619-4bab-8000-5b7e9dbc02bc",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalPriceAmount",
+        "@id": "badbecd8-dc4f-4b4b-8e0e-68af7695aef4",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalDeliveryTaxAmount",
+        "@id": "577eebec-996d-4bdb-9656-020478754ab5",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryChargeTaxAmount",
+        "@id": "637da983-1a58-4a1a-b2b2-8a6608f65586",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryChargeAmountCurrencyId",
+        "@id": "7056bc47-2620-4aba-8646-ac025daa9060",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryChargeAmount",
+        "@id": "c3d0c7d6-8816-4959-93d3-0da0a7c83ce4",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryAmountCurrencyId",
+        "@id": "d9b25829-359c-4aca-9050-3d9beef21f44",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryAdjustmentTaxAmount",
+        "@id": "5756c75a-b3c8-4929-b1b1-846e0d79de70",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "totalDeliveryAdjustmentAmount",
+        "@id": "c8200548-ce1b-4c4c-bcbc-1f96b868eaa2",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "ccdda799-5e24-4a0a-a161-c90483e44966",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderId",
+        "@id": "b5ac1c75-74b1-4b6b-a9a9-12787e8a6e65",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderDeliveryStatusId",
+        "@id": "27598c1d-9a8e-4f0f-b5b5-74ad9aec4097",
+        "node": "9587d03a-f0a1-4a3a-b474-fc5b09580937",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderDeliveryGroupNumber",
+        "@id": "3c46c123-0784-4bdb-b070-b3f6dddfc7ec",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "promisedDate",
+        "@id": "9e5360be-c1d2-4919-a8e8-cf02230b6650",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "originalDeliveryGroupId",
+        "@id": "232b4f6f-87cf-4636-a5e5-a827298b64ab",
+        "node": "a749188b-b632-3d84-9ea4-1f106c97518e",
+        "maxCount": "1"
+      },
+      {
+        "path": "orderDeliveryMethodId",
+        "@id": "53b3402d-efaf-308a-9dba-cee74a4496cb",
+        "node": "b734fc6b-e50d-3066-a5a0-9344dddfd605",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "ee72ef24-5bf0-4e1e-a868-b3ae256e58df",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a19cc051-b162-4707-bcfc-267ee6902de0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isGift",
+        "@id": "3eb4b29f-c2b5-4bcb-9f5f-347c5119cfad",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fb78e141-dd84-4171-aded-9f1c4fb8a233",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "df27373d-30bf-4949-8bcb-2f5e19442dda",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "grandTotalDeliveryAmount",
+        "@id": "b782cff8-e8c7-4aaa-b777-d9b6eb939c3c",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "giftMessageText",
+        "@id": "ab3d38a3-c0b2-48d8-8c0c-08650b437d77",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4cb5b64d-fa04-4c4c-a868-48737ba39bec",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ab3a736b-60de-4828-a0e0-1f03a4e7d4b9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "desiredDeliveryDate",
+        "@id": "4ca00f65-f109-43d3-a767-81ed2d2df8b3",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "6f23056a-a7bc-4b0b-9a5a-9657516ee691",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "deliveryInstructionsText",
+        "@id": "5655ee13-6d72-41a1-b9f9-99d00623ed13",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "548a3a36-ff90-4656-b373-7b90c5782318",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactPointAddressId",
+        "@id": "abbb1feb-6335-4ebe-acac-e563ed77f51b",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountContactId",
+        "@id": "ce506924-8fc8-4444-b1f1-0a460894508a",
+        "node": "0f5c0999-18e5-34e8-87e5-131be51789dc",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

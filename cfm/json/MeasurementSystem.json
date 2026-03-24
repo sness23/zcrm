@@ -1,0 +1,80 @@
+{
+  "@id": "MeasurementSystem",
+  "name": "Measurement System",
+  "@type": "Class",
+  "description": "A collection of units of measurement and rules relating them to each other. Systems of measurement in use today include the International System of Units (Metric system), the British imperial system, and the United States customary system.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9503249c-384a-4212-8d0d-712bdca393d2",
+    "@type": "Shape",
+    "targetClass": "MeasurementSystem",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3d456ed8-7702-40a0-85c5-d3ae0ab4acc6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "5890f784-cc8d-4e5e-a6a6-e94dc5442de4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "39a63e4b-18c4-4272-b535-b44d2dcd2145",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ba33e9bd-b629-4eae-b070-6d4a665d2b40",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9c449546-c4d2-4c5c-9797-ba58a95c3ef3",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d35dd025-cd71-4beb-b5b5-ace659937815",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6c69fedf-4c8e-4777-a1e1-4a3a2c40d880",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ca0ec1be-500b-4e6e-a9a9-f9cf4fb6c794",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

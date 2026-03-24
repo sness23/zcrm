@@ -1,0 +1,89 @@
+{
+  "@id": "EntitlementPolicy",
+  "name": "Entitlement Policy",
+  "@type": "Class",
+  "description": "Product entitlements often relate to service and support, for example Web Support, Phone Support or Parts Replacement",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a0e35753-0ed8-4faf-a525-48373f13c793",
+    "@type": "Shape",
+    "targetClass": "EntitlementPolicy",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "862056d7-5bf8-44d4-8e8e-6440c0dd4d94",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "e17396ac-a418-4959-9bdb-f05380a0b950",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8df14f1a-903b-4c9c-9ddd-abd50a0d1245",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9e372322-8aa8-4cbc-9c1c-9a92e4d45809",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c056b0a9-dfe4-4151-b878-4a08a793706e",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f6349b63-8d83-4faf-a8e8-13e5deb9ce26",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "225288bd-ecb7-4303-a969-8a9bd6984ecb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2dd50ca1-2cdc-4151-a565-e3f102c83c23",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "EntitlementProducts",
+        "node": "4f20318d-2383-4909-aaaa-6e4350a23810",
+        "minCount": "1"
+      }
+    ]
+  }
+}

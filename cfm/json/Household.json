@@ -1,0 +1,120 @@
+{
+  "@id": "Household",
+  "name": "Household",
+  "@type": "Class",
+  "description": "A combination of people, normally recorded in the system for marketing or service purposes",
+  "subClassOf": "AccountRole",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "householdDissolvedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "householdFormedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "householdMemberCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "businessAccountId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "152429ca-a556-344b-8b00-82479f4caa8d",
+    "@type": "Shape",
+    "targetClass": "Household",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "97939173-6bb6-3c6b-acc3-04e11297be46",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1b580770-1878-3548-937e-69c6d15dbf2a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "63a7de1d-e5c4-36ec-9d2f-ceafd8258ad4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "aa8b3201-8c66-4f4f-83c3-5df2a3c6bcaa",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "eefea1c7-63fa-317f-933c-8eff25f1a214",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "householdMemberCount",
+        "@id": "f17d1b9c-1f12-3fb9-951a-d6ecf40843ac",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "householdFormedDate",
+        "@id": "51a4d39e-f11c-3ea6-85de-655f20a0c127",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "householdDissolvedDate",
+        "@id": "ee718a88-0e9d-3d43-a45a-889cc54b6b47",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1d324afa-d067-4707-80c0-a64f3405f3e2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "132413d3-db80-3da8-8931-f3d5c931af5a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3a4eafa1-e30f-3239-81c1-f469c650e4b6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "businessAccountId",
+        "@id": "84710850-8fb9-44a4-87c7-ad6cd95f5389",
+        "node": "2f08c250-9ea0-45f5-b070-63932470b7cb",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

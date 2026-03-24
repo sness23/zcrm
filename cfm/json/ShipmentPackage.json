@@ -1,0 +1,101 @@
+{
+  "@id": "ShipmentPackage",
+  "name": "Shipment Package",
+  "@type": "Class",
+  "description": "A parcel of one or more items bundled together, so that they arrive at the customer's address as a single unit.",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "shipmentProductCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "shipmentProductDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "shipmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f5e74a74-c37e-4aea-b070-5c0760b25df4",
+    "@type": "Shape",
+    "targetClass": "ShipmentPackage",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "cb6db2b1-58d6-43c3-8000-2b05f65d853e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentProductDescription",
+        "@id": "68a46d50-087b-4e8e-b6b6-ce75f1b13240",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentProductCount",
+        "@id": "80919298-6efe-48f8-8848-b7b7c51eb2ba",
+        "datatype": "xsd:decimal",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentId",
+        "@id": "00e31929-3165-47e7-99d9-a6d4feb67e20",
+        "node": "e3947343-1f21-3573-8b27-d3f8e03ccb80",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "00f888b8-4798-4292-b3f3-31050c0fcb1f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ff9992e6-02f5-4a5a-8646-fc5af71516f2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "0a588ce2-db43-4d6d-baba-816e0488da4d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b28dbc0d-389b-4434-a5e5-13e66c7c537b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e59dfe32-4c87-4646-96d6-5e28341973a6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "dd3839e7-7b80-4ded-9c9c-a6f3dbec5735",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

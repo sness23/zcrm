@@ -1,0 +1,68 @@
+{
+  "@id": "ProductRelatedComponent",
+  "name": "Product Related Component",
+  "@type": "Class",
+  "description": "Association of two products using only the Product Relationship Types which are valid for Sales-type products. Two products associated in this way may form a component used within a larger product.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "306f3291-1af5-4e4e-9898-5227f9418202",
+    "@type": "Shape",
+    "targetClass": "ProductRelatedComponent",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "07ca4704-d0e5-43e3-b9f9-5aa82d7e507d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4f718603-55fc-4c7c-aaaa-40cdeeeb6590",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a420aae9-eb47-46a6-afef-7f8b14757917",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "bcb8b779-c173-40e0-9e9e-047266d507e0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "67a7db3c-6d8e-4676-9ede-372505b51c28",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "0c13f470-22cb-4faf-8282-a008ec9d603a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f968acd9-b029-4818-a222-81b882f3fc2a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

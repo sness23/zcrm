@@ -1,0 +1,79 @@
+{
+  "@id": "ShipmentDocument",
+  "name": "Shipment Document",
+  "@type": "Class",
+  "description": "A receipt, bill of lading or other document that is delivered with the shipment to explain the purchase or shipment contents.",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "shipmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "02af4700-50e1-45a5-9a5a-5fa41b5260d9",
+    "@type": "Shape",
+    "targetClass": "ShipmentDocument",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4cde8d89-b86e-4beb-8686-1ee0c13fce30",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "shipmentId",
+        "@id": "6b8db3d9-6c47-48d8-81c1-410691c516c5",
+        "node": "e3947343-1f21-3573-8b27-d3f8e03ccb80",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "01d96145-63b0-4e9e-afef-d62e4dbccf80",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d7615a1c-b9cb-4050-a525-3e6e95a3d5d2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "72bb7a3c-651b-43d3-b575-2bff4adec326",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ac1c6435-ad0b-4fdf-a161-a2b187bcd5ed",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e19dab7a-137e-4c8c-8787-36bb5fb03bba",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "cd80cdf3-b487-42a2-8383-4420309b5a9a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

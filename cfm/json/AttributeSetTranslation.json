@@ -1,0 +1,94 @@
+{
+  "@id": "AttributeSetTranslation",
+  "name": "Attribute Set Translation",
+  "@type": "Class",
+  "description": "Translated attributes for an attribute set",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "localeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "translatedName",
+      "@type": "Property"
+    },
+    {
+      "@id": "attributeSetId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c5be5e9d-ac6e-3b71-9bff-a7fb1497895f",
+    "@type": "Shape",
+    "targetClass": "AttributeSetTranslation",
+    "properties": [
+      {
+        "path": "translatedName",
+        "@id": "4c0cf19c-9981-3fd5-8568-96cb981597f7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "c78aca15-5e99-4000-8040-c5fa25371c59",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fd6ea980-f8e0-4f2f-8f8f-0987ab57a499",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "55cc6776-5005-4cbc-b6b6-d54c8a6ba1c3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "f8ff78a9-5300-36c5-87db-11a917a96b60",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dde7edfe-46b0-4696-adad-c02466f3295f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2b952e9c-b733-4838-9818-c6191fcc7328",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f2a5088e-af92-41c1-8888-5a2e9828f88e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "attributeSetId",
+        "@id": "3e9d3cfa-57fd-3d31-8076-2ff81c5e8440",
+        "node": "d993fe8d-c6df-340a-a03f-76ce6c78665c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

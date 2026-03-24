@@ -1,0 +1,90 @@
+{
+  "@id": "OrganizationMilestone",
+  "name": "Organization Milestone",
+  "@type": "Class",
+  "description": "Events such as revenue and market share metrics that are significant to the Organization and its goals.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a0f42e1b-7da2-4ddd-a424-56bf3cf97622",
+    "@type": "Shape",
+    "targetClass": "OrganizationMilestone",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a0b9aaf5-9a18-4949-9919-395854fea923",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "0622de28-53a6-4d2d-a7e7-2fc492ed9963",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a5985361-91cf-4e8e-a222-dc70dd3b46d3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b0ec5399-edce-4171-bb3b-41ccff8ad8cc",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a2db8eed-7e1f-4c3c-8d8d-0fa33be3734b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2650816b-6a64-4828-8aca-d91acc8e9c3f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "09f6058f-a66b-4f8f-bf7f-69e017993c75",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "e93e61ca-52cb-4727-8e0e-d9bf786c5f71",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fd77aa66-cd95-4202-aeae-2dd3fef6a64e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

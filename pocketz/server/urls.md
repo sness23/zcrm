@@ -1,0 +1,89 @@
+# Saved URLs
+
+- [2025-06-21T02:06:19.637Z] https://github.com/sness23/pocketz
+- [2025-06-21T02:06:21.448Z] https://github.com/sness23/pocketz
+- [2025-06-21T02:06:21.771Z] https://github.com/sness23/pocketz
+- [2025-06-21T02:06:22.072Z] https://github.com/sness23/pocketz
+- [2025-06-21T02:06:37.696Z] https://discord.com/download
+- [2025-06-21T02:09:53.738Z] https://github.com/sness23/pocketz
+- [2025-08-19T00:03:37.366Z] http://test.com
+- [2025-08-19T00:03:56.714Z] chrome://extensions/
+- [2025-08-19T00:04:05.327Z] https://sness.doi.bio/sness
+- [2025-08-19T00:06:09.400Z] https://sness.doi.bio/sness
+- [2025-08-19T00:06:41.976Z] https://www.nature.com/articles/d41586-025-00111-5
+- [2025-08-19T00:10:38.166Z] https://www.nature.com/articles/d41586-025-00111-5
+- [2025-08-19T00:13:22.802Z] https://www.nature.com/articles/d41586-025-02621-8
+- [2025-08-19T00:40:39.416Z] https://www.nature.com/articles/d41586-025-02621-8
+- [2025-08-19T00:44:22.655Z] https://www.nature.com/articles/d41586-025-02621-8
+- [2025-08-19T00:53:05.172Z] https://www.nature.com/articles/s41587-025-02781-y
+- [2025-08-19T00:53:11.886Z] https://www.nature.com/articles/s41467-025-62321-9
+- [2025-08-19T00:53:19.913Z] https://www.nature.com/articles/s41422-025-01164-x
+- [2025-08-19T00:53:26.649Z] https://www.nature.com/articles/s10038-025-01386-2
+- [2025-08-19T00:53:32.634Z] https://www.nature.com/articles/s41416-025-03121-2
+- [2025-08-19T00:53:38.880Z] https://www.nature.com/articles/s41467-025-62895-4
+- [2025-08-19T00:53:47.300Z] https://www.nature.com/articles/s41467-025-62896-3
+- [2025-08-19T00:53:55.076Z] https://www.nature.com/articles/s41467-025-62765-z
+- [2025-08-19T00:53:58.745Z] https://www.nature.com/articles/s41467-025-62792-w
+- [2025-08-19T00:54:02.594Z] https://www.nature.com/articles/s41467-025-62923-3
+- [2025-08-19T00:54:04.097Z] https://www.nature.com/articles/s41564-025-02074-9
+- [2025-08-19T00:54:06.457Z] https://www.nature.com/articles/s41587-025-02761-2
+- [2025-08-19T01:19:16.520Z] https://www.nature.com/articles/s41467-025-62417-2
+- [2025-08-19T01:19:44.760Z] https://www.nature.com/articles/s41467-025-62696-9
+- [2025-08-19T01:31:02.192Z] https://www.nature.com/articles/s41467-025-61108-2
+- [2025-08-19T01:31:40.210Z] https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-61108-2/MediaObjects/41467_2025_61108_MOESM3_ESM.pdf
+- [2025-08-19T01:32:05.991Z] https://www.nature.com/articles/s41551-025-01464-y (saved to: pocketz_1755567117355400000)
+- [2025-08-19T01:36:39.365Z] https://www.nature.com/articles/s41467-025-62906-4 (saved to: pocketz_1755567390915100200)
+- [2025-08-19T01:38:50.727Z] https://www.nature.com/articles/s41698-025-01082-6 (saved to: pocketz_1755567524263900200)
+- [2025-08-19T01:44:20.112Z] https://www.nature.com/articles/s42003-025-08610-x (saved to: pocketz_1755567850342300200)
+- [2025-08-19T01:45:01.504Z] https://www.nature.com/articles/s42003-025-08591-x (saved to: pocketz_1755567893069699800)
+- [2025-08-19T01:46:43.618Z] https://www.nature.com/articles/s41467-025-62750-6 (saved to: pocketz_1755567994320800000)
+- [2025-08-19T01:50:49.519Z] https://www.nature.com/articles/s41467-025-62395-5 (saved to: pocketz_1755568235131400000)
+- [2025-08-19T01:51:25.631Z] https://www.nature.com/articles/s41467-025-62859-8 (saved to: pocketz_1755568277459700000)
+- [2025-08-19T02:00:20.591Z] https://www.nature.com/articles/s41401-025-01630-7 (saved to: pocketz_1755568815333000000)
+- [2025-08-19T02:00:51.075Z] https://www.nature.com/articles/s41594-025-01614-5 (saved to: pocketz_1755568839964600000)
+- [2025-08-19T02:21:03.957Z] https://www.nature.com/articles/s41564-025-02084-7 (saved to: pocketz_1755570054630800100)
+- [2025-08-19T02:21:27.820Z] https://www.nature.com/articles/s41589-025-01997-y (saved to: pocketz_1755570080599900200)
+- [2025-08-19T02:22:55.357Z] https://www.nature.com/articles/s44387-025-00018-6 (saved to: pocketz_1755570170677200000)
+- [2025-08-19T02:23:43.071Z] https://www.nature.com/articles/s41467-025-62755-1 (saved to: pocketz_1755570214517900000)
+- [2025-08-19T17:56:23.878Z] https://www.nature.com/articles/s41467-025-62755-1
+- [2025-08-19T17:58:53.624Z] https://www.nature.com/articles/s41467-025-62680-3 (saved to: pocketz_1755626321314699800)
+- [2025-08-19T18:00:45.150Z] https://www.nature.com/articles/s41467-025-62757-z (saved to: pocketz_1755626434804900000)
+- [2025-08-19T18:04:39.658Z] https://www.nature.com/articles/s41594-025-01631-4 (saved to: pocketz_1755626668013600000)
+- [2025-08-20T01:09:38.025Z] https://news.mit.edu/2025/researchers-glimpse-inner-workings-protein-language-models-0818 (saved to: pocketz_1755652177841300000)
+- [2025-08-20T01:10:51.022Z] https://www.pnas.org/doi/10.1073/pnas.2506316122 (saved to: pocketz_1755652243344800000)
+- [2025-08-20T11:30:28.951Z] https://www.nature.com/articles/s41467-025-62654-5 (saved to: pocketz_1755689413583400000)
+- [2025-08-20T11:31:43.890Z] https://www.nature.com/articles/s41564-025-02085-6 (saved to: pocketz_1755689491571700000)
+- [2025-08-20T16:00:21.333Z] https://www.nature.com/articles/s41467-025-61905-9
+- [2025-08-20T16:33:46.667Z] https://www.nature.com/articles/s41467-025-61905-9
+- [2025-08-20T16:35:05.033Z] https://www.nature.com/articles/s41467-025-62739-1 (saved to: 2025-08-20_093452_nature_s41467-025-62739-1)
+- [2025-08-20T16:37:48.359Z] https://www.nature.com/articles/s41598-025-14331-2 (saved to: 2025-08-20_093738_nature_s41598-025-14331-2)
+- [2025-08-20T16:41:50.796Z] https://www.nature.com/articles/s41467-025-62759-x (saved to: 2025-08-20_094138_nature_s41467-025-62759-x)
+- [2025-08-20T16:44:41.392Z] https://www.nature.com/articles/s42003-025-08593-9 (saved to: 2025-08-20_094426_nature_s42003-025-08593-9)
+- [2025-08-20T16:45:00.143Z] https://www.nature.com/articles/s41467-025-62652-7 (saved to: 2025-08-20_094445_nature_s41467-025-62652-7)
+- [2025-08-20T16:45:21.841Z] https://www.nature.com/articles/s41467-025-62378-6 (saved to: 2025-08-20_094507_nature_s41467-025-62378-6)
+- [2025-08-20T16:45:26.386Z] https://www.nature.com/articles/s41577-025-01207-9 (saved to: 2025-08-20_094525_nature_s41577-025-01207-9)
+- [2025-08-20T16:45:48.924Z] https://www.nature.com/articles/s41467-025-61712-2 (saved to: 2025-08-20_094537_nature_s41467-025-61712-2)
+- [2025-08-20T16:46:08.330Z] https://www.nature.com/articles/s42004-025-01628-6 (saved to: 2025-08-20_094553_nature_s42004-025-01628-6)
+- [2025-08-20T16:46:28.960Z] https://www.nature.com/articles/s41592-025-02740-0 (saved to: 2025-08-20_094615_nature_s41592-025-02740-0)
+- [2025-08-20T16:51:00.834Z] https://www.nature.com/articles/s44387-025-00018-6 (saved to: 2025-08-20_095052_nature_s44387-025-00018-6)
+- [2025-08-20T16:55:05.683Z] https://www.nature.com/articles/s41467-025-62755-1 (saved to: 2025-08-20_095455_nature_s41467-025-62755-1)
+- [2025-08-21T09:25:12.512Z] https://www.nature.com/articles/23641 (saved to: 2025-08-21_022502_nature_23641)
+- [2025-08-21T09:25:44.803Z] https://www.nature.com/articles/s41467-025-61699-w#citeas (saved to: 2025-08-21_022530_nature_s41467-025-61699-w)
+- [2025-08-21T09:26:16.585Z] https://www.nature.com/articles/s41467-025-62757-z (saved to: 2025-08-21_022601_nature_s41467-025-62757-z)
+- [2025-08-21T09:29:09.491Z] https://www.nature.com/articles/s41594-025-01631-4 (saved to: 2025-08-21_022855_nature_s41594-025-01631-4)
+- [2025-08-21T22:26:22.638Z] https://www.nature.com/articles/s41586-023-05723-3 (saved to: 2025-08-21_152611_nature_s41586-023-05723-3)
+- [2025-08-21T22:27:25.672Z] https://www.nature.com/articles/s41586-023-06112-6 (saved to: 2025-08-21_152716_nature_s41586-023-06112-6)
+- [2025-08-21T22:27:42.048Z] https://www.nature.com/articles/s41586-023-06643-y (saved to: 2025-08-21_152732_nature_s41586-023-06643-y)
+- [2025-08-21T22:27:55.833Z] https://www.nature.com/articles/s41586-023-06746-6 (saved to: 2025-08-21_152746_nature_s41586-023-06746-6)
+- [2025-08-21T22:28:13.182Z] https://www.nature.com/articles/s41586-024-07462-5 (saved to: 2025-08-21_152801_nature_s41586-024-07462-5)
+- [2025-08-21T22:28:34.004Z] https://www.nature.com/articles/s41586-024-08237-8 (saved to: 2025-08-21_152825_nature_s41586-024-08237-8)
+- [2025-08-21T22:29:57.937Z] https://www.nature.com/articles/s41586-024-07668-7 (saved to: 2025-08-21_152947_nature_s41586-024-07668-7)
+- [2025-08-21T22:30:31.009Z] https://www.nature.com/articles/s41586-024-07668-7 (saved to: 2025-08-21_153030_nature_s41586-024-07668-7)
+- [2025-08-21T22:31:03.732Z] https://www.nature.com/articles/s41586-024-08237-8 (saved to: 2025-08-21_153057_nature_s41586-024-08237-8)
+- [2025-08-23T21:51:33.732Z] https://simularium.allencell.org/ (saved to: 2025-08-23_145130_simulariumallencellorg_simularium)
+- [2025-08-23T22:17:50.813Z] https://www.nature.com/articles/s41592-022-01442-1 (saved to: 2025-08-23_151743_nature_s41592-022-01442-1)
+- [2025-08-24T15:17:22.550Z] https://dev.epicgames.com/documentation/en-us/fortnite/verse-language-reference (saved to: 2025-08-24_081718_devepicgamescom_verse-language-reference)
+- [2025-08-24T20:45:31.812Z] https://www.youtube.com/watch?v=VC8Qhvrq0Sk (saved to: 2025-08-24_134530_youtube_VC8Qhvrq0Sk)
+- [2025-08-28T09:23:23.469Z] https://www.nature.com/articles/s43588-024-00714-4 (saved to: 2025-08-28_022313_nature_s43588-024-00714-4)
+- [2025-08-28T09:28:48.261Z] https://www.nature.com/articles/d41586-025-02694-5 (saved to: 2025-08-28_022829_nature_d41586-025-02694-5)
+- [2025-10-15T01:28:56.350Z] https://trailhead.salesforce.com/content/learn/modules/agentforce-service-agent-quick-look/get-started-with-agentforce-service-agent (saved to: 2025-10-15_182849_trailheadsalesforcecom_get-started-with-agentforce-service-agent)

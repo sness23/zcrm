@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.header-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: #52c41a;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.info {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.info p {
+  margin: 0.5rem 0;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  padding: 2em;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #52c41a;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #ccc;
+}

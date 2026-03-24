@@ -1,0 +1,123 @@
+{
+  "@id": "PartyRelatedParty",
+  "name": "Party Related Party",
+  "@type": "Class",
+  "description": "Relates any two parties together e.g. Jane and John Doe part of The Doe Household",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedPartyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyRelationshipTypeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "78299a5e-ac23-35b8-acc8-b9611bed38e4",
+    "@type": "Shape",
+    "targetClass": "PartyRelatedParty",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "c59e23d5-c2a0-3c92-ac33-dae9c2956c9e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedToDate",
+        "@id": "20daab83-a260-3f7f-9314-a2ee41120eee",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedPartyId",
+        "@id": "b8a45754-f0e2-35b5-8d4d-6629eb846d11",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedFromDate",
+        "@id": "215e5685-6b33-30aa-b030-ca8d662f54e9",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyRelationshipTypeId",
+        "@id": "0432c25b-8028-35dd-8934-552f56a4d6bc",
+        "node": "197d4b10-d67d-37ab-be7d-d9dd9c2e7ad8",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "c8db6917-3a3c-3070-876d-f6befcba2f52",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "db26d7bb-e9b1-3a68-b060-2408dae82050",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1d3c6715-2a9d-40e0-bdbd-9927eaeabcc5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "87f93d04-4e83-3c24-b72e-aca439ca83c8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e727b706-fe82-40a0-b171-6ea05745bd35",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6ff31a78-c141-38c0-83e0-20003f1854f9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "134680bf-4e6f-36f4-aa3b-6e8e4fad0218",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

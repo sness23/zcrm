@@ -1,0 +1,126 @@
+{
+  "@id": "ProductImage",
+  "name": "Product Image",
+  "@type": "Class",
+  "description": "Images of a product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "imageId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isDefaultImage",
+      "@type": "Property"
+    },
+    {
+      "@id": "imageViewType",
+      "@type": "Property"
+    },
+    {
+      "@id": "imageGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "de6b6fc2-0ae7-3e34-a8b6-82eb36067139",
+    "@type": "Shape",
+    "targetClass": "ProductImage",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3a80b22d-f56e-3aa6-a877-253e8b0fc13f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "010f28e4-a704-3cba-9974-9d05f284f7b5",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5843cb4e-f4ff-314e-b851-c264fac63117",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isDefaultImage",
+        "@id": "3755136e-5f68-34fb-afce-895b01c3ab16",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "71a18ffc-c75f-46d6-82c2-5657a743d928",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "imageViewType",
+        "@id": "34c35f15-241f-370d-98be-05ff9626c9fa",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "imageId",
+        "@id": "26b51d7c-7246-3a2a-a851-e6d56943a4a5",
+        "node": "e2d7d201-a749-3981-bfb6-57ba4026bcd5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "imageGroupId",
+        "@id": "74900991-a68e-3cff-8a69-901b9811e9de",
+        "node": "7076f041-0718-396f-9ac2-b7d57a9861b7",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "da9aefec-7f3a-30ce-8d99-5f040c287ea0",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0fed4da3-5d60-4050-bbbb-ff84e53d0d48",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "90fe2346-8c94-3409-9d6e-1d9ecb49c057",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f02a59bc-b137-3b8c-8525-720bf1d17da0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductImageTranslations",
+        "node": "a8587b90-962b-3c2b-ab54-2acc10834d3d",
+        "minCount": "1"
+      }
+    ]
+  }
+}

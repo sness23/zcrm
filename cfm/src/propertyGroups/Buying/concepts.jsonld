@@ -1,0 +1,27 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "BuyingPropertyGroup",
+    "name": "Buying Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "purchaseOrderDate",
+        "@type": "Property",
+        "description": "Date of the purchase order.",
+        "name": "Purchase Order Date",
+        "range": "DataType"
+    },{
+        "@id": "purchaseOrderNumber",
+        "@type": "Property",
+        "description": "Number identifying the purchase order. Maximum is 80.",
+        "name": "Purchase Order Number",
+        "range": "DataType"
+    },{
+        "@id": "soldToCustomerId",
+        "@type": "Property",
+        "description": "Reference to the Customer (party role) of a person who is buyer (sell-to), when that is different than the bill-to for the sales order.",
+        "name": "Sold To Customer",
+        "range": "Customer"
+    }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+  "@id": "PartyWebAddress",
+  "name": "Party Web Address",
+  "@type": "Class",
+  "description": "What is the Web URL for the Party",
+  "subClassOf": "ContactPoint",
+  "subjectArea": "Party",
+  "entityGroup": "ContactPoint",
+  "properties": [
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "webSiteURL",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "bb59bf00-d4ae-3a6e-8fb0-557701021d7c",
+    "@type": "Shape",
+    "targetClass": "PartyWebAddress",
+    "properties": [
+      {
+        "path": "webSiteURL",
+        "@id": "265e7c6f-897b-39bd-9feb-2198aea37827",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "6d7b08c1-9c28-3220-9e43-2d2bab8da709",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "16e25338-75db-3497-9249-6bf57c3a1794",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "85674937-7f84-4fcf-a3e3-4c94500427b0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "dec2867f-ac30-32f2-a84f-8baa5d954a71",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fce6c68c-a3c1-4cdc-ad6d-385a3996f901",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "046354b8-fc13-3562-ad9b-e5ab3a621086",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ee559f14-713c-45c5-8909-0936ab70ac7c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "27ff92b5-6b87-3b62-a135-bb89d0b8149c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "c079363e-dd8a-380e-9399-95402fd703c8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "@id": "Account",
+  "name": "Account",
+  "@type": "Class",
+  "description": "How the party want to interact with your enterprise e.g. have multiple billing or service accounts, can be hierarchical in nature and normally one particular business unit within the company owns the account.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "billContactAddressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactPointLocation",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "shippingEmailId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTermId",
+      "@type": "Property"
+    },
+    {
+      "@id": "autoPaymentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "generalLedgerAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "useAsBillingAccount",
+      "@type": "Property"
+    },
+    {
+      "@id": "primarySalesRepId",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceAmountLimit",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "useAsSalesAccount",
+      "@type": "Property"
+    },
+    {
+      "@id": "operatingHoursId",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceUnitOfMeasureCurrencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderDeliveryMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "sixtyDayBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "holdStatusReasonId",
+      "@type": "Property"
+    },
+    {
+      "@id": "shippingAddressId",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceAmountLimitCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "lastActivityDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "thirtyDayBalanceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "autoPayEnabledFlag",
+      "@type": "Property"
+    },
+    {
+      "@id": "defaultFreightTermsId",
+      "@type": "Property"
+    },
+    {
+      "@id": "sixtyDayBalanceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "assignTerritoryFlag",
+      "@type": "Property"
+    },
+    {
+      "@id": "shippingPhoneid",
+      "@type": "Property"
+    },
+    {
+      "@id": "autoPaymentMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "ninetyDayBalanceAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "billFrequencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "ninetyDayBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "defaultPriceBookId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountBusinessTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "useAsShippingAccount",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceUnitOfMeasureId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "billDeliveryMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "sLATypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesPhoneId",
+      "@type": "Property"
+    },
+    {
+      "@id": "primarySalesContactPointId",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "useAsServiceAccount",
+      "@type": "Property"
+    },
+    {
+      "@id": "parentAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyRoleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "thirtyDayBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "autoPaymentAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "sLAExpirationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "faxPhoneId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+    "@type": "Shape",
+    "targetClass": "Account",
+    "properties": [
+      {
+        "path": "useAsShippingAccount",
+        "@id": "b996dab5-5e4a-3292-8e28-4820f97b1314",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "useAsServiceAccount",
+        "@id": "e5be8717-8ff5-3985-8267-5bdf6f45fe40",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "useAsSalesAccount",
+        "@id": "a3a192e3-108e-3f0d-9119-4d10a72a5b4c",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "useAsBillingAccount",
+        "@id": "6f1e16d2-18d3-3902-9cea-96477ab280b1",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "thirtyDayBalanceAmountCurrency",
+        "@id": "8b8282b9-cb78-3051-bbca-d74b70ad9587",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "thirtyDayBalanceAmount",
+        "@id": "004841e7-c818-3568-b179-a97e0a652a8b",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "d78d8a6a-6cc7-3675-9c47-f7d070005c23",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "sLATypeId",
+        "@id": "39157e70-b57a-3992-b3ce-f35bf83c39ee",
+        "node": "4c1f90e6-12bf-368c-8de0-065e18226263",
+        "maxCount": "1"
+      },
+      {
+        "path": "sLAExpirationDate",
+        "@id": "b349b700-2200-34ad-a1e8-4178e690d93a",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "sixtyDayBalanceAmountCurrency",
+        "@id": "0eb8f2f1-48ee-3ba8-b977-663a7ac86a15",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "sixtyDayBalanceAmount",
+        "@id": "47df21a4-2eca-3803-9fb9-24400746d051",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "shippingPhoneid",
+        "@id": "7951c138-b553-3ded-8b2c-9c2bcb6911c8",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "shippingEmailId",
+        "@id": "660ca40a-c895-374e-8eb6-0f5fc6e5afa3",
+        "node": "892a1e9e-fd79-36d3-9aa6-51bffdfaa982",
+        "maxCount": "1"
+      },
+      {
+        "path": "shippingAddressId",
+        "@id": "73192375-e629-35cb-8dde-41352b1155a8",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "salesPhoneId",
+        "@id": "ac5663fc-1a85-3b1a-ab3d-97e7de83feae",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "primarySalesContactPointId",
+        "@id": "be241f49-6428-314f-b223-eb0ad875a515",
+        "node": "ce4e5a86-1aac-3aeb-a37d-20542a5ee107",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyRoleId",
+        "@id": "6ca1c258-5009-33a2-972b-dbf06208bf88",
+        "node": "7cb990ba-4eba-3824-abd7-0dfb55f76fb1",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "9ee52754-e370-347c-9536-abeb2e075689",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "parentAccountId",
+        "@id": "f3d8b798-3b64-3e77-b97f-c3d2965c95c5",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "orderDeliveryMethodId",
+        "@id": "9edf362c-590c-4d0d-8e4e-a797a4d88778",
+        "node": "b734fc6b-e50d-3066-a5a0-9344dddfd605",
+        "maxCount": "1"
+      },
+      {
+        "path": "ninetyDayBalanceAmountCurrency",
+        "@id": "3cf87728-c4bb-3206-a979-9af780a55823",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "ninetyDayBalanceAmount",
+        "@id": "9f3262c5-edc2-3933-bf8c-f4ee105fc1a6",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "941eb324-26d9-3ba2-bcf4-1eb598f674d6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "2a520aec-f1ca-30b6-8dfc-0594dba8a540",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastActivityDate",
+        "@id": "122fcda7-2d40-398b-a6d4-189530850e1e",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "24fe6475-9fec-4686-8707-2ec843cb7c7c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ba374e2b-34e2-3e43-ad06-f228b41b728b",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "holdStatusReasonId",
+        "@id": "e7549ee8-550e-3895-9e11-35331145d27b",
+        "node": "41c0ac46-ef4c-36a8-a0cc-3538adfba5cb",
+        "maxCount": "1"
+      },
+      {
+        "path": "faxPhoneId",
+        "@id": "2fdf3aa2-f21a-3937-9718-e96e53ceecf7",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dd9092c7-5418-4ebe-a424-e5a763680306",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c15949b0-27c9-3839-ba88-578b3ff09e0e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "85f6f420-62ce-3dcc-88c1-fd30292c5bd8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "defaultFreightTermsId",
+        "@id": "ec85441a-869e-352c-a615-f1bd6da68e27",
+        "node": "afd6fedf-0684-380a-b7bb-c1c26638145e",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3d7f3b3f-7281-3e20-974a-fdda7b635ce9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactPointLocation",
+        "@id": "b0b82c49-21e0-4c8c-a3e3-6b1e4f017294",
+        "node": "702bef9c-a70d-3c44-b15c-a7a9c976d1de",
+        "maxCount": "1"
+      },
+      {
+        "path": "billDeliveryMethodId",
+        "@id": "f6afcccc-a192-3e04-be44-6ddb41ff8d58",
+        "node": "653bc3b7-46bc-3b19-95c6-6f6ba739e45a",
+        "maxCount": "1"
+      },
+      {
+        "path": "billContactAddressId",
+        "@id": "c2a21722-f000-3548-aa69-b012e35a7d60",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceUnitOfMeasureId",
+        "@id": "ac337135-02ec-348d-9a61-b0cc1ffdc881",
+        "node": "d5436d5a-229b-3440-8489-119417471d42",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceUnitOfMeasureCurrencyId",
+        "@id": "d66daf70-b73e-3533-a913-39db2adf6f7b",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceAmountLimitCurrency",
+        "@id": "b0d908e7-afb3-3bdf-98a6-eb9d3f732561",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceAmountLimit",
+        "@id": "a00711ae-2732-3446-9d42-d0a7bec8a7d7",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceAmountCurrency",
+        "@id": "c630be82-9971-3ea4-9489-d145adb21c2b",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "balanceAmount",
+        "@id": "5a0e7826-918d-345e-b63e-a8bcfa5353a8",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "autoPaymentMethodId",
+        "@id": "b8d12d6e-0bd5-3d92-b15a-7ee0cf4011e9",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1"
+      },
+      {
+        "path": "autoPaymentAmountCurrency",
+        "@id": "0922703e-d099-3ef2-95c8-364662c4b83a",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "autoPaymentAmount",
+        "@id": "1784683a-3752-3ee5-81c6-a634f45b2976",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "autoPayEnabledFlag",
+        "@id": "452f57c7-7dbc-3645-a74b-7b456b19bfb4",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "assignTerritoryFlag",
+        "@id": "8a753855-936b-37ce-8a59-82979f95297a",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "accountNumber",
+        "@id": "eab23654-d9f2-45a5-aa6a-dfaf252948a2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountBusinessTypeId",
+        "@id": "ec234ffd-5263-4737-9818-5f70aa0a0c1c",
+        "node": "58a7bb0c-1865-4ada-a0a0-949a66dcdbdc",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "AccountBrands",
+        "node": "58d8d3e4-a639-4666-b676-1f77f223b9df",
+        "minCount": "1"
+      },
+      {
+        "path": "AccountContacts",
+        "node": "0f5c0999-18e5-34e8-87e5-131be51789dc",
+        "minCount": "1"
+      },
+      {
+        "path": "AccountRelationships",
+        "node": "78878833-91d3-4f3f-a6a6-5b0e1f565cb1",
+        "minCount": "1"
+      },
+      {
+        "path": "AccountServiceEntitlements",
+        "node": "4596c40d-f183-4979-a020-59d96666fd01",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentMethods",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "@id": "AccountContactRoleType",
+  "name": "Account Contact Role Type",
+  "@type": "Class",
+  "description": "E.g. decision maker, influencer",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "fab69370-7328-3fee-83fe-87106d5ec438",
+    "@type": "Shape",
+    "targetClass": "AccountContactRoleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a1fd1a36-36d3-49d9-8404-b3f82af50466",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2dbe0dc2-0db1-3803-bc12-b5b71e821d74",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "92f128c0-c446-43d3-a4a4-d1795db561ff",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "33341541-a3cf-47c7-bb3b-d9262b9fcabc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "701315d2-2193-305d-90a8-f637c65dbe77",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4a718b7a-8c6c-4494-9353-18cfe5bfcac7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ba39c4e6-ce8c-4cfc-a868-0f465773dd42",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "27c85ce3-6427-47c7-a424-f461a5737188",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

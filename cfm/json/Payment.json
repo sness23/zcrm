@@ -1,0 +1,438 @@
+{
+  "@id": "Payment",
+  "name": "Payment",
+  "@type": "Class",
+  "description": "An amount of currency paid.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "paymentEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestPaymentGatewayMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerPhoneNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "netAppliedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerEmailAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalAppliedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentType",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestGatewayInternalReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestGatewayInternalResultId",
+      "@type": "Property"
+    },
+    {
+      "@id": "macAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "iPAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentCancellationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "internalOrganizationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestGatewayResultCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderPaymentSummaryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalUnappliedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTreatmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestGatewayReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "legalEntityId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "commentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "amountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "authorizationProcessingModeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "balanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "latestGatewayDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4b597b6a-3084-3d50-a314-a9a27517b5f1",
+    "@type": "Shape",
+    "targetClass": "Payment",
+    "properties": [
+      {
+        "path": "totalUnappliedAmount",
+        "@id": "a2b62945-728a-4cdc-8808-1b6b6099964c",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalAppliedAmount",
+        "@id": "99ae8949-7295-4ebe-a727-1f4541ef0178",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "d3c71da1-9f0f-37d0-8c79-50d3e5db5179",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderPaymentSummaryId",
+        "@id": "54b1c1a3-2d76-4111-bf7f-698b20a30cab",
+        "node": "8a206d53-8696-42d2-a666-de78ebd6a9a5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentType",
+        "@id": "d857dd5c-95d1-4aca-adad-a6b1b40cc922",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "f667136c-1a92-4282-9555-66186aced3a4"
+              },
+              {
+                "@id": "abc3bd3e-efa7-4373-9010-6902768639fd"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentTreatmentId",
+        "@id": "4894bbd1-ea74-4616-bc7c-a1997ba23a04",
+        "node": "8c66c435-7484-4a6a-9ede-f02de8ab0b08",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentStatusId",
+        "@id": "41763297-4cd3-4a4a-bc7c-70746b5bea6e",
+        "node": "b71ae4f0-fa87-4323-bafa-a7653d9da4c8",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentNumber",
+        "@id": "849763f2-1ea0-4e1e-bd3d-1a4fd75c11fb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodId",
+        "@id": "b7979eb0-4456-49b9-8e0e-0b2cd401dca4",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGroupId",
+        "@id": "8dbf50ce-12ba-4bbb-a5a5-935803db2cae",
+        "node": "756cd379-a7e2-41b1-96d6-2e0cc621f228",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayId",
+        "@id": "1c475eb7-e8fa-4e9e-bbfb-bfc901fe9435",
+        "node": "2d0e1bae-275c-4141-bfff-d75d61515cff",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentEffectiveDate",
+        "@id": "dcb285f9-4028-40e0-8d8d-d30294ae31ab",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentCancellationDate",
+        "@id": "94c5f0d1-fcab-49c9-8545-45fc1784b809",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAmount",
+        "@id": "9a619a11-87e6-35de-9e74-5cd41ba3d023",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "netAppliedAmount",
+        "@id": "27f8b451-0216-4393-a464-f331b5cea7a4",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "d2fe2962-21ca-42c2-9292-76e1c34b423a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "macAddress",
+        "@id": "d836c2ff-f472-4050-9393-526cbf55b119",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "legalEntityId",
+        "@id": "4c90eb02-d25a-4cac-afef-a30632740f0a",
+        "node": "ac847633-d1de-4707-8d8d-bfbc69e7987a",
+        "maxCount": "1"
+      },
+      {
+        "path": "latestPaymentGatewayMessageText",
+        "@id": "0597d8e7-20b1-4626-a9a9-3b2dd72b7f85",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "latestGatewayResultCodeId",
+        "@id": "4ae2e63f-c956-4e7e-9717-78e113ec569c",
+        "node": "9b0f3886-5b43-4111-a6a6-1191e20389b4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "latestGatewayReferenceNumber",
+        "@id": "a5ad8d6a-a237-4ccc-ad6d-998a284c23f5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "latestGatewayInternalResultId",
+        "@id": "4ab9c3bb-9240-4161-9bdb-a17fb1e51c89",
+        "node": "7a0f75c7-a74f-4616-8949-84c4f86cbbf2",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "latestGatewayInternalReferenceNumber",
+        "@id": "e1411976-3fbf-4393-90d0-7fa03dedec37",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "latestGatewayDate",
+        "@id": "645d512d-9daa-49b9-9919-32731a771bb6",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4ad157de-f601-322b-9a35-9e2bca12fdfa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iPAddress",
+        "@id": "cb3ebc6c-c4e9-4222-a6e6-86a5bdb02098",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d79377d8-a393-4444-adad-06253ef69ad6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9bdc54ea-be97-3c23-8c32-ffd64f23164c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1d38e839-e67d-42a2-a868-5b60721c0d68",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "caa25947-6057-32ed-bde0-c94af3d61bde",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "c6139f4b-7441-4404-9111-e55284ac653e",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "customerPhoneNumber",
+        "@id": "d3804711-b9d8-4929-a767-dcbb05775c37",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerEmailAddress",
+        "@id": "8a5a1315-678b-41b1-9c1c-6a29f250cff5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d9ed6f87-0e98-3d36-b980-8b103736bac9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "commentText",
+        "@id": "c9b94f96-6370-4454-b1f1-3403e2c7051e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "balanceAmount",
+        "@id": "d20c3d52-0b6f-49f9-a3a3-00efaff59247",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "authorizationProcessingModeId",
+        "@id": "fb27c1b5-bd1c-41d1-b070-42bce6bb1702",
+        "node": "28e32192-ce6d-4bbb-b7b7-761e0f37c02d",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "amountCurrency",
+        "@id": "3cb6cce4-4820-3609-837f-0ead5a12da9b",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "84f1f425-7055-4262-8f4f-abed1c8ed65a",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "PaymentApplications",
+        "node": "f17bca80-fce8-4b1b-9313-198239c666f9",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentGatewayPaymentLogs",
+        "node": "1a01186a-190f-4ece-ae6e-993f9343779e",
+        "minCount": "1"
+      }
+    ]
+  }
+}

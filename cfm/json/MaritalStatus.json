@@ -1,0 +1,79 @@
+{
+  "@id": "MaritalStatus",
+  "name": "Marital Status",
+  "@type": "Class",
+  "description": "E.g. single, married, divorced, widowed, partnership, other",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "maritalStatusName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "6fa722b7-4333-39a2-9d5c-d8251d709174",
+    "@type": "Shape",
+    "targetClass": "MaritalStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6dccf63b-e45e-3607-9e93-d4bab783009f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "maritalStatusName",
+        "@id": "8684d5eb-1bec-3147-b231-d5ab6a77b926",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "98444a3f-d4bb-3e43-852e-0b23b31557e2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "8ba432ba-1737-43a3-9cdc-87c1e9847e3f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "55a750d7-4b6e-3c18-ae97-2649bae48132",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d3618ca4-9e70-4000-ad6d-622e9171d001",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d32a97e4-4ac2-3843-afd5-c1fe2133f6fa",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4d900c50-81c5-309c-8aaa-4f4bef25eecb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

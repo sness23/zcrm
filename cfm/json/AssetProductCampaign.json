@@ -1,0 +1,78 @@
+{
+  "@id": "AssetProductCampaign",
+  "name": "Asset Product Campaign",
+  "@type": "Class",
+  "description": "The issues addressed by a Product Service Campaign may include multiple Assets",
+  "subClassOf": "ProductServiceCampaignItem",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "assetId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cacfc08c-6984-4aca-a8e8-0ccdb4a85f88",
+    "@type": "Shape",
+    "targetClass": "AssetProductCampaign",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ee80dc93-fb28-4232-8e8e-7b6b1ec31e35",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c9267e35-1683-47f7-8707-e4c12270fe95",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d0148266-7ae5-4e6e-a2a2-aeeec7afa97a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a3bded46-ce7b-4dfd-b171-1f10c3051950",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "63886d6f-7695-4717-8747-25753e20d4d4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d359d7c6-807d-4c1c-9e9e-da831bb37de6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "686217a3-33e9-44f4-b737-c20385b8e27f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

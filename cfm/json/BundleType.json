@@ -1,0 +1,73 @@
+{
+  "@id": "BundleType",
+  "name": "Bundle Type",
+  "@type": "Class",
+  "description": "Types of product bundles include: Sold as One Unit, Changeable/Configurable, and Sold Only as a Sub-Bundle",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "771453ed-d84b-4919-a767-2c90ae284130",
+    "@type": "Shape",
+    "targetClass": "BundleType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "42c9ef66-1f6d-4dbd-b1b1-5a3e0d5f949b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c499ceea-e199-4494-acec-3d51c9eff625",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d46aaa88-d027-4767-9050-22a002db32d8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "7af28e88-dab8-4202-8dcd-099726338d25",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "25635906-4efd-4cbc-8f4f-204173adbeec",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a14bed79-9bb0-4919-9a5a-b027adc1079c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6ee9fd0b-47e2-4333-a363-3cb01e5ee164",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

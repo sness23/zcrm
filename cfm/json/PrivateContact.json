@@ -1,0 +1,137 @@
+{
+  "@id": "PrivateContact",
+  "name": "Private Contact",
+  "@type": "Class",
+  "description": "Contacts only available to the creator of the contact e.g., similar to a personal address book on the phone, only visible to the person using the phone.",
+  "subClassOf": "Contact",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "85b2954d-5aec-42d2-b373-93eb02574170",
+    "@type": "Shape",
+    "targetClass": "PrivateContact",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6d29ac58-dab4-4999-ab6b-b0c7e30da664",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "86caa4d8-6ee4-4b4b-bbbb-c138680479a5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2c2440a1-8972-46e6-a969-d7f5e8d41ab5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b65a84ea-3717-4707-bcbc-87af894f7bf8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "5128f82e-85a8-4bcb-9010-6105dc0ac315",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "63812863-7070-4dfd-b777-92e13312bbd2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "bde198e9-ad63-4ebe-bdbd-97c0b3d17ff8",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "primaryMobilePhoneNumber",
+        "@id": "bf92add5-31ca-4464-a727-e50a2fbe022c",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryMailingAddress",
+        "@id": "512ba8b0-1509-49b9-b9f9-6ae0ab96cfb1",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryHomePhone",
+        "@id": "500f5c7d-d3ec-4484-81c1-8398b24346de",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryFaxPhoneNumber",
+        "@id": "ab0ba3fd-22b7-4c4c-bc3c-c8e75eec9732",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryBusinessPhoneNumber",
+        "@id": "c82907ec-0e29-4414-90d0-c93bdb3de439",
+        "node": "ebb7825c-c6c6-3638-9d0b-d61c7a681be3",
+        "maxCount": "1"
+      },
+      {
+        "path": "personName",
+        "@id": "f825e26d-46ec-4b0b-bfff-f78c061ef4de",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "otherMailingAddress",
+        "@id": "01c4915c-5613-4838-9919-bcb0660a364c",
+        "node": "d4e3c4a5-9cc3-342a-b1f8-09d5bf6f554b",
+        "maxCount": "1"
+      },
+      {
+        "path": "middleName",
+        "@id": "a4e14ba9-d282-45f5-8242-66f3ef454e13",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastName",
+        "@id": "4d982e0c-5774-4939-8545-6e3da8abc4fd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "cbb68039-85f0-40d0-8181-9048730e238c",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1"
+      },
+      {
+        "path": "firstName",
+        "@id": "62a92331-3548-4dcd-85c5-cac3f5e23cea",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

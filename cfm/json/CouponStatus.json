@@ -1,0 +1,78 @@
+{
+  "@id": "CouponStatus",
+  "name": "Coupon Status",
+  "@type": "Class",
+  "description": "Description of the status, e.g. Active, Inactive",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "couponStatusName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "01f530ad-b0c5-40c0-b737-50b006d15b83",
+    "@type": "Shape",
+    "targetClass": "CouponStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0c096d9e-e93c-4f0f-8d4d-a3c59e233b8a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "42b8ffb5-219e-4b6b-a363-b63c040955ce",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e6ae412a-a836-4efe-a727-a796622e951e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c7f27536-bdf6-4e7e-a565-12ba51421aae",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "227cdfe6-e308-42b2-9f9f-0518fa1c8d86",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "fb26dd74-8ea9-4a9a-8d4d-4fc0fc27aa1b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b473fa10-d69d-4565-98d8-7eaf8e4eb059",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "couponStatusName",
+        "@id": "383a2b7b-d592-47f7-90d0-f8faf003c83b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

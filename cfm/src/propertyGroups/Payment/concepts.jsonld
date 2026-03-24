@@ -1,0 +1,15 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "paymentPropertyGroup",
+    "name": "payment Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "paymentId",
+        "@type": "Property",
+        "description": "An amount of currency paid.",
+        "name": "Payment",
+        "range": "Payment"
+    }
+    ]
+}

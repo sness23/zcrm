@@ -1,0 +1,111 @@
+{
+  "@id": "CustomerStatusHistory",
+  "name": "Customer Status History",
+  "@type": "Class",
+  "description": "History of when customer changed frome one status to another",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "endDateTIme",
+      "@type": "Property"
+    },
+    {
+      "@id": "startDateTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f38b14e3-ac6a-3717-9030-017758780119",
+    "@type": "Shape",
+    "targetClass": "CustomerStatusHistory",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4c26c8d1-26df-3fce-934c-a44aa3ddea1a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "startDateTime",
+        "@id": "faffe095-154d-3944-a4b8-dd0ca0ad665c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d37fa305-9a69-3894-b21d-4c8f621faf19",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e7fcc159-621f-4545-8080-d78b01ac6e4e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c9bea7d0-0b15-337a-ab7b-274cb16907a4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dc3b1f9b-935a-4353-adad-af8c25f18b92",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "df38280e-5bb6-317c-afd6-71ddef502a79",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "endDateTIme",
+        "@id": "86c4d5b7-0559-30e2-87a2-6aaa5a728d61",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "customerStatusId",
+        "@id": "25eab04c-3dcf-45c5-b272-43ae4b04b9df",
+        "node": "c9d6b8a3-8085-3867-91f5-ba2ff8f186ad",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "customerId",
+        "@id": "d2e3b516-1496-4d1d-b434-de5e405aa275",
+        "node": "9c3da7a2-435b-395a-b031-328314727453",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2be3d872-f979-3323-adf5-519c85161121",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

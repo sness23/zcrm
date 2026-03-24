@@ -1,0 +1,189 @@
+{
+  "@id": "Coupon",
+  "name": "Coupon",
+  "@type": "Class",
+  "description": "Payment in the form of a voucher entitling the holder to a discount for a particular product.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "returnCouponReason",
+      "@type": "Property"
+    },
+    {
+      "@id": "discountAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "isValid",
+      "@type": "Property"
+    },
+    {
+      "@id": "secondaryScanCodeLabel",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponDefinitionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryScanCodeLabel",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isReturnCoupon",
+      "@type": "Property"
+    },
+    {
+      "@id": "scanCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "customerId",
+      "@type": "Property"
+    },
+    {
+      "@id": "discountPercentage",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "couponCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ee988b63-7ce2-47e7-ae2e-240aa4f2c1d5",
+    "@type": "Shape",
+    "targetClass": "Coupon",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0e80579f-8572-4a1a-92d2-15221b1b207e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "secondaryScanCodeLabel",
+        "@id": "42fd47e5-8221-4020-8888-8915807d2f97",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "scanCode",
+        "@id": "82ebd102-51bc-4eee-8888-d0a5af4079a7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "returnCouponReason",
+        "@id": "7826d672-3a04-4787-9a9a-2de9facb5dce",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryScanCodeLabel",
+        "@id": "f0411f97-a5b5-4c2c-b0f0-471d7e3c9e62",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4cab0376-17d7-4aba-9e5e-92b9473e7bc6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isValid",
+        "@id": "a96f9b3a-0abf-4202-b9f9-086663915cd5",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isReturnCoupon",
+        "@id": "01d51849-b23d-44d4-9e1e-8065f85d8d9e",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "90656553-459e-4efe-9ada-addf17920f22",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2d5653b3-cd75-4e0e-b1b1-a275e2394812",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "29d59b99-0d78-4545-b4f4-cb5ac54682a9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "c97cada3-ad35-4272-a0a0-7a823a04a22d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "discountPercentage",
+        "@id": "11ec6c23-be54-46d6-a0a0-d22867fc5bb6",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "discountAmount",
+        "@id": "e1050917-36a6-4cfc-8e8e-02539cad33e4",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerId",
+        "@id": "0c5b13be-391d-4ded-a2a2-a94dc416d4c5",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4447f60c-ae7b-4e1e-84c4-b86bde246e7c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "couponStatusId",
+        "@id": "5afbd122-e34a-4474-8202-c208aeebd391",
+        "node": "01f530ad-b0c5-40c0-b737-50b006d15b83",
+        "maxCount": "1"
+      },
+      {
+        "path": "couponDefinitionId",
+        "@id": "4e9706df-5e70-4535-b3f3-97b319279cc8",
+        "node": "27576bc4-c000-49c9-83c3-a0b521e48ed2",
+        "maxCount": "1"
+      },
+      {
+        "path": "couponCode",
+        "@id": "34e692d6-3c67-4767-8c8c-a2b2478f8785",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

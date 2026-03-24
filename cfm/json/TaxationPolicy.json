@@ -1,0 +1,68 @@
+{
+  "@id": "TaxationPolicy",
+  "name": "Taxation Policy",
+  "@type": "Class",
+  "description": "The choice by a government as to what taxes to levy, in what amounts, and on whom.",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d7c401dc-3134-44a4-97d7-e3a91167ed98",
+    "@type": "Shape",
+    "targetClass": "TaxationPolicy",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d316dffd-1c44-4c7c-a2a2-c939f6878208",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "14483ae9-4477-42a2-8101-eb0ab84ad99e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "25e9f7c9-5728-4a4a-bdbd-0154ac851320",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b03109d2-bfbb-4d8d-ab2b-41a4f049feec",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "badc55d9-f4d0-4555-b333-6bf3bdf26ea6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ae129fa6-2b00-4040-a7e7-8b546f36502e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "79a0855a-e8ec-4ebe-8787-cfd54ae46d00",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

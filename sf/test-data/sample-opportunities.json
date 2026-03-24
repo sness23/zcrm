@@ -1,0 +1,84 @@
+{
+  "status": 0,
+  "result": {
+    "totalSize": 3,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/0061a00000Opp123"
+        },
+        "Id": "0061a00000Opp123",
+        "Name": "Acme - Enterprise Platform 2025",
+        "AccountId": "0011a00000Xyz123",
+        "Amount": 250000,
+        "CloseDate": "2025-01-31",
+        "StageName": "Negotiation/Review",
+        "Probability": 75,
+        "Type": "New Business",
+        "LeadSource": "Referral",
+        "NextStep": "Final contract review with legal",
+        "ForecastCategory": "Commit",
+        "IsClosed": false,
+        "IsWon": false,
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-09-01T08:00:00.000+0000",
+        "CreatedById": "0051a00000User001",
+        "LastModifiedDate": "2024-10-10T16:45:00.000+0000",
+        "LastModifiedById": "0051a00000User001",
+        "Description": "Enterprise platform deal for AI and analytics. Strong buy signal from CTO Bob Smith."
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/0061a00000Opp456"
+        },
+        "Id": "0061a00000Opp456",
+        "Name": "Global Industries - Manufacturing Suite",
+        "AccountId": "0011a00000Xyz456",
+        "Amount": 500000,
+        "CloseDate": "2024-12-15",
+        "StageName": "Proposal/Price Quote",
+        "Probability": 60,
+        "Type": "New Business",
+        "LeadSource": "Web",
+        "NextStep": "Send proposal to VP Operations",
+        "ForecastCategory": "Pipeline",
+        "IsClosed": false,
+        "IsWon": false,
+        "OwnerId": "0051a00000Owner2",
+        "CreatedDate": "2024-07-15T09:30:00.000+0000",
+        "CreatedById": "0051a00000User003",
+        "LastModifiedDate": "2024-10-08T14:20:00.000+0000",
+        "LastModifiedById": "0051a00000User003",
+        "Description": "Large manufacturing automation deal. Alice Johnson is champion."
+      },
+      {
+        "attributes": {
+          "type": "Opportunity",
+          "url": "/services/data/v59.0/sobjects/Opportunity/0061a00000Opp789"
+        },
+        "Id": "0061a00000Opp789",
+        "Name": "StartupCo - Starter Package",
+        "AccountId": "0011a00000Xyz789",
+        "Amount": 25000,
+        "CloseDate": "2024-11-30",
+        "StageName": "Qualification",
+        "Probability": 25,
+        "Type": "New Business",
+        "LeadSource": "Partner Referral",
+        "NextStep": "Schedule product demo with founder",
+        "ForecastCategory": "Pipeline",
+        "IsClosed": false,
+        "IsWon": false,
+        "OwnerId": "0051a00000Owner1",
+        "CreatedDate": "2024-09-20T10:00:00.000+0000",
+        "CreatedById": "0051a00000User002",
+        "LastModifiedDate": "2024-10-05T11:30:00.000+0000",
+        "LastModifiedById": "0051a00000User002",
+        "Description": "Early-stage opportunity with startup. Need to qualify budget and timeline."
+      }
+    ]
+  }
+}

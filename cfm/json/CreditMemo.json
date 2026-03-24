@@ -1,0 +1,89 @@
+{
+  "@id": "CreditMemo",
+  "name": "Credit Memo",
+  "@type": "Class",
+  "description": "A Credit Memo is a document used to adjust or rectify errors made in an invoice which has already been processed and sent to a customer.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "creditMemoName",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditMemoEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "37fcece1-e3ad-3020-9825-fdc0095ee8a4",
+    "@type": "Shape",
+    "targetClass": "CreditMemo",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "47e6aa80-0c0f-351b-bbd2-7d989dc62dc9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "804ecc3f-d9f6-3621-b86e-cf54a58bfb17",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "240ad3e6-a969-4565-acac-a8f4b67dc675",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4fde431f-79f5-343e-a404-ebf131103264",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7b477cde-b1ea-4bbb-9999-47a23cb88d64",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ef03f2df-9764-328b-b8c7-0e29fce41b73",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditMemoName",
+        "@id": "33f47be7-9b06-46e6-8242-8ca72bbf1ebd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditMemoEffectiveDate",
+        "@id": "245f1cd5-5000-4333-9414-ba04cd2dfcb9",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "9c308718-be6a-3e95-b736-c900515ac28a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "SalesOrderProductReason",
+  "name": "Sales Order Product Reason",
+  "@type": "Class",
+  "description": "The customer motive for ordering a product or service, such as replacement, new purchase, upgrade",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "salesOrderProductReasonCategoryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "db79ecd1-bba1-4b5b-ac2c-0cc63ecf6b31",
+    "@type": "Shape",
+    "targetClass": "SalesOrderProductReason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "61974a4d-22cc-4161-83c3-7d635c7ed689",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderProductReasonCategoryId",
+        "@id": "4423db98-7fa9-41e1-9858-4260f5f206a1",
+        "node": "6e2e4ed7-29df-4393-be7e-0d2cabf1ce6e",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "25d66b65-af8e-4cec-ad6d-854bbcfd2eb1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "52c2200b-bbdb-46c6-b4f4-541824b998bf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "50b0e473-54b0-4b1b-a060-5599179cfbdf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "18812010-beab-4d6d-a5a5-2c60170a1022",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "e3597785-129b-4999-9858-198effcb29e0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "dfdc1cb6-e799-41f1-a2e2-50839aea903c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "1676ab6d-e1ac-4151-b2b2-516f10d8fcf7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

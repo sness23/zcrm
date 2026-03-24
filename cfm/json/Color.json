@@ -1,0 +1,79 @@
+{
+  "@id": "Color",
+  "name": "Color",
+  "@type": "Class",
+  "description": "Colors available to select from e.g. blue, yellow",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "2d2b9566-7d0d-3e0a-ae7f-1327f94df7c2",
+    "@type": "Shape",
+    "targetClass": "Color",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8b480935-dbf2-31db-bbaf-5f2ca6a3d6db",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "9d0dce75-095e-3b27-aac5-9426d4ad26e6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "00498477-1664-3f72-a4b9-c1f33d0d51e8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d7ef1345-96e9-4b0b-afaf-af90dce2b763",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "1c416b49-7b8f-3d92-bf93-fb298111d4bb",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b38c4a2b-2320-48f8-8808-de2740176a2e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "09f43d3b-bbeb-37fd-b1f6-8536d8f73aef",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a40c8666-bb5a-35b5-8575-45fb705ff888",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "@id": "Party",
+  "name": "Party",
+  "@type": "Class",
+  "description": "A unified, in a system, definition of who you are dealing with e.g. John Doe, Northern Trail Outfitters and can be of different types e.g. individual, business or unknown (uncategorized).",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "primaryAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "globalPartyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "noMergeReasonId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "partyTypeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+    "@type": "Shape",
+    "targetClass": "Party",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5cf2ac24-745e-32d6-b224-13336d6a5b0d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "primaryAccountId",
+        "@id": "2b09d028-3806-3e8d-b535-84de73c15c91",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyTypeId",
+        "@id": "b9e4fe6f-e9a9-3e52-8c73-cefeab1157ce",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f"
+              },
+              {
+                "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1"
+              },
+              {
+                "@id": "4663a141-a405-38e8-a479-0607c0054909"
+              },
+              {
+                "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "b5870980-da7b-4454-9555-a23d6ecf993f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "noMergeReasonId",
+        "@id": "b277d008-4fc3-3b54-8a4d-ef69fde21a50",
+        "node": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "45108120-10b9-3a6d-88a5-3054babe7d15",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "0ffa0005-4629-4383-9313-922fde20f774",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "75a7f3fc-6552-3ae9-9912-825f030d2275",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "globalPartyId",
+        "@id": "9e32edb4-a0a6-3023-9e5c-642cfa5ed7bb",
+        "node": "211175d5-0ebf-3a61-bab9-6c23c5d5f54f",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "56d8f43d-db82-47e7-bbfb-edf755192945",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "38546f25-ea64-3cbe-9560-a0a734dc3520",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "532bc1c2-3774-3836-9861-4cc03c666ee5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "ContactPoints",
+        "node": "ce4e5a86-1aac-3aeb-a37d-20542a5ee107",
+        "minCount": "1"
+      },
+      {
+        "path": "PartyWebAddresses",
+        "node": "bb59bf00-d4ae-3a6e-8fb0-557701021d7c",
+        "minCount": "1"
+      },
+      {
+        "path": "OrganizationMilestones",
+        "node": "a0f42e1b-7da2-4ddd-a424-56bf3cf97622",
+        "minCount": "1"
+      },
+      {
+        "path": "PartyAdditionalNames",
+        "node": "1bdf119f-eb91-3bb3-b033-71b18fded3bf",
+        "minCount": "1"
+      },
+      {
+        "path": "PartyIdentifications",
+        "node": "2b917855-5d55-3358-8cba-ee9e73588e0e",
+        "minCount": "1"
+      },
+      {
+        "path": "PartyRoles",
+        "node": "7cb990ba-4eba-3824-abd7-0dfb55f76fb1",
+        "minCount": "1"
+      },
+      {
+        "path": "TaxExemptionCertificates",
+        "node": "d5e457ad-1410-4040-a2a2-5c1895cd426b",
+        "minCount": "1"
+      },
+      {
+        "path": "Competitors",
+        "node": "13094444-d191-3ac8-aac8-7b5e4ea7f276",
+        "minCount": "1"
+      },
+      {
+        "path": "Customers",
+        "node": "9c3da7a2-435b-395a-b031-328314727453",
+        "minCount": "1"
+      },
+      {
+        "path": "Sellers",
+        "node": "247da134-f1e6-3a7b-95d2-5c6ba3d373a2",
+        "minCount": "1"
+      },
+      {
+        "path": "Suppliers",
+        "node": "b1ab0944-e7f5-399a-a951-5661f6196d28",
+        "minCount": "1"
+      }
+    ]
+  }
+}

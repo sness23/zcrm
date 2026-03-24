@@ -1,0 +1,79 @@
+{
+  "@id": "SellerType",
+  "name": "Seller Type",
+  "@type": "Class",
+  "description": "Is the seller e.g. reseller, distributor, wholesaler, sales partner",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "sellerTypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "0034174d-0ca3-37f0-af3e-dea5f167c8d1",
+    "@type": "Shape",
+    "targetClass": "SellerType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "bb1497b6-2af1-355a-9e3b-fb5856552608",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "sellerTypeName",
+        "@id": "e786aace-169e-31f8-ae53-65c0483c5bb1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e0431a50-1cd1-3f58-8c72-0e38ba52a46f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "514f0ca9-271d-43c3-a161-2add28fd2f63",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c15ba3a4-9b88-37ff-b5c1-452cd1d117d9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "590a30bf-b30d-4575-9696-21d8b096d066",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "24adf451-32cb-3298-ab86-22129e48684d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "4279fbe9-7d62-309a-9176-4fbe149e4bd3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

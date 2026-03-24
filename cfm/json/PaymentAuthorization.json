@@ -1,0 +1,354 @@
+{
+  "@id": "PaymentAuthorization",
+  "name": "Payment Authorization",
+  "@type": "Class",
+  "description": "An approval from the issuer of a payment instrument (usually a card), that the customer has sufficient funds to cover the cost of the transaction.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "expirationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayResultId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationProcessingModeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInternalResultCodeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "gatewayReferenceDetailsText",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayInternalReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "macAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "iPAddress",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGroupId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesOrderPaymentSummaryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalPaymentCaptureAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "totalAuthorizationReversalAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "gatewayResultCodeDescription",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodID",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationCommentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayReferenceNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "requestDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "authorizationAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "availableBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayId",
+      "@type": "Property"
+    },
+    {
+      "@id": "gatewayAuthorizationCode",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAuthorizationStatusId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ff78bf12-66f1-4b1b-8f4f-d51ac7ec884f",
+    "@type": "Shape",
+    "targetClass": "PaymentAuthorization",
+    "properties": [
+      {
+        "path": "totalPaymentCaptureAmount",
+        "@id": "d85b695f-5a9d-4333-be3e-20850f466116",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "totalAuthorizationReversalAmount",
+        "@id": "f39514e1-9062-44f4-9ddd-e6abfb8565dc",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "3fcd2e62-6e03-4c0c-9353-9c137c87de66",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesOrderPaymentSummaryId",
+        "@id": "db83a185-04a8-4ddd-aeee-bd27768f98d2",
+        "node": "8a206d53-8696-42d2-a666-de78ebd6a9a5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "requestDate",
+        "@id": "168a7c86-a884-4080-a8e8-59735d3dfd0d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentMethodID",
+        "@id": "3ced4af5-e333-42d2-b575-7d4476110680",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGroupId",
+        "@id": "cf619fe1-aaa5-49c9-9919-33cebefb13d6",
+        "node": "756cd379-a7e2-41b1-96d6-2e0cc621f228",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayResultId",
+        "@id": "f122c25c-d6a3-4f4f-a121-4bd609b7a685",
+        "node": "9b0f3886-5b43-4111-a6a6-1191e20389b4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayReferenceNumber",
+        "@id": "8a626271-a396-49f9-aaea-5e6c73e7f25c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInternalResultCodeId",
+        "@id": "6bdfc4cb-45c8-4b2b-8b0b-dd060073838f",
+        "node": "3d19b5ea-7c4d-40c0-8505-5a857c5eee32",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayInternalReferenceNumber",
+        "@id": "16036b66-b948-4858-9b5b-722b401d49d4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayId",
+        "@id": "a04e9803-9bde-4a4a-bbbb-01af2b8d4363",
+        "node": "2d0e1bae-275c-4141-bfff-d75d61515cff",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayDate",
+        "@id": "883853ff-5fe9-4c2c-8040-8f1ce81ff1f1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationStatusId",
+        "@id": "c7e25a79-dea2-41e1-9515-68d26aa938fa",
+        "node": "0e19af50-e733-4848-9b9b-1830c49340d5",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationProcessingModeId",
+        "@id": "a221c217-1890-4b9b-a727-32e4c8c0a6c6",
+        "node": "28e32192-ce6d-4bbb-b7b7-761e0f37c02d",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationNumber",
+        "@id": "3ddad844-e3db-49d9-a222-6c7dcdd7e52b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentAuthorizationCommentText",
+        "@id": "6db7b9dd-c578-4bbb-83c3-599517cbc089",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "macAddress",
+        "@id": "76a47516-0bef-44b4-9717-cbb4f415ed5b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e6b4506c-57ac-4ada-bf3f-5928a16c1c03",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iPAddress",
+        "@id": "1f7ea08c-ce93-49d9-ae2e-4bbc5e553287",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5d210941-1586-4ebe-8747-fd7dba306da5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "53f7201f-2fbb-4656-9252-d3456f51e1f8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "gatewayResultCodeDescription",
+        "@id": "5f55d4da-d386-4252-8c4c-221bc3e15b33",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "gatewayReferenceDetailsText",
+        "@id": "e110a9cf-99fe-4ece-a9a9-56e95bfef788",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "gatewayAuthorizationCode",
+        "@id": "cac00433-a40e-4f1f-bf7f-e3cd0d3bfdb6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "acdc12a5-cb8b-4dad-8080-c10ab726e079",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d050dc74-91eb-41b1-a3e3-009223796ab4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "f9c950ef-c01d-4636-a0a0-2b765e7dfda3",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "expirationDate",
+        "@id": "71a0104b-091f-4181-b676-64937704e547",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2d343dfd-31e7-44c4-94d4-48f8170582b2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "availableBalanceAmount",
+        "@id": "f3dcc8ea-f92d-4636-9090-902627620a3c",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "authorizationAmount",
+        "@id": "ffe1afb3-f358-4f1f-9959-d764dacabf76",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "CapturePayments",
+        "node": "f667136c-1a92-4282-9555-66186aced3a4",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentAuthorizationReversals",
+        "node": "1bb15276-0000-4fdf-9757-6b101ce480fb",
+        "minCount": "1"
+      },
+      {
+        "path": "PaymentGatewayAuthorizationLogs",
+        "node": "fe62b08a-d05d-4fdf-b8f8-00beea483cf5",
+        "minCount": "1"
+      }
+    ]
+  }
+}

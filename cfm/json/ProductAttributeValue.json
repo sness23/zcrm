@@ -1,0 +1,126 @@
+{
+  "@id": "ProductAttributeValue",
+  "name": "Product Attribute Value",
+  "@type": "Class",
+  "description": "Assignment of an attribute value to a product e.g. shoe lace",
+  "subClassOf": "DataAttribute",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "attributeValueId",
+      "@type": "Property"
+    },
+    {
+      "@id": "attributeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "customAttributeValue",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "attributeSetId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cde2ab14-aee5-3bcf-babd-a55ecb872f1f",
+    "@type": "Shape",
+    "targetClass": "ProductAttributeValue",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "27d7cdbd-b778-3e1c-b83c-69ea53f4ce70",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "45e56b73-4267-3215-99f7-00614679706e",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "13b90efe-38e8-3d35-b9b5-ccbc323df878",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8cf7c0fb-b384-3ce5-82b0-60519dc19c3a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3a3553db-03e7-41d1-8d4d-4f6092488b73",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "694cb814-6fa0-362c-a480-9f2a60d7e334",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7d7412f5-7068-4010-b030-5d523b8a0ac3",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "943e0b98-e5c1-3c65-afc0-ded6bb0afbeb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "customAttributeValue",
+        "@id": "2071012e-61bd-37b6-b7bd-d51dfacdcd77",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "390b6a1d-7057-35bb-9d7c-1928c06672ee",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "attributeValueId",
+        "@id": "6a1bb76e-9eb3-311e-8129-b8d51326cc09",
+        "node": "f6ed0882-f86c-3b62-8f6e-6301d6262cc2",
+        "maxCount": "1"
+      },
+      {
+        "path": "attributeSetId",
+        "@id": "0c5efacd-8a21-3372-9992-341a74eff7ee",
+        "node": "d993fe8d-c6df-340a-a03f-76ce6c78665c",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

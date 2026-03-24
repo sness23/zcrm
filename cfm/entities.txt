@@ -1,0 +1,346 @@
+Account
+Account Balance Unit of Measure
+Account Brand
+Account Business Type
+Account Contact
+Account Contact Role Type
+Account Hold Status Reason
+Account Participant
+Account Participant Role
+Account Partner
+Account Relationship
+Account Relationship Role
+Account Role
+Account Score
+Account Service Entitlement
+Account Territory
+Account Type
+Affiliate Group
+Affiliation Group
+Age Range
+Alternate Payment
+Asset Product Campaign
+Assortment
+Assortment Product
+Attribute Set
+Attribute Set Attribute
+Attribute Set Translation
+Attribute Translation
+Attribute Value
+Attribute Value Translation
+Authorization Processing Mode
+Bank Account Type
+Bank Check Type
+Bank Transfer Tender
+Bank Type
+Bankruptcy Type
+Bill Delivery Method
+Brand Grade
+Bundle Product
+Bundle Type
+Business Account
+Business Activity
+Business Brand
+Business Legal Status
+Business Ownership
+Business Size Type
+Capture Payment
+Cash Tender
+Check Tender
+Color
+Competitor
+Contact
+Contact Account Relationship
+Contact Account Relationship Role
+Contact Contact Relationship
+Contact Point
+Contact Point Address
+Contact Point App
+Contact Point Email
+Contact Point Location
+Contact Point Phone
+Contact Point Social
+Contact Point Type
+Contact Role
+Coupon
+Coupon Definition
+Coupon Status
+Coupon Use Type
+Credit Memo
+Credit Tender
+Credit Tender Type
+Currency
+Customer
+Customer Status
+Customer Status History
+CustomerType
+Dietary Habit Type
+Digital Wallet
+Digital Wallet Type
+Disability Type
+Disposal Type
+Do Not Process Reason
+Email Frequency
+Employment Status
+Entitlement Policy
+Entitlement Product
+Ethnicity
+Freight Terms
+Gateway Provider Payment Method Type
+Gender
+Global Party
+Goods Product
+Height Unit Of Measure
+Hobby
+Household
+Housing Type
+ISIC Code
+Image
+Image Group
+Income Range
+Individual
+Individual Score
+Internal Business Unit Type
+Internal Result Code
+Inventory Product Campaign
+Keyword Search Sorting Rule
+Language Proficiency Level
+Lead
+Lead Rating
+Lead Source
+Lead Status
+Legal Entity
+Legal Organization Type
+Life Attitude Type
+Life Style Type
+Marital Status
+Marketing Related Product
+Master Product
+Measurement System
+Military Status
+MilitaryServiceStatus
+NAICS Code
+Occupation
+Order Delivery Method
+Order Reason
+Organization
+Organization Milestone
+Ownership Verification Type
+Party
+Party Accreditation
+Party Additional Name
+Party Additional Name Type
+Party Award
+Party Board Certification
+Party Business License
+Party Hierarchy
+Party Hierarchy Member
+Party Hierarchy Type
+Party Identification
+Party Identification Type
+Party No Merge Reason
+Party Professional Credential
+Party Professional Credential Type
+Party Related Party
+Party Relationship Role
+Party Relationship Type
+Party Role
+Party Tax Exemption Certificate
+Party Type
+Party Web Address
+Payment
+Payment Allocation
+Payment Application
+Payment Application Level
+Payment Application Type
+Payment Authorization
+Payment Authorization Internal Result Code
+Payment Authorization Reversal
+Payment Authorization Status
+Payment Card
+Payment Card Category
+Payment Card Type
+Payment Credit Memo Allocation
+Payment Credit Memo Application
+Payment Gateway
+Payment Gateway Authorization Log
+Payment Gateway Authorization Reversal Log
+Payment Gateway Interaction Log
+Payment Gateway Interaction Status
+Payment Gateway Interaction Type
+Payment Gateway Payment Log
+Payment Gateway Provider
+Payment Gateway Result Code
+Payment Gateway Status
+Payment Group
+Payment Invoice Allocation
+Payment Invoice Application
+Payment Invoice Application Type
+Payment Method
+Payment Method Status
+Payment Method Type
+Payment Policy
+Payment Policy Status
+Payment Policy Treatment Selection
+Payment Schedule
+Payment Schedule Item
+Payment Schedule Status
+Payment Status
+Payment Treatment
+Payment Treatment Method
+Payment Treatment Status
+Payment Type
+Person Education
+Person Employment
+Person Language
+Person Life Event
+Person Life Event Type
+Person Life Stage
+Person Name
+Person Training
+Personal Account
+Personal Account Owner
+Personal Value Type
+Personality Type
+Population Type
+Prepaid Card
+Prepaid Card Type
+Price Adjustment Group
+Price Adjustment Method
+Price Charge Type
+Primary Phone Type
+Private Contact
+Product
+Product Adverse Effect
+Product Age
+Product Asset Conversion Action
+Product Attribute
+Product Attribute Set
+Product Attribute Value
+Product Catalog
+Product Catalog Translation
+Product Category
+Product Category Attribute Set
+Product Category Product
+Product Category Sorting Rule
+Product Category Translation
+Product Cleanup Process
+Product Collateral
+Product Environment Requirement
+Product Fabric
+Product Feature
+Product Gender
+Product Image
+Product Image Translation
+Product Pattern
+Product Related Component
+Product Related Material
+Product Related Product
+Product Relationship Type
+Product Repair Certification
+Product Repair Skill
+Product Role
+Product Sales Model
+Product Season
+Product Security Requirement
+Product Service Campaign
+Product Service Campaign Item
+Product Service Campaign Item Type
+Product Sorting Rule
+Product Sorting Rule Type
+Product Status
+Product Style
+Product Translation
+Product Type
+Product Validity Time Period UOM
+Product Warranty Term
+Pronoun
+Prospect Rating
+Quantity Installment Period
+Quantity Schedule Type
+Quantity UOM
+Refund Allocation
+Refund Allocation Type
+Refund Credit Memo Allocation
+Refund Payment
+Refund Payment Allocation
+Religion
+Residence Capture Method
+Revenue Installment Period
+Revenue Schedule Type
+SIC Code
+SLA Type
+Sales Channel
+Sales Channel Type
+Sales Contract
+Sales Model
+Sales Order
+Sales Order Change Log
+Sales Order Change Type
+Sales Order Confirmation Status
+Sales Order Delivery Group
+Sales Order Delivery Status
+Sales Order Payment Summary
+Sales Order Price Adjustment
+Sales Order Price Adjustment Type
+Sales Order Product
+Sales Order Product Attribute Value
+Sales Order Product Group
+Sales Order Product Group Assignment
+Sales Order Product Group Type
+Sales Order Product Identification
+Sales Order Product Note
+Sales Order Product Price Adjustment
+Sales Order Product Price Adjustment Tax
+Sales Order Product Price Adjustment Type
+Sales Order Product Reason
+Sales Order Product Reason Category
+Sales Order Product Related Product
+Sales Order Product Relationship Type
+Sales Order Product Status
+Sales Order Product Tax
+Sales Order Segment
+Sales Order Status
+Sales Order System Status
+Sales Order Type
+Sales Store Product
+Seller
+Seller Tier
+Seller Type
+Service Product
+Service Related Product
+Service Type
+Settlement Type
+Shipment
+Shipment Document
+Shipment Package
+Shipment Product
+Shipment Product Price Adjustment
+Shipment Product Price Adjustment Tax
+Shipment Status
+Shipping Method
+Size UOM
+Social Fan Status
+Social Network Provider
+Store Assortment
+Subscription Pricing Method
+Supplier
+Supplier Type
+System Credential
+Tax
+Tax Exemption Certificate
+Tax Type
+Taxation Policy
+Temperature UOM
+Time UOM
+Trade In Product Type
+Trade In Tender
+Uncategorized Party
+Uncategorized Party Creation Reason
+Voucher
+Voucher Definition
+Voucher Expiration Type
+Voucher Status
+Voucher Type
+Web Site
+Weight Unit Of Measure

@@ -1,0 +1,79 @@
+{
+  "@id": "SubscriptionPricingMethod",
+  "name": "Subscription Pricing Method",
+  "@type": "Class",
+  "description": "A code that defines terms of a payment structure that allows a customer to purchase a sellers goods or services for a certain price, for a certain period of time",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "03ae60a7-728f-4858-b0f0-78ff2dc8bbaf",
+    "@type": "Shape",
+    "targetClass": "SubscriptionPricingMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "838decbe-f7e6-4eae-bcfc-fee1edcabe64",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "17a64265-e3e6-4a9a-8989-1ae50bac773c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1683a327-c51f-4dfd-ab6b-932487b19f26",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "918ad954-ab60-49f9-a363-0c5c65fd4dc4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ca167f3c-41bb-4a9a-99d9-fc0ab5500021",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "eb647e86-1a55-4979-a323-f8e7e4c19715",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "b398997c-f824-4e1e-b9b9-bac861b3ee15",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f38545d2-c5f3-4868-bb7b-3277b09f89a0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

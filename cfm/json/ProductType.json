@@ -1,0 +1,56 @@
+{
+  "@id": "ProductType",
+  "name": "Product Type",
+  "@type": "Class",
+  "description": "Product Type e.g. Goods Product, Service Product, Bundle Product, Master Product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [],
+  "schema": {
+    "@id": "386f991a-3d9d-3ad2-8861-c5f144c06323",
+    "@type": "Shape",
+    "targetClass": "ProductType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "41381fa3-da2a-3a4f-b811-40deb18dfca6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d668564d-b470-386c-bb90-5fef8f94eaa9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a3163026-28bf-45a5-b878-f7f0969585be",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9a21c3a1-0742-4979-8242-a8687b1ca191",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "24126e08-3fcb-3be6-8715-1af180d48bbf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "efd94a6f-1314-36e5-b9cb-40ac378b8b20",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "@context": "http://cloudinformationmodel.org/",
+    "@id": "ProgressPropertyGroup",
+    "name": "Progress Property Group",
+    "@type": "PropertyGroup",
+    "propertyConcepts": [
+{
+        "@id": "filedDate",
+        "@type": "Property",
+        "description": "Date the order was filed",
+        "name": "Filed Date",
+        "range": "DataType"
+    },{
+        "@id": "isAlerted",
+        "@type": "Property",
+        "description": "Is the order alerted. Used to notify the user that something went wrong during a workflow.",
+        "name": "Is Alerted",
+        "range": "DataType"
+    },{
+        "@id": "isClosed",
+        "@type": "Property",
+        "description": "Is the order closed or not. Used to drive and halt workflows",
+        "name": "Is Closed",
+        "range": "DataType"
+    },{
+        "@id": "isSuspended",
+        "@type": "Property",
+        "description": "Is the order suspended or not. Used to drive and halt workflows",
+        "name": "Is Suspended",
+        "range": "DataType"
+    },{
+        "@id": "orderEndDate",
+        "@type": "Property",
+        "description": "Date at which the order ends. For subscription-type orders, this would be the date when the subscription ends.",
+        "name": "Order End Date",
+        "range": "DataType"
+    },{
+        "@id": "orderStartDate",
+        "@type": "Property",
+        "description": "Date at which the order becomes effective. For subscription-type orders, this would be the date when the subscription begins.",
+        "name": "Order Start Date",
+        "range": "DataType"
+    },{
+        "@id": "originalOrderId",
+        "@type": "Property",
+        "description": "Reference to the a parent order. Needed for reship, excahnge and even swap orders",
+        "name": "Original Order",
+        "range": "SalesOrder"
+    },{
+        "@id": "promiseDate",
+        "@type": "Property",
+        "description": "Date the promise the order would be fulfilled",
+        "name": "Promise Date",
+        "range": "DataType"
+    },{
+        "@id": "requestedStartDate",
+        "@type": "Property",
+        "description": "The customer's preferred date for order fulfillment",
+        "name": "Requested Start Date",
+        "range": "DataType"
+    },{
+        "@id": "salesOrderStatusId",
+        "@type": "Property",
+        "description": "Current order status e.g. Draft, Ready for Review, Placed, Ready for Activation, Activated",
+        "name": "Sales Order Status",
+        "range": "SalesOrderStatus"
+    },{
+        "@id": "salesOrderSystemStatusId",
+        "@type": "Property",
+        "description": "An order status with values (Draft, Activated) that are fixed so that standard logic can use them. The related Sales Order Status is related, and customizable by customers. Each value of SalesOrderStatus relates to value of Sales Order SystemStatus",
+        "name": "Sales Order System Status",
+        "range": "SalesOrderSystemStatus"
+    }
+    ]
+}

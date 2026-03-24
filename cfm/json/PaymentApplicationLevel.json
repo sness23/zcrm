@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentApplicationLevel",
+  "name": "Payment Application Level",
+  "@type": "Class",
+  "description": "Determines if application is at header level or line level.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "fbdc9364-6b96-4363-9393-3c3847b2bb48",
+    "@type": "Shape",
+    "targetClass": "PaymentApplicationLevel",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "334305f1-02b8-4262-a525-60b76765c334",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1032d30f-c3d6-4515-9b5b-02f8667fad40",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1b06b686-6e31-4b0b-a0e0-f7a2debe08de",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "174dded3-0c84-49e9-bb7b-c20007f48ddf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "7a7788bc-f3d6-4646-a7e7-6feac566aaa5",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ac262410-d7bd-4c3c-af2f-fae9c26e76c7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7cda5002-5cf7-47c7-a7a7-91605d392179",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "31b40b86-e9db-4525-8f0f-5c0f4e604fc8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "@id": "Voucher",
+  "name": "Voucher",
+  "@type": "Class",
+  "description": "A document that authorizes the disbursement of cash or a credit against a purchase or expense to be made in the future.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "promotionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "expirationDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "notesText",
+      "@type": "Property"
+    },
+    {
+      "@id": "loyaltyBenefitId",
+      "@type": "Property"
+    },
+    {
+      "@id": "faceValueAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "loyaltyProgramMemberId",
+      "@type": "Property"
+    },
+    {
+      "@id": "voucherDefinitionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "voucherTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "discountPercent",
+      "@type": "Property"
+    },
+    {
+      "@id": "voucherCodeText",
+      "@type": "Property"
+    },
+    {
+      "@id": "loyaltyJournalSubtypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "effectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "voucherStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "loyaltyTransactionJournalId",
+      "@type": "Property"
+    },
+    {
+      "@id": "usedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "loyaltyJournalTypeId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1dcf6a90-d49d-4080-a626-80af26fd471c",
+    "@type": "Shape",
+    "targetClass": "Voucher",
+    "properties": [
+      {
+        "path": "voucherTypeId",
+        "@id": "1fa90121-7a34-47a7-b0b0-3609573d057b",
+        "node": "9de310a0-723b-4373-8f0f-c24d5a8afe7c",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "voucherStatusId",
+        "@id": "e92c3249-b67b-4424-9ede-e028d988f565",
+        "node": "06fa933e-c084-4e5e-9414-c2bf2671f5b2",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "voucherDefinitionId",
+        "@id": "ec25a5e7-e8ec-44d4-81c1-8f3710a143c0",
+        "node": "62a3c282-cfaa-42a2-9ddd-700f75935b95",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "voucherCodeText",
+        "@id": "66978452-1bad-4d0d-8585-c847e1ed634f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "usedDate",
+        "@id": "5779a802-03e5-4ede-9151-b241e31661ac",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "db95a988-0dd3-4626-9a1a-25a28b3f2d89",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "notesText",
+        "@id": "f5068668-1877-42f2-a1a1-b5745b58008d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "6f5dd20e-8a14-4e5e-b8b8-57af51481657",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "fee4ce7b-bba4-4efe-97d7-c310a8f5d5a8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3fcef6d6-ba37-4141-b7b7-b863026473c6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "811acfe5-6bfc-4b4b-9818-98b23c74faf8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "faceValueAmount",
+        "@id": "ab680ee1-bb2d-49d9-8b0b-9ca1d2917a01",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9d062779-ed83-40f0-8b0b-6a086c96f16f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "dcb362e1-072b-4232-abab-b8c59608fef4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "expirationDate",
+        "@id": "3cf2ae37-a802-4737-a2a2-6bd39da21df1",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "effectiveDate",
+        "@id": "5b4c822c-b153-4494-a222-6bba30dfb645",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "discountPercent",
+        "@id": "8ff7449c-8866-4a4a-acac-46efc4232ae7",
+        "datatype": "cim:percentage",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "580602bb-2236-4b8b-a2e2-c0075a6b9435",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

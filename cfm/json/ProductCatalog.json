@@ -1,0 +1,110 @@
+{
+  "@id": "ProductCatalog",
+  "name": "Product Catalog",
+  "@type": "Class",
+  "description": "A catalog used for a certain business process e.g. inventory, merchandising",
+  "subjectArea": "Product",
+  "entityGroup": "ProductCatalog",
+  "properties": [
+    {
+      "@id": "activeFromDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "activeToDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f5f24373-d952-3688-88c9-ab66ee0b0bcd",
+    "@type": "Shape",
+    "targetClass": "ProductCatalog",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "aee5d2ed-88b5-3d89-91e4-286a3344edde",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "21762ad7-5cdb-39f1-9be8-ea52dc040ef3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "044854fa-8503-3afb-b214-2da0c0d50cd8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "93fde7b7-c66f-4404-8e8e-623ddd274c5b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "3c56943a-1ed2-37fd-ab85-948eaf39f2ee",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "72e3cadd-b4c4-4333-bd7d-bd6fbfc0c967",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "89503f26-5140-3203-aaca-40713082863e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "456d5405-2105-3fc4-9995-500235b81c45",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "activeToDate",
+        "@id": "f0dc394d-de7d-32e7-9b03-764d964355f3",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "activeFromDate",
+        "@id": "e94ca5b4-1b80-358e-863a-56585ca4b4ab",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductCatalogTranslations",
+        "node": "4417d614-26ef-379b-9cc2-e927cf57c4d7",
+        "minCount": "1"
+      },
+      {
+        "path": "ProductCategories",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "minCount": "1"
+      }
+    ]
+  }
+}

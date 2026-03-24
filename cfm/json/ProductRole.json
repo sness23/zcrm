@@ -1,0 +1,79 @@
+{
+  "@id": "ProductRole",
+  "name": "Product Role",
+  "@type": "Class",
+  "description": "Product Role is what role a product plays in product-to-product relationships e.g. Bundled with, Bundles",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5d274eff-cffb-3246-8064-d7b17f46462e",
+    "@type": "Shape",
+    "targetClass": "ProductRole",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8517a7ab-10a5-38f1-89d9-a595b86b2a57",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "8be9ef50-a301-3542-b7a9-070f0ffb7075",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5a4d7cea-15b9-33df-9e08-0c0a94d2b285",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "08b4dd8e-263f-41e1-b5f5-063c3c4c1ac6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "7d5d5e3c-1aa5-3a1b-9726-cb06d4d1cb97",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c6864f05-1145-4686-8ccc-fe28897b9fc2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d36fd6bc-dcd9-3b58-9556-20996d067529",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "021a6bb0-4271-379a-98ae-3f02edd9b146",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "@id": "AgeRange",
+  "name": "Age Range",
+  "@type": "Class",
+  "description": "Commonly used age ranges, e.g., 18-49, 50-75",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "fromAgeNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "toAgeNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "fa1649bd-0888-40f0-9252-947492038cc3",
+    "@type": "Shape",
+    "targetClass": "AgeRange",
+    "properties": [
+      {
+        "path": "toAgeNumber",
+        "@id": "ba0bbb22-21bf-4040-b9f9-8eb640453019",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "813e302c-aaab-4060-8141-6ce640d34874",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "1d4ef1a9-7341-4858-9656-b52190c2f696",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4145e87c-5864-4606-a9a9-3ad521b9ae37",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementerTypeName",
+        "@id": "f346634c-1994-4969-8545-b9632304e57f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "2eee7e35-fade-44b4-8000-99cf78bfd948",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "fromAgeNumber",
+        "@id": "b42f071c-b629-4111-97d7-dde0227a10d8",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "81d20e6a-3f20-4f1f-8949-76b953ca42ee",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "f99635c2-ec45-4dad-b070-3aa45752e2dd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "ac676300-4258-41e1-8a0a-ecc4e0a52283",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "464c8dae-58d5-4202-8aca-7ff1731a7441",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

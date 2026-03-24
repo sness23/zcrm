@@ -1,0 +1,105 @@
+{
+  "@id": "IndividualScore",
+  "name": "Individual Score",
+  "@type": "Class",
+  "description": "A value, collected or derived about a person. May be specific to one of their contact points, and may be specific to the analysis of one internal organization within the larger organization. Examples could include how likely to open an email, or buy",
+  "subClassOf": "Score",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "internalOrganizationId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "contactPointId",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f4d5f165-88ba-4787-b1f1-f94d201f1d63",
+    "@type": "Shape",
+    "targetClass": "IndividualScore",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5cc8859e-1e42-4aca-aaea-3e663fd382da",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "386af214-3ee2-45e5-ba7a-bc99e28f6012",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3906764f-6fa1-4e9e-9b9b-742a21781518",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "bdd81d68-caf4-4ccc-9959-1b581fb60286",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "07b899fb-8f02-4a0a-b7f7-9ca39977af03",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "43da9f03-e6d7-4f9f-80c0-a4eaad5c7f1a",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "9d2517a9-fc8b-4bdb-baba-20c59029951c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "631c1c75-e5af-4919-b737-315ed2674280",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "658f94db-963b-4ada-9717-376362e7c0ef",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "contactPointId",
+        "@id": "d7e55750-9fca-46a6-be3e-0e9f8bf6c8f8",
+        "node": "ce4e5a86-1aac-3aeb-a37d-20542a5ee107",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

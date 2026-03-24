@@ -1,0 +1,634 @@
+{
+  "@id": "ServiceProduct",
+  "name": "Service Product",
+  "@type": "Class",
+  "description": "Products that are intangible e.g. labor, software subscription",
+  "subClassOf": "Product",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "rentalCleanupFeeAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "evergreenContractEstimatedChargeAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "serviceProviderAccountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "serviceTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "evergreenContractEstimatedMonthCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "rentalTermViolationPenaltyAmountCurrency",
+      "@type": "Property"
+    },
+    {
+      "@id": "rentalCleanupFeeAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "evergreenContractEstimatedChargeAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "servicePeriodCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "servicePeriodUOM",
+      "@type": "Property"
+    },
+    {
+      "@id": "rentalTermViolationPenaltyAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a7d0ef56-bac7-311a-8abf-06e39a4fe069",
+    "@type": "Shape",
+    "targetClass": "ServiceProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "0cc2d18e-ce52-4020-8b0b-ccbe1e95981b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "serviceTypeId",
+        "@id": "5069b011-ba5d-3822-adb5-66598716fab0",
+        "node": "be030082-cf47-37dc-a878-35420f883c62",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "serviceProviderAccountId",
+        "@id": "69ea9e58-170c-387a-ae3e-a81412541ecb",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "servicePeriodUOM",
+        "@id": "b5f506dd-1fa6-3250-bf50-87d3f17ca194",
+        "node": "78e6e75a-4354-30e8-9803-741a0d98d1b5",
+        "maxCount": "1"
+      },
+      {
+        "path": "servicePeriodCount",
+        "@id": "12179e07-498a-3f57-b86a-53509addf30a",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "rentalTermViolationPenaltyAmountCurrency",
+        "@id": "fbf6c30c-3090-322a-829c-1c5ec085b405",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "rentalTermViolationPenaltyAmount",
+        "@id": "729fb487-3810-3614-9f82-094c4a48a1fb",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "rentalCleanupFeeAmountCurrency",
+        "@id": "50e84750-dc55-310c-9391-fa8886d17828",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "rentalCleanupFeeAmount",
+        "@id": "4b3f7223-61f0-356b-ad79-336f20aad099",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "68f372c5-ad32-47b7-8ccc-017d1f0eec10",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "efce3324-fcaa-4232-9b1b-e84fc909e3d8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "98f52a5d-be11-32ef-8e4d-61f62a6714de",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "438dcace-d848-45d5-af2f-96cb0b4bea58",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "df7ed69a-346a-49d9-a727-d625b8ca3add",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "evergreenContractEstimatedMonthCount",
+        "@id": "af0b94ee-e538-3cfd-89f8-5f104312d0fe",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "evergreenContractEstimatedChargeAmountCurrency",
+        "@id": "333e49ec-54c0-3dc3-9718-3675b5f30226",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "evergreenContractEstimatedChargeAmount",
+        "@id": "3991c0e0-34d6-36de-a407-9477a92b666e",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "fb415806-7e7f-4d7d-af2f-7993fc77abaf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "versionNumber",
+        "@id": "c96f442f-495a-39f3-a827-5881f9bbe5bd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "validToDate",
+        "@id": "9aaea59f-5617-358e-8fd4-c2a0e19467db",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "validFromDate",
+        "@id": "c2f8f274-8251-301c-ada8-ec531d6cf26b",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "validForPeriodUOMId",
+        "@id": "93e56b5a-77c9-33f0-8649-aee53cfb0066",
+        "node": "277ad160-ac8f-3622-aa33-85c7950e340f",
+        "maxCount": "1"
+      },
+      {
+        "path": "validForPeriodCount",
+        "@id": "fdd31cbb-7a6d-3438-b06b-b7323569e1ef",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "stockLedgerValuationAmountCurrency",
+        "@id": "717a5906-7afa-34f4-9034-f1def3c5dc33",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "stockLedgerValuationAmount",
+        "@id": "db9d6f47-d9c8-3565-b2f4-6b92792f14d9",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "standardWarrantyLengthMonth",
+        "@id": "9d4d1c44-7604-3413-83d2-a3d65feeed84",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "rewardProgramPointsCount",
+        "@id": "152f98ca-a64e-32ff-aa43-8ba633227380",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "revenueScheduleTypeId",
+        "@id": "6c027959-9e70-34cb-8b03-927620caba57",
+        "node": "3b1fce97-41cf-377e-a2c1-8bffcb73cf5c",
+        "maxCount": "1"
+      },
+      {
+        "path": "revenueInstallmentPeriodId",
+        "@id": "ca2686a5-1603-34a1-9b1e-e9e1efbc2ebe",
+        "node": "af17d62d-d449-392f-8858-d00fe3e1bf26",
+        "maxCount": "1"
+      },
+      {
+        "path": "revenueInstallmentCount",
+        "@id": "9da14787-709e-3bd6-9bef-fda7a32715b7",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "requiresInvididualUnitPricing",
+        "@id": "fdb09974-6c07-3dac-83f5-b2a7fe449dc4",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "requiredDepositPercentage",
+        "@id": "587e500c-3732-319e-a5f9-55e32e43df41",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "requiredDepositAmountCurrency",
+        "@id": "5539be01-9c07-3fc2-9c32-ed3bceed9dc6",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "requiredDepositAmount",
+        "@id": "cd778e4d-52d9-39d3-a9e4-67df9145efae",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "quantityScheduleTypeId",
+        "@id": "4c999808-4ef8-3017-abac-3c63f80395ac",
+        "node": "9ad8e7ca-0a50-32a7-9d35-3553f24d5740",
+        "maxCount": "1"
+      },
+      {
+        "path": "quantityInstallmentPeriodId",
+        "@id": "4e117591-bc77-303f-b8f7-4a53749517ef",
+        "node": "5019280f-282d-3e0e-ac62-a32448849bdb",
+        "maxCount": "1"
+      },
+      {
+        "path": "quantityInstallmentCount",
+        "@id": "dc91d46f-ced4-3f9a-8f0a-564ecfac575c",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "productType",
+        "@id": "b3452daf-95d7-4c1c-b2f2-f49f7d2ee714",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "24dd441d-0078-3314-9cfc-34dffdb55b77"
+              },
+              {
+                "@id": "9b526a6d-bf7a-3ef9-9059-f4241366c46a"
+              },
+              {
+                "@id": "7caf9046-9a2a-3695-8f65-5a10a9c59b68"
+              },
+              {
+                "@id": "a7d0ef56-bac7-311a-8abf-06e39a4fe069"
+              }
+            ]
+          }
+        },
+        "maxCount": "1"
+      },
+      {
+        "path": "productStatusId",
+        "@id": "e95e5921-71f8-31f0-9214-69f5e0665e4e",
+        "node": "86d5609d-0eb3-3a79-9fcd-b7729e09b129",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productSKU",
+        "@id": "dc9b219f-df31-33b7-bff4-99e5b174cd77",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productAssetCvsnActionId",
+        "@id": "1a15c022-b3df-49f9-abeb-3398dda19f75",
+        "node": "1ea6e0b9-f0ec-4989-81c1-720e261af940",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "primarySalesChannelId",
+        "@id": "a0482d46-fb92-3150-86ca-3d14222b6438",
+        "node": "e152647c-6a1f-359d-9f2f-ecf9e138d951",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryProductCategoryId",
+        "@id": "ec3a2861-894e-4333-8f8f-bad2ef7d012c",
+        "node": "f0f9fdb7-79a1-3462-8a71-47c29482230b",
+        "maxCount": "1"
+      },
+      {
+        "path": "priceChargeTypeId",
+        "@id": "83142463-676b-3f3b-9426-154a056a9dd6",
+        "node": "823b4254-9cc9-3b52-81ab-bcd3c46661ff",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "93002ab7-ea57-4636-b8b8-5f039b7254a1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "mSRPAmountCurrency",
+        "@id": "aade5557-f276-3b16-b998-eff7322c7815",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "mSRPAmount",
+        "@id": "1e78f8d5-eb82-3f42-a51c-d825341150b6",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "modelYear",
+        "@id": "a0de0ebf-c86d-340d-99b0-4417d09862ae",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "modelNumber",
+        "@id": "4eae3bac-21a6-3051-b82c-a87c4b16d7a7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "minimumOrderQuantityCount",
+        "@id": "a7ce8276-d0b6-3ff4-84ed-3d6e224f6f8e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "minimumAdvertisementAmountStartDate",
+        "@id": "cd583146-c4a7-3703-a19c-1ecd73e867ca",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "minimumAdvertisementAmountCurrency",
+        "@id": "e74bcfb3-6086-3660-a9fc-63e2168bcb69",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "minimumAdvertisementAmount",
+        "@id": "cbd6f1b8-e26c-329b-838e-a5b3fc4c7306",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "maximumOrderQuantityCount",
+        "@id": "2f6345fa-5526-3e1d-a14e-78518f13b99c",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "masterProductId",
+        "@id": "e980880b-172b-3862-97f2-fe6a54eaa642",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1"
+      },
+      {
+        "path": "manufacturerName",
+        "@id": "85eb8e5a-3c1e-31f4-9ce5-1f90b4ded4f8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lotIdentifier",
+        "@id": "d3afdc1f-f46c-3266-9c37-92b32f562254",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "isWorkerDiscountAllowed",
+        "@id": "60b25ed4-0206-3408-913d-3eb0cbd1656c",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isWeightEntryRequired",
+        "@id": "21dc80a3-cca6-30d3-8a5d-a71df80f8622",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isSerialized",
+        "@id": "e28a1105-b574-3352-99ba-12f20c928d0d",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isSellableWithoutPrice",
+        "@id": "c37056d0-d63f-3ed0-99ac-67f29631f804",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isSellableIndependently",
+        "@id": "3f4f8a07-8ade-3757-87b4-5602b65848ba",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isSellable",
+        "@id": "ea9d97c6-568f-3e72-8dfb-20620d149981",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isReturnable",
+        "@id": "bd59d832-945c-30c0-98f4-55f160d43540",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isRainCheckAllowed",
+        "@id": "a56aafd4-420a-3573-8348-a362eb8828b3",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isQuantityEntryRequired",
+        "@id": "f7f14731-3872-3008-b01b-d62b52a6e41f",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isQualityVerificationRequired",
+        "@id": "37efa61a-6783-33ab-bfa6-72ae0d078e37",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isPreOrderable",
+        "@id": "a2d36b0c-6e89-35bd-be6b-f8da101ed9d9",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isPartnerDiscountAllowed",
+        "@id": "a76bda97-bccf-3496-b1bb-24c08dbde124",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isMultipleCouponsAllowed",
+        "@id": "79dfe05e-fb05-30e0-b16e-9ed794aa744c",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isManualPriceEntryRequired",
+        "@id": "c727bb0e-a94e-356e-895c-0603f4d87778",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isIntellectualPropertyProtected",
+        "@id": "8a5d8a23-fd7f-33de-bdbb-23feccfe168e",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isInstallable",
+        "@id": "4b5e1060-b97d-3e2a-ae4a-ac727544f051",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isFoodstampPaymentAllowed",
+        "@id": "f4e69868-3ce3-35c6-824d-040865a71dfd",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isDynamicBundle",
+        "@id": "53569df8-14d0-3f67-9e5f-c2ecce984cce",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isCustomerDiscountAllowed",
+        "@id": "05c368a3-87e3-3ca1-8c86-d5d919c6723f",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isCouponRedemptionAllowed",
+        "@id": "d34f0d57-65d2-3b26-894d-f4964a399a8b",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isBackOrdered",
+        "@id": "2651913c-0c1d-3abe-8817-0606dd4f93ac",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isAutoProvisionable",
+        "@id": "515f4817-56a9-3add-869d-f32a4b3de814",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceRecordId",
+        "@id": "f756e885-6a3c-323e-a9df-4456a8a45c43",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "disposalTypeId",
+        "@id": "cb3a3dd0-a764-3571-b8b5-18ccd872dd6e",
+        "node": "a4ec54fb-5414-35a8-b96a-c7efac00028f",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "1031cd6d-1ecf-41f1-bafa-bb62d3420fb2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "canUseRevenueSchedule",
+        "@id": "7821941b-3172-31df-b139-04666792c450",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "canUseQuantitySchedule",
+        "@id": "a46a820f-3a2c-318c-bed6-51f308b7c122",
+        "datatype": "xsd:boolean",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "allowPartialRefund",
+        "@id": "457ff531-05bd-38b5-9270-9185b243e762",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "allowCustomerReturn",
+        "@id": "a220b0fd-857f-3f02-926f-92293e576671",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

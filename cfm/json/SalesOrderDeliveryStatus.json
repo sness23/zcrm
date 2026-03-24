@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderDeliveryStatus",
+  "name": "Sales Order Delivery Status",
+  "@type": "Class",
+  "description": "The progress of a delivery such as awaiting pickup, in progress or complete",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9587d03a-f0a1-4a3a-b474-fc5b09580937",
+    "@type": "Shape",
+    "targetClass": "SalesOrderDeliveryStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7937b48c-a321-4c2c-b434-91f5d9b05d3f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "272d0d3c-3068-41c1-9616-58b8c2f89ccc",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5546448f-e937-4838-aaaa-a47fd0d529ae",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d1aa0e60-b2b8-4b0b-ac6c-110d7fa38a63",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "68c50e4a-a4e6-4a9a-9818-4b0c6d306e13",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dbb31326-b0ff-43a3-b9f9-fa62bb6892a6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "418a353f-f33c-4858-baba-a6331eb3d785",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "033f8868-8f67-42d2-8787-96d93a6a6951",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

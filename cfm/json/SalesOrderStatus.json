@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderStatus",
+  "name": "Sales Order Status",
+  "@type": "Class",
+  "description": "The status of a Sales Order",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "55c4e4fd-6219-320c-92ca-07d5a2817cd1",
+    "@type": "Shape",
+    "targetClass": "SalesOrderStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "55138a3a-9d2a-372e-bff6-05f37b4bb4aa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "519e7adc-e3a5-4b9b-a5a5-d5290d393108",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "4b24d71d-8b34-3804-bee7-84dfdb0d3fef",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5de07624-59e5-4b7b-9a9a-37e84676b00c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "329caf41-12b7-3175-aa7a-264a318d9fa2",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "3d16295c-dd11-4848-be3e-8e879b7d717a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "35aca8f6-a87b-338e-aeea-51dc098931b6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "0430c837-90d3-3407-ac8a-7a1ea84a3638",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

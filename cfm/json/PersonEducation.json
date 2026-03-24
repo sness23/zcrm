@@ -1,0 +1,123 @@
+{
+  "@id": "PersonEducation",
+  "name": "Person Education",
+  "@type": "Class",
+  "description": "Education that a person has completed, e.g. Phd, High School",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "institutionName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "schoolDaysMissedNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "educationName",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    },
+    {
+      "@id": "graduationDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9bef4663-088a-3200-a9ce-912f33d7d137",
+    "@type": "Shape",
+    "targetClass": "PersonEducation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "2f1421b0-a4e3-388c-902a-6d27e3c93a0a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "schoolDaysMissedNumber",
+        "@id": "d248bab6-1872-45c5-9fdf-fa36fe6cccf3",
+        "datatype": "xsd:decimal",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "ce573a68-f8cc-3439-afb9-631c3152a56a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "institutionName",
+        "@id": "dc86d378-0902-3f08-81ba-b87f594e6dee",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "f0b79b18-963c-35b0-88da-a42d6e14b82f",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e984f409-be55-4838-a767-f52a16f4662e",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fbc5c1d9-f146-3d80-9d4f-79bd90f41e13",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "graduationDate",
+        "@id": "a2356d05-6679-31de-b162-353a7b25d63c",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "7b95e90c-8213-44f4-9757-006934573877",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6780c392-e5e4-3e8a-9793-88fbcc012e5c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "educationName",
+        "@id": "ea299ad9-ea6f-38d1-b237-8c3c9c77b023",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "03750ad8-4b8c-3aa1-b423-4e0a826b1bc9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

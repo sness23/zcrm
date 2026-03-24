@@ -1,0 +1,105 @@
+{
+  "@id": "AccountTerritory",
+  "name": "Account Territory",
+  "@type": "Class",
+  "description": "The membershisp of an Account in a Work Territory. Over time, accounts may be long to multiple Work Territories.",
+  "subjectArea": "Account",
+  "entityGroup": "Account",
+  "properties": [
+    {
+      "@id": "firstEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "opportunityTerritoryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "endEffectiveDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e3ae949c-39fd-4bcb-8343-0ffea9e117a8",
+    "@type": "Shape",
+    "targetClass": "AccountTerritory",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5663e499-ceec-4020-8606-b4253cd2c4d5",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "98d5366e-6edb-4cbc-92d2-4d519b222f34",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c85fb40f-a58e-4464-ae2e-76ae8000a6c2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "741d05a9-5d50-4a4a-8202-7d757515892f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "firstEffectiveDate",
+        "@id": "323af285-cba9-4f6f-b4b4-5c880fe82061",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "a47634a2-fb64-4838-8040-9b5f8fecf9a6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "307ef0a2-66b2-4242-a565-c211f6cf8023",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "endEffectiveDate",
+        "@id": "b8f4a7ba-17b6-4959-a8e8-b57872935612",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "bc891d31-9232-4909-9d1d-2dc8439fbd1c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "efd4cc72-4d4b-49d9-9252-8e8066d80301",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "@id": "CreditTender",
+  "name": "Credit Tender",
+  "@type": "Class",
+  "description": "Payment to the seller that results in an agreement to pay at a later date, usually via a credit account.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "purchaseOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "accountId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3fc674ae-cdf8-44c4-a262-a7adfc7e738c",
+    "@type": "Shape",
+    "targetClass": "CreditTender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8ad5e55d-299d-4888-be7e-421648ab4aaa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "f04dfc8f-5036-4909-9c1c-027f63527f1c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "86de9183-d0a3-4191-a8a8-b71c03b3ad3c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "6b437bdb-eba2-4afa-b8b8-79d52534ae42",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dfda7fde-7cf4-4080-8e4e-f2bdec695b4d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "381d959e-aa29-48b8-a969-8a65c86ab484",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "010da01a-ef06-4d4d-b777-054675ffbcf7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "accountId",
+        "@id": "fe7c9cc2-6413-4565-bb3b-35df9b94d611",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "@id": "BankTransferTender",
+  "name": "Bank Transfer Tender",
+  "@type": "Class",
+  "description": "A payment method that transfers money directly from one bank to another.",
+  "subClassOf": "PaymentMethod",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "9779dc3a-2073-4fef-8e8e-3022bbe9afe2",
+    "@type": "Shape",
+    "targetClass": "BankTransferTender",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3b1a405c-4387-40d0-acec-88d48d92c6fd",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "88baf1e0-bb08-304e-94a1-c938ac42c2e7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "76c66af0-2e77-47e7-b737-9b4e2f643fff",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b3a46cb8-5a7b-47b7-9fdf-e1e5d5d65284",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "b612443e-69e4-4ada-9010-569885751911",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "142e2f05-49ea-4b3b-a464-c3ecf4c14c8d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "6b1dcf88-a7c0-49d9-9494-0368e8d98066",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f1ddaf4b-e2ec-4d7d-ab2b-90a6593a1fe4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "PriceChargeType",
+  "name": "Price Charge Type",
+  "@type": "Class",
+  "description": "Is the item to be sold based on weight, by units or by usage",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "823b4254-9cc9-3b52-81ab-bcd3c46661ff",
+    "@type": "Shape",
+    "targetClass": "PriceChargeType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "be4c987d-4c3c-4676-81c1-60d7fbcc25e1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d957502d-b5bf-4080-9d1d-65d175a04534",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fb488fe1-9c5d-47d7-a4a4-efb03476d5ec",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "69b824fd-32d3-4828-ba7a-24d99189590c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "750a25fe-bc89-4464-acac-379291507c56",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "3d75660d-6e14-4141-9898-c3a2a47a2596",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "23a0427f-afc9-46f6-a121-cd608b00d0e6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

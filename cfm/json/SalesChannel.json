@@ -1,0 +1,122 @@
+{
+  "@id": "SalesChannel",
+  "name": "Sales Channel",
+  "@type": "Class",
+  "description": "Which channel is used to sell goods e.g. Web Store, Retail Store, Street Faire",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "externalSourceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesChannelTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesChannelNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "externalRecordId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e152647c-6a1f-359d-9f2f-ecf9e138d951",
+    "@type": "Shape",
+    "targetClass": "SalesChannel",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "8e01cc1c-8aa3-3890-96e7-b592bec33c17",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesChannelTypeId",
+        "@id": "91f472ce-d6e9-4414-a767-a462d0cd4f29",
+        "node": "5ae0f454-3504-41c1-9a5a-046dc50bf5a4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "salesChannelNumber",
+        "@id": "3e65790a-8db2-49d9-bbbb-cce85c9f274a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b65d7214-0602-3e2e-8d79-5a6fdd250a93",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "38788aea-80a9-3208-aa6e-924c139ac805",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "34c6b239-fae8-4c7c-9e9e-49bc6a745b5d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5fe5f31b-4d5f-3f50-b31f-36a3240436c9",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "1d3e51bf-26fd-4464-b777-c6e441f7e9ef",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2511298a-31dc-37fb-9924-da4687dc5d90",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "05fef7ac-f61e-4191-8b0b-462435730805",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "d07628c6-8f20-3f86-a14e-5d1124ef1fcb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

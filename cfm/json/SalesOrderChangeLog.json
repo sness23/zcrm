@@ -1,0 +1,123 @@
+{
+  "@id": "SalesOrderChangeLog",
+  "name": "Sales Order Change Log",
+  "@type": "Class",
+  "description": "Change log for sales order",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "changeSalesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedSalesOrderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "changeSalesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "relatedSalesOrderProductId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b57450af-61f6-4060-9898-4e1ab922dab9",
+    "@type": "Shape",
+    "targetClass": "SalesOrderChangeLog",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "bb38f79a-8a12-4717-8808-5e5728f17d41",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedSalesOrderProductId",
+        "@id": "81626e1c-82ce-4d0d-a1e1-9b2017ed2214",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "relatedSalesOrderId",
+        "@id": "a116f216-5ed1-4a5a-8f4f-a75103713266",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "61609e8a-cb8a-4a1a-8242-0121878a9c49",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "73bc955b-76da-4434-b434-8359f4e1dccf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5e2f157f-77ef-4575-9ddd-b9092b886874",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "8e4de58f-23b7-4555-8bcb-ea78a0b9eccb",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "c1c37126-d91f-4717-acec-84539c2af297",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "edf37dec-5ee9-49b9-a060-17efda5c15cf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "130d8560-7493-4595-b8b8-959b8bf8829b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "changeSalesOrderProductId",
+        "@id": "e521c081-f5df-4f4f-9393-3c89b69be05e",
+        "node": "91bc8ac5-a68a-34e3-b7c9-1097594688f7",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "changeSalesOrderId",
+        "@id": "fe4837a7-9169-4d1d-a8a8-caa9c201f1a4",
+        "node": "12a0c973-f594-3605-b886-1a10e4860c37",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

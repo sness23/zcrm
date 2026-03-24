@@ -1,0 +1,79 @@
+{
+  "@id": "ISICCode",
+  "name": "ISIC Code",
+  "@type": "Class",
+  "description": "United Nations International Standard Industrial Classification of All Economic Activities",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "iSICCodeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "d3c6518e-179c-3b24-98ba-ce5c2a69f0af",
+    "@type": "Shape",
+    "targetClass": "ISICCode",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "41816ef5-679d-322e-a014-a8d1e30676c2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "acc28ed1-fc3e-3f83-a604-64e4f99e29a3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "iSICCodeName",
+        "@id": "1a468ae9-7929-3b2a-acf4-ec8294127fb3",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b90e8b2e-b16b-4eee-8181-845eedd4c5d6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "74d79c4b-626b-3fd1-840b-b3afe34af202",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "ecd477df-bb36-4050-b6f6-9cabf3af5c0e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1d48ce31-0536-35ce-8b14-eb1664b1196d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "17c86ee4-8877-3adb-82b9-72a0279c6bcf",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

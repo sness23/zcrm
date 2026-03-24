@@ -1,0 +1,243 @@
+{
+  "@id": "PaymentScheduleStatus",
+  "name": "Payment Schedule Status",
+  "@type": "Class",
+  "description": "The status of Payment Schedule may be Open, Closed or Cancelled.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "commentsText",
+      "@type": "Property"
+    },
+    {
+      "@id": "retryCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "processedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "retryIntervalTime",
+      "@type": "Property"
+    },
+    {
+      "@id": "declinedPaymentCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "targetPaymentDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "requestedAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentScheduleItemId",
+      "@type": "Property"
+    },
+    {
+      "@id": "retryIntervalInDaysNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "currencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentScheduleId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayPaymentLogId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentTriggerName",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentProcessingMessageText",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentAccountId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "bf198602-b17c-4b9b-9696-f173d5f4425a",
+    "@type": "Shape",
+    "targetClass": "PaymentScheduleStatus",
+    "properties": [
+      {
+        "path": "targetPaymentDate",
+        "@id": "709df1a7-8d0c-4969-b3b3-4b9e9ae02d8e",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "9672ec87-7bda-47c7-9292-21df4d7a7c7d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "retryIntervalTime",
+        "@id": "388c9649-bbff-46a6-8040-cac77181a27b",
+        "datatype": "xsd:time",
+        "maxCount": "1"
+      },
+      {
+        "path": "retryIntervalInDaysNumber",
+        "@id": "6e9c92b3-32bf-4121-bc3c-a52a97effaf3",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "retryCount",
+        "@id": "d5aefa51-19e6-4050-a929-0318dbd1c705",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "requestedAmount",
+        "@id": "b758da19-9444-4646-8e4e-a1f028faa104",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "processedAmount",
+        "@id": "682e2f6b-e619-4898-9f9f-9abc469bbb19",
+        "datatype": "cim:amount",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentTriggerName",
+        "@id": "d859830f-c527-4535-ba7a-68a86cfcb7d4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentScheduleItemId",
+        "@id": "4582dcc3-97e2-4464-9b5b-85d4660452a4",
+        "node": "2c01b258-fb05-40f0-a0e0-36a31d57ecf3",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentScheduleId",
+        "@id": "9e787039-5a5e-4585-9f9f-2017c01773a8",
+        "node": "21b1c930-1321-4dad-aa2a-74500cbeb2a4",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentProcessingMessageText",
+        "@id": "5af22bbf-6025-4fff-a3a3-49b81d1e6c8c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentMethodId",
+        "@id": "d391d0a9-cf7b-4a9a-8080-b72ed4f8a96b",
+        "node": "d477c570-e6c7-4d1d-9d5d-3e67b718c678",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentId",
+        "@id": "f844cb76-38f8-42d2-9595-0297be73db86",
+        "node": "4b597b6a-3084-3d50-a314-a9a27517b5f1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayPaymentLogId",
+        "@id": "ed725274-45f9-4aaa-9919-3f969ddf19a1",
+        "node": "1a01186a-190f-4ece-ae6e-993f9343779e",
+        "maxCount": "1"
+      },
+      {
+        "path": "paymentAccountId",
+        "@id": "dd938ddc-8a4f-45c5-adad-e5e9af5c8818",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c9a08f9e-7ae9-4a1a-ac6c-a95ff040820f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "24bcf521-d906-4646-8d8d-ec33ef1df222",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "e44b05ff-59c9-4747-adad-96f95f7eba43",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "426c18c2-8b19-4f7f-b0b0-69e21249747f",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "95905492-5dac-4ece-86c6-32034bf5af73",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "declinedPaymentCount",
+        "@id": "0a82b66c-a3e5-4cec-8e8e-a6abb3d2740a",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "currencyId",
+        "@id": "a3adbd33-9665-4858-8aca-c97897dfdb70",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ddf35ef5-5b5d-4cac-bdfd-cd9479d64a90",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "commentsText",
+        "@id": "7f6f699a-2754-4717-ae6e-2cd1481fdf6e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

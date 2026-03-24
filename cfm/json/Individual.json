@@ -1,0 +1,1031 @@
+{
+  "@id": "Individual",
+  "name": "Individual",
+  "@type": "Class",
+  "description": "Represents a person.",
+  "subClassOf": "Party",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "middleName",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotProcessFromUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "militaryStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "shouldForget",
+      "@type": "Property"
+    },
+    {
+      "@id": "personName",
+      "@type": "Property"
+    },
+    {
+      "@id": "consumerCreditScoreProviderName",
+      "@type": "Property"
+    },
+    {
+      "@id": "childrenCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryCitizenshipCountryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainLifeStyleTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "influencerRating",
+      "@type": "Property"
+    },
+    {
+      "@id": "secondLastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasAlcoholAbuseHistory",
+      "@type": "Property"
+    },
+    {
+      "@id": "isHomeOwner",
+      "@type": "Property"
+    },
+    {
+      "@id": "isHighRiskOccupation",
+      "@type": "Property"
+    },
+    {
+      "@id": "minorCitationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotTrackLocationUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "nameSuffix",
+      "@type": "Property"
+    },
+    {
+      "@id": "isGoodDriver",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainPersonalityTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "originCountryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryLanguageId",
+      "@type": "Property"
+    },
+    {
+      "@id": "yearlyIncomeCurrencyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "preferredName",
+      "@type": "Property"
+    },
+    {
+      "@id": "overAgeNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "personWeight",
+      "@type": "Property"
+    },
+    {
+      "@id": "canStorePIIElsewhere",
+      "@type": "Property"
+    },
+    {
+      "@id": "majorCitationCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "officialName",
+      "@type": "Property"
+    },
+    {
+      "@id": "netWorth",
+      "@type": "Property"
+    },
+    {
+      "@id": "birthDateMonth",
+      "@type": "Property"
+    },
+    {
+      "@id": "isAlcoholConsumer",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotProfileFromUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "birthDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "weddingAnniversaryDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "isDrugConsumer",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasDrugAbuseHistory",
+      "@type": "Property"
+    },
+    {
+      "@id": "surgeriesLast5YearsCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasOptedOutProcessing",
+      "@type": "Property"
+    },
+    {
+      "@id": "mailingName",
+      "@type": "Property"
+    },
+    {
+      "@id": "webSiteURL",
+      "@type": "Property"
+    },
+    {
+      "@id": "photoURL",
+      "@type": "Property"
+    },
+    {
+      "@id": "ethnicityId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isGoodStudent",
+      "@type": "Property"
+    },
+    {
+      "@id": "highestEducationLevelId",
+      "@type": "Property"
+    },
+    {
+      "@id": "personHeight",
+      "@type": "Property"
+    },
+    {
+      "@id": "firstName",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotProcessReasonId",
+      "@type": "Property"
+    },
+    {
+      "@id": "lastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "yearlyIncomeRangeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "genderId",
+      "@type": "Property"
+    },
+    {
+      "@id": "yearlyIncome",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotMarketFromUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainLifeAttitudeTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "employedSinceDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainDisabilityTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "doNotTrackUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "hospitalizationsLast5YearsCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "residenceCaptureMethodId",
+      "@type": "Property"
+    },
+    {
+      "@id": "taxBracketRange",
+      "@type": "Property"
+    },
+    {
+      "@id": "salutation",
+      "@type": "Property"
+    },
+    {
+      "@id": "orderingName",
+      "@type": "Property"
+    },
+    {
+      "@id": "pronounId",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryHouseholdId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasOptedOutGeoTracking",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainPersonalValueTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasOptedOutTracking",
+      "@type": "Property"
+    },
+    {
+      "@id": "deathDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "maritalStatusId",
+      "@type": "Property"
+    },
+    {
+      "@id": "religionId",
+      "@type": "Property"
+    },
+    {
+      "@id": "birthPlace",
+      "@type": "Property"
+    },
+    {
+      "@id": "secondaryCitizenshipCountryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "residenceCountryId",
+      "@type": "Property"
+    },
+    {
+      "@id": "militaryServiceId",
+      "@type": "Property"
+    },
+    {
+      "@id": "birthDateDay",
+      "@type": "Property"
+    },
+    {
+      "@id": "primaryHobbyId",
+      "@type": "Property"
+    },
+    {
+      "@id": "convictionsCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "mothersMaidenName",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasOptedOutSolicit",
+      "@type": "Property"
+    },
+    {
+      "@id": "personHeightUnitofMeasureId",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasOptedOutProfiling",
+      "@type": "Property"
+    },
+    {
+      "@id": "birthDateYear",
+      "@type": "Property"
+    },
+    {
+      "@id": "occupationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "doExtractMyDataUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "personLifeStageId",
+      "@type": "Property"
+    },
+    {
+      "@id": "personWeightUnitofMeasureId",
+      "@type": "Property"
+    },
+    {
+      "@id": "isHighRiskHobby",
+      "@type": "Property"
+    },
+    {
+      "@id": "dependentCount",
+      "@type": "Property"
+    },
+    {
+      "@id": "residenceCountryName",
+      "@type": "Property"
+    },
+    {
+      "@id": "sendIndividualData",
+      "@type": "Property"
+    },
+    {
+      "@id": "occupation",
+      "@type": "Property"
+    },
+    {
+      "@id": "deathPlace",
+      "@type": "Property"
+    },
+    {
+      "@id": "mainDietaryHabitTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "doForgetMeFromUpdateDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "isTobaccoConsume",
+      "@type": "Property"
+    },
+    {
+      "@id": "consumerCreditScore",
+      "@type": "Property"
+    },
+    {
+      "@id": "currentEmployerName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+    "@type": "Shape",
+    "targetClass": "Individual",
+    "properties": [
+      {
+        "path": "yearlyIncomeRangeId",
+        "@id": "c489543f-b751-3892-a3bd-87ef2125e34f",
+        "node": "5513e3b6-2471-3c80-8697-b3689513d724",
+        "maxCount": "1"
+      },
+      {
+        "path": "yearlyIncomeCurrencyId",
+        "@id": "3b993be4-4796-3249-b437-bc383dbd237d",
+        "node": "6524a5c3-01b2-3a34-9a07-0d5f8faf5130",
+        "maxCount": "1"
+      },
+      {
+        "path": "yearlyIncome",
+        "@id": "5c009560-a443-3a43-9117-cf6e07a37b09",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "weddingAnniversaryDate",
+        "@id": "9a0230c8-ae8c-3d30-a137-30052c828b45",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "webSiteURL",
+        "@id": "3bf58d18-22cd-3a49-8a5d-b934cd84673a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "taxBracketRange",
+        "@id": "ee8d9c47-3651-306f-bd08-57b6d5b7fe10",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "47437e3f-3668-382d-9fcc-95bab2530cb7",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "surgeriesLast5YearsCount",
+        "@id": "17e7468c-2328-380b-a9ec-4d7dbffd4e42",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "shouldForget",
+        "@id": "30b5d59a-1620-3bf7-8789-2a1900b5091e",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "sendIndividualData",
+        "@id": "4cb8f48d-29d6-3f6b-bc11-df2127630fe1",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "secondLastName",
+        "@id": "c99e4c1d-fcd2-37b3-8d43-40f32f169a2e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "salutation",
+        "@id": "b5d96b36-4690-37cd-aa73-2564e42b9dce",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "residenceCountryName",
+        "@id": "fd4883cd-e11e-4191-b636-bf8a65b34167",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "residenceCaptureMethodId",
+        "@id": "9636bec5-0913-3f29-8b94-43aefd9f8526",
+        "node": "3d87c68e-08dc-33b1-96d2-5b26ea971f9b",
+        "maxCount": "1"
+      },
+      {
+        "path": "religionId",
+        "@id": "2e1176d1-afe1-3f68-b1e4-51d9415a4053",
+        "node": "5f90ffe9-deb3-339a-9fcd-bbb7c52844e7",
+        "maxCount": "1"
+      },
+      {
+        "path": "pronounId",
+        "@id": "23ec2e38-c618-49a9-acac-095630bc26e6",
+        "node": "eb5612bf-96a3-4777-a7e7-e891c542b109",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryHouseholdId",
+        "@id": "2815e73a-0453-39c0-8d8f-a29cae77369a",
+        "node": "152429ca-a556-344b-8b00-82479f4caa8d",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryHobbyId",
+        "@id": "330d430f-80ee-3063-91a7-6f514a51f746",
+        "node": "0788d91c-38a5-38ef-b869-1661668bbbdb",
+        "maxCount": "1"
+      },
+      {
+        "path": "preferredName",
+        "@id": "d30fa90f-fb11-33ef-97a5-d25953b0d6b8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "photoURL",
+        "@id": "9c10b048-11df-371a-87a6-375a8a388a66",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "personWeightUnitofMeasureId",
+        "@id": "ad592051-2520-371a-acec-19d4b99e218f",
+        "node": "e640be2c-6fc8-3335-90e6-6a339e3c0e16",
+        "maxCount": "1"
+      },
+      {
+        "path": "personWeight",
+        "@id": "719f1c32-685d-331b-96e7-9a632fa87c52",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "personName",
+        "@id": "95c8c148-048e-3864-8873-3ba8304705fd",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personLifeStageId",
+        "@id": "69a39c3c-4179-385b-9130-34a8503e452b",
+        "node": "105e6c61-6cdd-3553-b474-aeeb43dd63b1",
+        "maxCount": "1"
+      },
+      {
+        "path": "personHeightUnitofMeasureId",
+        "@id": "24e9897d-d8ac-3193-95a0-7d7b7c12e55e",
+        "node": "feded462-47c4-4b9b-a727-50f1ba61bdb6",
+        "maxCount": "1"
+      },
+      {
+        "path": "personHeight",
+        "@id": "b1e94cef-608e-3404-a88c-e4a5c576b99e",
+        "datatype": "xsd:decimal",
+        "maxCount": "1"
+      },
+      {
+        "path": "overAgeNumber",
+        "@id": "4e1b0572-7799-3bb4-8097-997e2ddaa927",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "orderingName",
+        "@id": "530f4e37-6fdf-3f5e-8dae-6ff03099c60a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "officialName",
+        "@id": "67a7df76-3d9b-3481-bd44-1a8d8b9202e2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "occupationTypeId",
+        "@id": "4a6e0a34-1a0d-3174-a819-3895db8614c4",
+        "node": "f5dda8a9-3a0f-35c3-a7dc-b9ef0b9adc66",
+        "maxCount": "1"
+      },
+      {
+        "path": "occupation",
+        "@id": "ed483bdd-f50f-344f-bb4e-b3a2262109ee",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "netWorth",
+        "@id": "a06261c8-6e49-3db6-bf38-b58f7cfadf1e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "nameSuffix",
+        "@id": "bed6cfbc-e6e1-36c0-8abc-cfb39a134f55",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "mothersMaidenName",
+        "@id": "94dbae6f-6847-304f-a0fb-75b057472d0c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "minorCitationCount",
+        "@id": "1f6ce377-08a0-3076-902a-dee1eefaefdf",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "militaryStatusId",
+        "@id": "59e66c55-5c1e-392a-aa21-301d42aaf1c2",
+        "node": "20bdfd2e-b765-3a66-93d8-7ccc54dda95c",
+        "maxCount": "1"
+      },
+      {
+        "path": "militaryServiceId",
+        "@id": "b02b65d4-03d3-3df6-bb2d-33d6069bf6ae",
+        "node": "ceaae7a3-eaa3-3433-844d-a5ee03767dba",
+        "maxCount": "1"
+      },
+      {
+        "path": "middleName",
+        "@id": "19496ac7-517f-339f-b38c-c99f692566f7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "maritalStatusId",
+        "@id": "9b6a0c26-afdc-30d3-8f4b-be40a957357e",
+        "node": "6fa722b7-4333-39a2-9d5c-d8251d709174",
+        "maxCount": "1"
+      },
+      {
+        "path": "majorCitationCount",
+        "@id": "f6893ca3-fd63-37d2-82a7-b0eb49dfcd6d",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainPersonalValueTypeId",
+        "@id": "33056cbd-50b4-3724-899b-08b91ea0a3de",
+        "node": "f4e9a31a-0df3-3a66-afd9-386a85a8c77b",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainPersonalityTypeId",
+        "@id": "c12c1ffc-acd8-3ad6-bf10-d293ab1a1535",
+        "node": "59b53c67-21d9-3a7f-b2d4-e2002e5ef535",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainLifeStyleTypeId",
+        "@id": "56a4403f-e352-3fb5-b814-17875d8fc121",
+        "node": "3e2c35be-d804-3057-b1e7-10f8f94bcebd",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainLifeAttitudeTypeId",
+        "@id": "b807b772-12f1-3e8f-add8-3140af662a7d",
+        "node": "22bef8a4-5694-3465-aaab-377d356cf758",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainDisabilityTypeId",
+        "@id": "d157ab98-cec9-3163-9c38-3fa1e34e8bba",
+        "node": "c27ba8a2-952f-302c-84f8-c5ad978b9df8",
+        "maxCount": "1"
+      },
+      {
+        "path": "mainDietaryHabitTypeId",
+        "@id": "4f7fb8b1-6f59-398d-9598-869f56f9981f",
+        "node": "7522e850-5914-34a6-a495-5a17714f82bb",
+        "maxCount": "1"
+      },
+      {
+        "path": "mailingName",
+        "@id": "5e2d48d0-e558-3222-a947-951e477e2ff6",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastName",
+        "@id": "9b7be613-61f9-34fa-bc40-07d66652a720",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "18f0ed02-bb38-3282-8861-984806a50c87",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "isTobaccoConsume",
+        "@id": "9795bb14-5628-3124-95a8-c4377aead100",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isHomeOwner",
+        "@id": "752f6b69-405c-351c-b7a8-725fd386af2e",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isHighRiskOccupation",
+        "@id": "3b4af2d6-0f66-329c-8d50-bb3ca9f7971b",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isHighRiskHobby",
+        "@id": "cba0132d-fadc-32c6-a64c-ac6f65b5c23c",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isGoodStudent",
+        "@id": "333b45fe-6a13-3f39-8ccd-3ab049699406",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isGoodDriver",
+        "@id": "6799672c-8e77-393e-b931-9edc4c91c8b3",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isDrugConsumer",
+        "@id": "e9feccb8-cbf9-3e13-8e98-175fcecd7091",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "isAlcoholConsumer",
+        "@id": "8c0d1255-4034-31da-9e7a-4af8eef76f9f",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "influencerRating",
+        "@id": "5e37d272-3b32-3f86-879e-ebbbe37322bf",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "fd1ee67c-1827-4f7f-a8a8-694843c7e10a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "d7a057ad-5fb3-3bb6-a26a-e3f068118893",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "hospitalizationsLast5YearsCount",
+        "@id": "b7a109d4-7fae-3b5d-b1ff-84378ed212ca",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "hasDrugAbuseHistory",
+        "@id": "fb35768c-45d3-363b-9708-3f93e94ccfe1",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "hasAlcoholAbuseHistory",
+        "@id": "b87903e9-1707-3fc5-a259-bced9af6bb05",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "genderId",
+        "@id": "fdb5b3d7-d6c8-3dc6-9dca-7d6070d032b3",
+        "node": "11c4bce4-8e3f-38c0-83be-24f20287bbc1",
+        "maxCount": "1"
+      },
+      {
+        "path": "firstName",
+        "@id": "22a8923c-e0d0-3c2c-9c54-a7a22d3db123",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "d0291bba-fcde-4c9c-ad6d-40edacb660bf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "842b6544-b708-3710-963b-b9a531f7d325",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "ethnicityId",
+        "@id": "65b0e37c-d56d-39ce-b766-1bb90164ab25",
+        "node": "12874a87-aab7-3d77-8298-ecb2c3f1c940",
+        "maxCount": "1"
+      },
+      {
+        "path": "employedSinceDate",
+        "@id": "0ed4de72-2781-3f43-ad6b-0252b954beae",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotTrackUpdateDate",
+        "@id": "62f45180-6a9b-3ba6-ac5e-3c8b9fe53853",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotTrackLocationUpdateDate",
+        "@id": "2e316282-7f84-3e1d-95ad-9ed2f0a63dc4",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotProfileFromUpdateDate",
+        "@id": "f78082d2-49bc-330f-87a5-34767dbef09e",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotProcessReasonId",
+        "@id": "6585fc76-bfda-3c63-9b9a-2922dec9b510",
+        "node": "f79bb600-fe2d-3a53-a581-aa1d4e0ac754",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotProcessFromUpdateDate",
+        "@id": "2481f658-51ef-3792-96dd-6f3d2290dd61",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotMarketFromUpdateDate",
+        "@id": "b2999ca5-d711-34d1-b727-7f99b4ad244a",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doForgetMeFromUpdateDate",
+        "@id": "109fbc24-1f53-39a8-89a0-9f9778804ecf",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "doExtractMyDataUpdateDate",
+        "@id": "b542cd65-ae75-3a74-8480-89052a3ef58f",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "dependentCount",
+        "@id": "29b504f4-0400-306c-ba24-0902d34266f5",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "deathPlace",
+        "@id": "fbb0bb31-531b-36fc-87cc-722a98739375",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "deathDate",
+        "@id": "86336011-a552-3cc9-95a1-91e2b227740d",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "currentEmployerName",
+        "@id": "cfa32958-b772-3aec-b9c1-8b5c68aab4b1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2774ebd4-5de8-3e02-b016-6767bdfe32eb",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "convictionsCount",
+        "@id": "df482c61-ac77-39de-b4e4-7ec194ac8725",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "consumerCreditScoreProviderName",
+        "@id": "1f568263-b881-3a2a-8161-065248de1cd7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "consumerCreditScore",
+        "@id": "744f748e-4582-3dae-bcf6-2a4419a6ae30",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "childrenCount",
+        "@id": "ece12922-285f-3957-86c4-e29ff554273e",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "birthPlace",
+        "@id": "2ef5ce62-55cd-32a4-9165-0149e6a79db7",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "birthDateYear",
+        "@id": "f6996b1b-4020-4ebe-8d8d-c9c0da53c0b3",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "birthDateMonth",
+        "@id": "baaafa0d-8364-4868-8e4e-80f67f40b063",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "birthDateDay",
+        "@id": "37bb9704-2bbe-4333-a464-d0e9987d4909",
+        "datatype": "xsd:integer",
+        "maxCount": "1"
+      },
+      {
+        "path": "birthDate",
+        "@id": "a009090e-3be5-3fe7-9b81-7a483c128682",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "primaryAccountId",
+        "@id": "2b09d028-3806-3e8d-b535-84de73c15c91",
+        "node": "c3fabe09-9e66-38c7-adb7-022e190e8c4c",
+        "maxCount": "1"
+      },
+      {
+        "path": "partyTypeId",
+        "@id": "b9e4fe6f-e9a9-3e52-8c73-cefeab1157ce",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8ed165eb-faee-3b85-ab09-5b4de77aad7f"
+              },
+              {
+                "@id": "1c7ee523-ac2b-37ca-aa48-25222303e8d1"
+              },
+              {
+                "@id": "4663a141-a405-38e8-a479-0607c0054909"
+              },
+              {
+                "@id": "e3a3eb20-ce37-32cc-a5b0-938a248d241d"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "partyId",
+        "@id": "b5870980-da7b-4454-9555-a23d6ecf993f",
+        "node": "665dd0a2-7dd8-3082-8350-3678847b8c52",
+        "maxCount": "1"
+      },
+      {
+        "path": "noMergeReasonId",
+        "@id": "b277d008-4fc3-3b54-8a4d-ef69fde21a50",
+        "node": "29c48ff9-90ef-3fe9-a9cf-d4f8c1244883",
+        "maxCount": "1"
+      },
+      {
+        "path": "globalPartyId",
+        "@id": "9e32edb4-a0a6-3023-9e5c-642cfa5ed7bb",
+        "node": "211175d5-0ebf-3a61-bab9-6c23c5d5f54f",
+        "maxCount": "1"
+      },
+      {
+        "path": "PersonEducations",
+        "node": "9bef4663-088a-3200-a9ce-912f33d7d137",
+        "minCount": "1"
+      },
+      {
+        "path": "PersonEmployments",
+        "node": "b9d8a679-fee6-3baa-b7dd-667ea4c6bf4c",
+        "minCount": "1"
+      },
+      {
+        "path": "PersonLanguages",
+        "node": "3d5e5d6f-30a3-3294-9ba7-56b4e64d2037",
+        "minCount": "1"
+      },
+      {
+        "path": "PersonLifeEvents",
+        "node": "4f089b0a-9f3f-3f79-b73e-fd2dd77ae43c",
+        "minCount": "1"
+      },
+      {
+        "path": "PersonTrainings",
+        "node": "3f29e909-67e9-4dbd-b535-504b6e682ae5",
+        "minCount": "1"
+      }
+    ]
+  }
+}

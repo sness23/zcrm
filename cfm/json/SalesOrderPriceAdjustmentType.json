@@ -1,0 +1,79 @@
+{
+  "@id": "SalesOrderPriceAdjustmentType",
+  "name": "Sales Order Price Adjustment Type",
+  "@type": "Class",
+  "description": "Reasons for adjusting the price of an order such as promotional discount, or customer satisfaction issue",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "55ab903c-b415-44a4-8d0d-9ea8b1338290",
+    "@type": "Shape",
+    "targetClass": "SalesOrderPriceAdjustmentType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d4376335-8010-4f0f-bc7c-933e27379da6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "36f316e8-d3a8-4171-9ddd-3278469e1824",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e63038d0-ecc9-45e5-a1a1-6d40aaccc00d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "ee535482-907e-4e9e-bdbd-bb9b4974325a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "37554f37-e667-4818-bbfb-469880a0bf73",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "45fb446b-3a61-4d5d-8aca-55a978037c95",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ee37a0bf-6690-4e9e-a060-b7b7c466e935",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "3b14aa45-9158-45c5-b474-7b9e7e22bde4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "@id": "PersonTraining",
+  "name": "Person Training",
+  "@type": "Class",
+  "description": "Training a person have e.g. work-related training",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "personTrainingId",
+      "@type": "Property"
+    },
+    {
+      "@id": "trainingPointTotalNumber",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "trainingTierNm",
+      "@type": "Property"
+    },
+    {
+      "@id": "individualId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "3f29e909-67e9-4dbd-b535-504b6e682ae5",
+    "@type": "Shape",
+    "targetClass": "PersonTraining",
+    "properties": [
+      {
+        "path": "trainingTierNm",
+        "@id": "4199aeb3-7b54-4747-8242-e9d4d3304f00",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "trainingPointTotalNumber",
+        "@id": "2e011b5b-605a-4a2a-b232-0d63008d5d23",
+        "datatype": "xsd:decimal",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "96503f46-9039-4fdf-a828-3cb71be91689",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "personTrainingId",
+        "@id": "5efc4ca5-ce5b-4727-8f0f-54fa21b41878",
+        "node": "3f29e909-67e9-4dbd-b535-504b6e682ae5",
+        "maxCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "a1b27930-4a5d-46a6-9919-7366e8e21200",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "302bc488-f7ad-4a1a-b434-29a12c375f01",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "individualId",
+        "@id": "07a15797-b58e-47f7-a969-8bcc0a9e2c3b",
+        "node": "1c7ee523-ac2b-37ca-aa48-25222303e8d1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "d52e0b37-2c84-4363-bfbf-bedfd7cf8590",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c61db814-b12f-4111-a020-b941b6da2264",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "6dfb7304-5415-4898-99d9-ef1510a7a27b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "9bbd72c1-e318-4f0f-8c4c-b7cf71be4b27",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b220be90-c84c-4bcb-abeb-4e215a5fac2f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

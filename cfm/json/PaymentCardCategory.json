@@ -1,0 +1,78 @@
+{
+  "@id": "PaymentCardCategory",
+  "name": "Payment Card Category",
+  "@type": "Class",
+  "description": "The category of payment card e.g. Debit or Credit",
+  "subjectArea": "PaymentMethod",
+  "entityGroup": "PaymentMethod",
+  "properties": [
+    {
+      "@id": "paymentCardCategoryName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e32d4534-e26c-4e5e-99d9-a5f789ba3fbc",
+    "@type": "Shape",
+    "targetClass": "PaymentCardCategory",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "7a3a4f68-fdd6-4dcd-a5a5-0c056fef3ddc",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentCardCategoryName",
+        "@id": "682e35a7-44e9-4848-bd3d-7937630fc3bf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c323a43d-dcf8-4454-9595-706452ea6d1b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "9269d4e8-0b39-4efe-b171-04a6cb06eb3b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "c9ff6977-2d30-4181-81c1-9fd1549d73c7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "0d5ef052-a50a-42c2-8888-fd1035cfdb23",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "467df02a-e492-4343-9252-cbed0670b36e",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "08d96c80-afc7-46e6-bc3c-e1067369d61b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "@id": "QuantityInstallmentPeriod",
+  "name": "Quantity Installment Period",
+  "@type": "Class",
+  "description": "If the product has a quantity schedule, the amount of time covered by the schedule.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "5019280f-282d-3e0e-ac62-a32448849bdb",
+    "@type": "Shape",
+    "targetClass": "QuantityInstallmentPeriod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4f7376c3-fedb-47a7-9c5c-9e4e41f6e21c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "54b46c37-c42e-4dbd-b333-c16074b8c3f4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1073996f-494b-4f8f-8242-848f3a0dc3e2",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4e3b6642-c3cb-4010-be3e-4cfc98283b79",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4886f4cc-d655-42e2-8b0b-63113ac409e0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "527bdaf2-c45c-4929-8101-d963f005ade9",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "85f5c6f9-bbac-4090-bf7f-01bd516111a6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

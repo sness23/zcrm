@@ -1,0 +1,802 @@
+#!/usr/bin/env node
+/**
+ * Real data seeder for FS-CRM
+ * Seeds the database with real customer data for testing
+ */
+
+import { ulid } from 'ulidx';
+
+const API_URL = 'http://localhost:9600';
+
+// ID generators for each entity type
+function generateId(prefix: string): string {
+  return `${prefix}_${ulid().toLowerCase()}`;
+}
+
+// API helper
+async function createEvent(type: string, entity_type: string, entity_id: string, data: any) {
+  try {
+    const response = await fetch(`${API_URL}/api/events`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type, entity_type, entity_id, data })
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      console.error(`❌ Failed to create ${entity_type}:`, result.errors || result.error);
+      return null;
+    }
+
+    console.log(`✅ Created ${entity_type}: ${data.name} (${result.event_id})`);
+    return result;
+  } catch (error: any) {
+    console.error(`❌ Error creating ${entity_type}:`, error.message);
+    return null;
+  }
+}
+
+// Seed real data
+async function seedRealData() {
+  console.log('🌱 Starting real data seeder...\n');
+  console.log(`📍 API URL: ${API_URL}\n`);
+
+  // 1. Create EvolutionaryScale.ai Account
+  console.log('🏢 Creating Account: EvolutionaryScale.ai...');
+  const accountId = generateId('acc');
+  await createEvent('create', 'Account', accountId, {
+    id: accountId,
+    name: 'EvolutionaryScale',
+    website: 'https://evolutionaryscale.ai',
+    industry: 'AI/ML Research',
+    lifecycle_stage: 'customer',
+    description: 'AI research company focused on developing ESM (Evolutionary Scale Modeling) for protein design and biological sequences.',
+    type: 'Account'
+  });
+
+  // 2. Create Alex Rives as Party (with Individual + ResearcherProfile)
+  console.log('\n🎭 Creating Party: Alex Rives...');
+  const alexPartyId = generateId('pty');
+  await createEvent('create', 'party', alexPartyId, {
+    id: alexPartyId,
+    name: 'Alex Rives',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Alex Rives...');
+  const alexIndividualId = generateId('ind');
+  await createEvent('create', 'individual', alexIndividualId, {
+    id: alexIndividualId,
+    name: 'Alex Rives',
+    party_id: `[[parties/alex-rives]]`,
+    person_name: 'Alex Rives',
+    person_given_name: 'Alex',
+    person_family_name: 'Rives',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Alex Rives...');
+  const alexResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', alexResearcherId, {
+    id: alexResearcherId,
+    name: 'Alex Rives - Researcher Profile',
+    party_id: `[[parties/alex-rives]]`,
+    individual_id: `[[individuals/alex-rives]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'Research Scientist',
+    primary_research_area: 'Protein Language Models',
+    lead_score: 85,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  console.log('📧 Creating ContactPointEmail: alex@evolutionaryscale.ai...');
+  const alexEmailId = generateId('cpe');
+  await createEvent('create', 'contact-point-email', alexEmailId, {
+    id: alexEmailId,
+    name: 'alex@evolutionaryscale.ai',
+    party_id: `[[parties/alex-rives]]`,
+    email_address: 'alex@evolutionaryscale.ai',
+    is_primary: true,
+    type: 'contact-point-email'
+  });
+
+  console.log('📊 Creating PartySource: Alex Rives...');
+  const alexSourceId = generateId('pso');
+  await createEvent('create', 'party-source', alexSourceId, {
+    id: alexSourceId,
+    name: 'Alex Rives - LinkedIn Source',
+    party_id: `[[parties/alex-rives]]`,
+    source_type: 'LinkedIn',
+    source_name: 'LinkedIn Profile Discovery',
+    data_quality_score: 90,
+    type: 'party-source'
+  });
+
+  // Also create Contact for backward compatibility
+  console.log('👤 Creating Contact: Alex Rives (legacy)...');
+  const alexContactId = generateId('con');
+  await createEvent('create', 'Contact', alexContactId, {
+    id: alexContactId,
+    name: 'Alex Rives',
+    first_name: 'Alex',
+    last_name: 'Rives',
+    email: 'alex@evolutionaryscale.ai',
+    title: 'Research Scientist',
+    account: '[[accounts/evolutionaryscale]]',
+    linkedin: 'https://www.linkedin.com/in/alexander-rives',
+    description: 'AI researcher specializing in protein language models and biological sequence analysis.',
+    type: 'Contact'
+  });
+
+  // 3. Create Roshan Rao as Party (with Individual + ResearcherProfile)
+  console.log('\n🎭 Creating Party: Roshan Rao...');
+  const roshanPartyId = generateId('pty');
+  await createEvent('create', 'party', roshanPartyId, {
+    id: roshanPartyId,
+    name: 'Roshan Rao',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Roshan Rao...');
+  const roshanIndividualId = generateId('ind');
+  await createEvent('create', 'individual', roshanIndividualId, {
+    id: roshanIndividualId,
+    name: 'Roshan Rao',
+    party_id: `[[parties/roshan-rao]]`,
+    person_name: 'Roshan Rao',
+    person_given_name: 'Roshan',
+    person_family_name: 'Rao',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Roshan Rao...');
+  const roshanResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', roshanResearcherId, {
+    id: roshanResearcherId,
+    name: 'Roshan Rao - Researcher Profile',
+    party_id: `[[parties/roshan-rao]]`,
+    individual_id: `[[individuals/roshan-rao]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'AI Research Engineer',
+    primary_research_area: 'Protein Folding',
+    lead_score: 80,
+    lead_temperature: 'Hot',
+    discovery_source: 'Referral',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  console.log('📧 Creating ContactPointEmail: roshan@evolutionaryscale.ai...');
+  const roshanEmailId = generateId('cpe');
+  await createEvent('create', 'contact-point-email', roshanEmailId, {
+    id: roshanEmailId,
+    name: 'roshan@evolutionaryscale.ai',
+    party_id: `[[parties/roshan-rao]]`,
+    email_address: 'roshan@evolutionaryscale.ai',
+    is_primary: true,
+    type: 'contact-point-email'
+  });
+
+  console.log('📊 Creating PartySource: Roshan Rao...');
+  const roshanSourceId = generateId('pso');
+  await createEvent('create', 'party-source', roshanSourceId, {
+    id: roshanSourceId,
+    name: 'Roshan Rao - Referral Source',
+    party_id: `[[parties/roshan-rao]]`,
+    source_type: 'Referral',
+    source_name: 'Team Referral',
+    data_quality_score: 85,
+    type: 'party-source'
+  });
+
+  // Also create Lead for backward compatibility
+  console.log('🎯 Creating Lead: Roshan Rao (legacy)...');
+  const roshanLeadId = generateId('led');
+  await createEvent('create', 'Lead', roshanLeadId, {
+    id: roshanLeadId,
+    name: 'Roshan Rao',
+    first_name: 'Roshan',
+    last_name: 'Rao',
+    email: 'roshan@evolutionaryscale.ai',
+    status: 'qualified',
+    source: 'referral',
+    title: 'AI Research Engineer',
+    company: 'EvolutionaryScale',
+    description: 'AI engineer working on protein folding and evolutionary models.',
+    type: 'Lead'
+  });
+
+  // 3a. Create Tom Sercu (Co-Founder)
+  console.log('\n🎭 Creating Party: Tom Sercu...');
+  const tomPartyId = generateId('pty');
+  await createEvent('create', 'party', tomPartyId, {
+    id: tomPartyId,
+    name: 'Tom Sercu',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Tom Sercu...');
+  const tomIndividualId = generateId('ind');
+  await createEvent('create', 'individual', tomIndividualId, {
+    id: tomIndividualId,
+    name: 'Tom Sercu',
+    party_id: `[[parties/tom-sercu]]`,
+    person_name: 'Tom Sercu',
+    person_given_name: 'Tom',
+    person_family_name: 'Sercu',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Tom Sercu...');
+  const tomResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', tomResearcherId, {
+    id: tomResearcherId,
+    name: 'Tom Sercu - Researcher Profile',
+    party_id: `[[parties/tom-sercu]]`,
+    individual_id: `[[individuals/tom-sercu]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'Co-Founder',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'Protein Language Models',
+    lead_score: 90,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 3b. Create Sal Candido (Co-Founder)
+  console.log('\n🎭 Creating Party: Sal Candido...');
+  const salPartyId = generateId('pty');
+  await createEvent('create', 'party', salPartyId, {
+    id: salPartyId,
+    name: 'Sal Candido',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Sal Candido...');
+  const salIndividualId = generateId('ind');
+  await createEvent('create', 'individual', salIndividualId, {
+    id: salIndividualId,
+    name: 'Sal Candido',
+    party_id: `[[parties/sal-candido]]`,
+    person_name: 'Sal Candido',
+    person_given_name: 'Sal',
+    person_family_name: 'Candido',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Sal Candido...');
+  const salResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', salResearcherId, {
+    id: salResearcherId,
+    name: 'Sal Candido - Researcher Profile',
+    party_id: `[[parties/sal-candido]]`,
+    individual_id: `[[individuals/sal-candido]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'Co-Founder',
+    previous_institution: 'Stanford University',
+    primary_research_area: 'AI for Biology',
+    lead_score: 90,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 3c. Create Thomas Hayes (Co-Founder)
+  console.log('\n🎭 Creating Party: Thomas Hayes...');
+  const thomasPartyId = generateId('pty');
+  await createEvent('create', 'party', thomasPartyId, {
+    id: thomasPartyId,
+    name: 'Thomas Hayes',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Thomas Hayes...');
+  const thomasIndividualId = generateId('ind');
+  await createEvent('create', 'individual', thomasIndividualId, {
+    id: thomasIndividualId,
+    name: 'Thomas Hayes',
+    party_id: `[[parties/thomas-hayes]]`,
+    person_name: 'Thomas Hayes',
+    person_given_name: 'Thomas',
+    person_family_name: 'Hayes',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Thomas Hayes...');
+  const thomasResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', thomasResearcherId, {
+    id: thomasResearcherId,
+    name: 'Thomas Hayes - Researcher Profile',
+    party_id: `[[parties/thomas-hayes]]`,
+    individual_id: `[[individuals/thomas-hayes]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'Co-Founder',
+    previous_institution: 'MIT',
+    primary_research_area: 'Computational Biology',
+    lead_score: 85,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 3d. Create Halil Akin (Co-Founder)
+  console.log('\n🎭 Creating Party: Halil Akin...');
+  const halilPartyId = generateId('pty');
+  await createEvent('create', 'party', halilPartyId, {
+    id: halilPartyId,
+    name: 'Halil Akin',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Halil Akin...');
+  const halilIndividualId = generateId('ind');
+  await createEvent('create', 'individual', halilIndividualId, {
+    id: halilIndividualId,
+    name: 'Halil Akin',
+    party_id: `[[parties/halil-akin]]`,
+    person_name: 'Halil Akin',
+    person_given_name: 'Halil',
+    person_family_name: 'Akin',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Halil Akin...');
+  const halilResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', halilResearcherId, {
+    id: halilResearcherId,
+    name: 'Halil Akin - Researcher Profile',
+    party_id: `[[parties/halil-akin]]`,
+    individual_id: `[[individuals/halil-akin]]`,
+    current_institution: 'EvolutionaryScale',
+    current_position: 'Co-Founder',
+    previous_institution: 'Stanford University',
+    primary_research_area: 'Machine Learning',
+    lead_score: 85,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 4. Create a related Opportunity
+  console.log('\n💰 Creating Opportunity: ESM3 Integration...');
+  const oppId = generateId('opp');
+  await createEvent('create', 'Opportunity', oppId, {
+    id: oppId,
+    name: 'ESM3 Protein Design Platform Integration',
+    account: '[[accounts/evolutionaryscale]]',
+    contact: '[[contacts/alex-rives]]',
+    stage: 'proposal',
+    amount_acv: 250000,
+    close_date: new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 60 days
+    probability: 0.7,
+    description: 'Integration of ESM3 protein design capabilities into customer pipeline.',
+    type: 'Opportunity'
+  });
+
+  // 5. Create some Activities
+  console.log('\n📅 Creating Activities...');
+
+  const callId = generateId('act');
+  await createEvent('create', 'Activity', callId, {
+    id: callId,
+    name: 'Discovery Call - ESM3 Capabilities',
+    kind: 'call',
+    when: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 7 days
+    status: 'scheduled',
+    with: '[[contacts/alex-rives]]',
+    related_to: '[[opportunities/esm3-protein-design-platform-integration]]',
+    notes: 'Discuss ESM3 architecture and integration requirements.',
+    type: 'Activity'
+  });
+
+  const demoId = generateId('act');
+  await createEvent('create', 'Activity', demoId, {
+    id: demoId,
+    name: 'ESM3 Technical Demo',
+    kind: 'demo',
+    when: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 14 days
+    status: 'scheduled',
+    with: '[[contacts/alex-rives]]',
+    related_to: '[[opportunities/esm3-protein-design-platform-integration]]',
+    notes: 'Live demonstration of protein folding and design capabilities.',
+    type: 'Activity'
+  });
+
+  // 5. Create Latent Labs Account
+  console.log('\n🏢 Creating Account: Latent Labs...');
+  const latentLabsAccountId = generateId('acc');
+  await createEvent('create', 'Account', latentLabsAccountId, {
+    id: latentLabsAccountId,
+    name: 'Latent Labs',
+    website: 'https://latentlabs.com',
+    industry: 'AI/ML Research',
+    lifecycle_stage: 'prospect',
+    description: 'TechBio company building frontier AI models for protein design and programmable biology.',
+    type: 'Account'
+  });
+
+  // 5a. Create Simon Kohl (Founder & CEO)
+  console.log('\n🎭 Creating Party: Simon Kohl...');
+  const simonPartyId = generateId('pty');
+  await createEvent('create', 'party', simonPartyId, {
+    id: simonPartyId,
+    name: 'Simon Kohl',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Simon Kohl...');
+  const simonIndividualId = generateId('ind');
+  await createEvent('create', 'individual', simonIndividualId, {
+    id: simonIndividualId,
+    name: 'Simon Kohl',
+    party_id: `[[parties/simon-kohl]]`,
+    person_name: 'Simon Kohl',
+    person_given_name: 'Simon',
+    person_family_name: 'Kohl',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Simon Kohl...');
+  const simonResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', simonResearcherId, {
+    id: simonResearcherId,
+    name: 'Simon Kohl - Researcher Profile',
+    party_id: `[[parties/simon-kohl]]`,
+    individual_id: `[[individuals/simon-kohl]]`,
+    current_institution: 'Latent Labs',
+    current_position: 'Founder & CEO',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'Protein Design',
+    lead_score: 95,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 5b. Create Alex Bridgland
+  console.log('\n🎭 Creating Party: Alex Bridgland...');
+  const alexBPartyId = generateId('pty');
+  await createEvent('create', 'party', alexBPartyId, {
+    id: alexBPartyId,
+    name: 'Alex Bridgland',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Alex Bridgland...');
+  const alexBIndividualId = generateId('ind');
+  await createEvent('create', 'individual', alexBIndividualId, {
+    id: alexBIndividualId,
+    name: 'Alex Bridgland',
+    party_id: `[[parties/alex-bridgland]]`,
+    person_name: 'Alex Bridgland',
+    person_given_name: 'Alex',
+    person_family_name: 'Bridgland',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Alex Bridgland...');
+  const alexBResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', alexBResearcherId, {
+    id: alexBResearcherId,
+    name: 'Alex Bridgland - Researcher Profile',
+    party_id: `[[parties/alex-bridgland]]`,
+    individual_id: `[[individuals/alex-bridgland]]`,
+    current_institution: 'Latent Labs',
+    current_position: 'Research Scientist',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'AlphaFold Development',
+    lead_score: 90,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 5c. Create Jonathan Crabbé
+  console.log('\n🎭 Creating Party: Jonathan Crabbé...');
+  const jonathanPartyId = generateId('pty');
+  await createEvent('create', 'party', jonathanPartyId, {
+    id: jonathanPartyId,
+    name: 'Jonathan Crabbé',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Jonathan Crabbé...');
+  const jonathanIndividualId = generateId('ind');
+  await createEvent('create', 'individual', jonathanIndividualId, {
+    id: jonathanIndividualId,
+    name: 'Jonathan Crabbé',
+    party_id: `[[parties/jonathan-crabbe]]`,
+    person_name: 'Jonathan Crabbé',
+    person_given_name: 'Jonathan',
+    person_family_name: 'Crabbé',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Jonathan Crabbé...');
+  const jonathanResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', jonathanResearcherId, {
+    id: jonathanResearcherId,
+    name: 'Jonathan Crabbé - Researcher Profile',
+    party_id: `[[parties/jonathan-crabbe]]`,
+    individual_id: `[[individuals/jonathan-crabbe]]`,
+    current_institution: 'Latent Labs',
+    current_position: 'ML Researcher',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'Machine Learning Interpretability',
+    lead_score: 85,
+    lead_temperature: 'Warm',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 5d. Create Henry Kenlay
+  console.log('\n🎭 Creating Party: Henry Kenlay...');
+  const henryPartyId = generateId('pty');
+  await createEvent('create', 'party', henryPartyId, {
+    id: henryPartyId,
+    name: 'Henry Kenlay',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Henry Kenlay...');
+  const henryIndividualId = generateId('ind');
+  await createEvent('create', 'individual', henryIndividualId, {
+    id: henryIndividualId,
+    name: 'Henry Kenlay',
+    party_id: `[[parties/henry-kenlay]]`,
+    person_name: 'Henry Kenlay',
+    person_given_name: 'Henry',
+    person_family_name: 'Kenlay',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Henry Kenlay...');
+  const henryResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', henryResearcherId, {
+    id: henryResearcherId,
+    name: 'Henry Kenlay - Researcher Profile',
+    party_id: `[[parties/henry-kenlay]]`,
+    individual_id: `[[individuals/henry-kenlay]]`,
+    current_institution: 'Latent Labs',
+    current_position: 'ML Researcher',
+    previous_institution: 'University of Oxford',
+    primary_research_area: 'Graph Machine Learning',
+    lead_score: 85,
+    lead_temperature: 'Warm',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 6. Create Isomorphic Labs Account
+  console.log('\n🏢 Creating Account: Isomorphic Labs...');
+  const isomorphicLabsAccountId = generateId('acc');
+  await createEvent('create', 'Account', isomorphicLabsAccountId, {
+    id: isomorphicLabsAccountId,
+    name: 'Isomorphic Labs',
+    website: 'https://isomorphiclabs.com',
+    industry: 'AI/ML Research',
+    lifecycle_stage: 'customer',
+    description: 'Alphabet/DeepMind spin-off using AI for drug discovery, founded by Nobel Prize winner Demis Hassabis.',
+    type: 'Account'
+  });
+
+  // 6a. Create Demis Hassabis (Founder & CEO)
+  console.log('\n🎭 Creating Party: Demis Hassabis...');
+  const demisPartyId = generateId('pty');
+  await createEvent('create', 'party', demisPartyId, {
+    id: demisPartyId,
+    name: 'Demis Hassabis',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Demis Hassabis...');
+  const demisIndividualId = generateId('ind');
+  await createEvent('create', 'individual', demisIndividualId, {
+    id: demisIndividualId,
+    name: 'Demis Hassabis',
+    party_id: `[[parties/demis-hassabis]]`,
+    person_name: 'Demis Hassabis',
+    person_given_name: 'Demis',
+    person_family_name: 'Hassabis',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Demis Hassabis...');
+  const demisResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', demisResearcherId, {
+    id: demisResearcherId,
+    name: 'Demis Hassabis - Researcher Profile',
+    party_id: `[[parties/demis-hassabis]]`,
+    individual_id: `[[individuals/demis-hassabis]]`,
+    current_institution: 'Isomorphic Labs',
+    current_position: 'Founder & CEO',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'AI for Drug Discovery',
+    lead_score: 100,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 6b. Create Colin Murdoch (President)
+  console.log('\n🎭 Creating Party: Colin Murdoch...');
+  const colinPartyId = generateId('pty');
+  await createEvent('create', 'party', colinPartyId, {
+    id: colinPartyId,
+    name: 'Colin Murdoch',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Colin Murdoch...');
+  const colinIndividualId = generateId('ind');
+  await createEvent('create', 'individual', colinIndividualId, {
+    id: colinIndividualId,
+    name: 'Colin Murdoch',
+    party_id: `[[parties/colin-murdoch]]`,
+    person_name: 'Colin Murdoch',
+    person_given_name: 'Colin',
+    person_family_name: 'Murdoch',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Colin Murdoch...');
+  const colinResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', colinResearcherId, {
+    id: colinResearcherId,
+    name: 'Colin Murdoch - Researcher Profile',
+    party_id: `[[parties/colin-murdoch]]`,
+    individual_id: `[[individuals/colin-murdoch]]`,
+    current_institution: 'Isomorphic Labs',
+    current_position: 'President',
+    previous_institution: 'University of Oxford',
+    primary_research_area: 'Applied AI',
+    lead_score: 95,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 6c. Create Max Jaderberg (Chief AI Officer)
+  console.log('\n🎭 Creating Party: Max Jaderberg...');
+  const maxPartyId = generateId('pty');
+  await createEvent('create', 'party', maxPartyId, {
+    id: maxPartyId,
+    name: 'Max Jaderberg',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Max Jaderberg...');
+  const maxIndividualId = generateId('ind');
+  await createEvent('create', 'individual', maxIndividualId, {
+    id: maxIndividualId,
+    name: 'Max Jaderberg',
+    party_id: `[[parties/max-jaderberg]]`,
+    person_name: 'Max Jaderberg',
+    person_given_name: 'Max',
+    person_family_name: 'Jaderberg',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Max Jaderberg...');
+  const maxResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', maxResearcherId, {
+    id: maxResearcherId,
+    name: 'Max Jaderberg - Researcher Profile',
+    party_id: `[[parties/max-jaderberg]]`,
+    individual_id: `[[individuals/max-jaderberg]]`,
+    current_institution: 'Isomorphic Labs',
+    current_position: 'Chief AI Officer',
+    previous_institution: 'University of Oxford',
+    primary_research_area: 'AI Research',
+    lead_score: 95,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 6d. Create Miles Congreve (Chief Scientific Officer)
+  console.log('\n🎭 Creating Party: Miles Congreve...');
+  const milesPartyId = generateId('pty');
+  await createEvent('create', 'party', milesPartyId, {
+    id: milesPartyId,
+    name: 'Miles Congreve',
+    party_type: 'Individual',
+    type: 'party'
+  });
+
+  console.log('👤 Creating Individual: Miles Congreve...');
+  const milesIndividualId = generateId('ind');
+  await createEvent('create', 'individual', milesIndividualId, {
+    id: milesIndividualId,
+    name: 'Miles Congreve',
+    party_id: `[[parties/miles-congreve]]`,
+    person_name: 'Miles Congreve',
+    person_given_name: 'Miles',
+    person_family_name: 'Congreve',
+    type: 'individual'
+  });
+
+  console.log('🔬 Creating ResearcherProfile: Miles Congreve...');
+  const milesResearcherId = generateId('rsp');
+  await createEvent('create', 'researcher-profile', milesResearcherId, {
+    id: milesResearcherId,
+    name: 'Miles Congreve - Researcher Profile',
+    party_id: `[[parties/miles-congreve]]`,
+    individual_id: `[[individuals/miles-congreve]]`,
+    current_institution: 'Isomorphic Labs',
+    current_position: 'Chief Scientific Officer',
+    previous_institution: 'University of Cambridge',
+    primary_research_area: 'Structure-Based Drug Design',
+    lead_score: 95,
+    lead_temperature: 'Hot',
+    discovery_source: 'LinkedIn',
+    first_discovered: new Date().toISOString().split('T')[0],
+    type: 'researcher-profile'
+  });
+
+  // 7. Create Cyber Dynamics (for integration tests)
+  console.log('\n🏢 Creating Account: Cyber Dynamics (for tests)...');
+  const cyberDynamicsId = generateId('acc');
+  await createEvent('create', 'Account', cyberDynamicsId, {
+    id: cyberDynamicsId,
+    name: 'Cyber Dynamics',
+    website: 'https://cyberdynamics.example.com',
+    industry: 'Technology',
+    lifecycle_stage: 'prospect',
+    description: 'Test account for integration tests.',
+    type: 'Account'
+  });
+
+  console.log('\n✨ Real data seeding complete!');
+  console.log('\nCreated entities:');
+  console.log('  📊 3 Accounts: EvolutionaryScale, Latent Labs, Isomorphic Labs');
+  console.log('  🎭 14 Parties:');
+  console.log('     • EvolutionaryScale (6): Alex Rives, Roshan Rao, Tom Sercu, Sal Candido, Thomas Hayes, Halil Akin');
+  console.log('     • Latent Labs (4): Simon Kohl, Alex Bridgland, Jonathan Crabbé, Henry Kenlay');
+  console.log('     • Isomorphic Labs (4): Demis Hassabis, Colin Murdoch, Max Jaderberg, Miles Congreve');
+  console.log('  👤 14 Individuals + 14 ResearcherProfiles');
+  console.log('  👤 1 Contact: Alex Rives (legacy)');
+  console.log('  🎯 1 Lead: Roshan Rao (legacy)');
+  console.log('  💰 1 Opportunity: ESM3 Integration');
+  console.log('  📅 2 Activities: Call + Demo');
+  console.log('  🧪 1 Test Account: Cyber Dynamics');
+  console.log('\nNow run:');
+  console.log('  npm run process-events  # Process events into projections');
+  console.log('  npm run sync-files      # Sync to markdown files');
+  console.log('  npm start               # Start all services');
+}
+
+// Main
+seedRealData().catch(error => {
+  console.error('\n❌ Seeding failed:', error.message);
+  process.exit(1);
+});

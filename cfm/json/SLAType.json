@@ -1,0 +1,79 @@
+{
+  "@id": "SLAType",
+  "name": "SLA Type",
+  "@type": "Class",
+  "description": "Types of Service Level Agreement e.g. 24x7, weekdays, work hours",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "sLATypeName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "4c1f90e6-12bf-368c-8de0-065e18226263",
+    "@type": "Shape",
+    "targetClass": "SLAType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "be95427b-1e4b-357b-8b2c-f3c0718b7297",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "sLATypeName",
+        "@id": "7f93495a-4850-3ee2-a414-f8e673030983",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "79419f95-1dcd-3209-a501-23e519a82384",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "dcc95a9b-cff8-4888-b9f9-6328dac31efb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "87311a8d-808d-3957-87f0-694148dd6045",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "31aafed4-d795-4727-a0a0-aa1ad7a76ccd",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "ed1fad0b-596e-3598-a2cb-4f5722ad0e13",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "6d87ff17-1db2-3aa4-971c-0c9c28e152b6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

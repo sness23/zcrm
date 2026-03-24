@@ -1,0 +1,79 @@
+{
+  "@id": "PriceAdjustmentMethod",
+  "name": "Price Adjustment Method",
+  "@type": "Class",
+  "description": "Defines how the adjustment will be calculated. Valid values used in Commerce Cloud are: percentage, fixed_price, amount, free, price_book_price, bonus, total_fixed_price, bonus_choice, percentage_off_options",
+  "subjectArea": "SalesOrder",
+  "entityGroup": "SalesOrder",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "7ddd73b9-2f0c-4a5a-a9e9-3b3821b6c0f4",
+    "@type": "Shape",
+    "targetClass": "PriceAdjustmentMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "99ecaba8-a827-4424-a424-7a3e3068e262",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "b3f7b20e-9a71-4404-a626-aa369c0600f8",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "3dc86d57-5f85-4303-9717-3f01f271d4aa",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "c875f750-ec2c-4161-9595-08d130458566",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4eb9d054-d21e-4a2a-9b9b-e3446aab61a4",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "dba3aa00-a996-4222-bf7f-2e2ad202a604",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "dad50e7e-677b-4060-aeae-229965d8cacf",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "267a44d7-0e15-4444-a9e9-b4f29925ab96",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

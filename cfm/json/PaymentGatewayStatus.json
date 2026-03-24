@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentGatewayStatus",
+  "name": "Payment Gateway Status",
+  "@type": "Class",
+  "description": "A summary-level result code for an access to the Payment Gateway: success, failure or timeout",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentGatewayStatusCode",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e171e2cb-30f0-4c8c-8c0c-f0c962b39d19",
+    "@type": "Shape",
+    "targetClass": "PaymentGatewayStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "955793ef-994b-46a6-8101-3f85a52f1ac0",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentGatewayStatusCode",
+        "@id": "cef6f229-233e-4747-aaea-bcd67078a5d7",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1873f91d-7ef8-4747-8303-1fc43b84c42e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "a42c4278-53ad-4010-a464-393a11e62bf0",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "430d4cc4-6bbd-4989-9e9e-7abb43e93f28",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "b05ba157-eb8b-4fff-9d5d-7ac60fea188c",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "cc8dd668-6559-4888-99d9-d5e6f6b58c69",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "ba34195a-6fa0-4beb-bf3f-fd11993a51de",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

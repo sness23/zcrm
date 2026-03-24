@@ -1,0 +1,91 @@
+{
+  "@id": "PaymentCreditMemoApplication",
+  "name": "Payment Credit Memo Application",
+  "@type": "Class",
+  "description": "Facilitates applying/unapplying payment balance to a credit memo.",
+  "subClassOf": "PaymentApplication",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditMemoId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "8767dc1c-ddfd-4e2e-abab-a8138cf9a475",
+    "@type": "Shape",
+    "targetClass": "PaymentCreditMemoApplication",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "510b2684-28f8-4b4b-a3a3-537cf903d0b6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "c8aaaa6a-0a51-4ccc-ae2e-532366c87928",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "87868301-c140-4e2e-ac2c-b9356dc1d4e2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "08370e63-a389-4424-9999-5e615d1a35cf",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "16ae8565-89e7-4c5c-a6e6-92265beb7fe8",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "880858f3-6e86-4dad-bb3b-7e2edae768ee",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "85e5dcee-848c-47f7-85c5-f42a48317f0a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditMemoId",
+        "@id": "e4fd7d88-07c9-4e3e-b030-f5f9bd7c69a1",
+        "node": "37fcece1-e3ad-3020-9825-fdc0095ee8a4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "07ca2e5c-f291-4777-81c1-70121c9e0d9e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

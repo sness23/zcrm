@@ -1,0 +1,79 @@
+{
+  "@id": "CustomerType",
+  "name": "CustomerType",
+  "@type": "Class",
+  "description": "What type of customer is this e.g. High Roller, Low Value or other segementation value",
+  "subjectArea": "Party",
+  "entityGroup": "PartyRole",
+  "properties": [
+    {
+      "@id": "customerTypeName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "26d02fe7-2f72-3838-8f9b-ff8471ce37ce",
+    "@type": "Shape",
+    "targetClass": "CustomerType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "6fe4c5f0-dc32-3185-ac6b-d60be8fef244",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "e78d77b2-a59b-3eb7-a424-4363220b81e8",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5744a8f8-db99-4a3a-9313-995234e9ebff",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "48c9ea96-a0e4-3f17-a0b4-08dbc3a68796",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "91c5e6bc-590a-4c8c-9a5a-b3a62c261be0",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "d3bed71a-42aa-32ab-b305-f2f856fc83ed",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "customerTypeName",
+        "@id": "59a388b6-95e6-36a7-ab35-f2d3c0a2a139",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "327b79f7-abbd-319c-b619-76440fc66480",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "@id": "ProductCollateral",
+  "name": "Product Collateral",
+  "@type": "Class",
+  "description": "Collateral for a product e.g. link to brochure one",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "uRL",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "cf800cf3-7f8f-32a0-817e-f1c245da2585",
+    "@type": "Shape",
+    "targetClass": "ProductCollateral",
+    "properties": [
+      {
+        "path": "uRL",
+        "@id": "64bdb35c-1d68-33fe-a274-2c77ce9200c6",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "b336befc-751b-4727-a1e1-47679fc3b690",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "a8573401-5cec-330d-b2a8-14433368d739",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0a05c546-dd5c-4030-8aca-60f52506fb3a",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "3cb2fe7a-7e63-4313-bb3b-3037a8d7c470",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "a24c6794-f02a-363c-b12e-add43e51b0a1",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "450ada16-07ef-46a6-a020-a6ab491fde35",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a5763c42-790d-4e0e-8202-c4f68177cd8a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b4a51ac4-b5c0-49b9-9898-6d797f4cea94",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

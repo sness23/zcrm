@@ -1,0 +1,79 @@
+{
+  "@id": "BillDeliveryMethod",
+  "name": "Bill Delivery Method",
+  "@type": "Class",
+  "description": "How can a bill be delivered e.g. electronic, mail",
+  "subjectArea": "Account",
+  "entityGroup": "AccountSetup",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "billDeliveryMethodName",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "653bc3b7-46bc-3b19-95c6-6f6ba739e45a",
+    "@type": "Shape",
+    "targetClass": "BillDeliveryMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "a9790443-2700-39f3-a651-d887e6bda640",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "43f0899d-bf66-360c-a6fa-d617a2993f42",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "b0c202cd-be0a-4999-b3f3-6ddf3114d60b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "4011ddc9-a122-39f8-913e-c342cb43f404",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "980b0bba-5b15-4dfd-b9b9-048468d62611",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "1d4718cb-a78b-3d16-aff8-132503a20e25",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a00e1010-e4be-3e2a-8b0c-6892893c2de1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "billDeliveryMethodName",
+        "@id": "720d13a0-fd46-3091-8ed0-88bee4fa483d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

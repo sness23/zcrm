@@ -1,0 +1,149 @@
+{
+  "@id": "PersonName",
+  "name": "Person Name",
+  "@type": "Class",
+  "description": "Variations of a person's name over time. Reasons for name changes include changes in marriage status and adoption.",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "middleName",
+      "@type": "Property"
+    },
+    {
+      "@id": "suffixName",
+      "@type": "Property"
+    },
+    {
+      "@id": "secondLastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "beginEffectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "firstName",
+      "@type": "Property"
+    },
+    {
+      "@id": "lastName",
+      "@type": "Property"
+    },
+    {
+      "@id": "fullName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "endEffectiveDate",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "a96ae737-2cda-4636-bd7d-3c813580d987",
+    "@type": "Shape",
+    "targetClass": "PersonName",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "5a4744ec-4109-4838-a0e0-0817064297de",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "suffixName",
+        "@id": "31cbd13e-8255-4a0a-8686-a3fc39bb12b2",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "secondLastName",
+        "@id": "3c354e79-e156-46a6-a828-38c531aab39f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "middleName",
+        "@id": "00ba60a9-77e1-4c9c-98d8-b25072da0989",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastName",
+        "@id": "cb373f98-a3f1-4242-82c2-cc81b1436b65",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "c2bcceaf-e623-4cec-bd3d-6ca86e0ee66f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "add68e64-ef9d-4ada-b838-c3a910fb5ade",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "246018ca-10a1-4484-8a4a-0f566d766062",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "fullName",
+        "@id": "c4289a10-01db-4363-9313-8fa4c83175ab",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "firstName",
+        "@id": "526eb1dd-703d-4252-8707-01e064a48502",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2ba4ae3b-d0db-4191-8646-9802a36389b1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "7c7b95f5-87af-4b2b-bcfc-93d58d16a27a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "endEffectiveDate",
+        "@id": "7ce8e654-53f3-4aaa-a0a0-3a9f1938628e",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "87f6bde3-0e83-49b9-b0f0-9d66ef7c6d53",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "beginEffectiveDate",
+        "@id": "01f8631a-debc-41e1-8282-04d88e3a8b6c",
+        "datatype": "xsd:date",
+        "maxCount": "1"
+      }
+    ]
+  }
+}

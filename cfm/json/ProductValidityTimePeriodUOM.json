@@ -1,0 +1,90 @@
+{
+  "@id": "ProductValidityTimePeriodUOM",
+  "name": "Product Validity Time Period UOM",
+  "@type": "Class",
+  "description": "Standard units of measure for time, for example minute, second, hour and day",
+  "subjectArea": "Product",
+  "entityGroup": "ProductAttribute",
+  "properties": [
+    {
+      "@id": "pluralName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "277ad160-ac8f-3622-aa33-85c7950e340f",
+    "@type": "Shape",
+    "targetClass": "ProductValidityTimePeriodUOM",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "aa164f49-1ea5-37c1-ad4a-7c1564b0d689",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "pluralName",
+        "@id": "a0398e5d-e401-34a6-8c60-a1afc5c78835",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "6c0375cc-1a8e-390e-b2c7-c2a3f7a642a1",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "8c003b9c-b630-3537-aff3-fcbd8b526a63",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "6037e548-9435-49d9-9e9e-181a710e7640",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "681adb87-94c7-3499-8482-58a8169362ca",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "4a94625c-6852-4434-a727-6b619417e211",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "2bf00586-db19-3cf9-9956-f536dd11a9d8",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "2236b554-85c0-30ce-b544-fb46f7dc3413",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "@id": "BrandGrade",
+  "name": "Brand Grade",
+  "@type": "Class",
+  "description": "What is the value of the brand e.g. premium, regular, value",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ab402c41-7e08-3c49-bebe-479012bc8c1e",
+    "@type": "Shape",
+    "targetClass": "BrandGrade",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "3b54f3d8-e276-3540-a641-1a1fe691eb17",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "5f9f31ed-d489-39a9-9099-74de6bf699d5",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "5d601069-c31d-335c-99f9-e26947ec63c6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "713a31f9-c73d-41b1-a8e8-27115a5c2b3f",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "e89c7002-52ae-3d61-a6b7-379a10c77103",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "55305eb2-2794-4c8c-8707-c2bca4d64197",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "e0e3821d-7140-3eb1-9c5b-6a629a84ad37",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "326871a2-d87e-3018-9cb1-a09388a74dff",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

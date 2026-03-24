@@ -1,0 +1,90 @@
+{
+  "@id": "RefundCreditMemoAllocation",
+  "name": "Refund Credit Memo Allocation",
+  "@type": "Class",
+  "description": "Facilitates applying/unapplying refund balance to a credit memo.",
+  "subClassOf": "RefundAllocation",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "creditMemoId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e0b743e5-fad5-4e6e-8d4d-936609a8f551",
+    "@type": "Shape",
+    "targetClass": "RefundCreditMemoAllocation",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "504fdd2e-8cf2-44b4-8444-e5979756e912",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "2ae07a5e-9c43-4a7a-88c8-36018f132b63",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d8ec0b19-4ba8-4f1f-8383-7b76fd39ba8f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "2b4e6640-ecc6-4121-9c5c-6e4ae39c298a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "9dd77685-6998-48c8-9d5d-5e06db367822",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "87cfe016-56f5-4b8b-9e9e-33fb84baff03",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "49b14ce7-62d1-42f2-ad2d-53837fd71a97",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "creditMemoId",
+        "@id": "9dce054d-22a1-4707-8e8e-f2a2414772ec",
+        "node": "37fcece1-e3ad-3020-9825-fdc0095ee8a4",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "511a763d-58e0-40a0-b939-27f6dce5928e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

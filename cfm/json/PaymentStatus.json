@@ -1,0 +1,79 @@
+{
+  "@id": "PaymentStatus",
+  "name": "Payment Status",
+  "@type": "Class",
+  "description": "The state of a Payment: Draft, Processed, or Cancelled.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b71ae4f0-fa87-4323-bafa-a7653d9da4c8",
+    "@type": "Shape",
+    "targetClass": "PaymentStatus",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "24dcd910-1f91-4060-8ece-60dadb575ec3",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "419c2e4f-550b-4181-88c8-e18476068eac",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "312e2078-5ea9-4ded-8f8f-09319c8c3a5b",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "442da7af-587e-43f3-aded-63ea157d826c",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "482e1180-4671-4878-9353-0e26b138cb93",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "109f6f99-8507-41e1-9414-00e11289c8e4",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "297bb704-a5e9-44b4-bf3f-c8606aadf105",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "f6e0b818-5074-4868-9a1a-cf7ed9de17ff",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

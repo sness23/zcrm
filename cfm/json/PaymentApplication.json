@@ -1,0 +1,198 @@
+{
+  "@id": "PaymentApplication",
+  "name": "Payment Application",
+  "@type": "Class",
+  "description": "The designation of part or all of a Payment to satisfy a claim on the payment funds.",
+  "subjectArea": "Payment",
+  "entityGroup": "Payment",
+  "properties": [
+    {
+      "@id": "externalCreatedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentBalanceAmount",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentApplicationTypeId",
+      "@type": "Property"
+    },
+    {
+      "@id": "paymentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "unappliedDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "effectiveDate",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "hasBeenUnapplied",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    },
+    {
+      "@id": "commentText",
+      "@type": "Property"
+    },
+    {
+      "@id": "appliedAmount",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f17bca80-fce8-4b1b-9313-198239c666f9",
+    "@type": "Shape",
+    "targetClass": "PaymentApplication",
+    "properties": [
+      {
+        "path": "unappliedDate",
+        "@id": "cd54ea6e-8a22-4767-a525-934d1ceed7d0",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "systemModstamp",
+        "@id": "99c9a736-3629-4d7d-94d4-c6d1505d10db",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentId",
+        "@id": "9312d05c-76f3-45e5-a424-a9d2e1bbe1ba",
+        "node": "4b597b6a-3084-3d50-a314-a9a27517b5f1",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentBalanceAmount",
+        "@id": "1a6c942f-10e7-4010-9090-6299f6ce37d2",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "paymentApplicationTypeId",
+        "@id": "dccd2709-3f50-4b6b-8a4a-092f90010f74",
+        "node": {
+          "xor": {
+            "@list": [
+              {
+                "@id": "8767dc1c-ddfd-4e2e-abab-a8138cf9a475"
+              },
+              {
+                "@id": "e8a4748d-55c2-4727-b7f7-2032f674bdb0"
+              }
+            ]
+          }
+        },
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "34bd470d-3b91-4797-9c1c-14ea0f60d982",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a81553a1-9394-4878-b3b3-0c1e3a9a65e2",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "5817d06b-eb64-4e4e-8040-fb1b774743f4",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "31d7d01f-00a3-4e9e-98d8-be4492c8097c",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "hasBeenUnapplied",
+        "@id": "7a984c9c-f7bf-4959-9fdf-d9b97cb3de0d",
+        "datatype": "xsd:boolean",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "56e1db74-99b4-4ece-a828-5f50a45b697f",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "a1b73d9b-5678-4c1c-9212-b26566b44216",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalCreatedDate",
+        "@id": "12723ce5-dbfc-4171-bafa-99e97d68fc3d",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "effectiveDate",
+        "@id": "884a04fc-120e-40f0-8202-d5dc49416724",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "b61602b6-7ea6-45f5-b979-71707ccbc402",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "commentText",
+        "@id": "93497eb1-0de8-4aba-b838-b73aef7f520b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "appliedDate",
+        "@id": "d7ef1ff8-be9b-4dcd-bf7f-56428ee6cddf",
+        "datatype": "xsd:date",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "appliedAmount",
+        "@id": "a8feab5e-c692-4faf-90d0-8c8bdd7a6ba0",
+        "datatype": "cim:amount",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

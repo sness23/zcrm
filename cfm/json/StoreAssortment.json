@@ -1,0 +1,88 @@
+{
+  "@id": "StoreAssortment",
+  "name": "Store Assortment",
+  "@type": "Class",
+  "description": "The assignment of an Assortment to a particular Sales Store.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "assortmentId",
+      "@type": "Property"
+    },
+    {
+      "@id": "salesStoreId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "ddef2324-7072-4191-84c4-b7bb33707f65",
+    "@type": "Shape",
+    "targetClass": "StoreAssortment",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "32a5c4e9-80a5-47b7-8f0f-4fbe48b0ceed",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "8be45b2c-a482-4636-8808-b698c54f0b65",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "66ee80dd-111b-4858-b535-8533db1f1744",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "1cb0edb4-4949-43f3-bd3d-b57b349fe64a",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "fcf0276a-80a2-4d0d-8e0e-c74ac3312bcc",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "5317c8fa-d2be-4777-8ccc-8db4cb34954a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "88439b6e-2fda-44d4-9ada-b00ff0854789",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "assortmentId",
+        "@id": "76027fd6-feff-4595-8a8a-b3783c6fa9b0",
+        "node": "c5ecef9d-b708-4424-8d0d-a8de6da39864",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

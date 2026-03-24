@@ -1,0 +1,80 @@
+{
+  "@id": "PopulationType",
+  "name": "Population Type",
+  "@type": "Class",
+  "description": "List of Population Types e.g. Medical Staff, Patient, Vendor",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "e7791973-2854-4d1d-8b4b-0ab7bf6291ea",
+    "@type": "Shape",
+    "targetClass": "PopulationType",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "4b67a0c5-012e-4dfd-bf3f-c94dc8f2d7d6",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "59225ef0-cfe1-4101-b535-4d1f71d8ff9a",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "0b91bd96-9f9d-4f0f-a3a3-319f9c0017e4",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "949a0199-efbb-42d2-84c4-ceb0892313be",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ab011f10-6584-4959-b737-bfd98332de02",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2132dbbf-1c42-4282-8444-746faf45c946",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "de327181-0b06-4565-8ece-6f4edd079433",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "aa750bce-3bbb-45a5-a2e2-4d05805329c1",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

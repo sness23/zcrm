@@ -1,0 +1,50 @@
+{
+  "@id": "SalesStoreProduct",
+  "name": "Sales Store Product",
+  "@type": "Class",
+  "description": "The association of a Product with a Sales Store",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [],
+  "schema": {
+    "@id": "a4056049-66e8-46a6-8040-a1cb0c8caa0f",
+    "@type": "Shape",
+    "targetClass": "SalesStoreProduct",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "348b21db-ee65-46d6-9919-a0a495f68a24",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "79a2a226-f141-4aaa-bdfd-b3fef9a8cc5f",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "349e2d67-1c52-41d1-8303-d3eb3b7e7eaa",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "8e3cb1be-7aff-4f9f-a1e1-602725e89944",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "04fd362e-1134-46a6-a828-26bfd8c08d31",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

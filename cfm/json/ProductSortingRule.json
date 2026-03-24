@@ -1,0 +1,89 @@
+{
+  "@id": "ProductSortingRule",
+  "name": "Product Sorting Rule",
+  "@type": "Class",
+  "description": "Rules for displaying of products within a Campaign, that are based on factors such as keyword searches done by campaign members, or rankings of product categories.",
+  "subjectArea": "Product",
+  "entityGroup": "Product",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "productSortingRuleId",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "b2108d0b-5bbd-4f1f-a3a3-38546fa8b821",
+    "@type": "Shape",
+    "targetClass": "ProductSortingRule",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "ee46c51f-cb39-48f8-a868-a3a5500ae987",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productSortingRuleId",
+        "@id": "3240cb61-32f5-4c0c-a8a8-fc448ad28bcb",
+        "node": "47408e52-f5ba-4ada-9d9d-22b9fc070257",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "a98d41ac-bd09-4dbd-b030-58dfe449b77e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "426c3ee9-98ee-4aaa-8101-cf6b62c92e5b",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "ff504f05-dd6c-4b8b-85c5-911cd8a40fb7",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "69ce8406-54f7-4b4b-b737-3d6cfb42d92d",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "60040740-3ec0-48b8-8a8a-054378686533",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "6ab055ca-0bcb-4868-8141-68c6331bdfb5",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "75d2d52c-1a27-4e5e-8b0b-43fd2f50620e",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

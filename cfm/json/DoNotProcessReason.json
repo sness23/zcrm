@@ -1,0 +1,79 @@
+{
+  "@id": "DoNotProcessReason",
+  "name": "Do Not Process Reason",
+  "@type": "Class",
+  "description": "Why no processing allowed e.g Accuracy Questioned, Processing Unlawful, Legal Prohibit Delete, Data Subject Objection",
+  "subjectArea": "Party",
+  "entityGroup": "Party",
+  "properties": [
+    {
+      "@id": "doNotProcessReasonName",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "f79bb600-fe2d-3a53-a581-aa1d4e0ac754",
+    "@type": "Shape",
+    "targetClass": "DoNotProcessReason",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "100cddf1-bff7-33c6-a083-538a67e1b65d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "d958102c-ebe8-319b-8ddc-b5d1a131f95d",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "45494324-7dcf-41b1-be7e-db314610e5ae",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "5e4f9708-d2eb-3a8c-bb10-bd233384275d",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "2f2d5dd0-5fa5-4323-ae6e-83fde2a61dc1",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "192e5024-b7fd-3da3-9308-2bdd69897ddb",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "doNotProcessReasonName",
+        "@id": "e8a073e9-011d-30cc-b846-42f79cbd64fb",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "e8d2a392-b6ba-3442-9f39-f846b47a158c",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}

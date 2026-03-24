@@ -1,0 +1,101 @@
+{
+  "@id": "ShippingMethod",
+  "name": "Shipping Method",
+  "@type": "Class",
+  "description": "A parcel of one or more items bundled together, so that they arrive at the customer's address as a single unit.",
+  "subjectArea": "Shipment",
+  "entityGroup": "Shipment",
+  "properties": [
+    {
+      "@id": "description",
+      "@type": "Property"
+    },
+    {
+      "@id": "productId",
+      "@type": "Property"
+    },
+    {
+      "@id": "id",
+      "@type": "Property"
+    },
+    {
+      "@id": "name",
+      "@type": "Property"
+    }
+  ],
+  "schema": {
+    "@id": "beb8f1e4-e2bc-4151-a464-7d29c9be52c2",
+    "@type": "Shape",
+    "targetClass": "ShippingMethod",
+    "properties": [
+      {
+        "path": "systemModstamp",
+        "@id": "d4c9efb8-4bf4-47d7-8c8c-6746bde95e14",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "productId",
+        "@id": "c450a7f2-e5d2-4efe-a020-75311ae89902",
+        "node": "0a14a328-3059-3c24-9c85-ececb74ab456",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "name",
+        "@id": "ad1b8d12-78ad-4e3e-bfbf-bd8593144c7d",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "lastModifiedDate",
+        "@id": "1bd8257f-4941-4202-9919-6d59e3309e96",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "implementorType",
+        "@id": "94f66751-4b04-4e2e-8141-9caec284d841",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "id",
+        "@id": "775466cb-fc4f-389e-9501-5a4219aaa5ca",
+        "datatype": "cim:id",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "externalSourceId",
+        "@id": "24a66ed6-cdd4-4484-a6e6-f8c171a7a592",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "externalRecordId",
+        "@id": "251725d6-59ff-3b08-8d06-765840a7aa7b",
+        "datatype": "xsd:string",
+        "maxCount": "1"
+      },
+      {
+        "path": "description",
+        "@id": "2e60b63f-e0d6-4f7f-9151-7131fdbeb5ee",
+        "datatype": "xsd:string",
+        "maxCount": "1",
+        "minCount": "1"
+      },
+      {
+        "path": "createdDate",
+        "@id": "a3cd2397-1ade-4e8e-af6f-4ee3d963c4e9",
+        "datatype": "xsd:time",
+        "maxCount": "1",
+        "minCount": "1"
+      }
+    ]
+  }
+}
