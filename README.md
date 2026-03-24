@@ -1,110 +1,16 @@
-# Zax CRM
+# zcrm
 
-Filesystem-first, Obsidian-native AI CRM (SSOT). This repo contains:
-- A sample Obsidian vault structure with 9 Salesforce-compatible entity types
-- JSON Schemas for core entities
-- Git-backed vault with automatic version control
-- Git hook validators (frontmatter & link checks)
-- A minimal TypeScript CLI (`zcrm`) to scaffold records, validate, and install hooks
-- A Postgres adapter stub
+A filesystem-first, Obsidian-native CRM with event-sourced architecture. Your data lives as markdown files in a git-backed vault — human-readable, version-controlled, and portable. SQLite provides fast queries as a derived projection.
 
-## Quickstart
+## Why zcrm?
 
-```bash
-# 1) Install Node 20+ and Python 3.10+
-cd zcrm
+**Your CRM data should be files you own**, not rows locked in someone else's database.
 
-# 2) Install CLI deps
-npm i
-
-# 3) Build CLI
-npm run build
-
-# 4) Initialize the vault & install git hooks
-node dist/index.js init
-
-# 5) (Optional) Set up git for the vault
-cd vault
-git init
-git remote add origin <your-vault-repo-url>
-cd ..
-
-# 6) Create sample records (auto-commits & pushes if vault is git repo)
-node dist/index.js new account "Acme Co"
-node dist/index.js new contact --account acme-co "Jane Doe" --email jane@acme.example
-
-# 7) Validate the vault
-node dist/index.js validate
-
-# 8) (Optional) Link git hooks into .git/hooks
-node dist/index.js install-hooks
-```
-
-Open `vault/` as an Obsidian vault.
-
----
-
-## CLI Commands
-
-- `init` — ensure folder layout, write default config.
-- `new <entity-type> <name>` — create a record from a template.
-  - **Entity types**: account, contact, opportunity, activity, lead, task, quote, product, campaign
-  - **Git flags**: `--no-commit` (skip git), `--no-push` (commit but don't push)
-  - **Examples**:
-    - `new account "Acme Corp"`
-    - `new contact --account acme-corp "Jane Doe" --email jane@acme.co`
-    - `new opportunity --account acme-corp "Q1 2025 Deal"`
-    - `new lead "Sarah Johnson" --email sarah@example.com --company "TechCo"`
-- `validate` — run schema + link validators.
-- `install-hooks` — symlink `vault/_hooks/*` into `.git/hooks/`.
-- `sync postgres` — stub for DB mirror (dry run).
-
-## REST API
-
-The CRM includes a REST API with event-sourced architecture for programmatic access.
-
-### Start API Server
-
-```bash
-npm run api
-# API available at http://localhost:3000
-```
-
-### Start Worker Process
-
-```bash
-npm run worker
-# Processes events and updates both markdown files AND SQLite database
-# Database created at vault/crm.db
-```
-
-### Quick Example
-
-```bash
-# Create an account via API
-curl -X POST http://localhost:3000/api/events \
-  -H "Content-Type: application/json" \
-  -d '{"type":"create","entity_type":"Account","data":{"name":"Acme Corp","lifecycle_stage":"prospect"}}'
-
-# List recent events
-curl http://localhost:3000/api/events
-
-# Get all accounts
-curl http://localhost:3000/api/entities/accounts
-
-# Query SQLite database directly
-sqlite3 vault/crm.db "SELECT name, lifecycle_stage FROM accounts LIMIT 5"
-```
-
-**See:**
-- `docs/QUICKSTART-rest-api.md` for complete REST API documentation
-- `docs/DESIGN-sqlite-sync.md` for SQLite architecture details
-
----
-
-## Architecture
-
-**Event Log = Single Source of Truth**
+- **Markdown files** are the source of truth — open them in Obsidian, VS Code, or any text editor
+- **Event log** captures every change immutably — complete audit trail, time-travel, replay
+- **SQLite** is just a queryable view — delete it and rebuild from the event log anytime
+- **Git** tracks every change — revert mistakes, see history, collaborate
+- **Salesforce-compatible** entity model — Account, Contact, Opportunity, Lead, and 13 more
 
 ```
 Client → REST API → Event Log (immutable, append-only)
@@ -119,28 +25,173 @@ Client → REST API → Event Log (immutable, append-only)
                   Git
 ```
 
-The system uses an **event-sourced architecture**:
-1. **Event Log** (`vault/_logs/*.md`) is the immutable source of truth
-2. **Worker** reads events and applies them to:
-   - **Markdown files** in `vault/` (human-readable, Obsidian-compatible)
-   - **SQLite database** in `vault/crm.db` (queryable, normalized tables)
-3. **Git** tracks all changes to markdown files
+## Quickstart
 
-**Benefits:**
-- Complete audit trail of all operations
-- Can rebuild markdown or SQLite from event log
-- Both projections stay in sync automatically
-- Easy to add more projections (Postgres, Elasticsearch, etc.)
+```bash
+# Prerequisites: Node 20+, Python 3.10+
+npm install
+npm run build
 
-## Design Notes
+# Initialize vault structure and git hooks
+node dist/index.js init
 
-- **Event-Sourced**: Event log is single source of truth; markdown and SQLite are projections
-- **Git-Backed Vault**: Each entity creation automatically commits with message `"Create Account: Acme Corp"`
-- **Schema Validation**: Frontmatter validated by JSON Schema (AJV); link integrity checked by Python
-- **Obsidian-Native Links**: Wikilinks use `[[folder/slug]]` format (e.g., `[[accounts/acme-corp]]`)
-- **SQLite Database**: Normalized Salesforce-like tables for rich SQL queries
-- **ULID IDs**: IDs use ULID prefixes: `acc_`, `con_`, `opp_`, `act_`, `led_`, `tsk_`, `quo_`, `prd_`, `cmp_`
-- **9 Entity Types**: Account, Contact, Opportunity, Activity, Lead, Task, Quote, Product, Campaign
-- **TypeScript Types**: Strong typing throughout with JSON Schema validation
+# Create records via CLI
+node dist/index.js new account "Acme Corp"
+node dist/index.js new contact --account acme-corp "Jane Doe" --email jane@acme.co
+node dist/index.js new opportunity --account acme-corp "Q1 2025 Deal"
 
-MIT License.
+# Validate the vault
+node dist/index.js validate
+```
+
+Open `vault/` as an Obsidian vault to browse your CRM with backlinks, graph view, and Dataview queries.
+
+## REST API
+
+```bash
+# Start the API server and worker
+npm run api      # Port 9600
+npm run worker   # Syncs events → markdown + SQLite
+```
+
+```bash
+# Create an account
+curl -X POST http://localhost:9600/api/events \
+  -H "Content-Type: application/json" \
+  -d '{"type":"create","entity_type":"Account","data":{"name":"Acme Corp","lifecycle_stage":"prospect"}}'
+
+# Query accounts
+curl http://localhost:9600/api/entities/accounts
+
+# Or query SQLite directly
+sqlite3 vault/crm.db "SELECT name, lifecycle_stage FROM accounts"
+```
+
+## CLI Commands
+
+| Command | Description |
+|---------|-------------|
+| `init` | Create vault directory structure and default config |
+| `new <type> <name>` | Create a record (auto-commits to git) |
+| `validate` | Run schema + link validators |
+| `install-hooks` | Enable pre-commit validation hooks |
+
+**Entity types:** account, contact, opportunity, activity, lead, task, quote, product, campaign
+
+**Flags:** `--no-commit` (skip git), `--no-push` (commit but don't push)
+
+## Frontend Apps
+
+zcrm includes 19 React + TypeScript + Vite frontend apps:
+
+| App | Port | Description |
+|-----|------|-------------|
+| comms-app | 9100 | Slack-like chat with AI (Cohere) |
+| tables-app | 9101 | Data grid views |
+| docs-app | 9102 | Documentation viewer |
+| login-app | 9103 | Supabase authentication |
+| leads-app | 9105 | Lead management |
+| search-app | 9106 | Search interface |
+| contact-app | 9107 | Contact management |
+| graph-app | 9007 | Relationship graph visualization |
+| analytics-app | 9112 | Analytics dashboards |
+| party-app | 9115 | Party entity management |
+| ... | | and 9 more |
+
+```bash
+npm run comms:dev    # Start any app in dev mode
+npm run leads:build  # Build for production
+```
+
+## Entity Model
+
+17 Salesforce-compatible entity types with ULID IDs:
+
+| Entity | Prefix | Directory |
+|--------|--------|-----------|
+| Account | `acc_` | `accounts/` |
+| Contact | `con_` | `contacts/` |
+| Opportunity | `opp_` | `opportunities/` |
+| Lead | `led_` | `leads/` |
+| Activity | `act_` | `activities/` |
+| Task | `tsk_` | `tasks/` |
+| Campaign | `cmp_` | `campaigns/` |
+| Quote | `quo_` | `quotes/` |
+| Product | `prd_` | `products/` |
+| Order | `ord_` | `orders/` |
+| Contract | `ctr_` | `contracts/` |
+| Event | `evt_` | `events/` |
+| Case | `cas_` | `cases/` |
+| Knowledge | `kav_` | `knowledge/` |
+| Asset | `ast_` | `assets/` |
+| Party | `pty_` | `parties/` |
+| Individual | `ind_` | `individuals/` |
+
+Each entity is a markdown file with YAML frontmatter, validated against JSON Schema:
+
+```yaml
+---
+id: acc_01k7djy3vnezx59arwm93xs613
+type: Account
+name: Acme Corp
+lifecycle_stage: prospect
+created_at: 2025-10-12T19:50:00.123Z
+---
+# Acme Corp
+
+## Notes
+- Enterprise prospect, 500+ employees
+```
+
+Entities link to each other using Obsidian wiki-links: `account: '[[accounts/acme-corp]]'`
+
+## Data Management
+
+```bash
+npm run seed          # Seed test data
+npm run reset         # Clear all vault data
+npm run process-events # Replay pending events
+npm run sync-files    # Sync markdown → database
+npm run reseed        # Full reset + seed + process + sync
+```
+
+## Testing
+
+```bash
+npm test              # Run all vitest tests
+npm run test:unit     # Unit tests only
+npm run test:integration  # API integration tests
+npm run test:vault    # Markdown integrity checks
+
+# Playwright E2E (per app)
+npm run test:integration:comms:headed
+npm run test:integration:docs:ui
+```
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Philosophy](docs/PHILOSOPHY.md) | The "Helpful Web" — our vision for ads that help instead of interrupt |
+| [Architecture](docs/ARCHITECTURE.md) | The "Magic Bus" event-sourced design |
+| [Vault Entities](docs/ARCHITECTURE-vault-entities.md) | Entity relationships and knowledge graph patterns |
+| [REST API Design](docs/DESIGN-rest-api.md) | Event-sourced REST API architecture |
+| [SQLite Sync](docs/DESIGN-sqlite-sync.md) | How the database projection works |
+| [Git-Backed Vault](docs/DESIGN-git-backed-vault.md) | Automatic version control for CRM data |
+| [API Quickstart](docs/API-QUICKSTART.md) | curl examples for all operations |
+| [Webhooks](docs/API-WEBHOOKS.md) | Real-time notifications with HMAC signatures |
+| [Salesforce Reference](docs/REFERENCE-salesforce-entities.md) | Entity type mapping to Salesforce objects |
+
+## Key Dependencies
+
+- `gray-matter` — YAML frontmatter parsing
+- `better-sqlite3` — SQLite database
+- `ajv` — JSON Schema validation
+- `express` v5 — REST API
+- `ws` — WebSocket server
+- `cohere-ai` — AI chat integration
+- `vitest` / `@playwright/test` — testing
+
+## License
+
+MIT
